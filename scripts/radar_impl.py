@@ -98,7 +98,8 @@ def collect_events():
         else: clusters.append({"primary": dict(article), "sources": []})
     events = []
     for i, cluster in enumerate(clusters[:MAX_EVENTS], 1):
-        p = cluster["primary"]; events.append({"id": datetime.now(timezone.utc).strftime("%y%m%d") + "-" + f"{i:02d}", "title": p["title"], "category": topic_list(p["title"] + " " + p["summary"] + " " + p["source_text"]), "source_type": p["source_type"], "primary_source": p["source"], "published_at": p["published_at"], "link": p["link"], "summary_raw": p["summary"], "source_text": p["source_text"], "sources": cluster["sources"][:10]})
+        p = cluster["primary"]
+        events.append({"id": datetime.now(timezone.utc).strftime("%y%m%d") + "-" + f"{i:02d", "title": p["title"], "category": topic_list(p["title"] + " " + p["summary"] + " " + p["source_text"]), "source_type": p["source_type"], "primary_source": p["source"], "published_at": p["published_at"], "link": p["link"], "summary_raw": p["summary"], "source_text": p["source_text"], "sources": cluster["sources"][:10]})
     return events
 
 def ask_deepseek(events, report_date):
@@ -131,10 +132,19 @@ def main():
         ai = {"events": [], "directions": {}, "observations": [], "quality_notes": "本次没有获得具有可核验原文内容的强相关事件。"}; events = []
     else:
         try:
-            ai = ask_deepseek(raw_events, report_date); by_id = {x["id"]: x for x in raw_events}; events = [normalize_ai_event(x, by_id[x.get("id")]) for x in ai.get("events", []) if x.get("id") in by_id]
+            ai = ask_deepseek(raw_events, report_date)
+            by_id = {x["id"]: x for x in raw_events}
+            by_title = {clean(x.get("title", "")).lower(): x for x in raw_events}
+            by_link = {str(x.get("link", "")).rstrip("/"): x for x in raw_events}
+            events = []
+            for item in ai.get("events", []):
+                ident = str(item.get("id") or "")
+                base = by_id.get(ident) or by_title.get(clean(item.get("title", "")).lower()) or by_link.get(str(item.get("link", "")).rstrip("/"))
+                if base:
+                    events.append(normalize_ai_event(item, base))
             if not events: raise ValueError("AI returned no matching events")
         except Exception as exc:
-            print("AI structured output failed:", repr(exc)); ai = {"events": [], "directions": {}, "observations": [], "quality_notes": "AI结构化分析失败，未补充原文之外的事实。"}; events = [fallback_event(x) for x in raw_events]
+            print("AI structured output failed:", repr(exc)); ai = {"events": [], "directions": {}, "observations": [], "quality_notes": "本次AI分析未完成，以下仅保留已核验原文内容。"}; events = [fallback_event(x) for x in raw_events]
     data = {"schema_version": "3.1", "updated": now.isoformat(), "report_date": report_date, "event_count": len(events), "events": events, "directions": ai.get("directions", {}), "observations": ai.get("observations", []), "quality_notes": ai.get("quality_notes", "")}
     with open("data.json", "w", encoding="utf-8") as handle: json.dump(data, handle, ensure_ascii=False, indent=2)
     print("Validated", len(events), "grounded events")
