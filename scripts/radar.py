@@ -7,12 +7,17 @@ import feedparser
 from difflib import SequenceMatcher
 from datetime import datetime, timezone, timedelta
 
+try:
+    from googlenewsdecoder import gnewsdecoder
+except Exception:
+    gnewsdecoder = None
+
 RSS_SOURCES = [
-    ("Google News - Power Electronics", "https://news.google.com/rss/search?q=power+electronics"),
-    ("Google News - Solid State Transformer", "https://news.google.com/rss/search?q=%22solid-state+transformer%22"),
-    ("Google News - SiC Power Electronics", "https://news.google.com/rss/search?q=SiC+power+electronics"),
-    ("Google News - GaN Power Electronics", "https://news.google.com/rss/search?q=GaN+power+electronics"),
-    ("Google News - Grid Forming", "https://news.google.com/rss/search?q=%22grid-forming%22+power"),
+    ("Google News - Power Electronics", "https://news.google.com/rss/search?q=power+electronics&hl=en-US&gl=US&ceid=US:en"),
+    ("Google News - Solid State Transformer", "https://news.google.com/rss/search?q=%22solid-state+transformer%22&hl=en-US&gl=US&ceid=US:en"),
+    ("Google News - SiC Power Electronics", "https://news.google.com/rss/search?q=SiC+power+electronics&hl=en-US&gl=US&ceid=US:en"),
+    ("Google News - GaN Power Electronics", "https://news.google.com/rss/search?q=GaN+power+electronics&hl=en-US&gl=US&ceid=US:en"),
+    ("Google News - Grid Forming", "https://news.google.com/rss/search?q=%22grid-forming%22+power&hl=en-US&gl=US&ceid=US:en"),
 ]
 
 KEYWORDS = [
@@ -87,17 +92,42 @@ def entities(text):
 def resolve_google(url):
     if not url or "news.google.com" not in url:
         return url, ""
+    resolved = url
     try:
-        r = requests.get(url, timeout=8, allow_redirects=True,
+        if gnewsdecoder is not None:
+            result = gnewsdecoder(url, interval=1)
+            if isinstance(result, dict) and result.get("status") and result.get("decoded_url"):
+                resolved = result["decoded_url"]
+    except Exception as e:
+        print("Google News decoder error:", repr(e))
+
+    # Fallback: follow redirects and inspect metadata from whichever page responds.
+    try:
+        r = requests.get(resolved, timeout=10, allow_redirects=True,
                           headers={"User-Agent": "Mozilla/5.0 PowerElectronicsRadar/2.1"})
-        final = r.url or url
-        page = r.text[:500000]
-        desc = re.findall(r'<meta[^>]+(?:property|name)=["\'](?:og:description|description)["\'][^>]+content=["\']([^"\']*)', page, re.I)
-        if not desc:
-            desc = re.findall(r'<meta[^>]+content=["\']([^"\']*)["\'][^>]+(?:property|name)=["\'](?:og:description|description)["\']', page, re.I)
-        return final, clean(desc[0]) if desc else ""
+        final = r.url or resolved
+        page = r.text[:800000]
+        patterns = [
+            r'<meta[^>]+(?:property|name)=["\'](?:og:description|description)["\'][^>]+content=["\']([^"\']*)',
+            r'<meta[^>]+content=["\']([^"\']*)["\'][^>]+(?:property|name)=["\'](?:og:description|description)["\']',
+            r'<link[^>]+rel=["\']canonical["\'][^>]+href=["\']([^"\']*)',
+        ]
+        desc = ""
+        canonical = ""
+        for idx, pattern in enumerate(patterns):
+            m = re.search(pattern, page, re.I)
+            if m:
+                if idx < 2:
+                    desc = clean(m.group(1))
+                else:
+                    canonical = html.unescape(m.group(1))
+        if "news.google.com" not in final:
+            resolved = final
+        if "news.google.com" in resolved and canonical and "news.google.com" not in canonical:
+            resolved = canonical
+        return resolved, desc
     except Exception:
-        return url, ""
+        return resolved, ""
 
 
 def same_event(a, b):
@@ -124,6 +154,12 @@ def collect_events():
         for item in feed.entries[:25]:
             title = clean(item.get("title", ""))
             summary = clean(item.get("summary", ""))
+            content_parts = []
+            for part in item.get("content", []) or []:
+                if isinstance(part, dict):
+                    content_parts.append(clean(part.get("value", "")))
+            if content_parts:
+                summary = max([summary] + content_parts, key=len)
             link = item.get("link", "") or ""
             text = (title + " " + summary).lower()
             if not title or not any(k in text for k in KEYWORDS):
@@ -140,10 +176,9 @@ def collect_events():
                 source = source_obj
             source = clean(source or fallback)
             resolved, desc = resolve_google(link)
-            if "news.google.com" not in resolved:
-                link = resolved
+            link = resolved
             if len(desc) > len(summary):
-                summary = desc[:1600]
+                summary = desc[:3000]
             candidates.append({"source": source, "title": title, "summary": summary, "link": link, "score": score(source)})
             if len(candidates) >= MAX_CANDIDATES:
                 break
@@ -194,36 +229,18 @@ def ask_deepseek(events, date):
 10. 每个事件必须保留原 id、primary_source、link 和 sources，不得删除来源。
 
 严格输出结构：
-{{
+{
   "events": [
-    {{
-      "id":"原id",
-      "title":"",
-      "category":[],
-      "importance":"重点|一般",
-      "evidence_level":"",
-      "summary":"",
-      "technical":{{
-        "voltage":"原文未提供",
-        "power":"原文未提供",
-        "topology":"原文未提供",
-        "device":"原文未提供",
-        "switching_frequency":"原文未提供",
-        "efficiency":"原文未提供",
-        "power_density":"原文未提供",
-        "isolation":"原文未提供",
-        "control":"原文未提供",
-        "application":"原文未提供"
-      }},
-      "industrialization":{{"stage":"未知","status":"","target":""}},
-      "evidence":{{"confirmed_facts":[],"source_claims":[],"inferences":[],"unknowns":[]}},
-      "sources":[]
-    }}
+    {
+      "id":"原id","title":"","category":[],"importance":"重点|一般","evidence_level":"","summary":"",
+      "technical":{"voltage":"原文未提供","power":"原文未提供","topology":"原文未提供","device":"原文未提供","switching_frequency":"原文未提供","efficiency":"原文未提供","power_density":"原文未提供","isolation":"原文未提供","control":"原文未提供","application":"原文未提供"},
+      "industrialization":{"stage":"未知","status":"","target":""},
+      "evidence":{"confirmed_facts":[],"source_claims":[],"inferences":[],"unknowns":[]},"sources":[]
+    }
   ],
-  "directions":{{"SST":"","SiC_GaN":"","GFM_PCS":"","800V_AI_DC":"","topology_magnetics":""}},
-  "observations":[],
-  "quality_notes":""
-}}
+  "directions":{"SST":"","SiC_GaN":"","GFM_PCS":"","800V_AI_DC":"","topology_magnetics":""},
+  "observations":[],"quality_notes":""
+}
 
 输入事件：
 {json.dumps(events, ensure_ascii=False)}'''
@@ -293,15 +310,8 @@ def main():
             result = ai
         except Exception as e:
             print("AI structured output failed:", repr(e))
-            events = []
-            for base in raw_events:
-                events.append(normalize_ai_event({}, base))
-            result = {
-                "events": events,
-                "directions": {},
-                "observations": [],
-                "quality_notes": "AI结构化分析失败，本次保留事件数据；技术参数均标记为原文未提供。"
-            }
+            events = [normalize_ai_event({}, base) for base in raw_events]
+            result = {"events": events, "directions": {}, "observations": [], "quality_notes": "AI结构化分析失败，本次保留事件数据；技术参数均标记为原文未提供。"}
     else:
         events, result = [], {"events": [], "directions": {}, "observations": [], "quality_notes": "本次未筛选到事件。"}
 
