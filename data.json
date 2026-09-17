@@ -1,311 +1,172 @@
 {
-  "schema_version": "2.1",
-  "updated": "2026-09-17T17:27:01.162162+08:00",
+  "schema_version": "3.0",
+  "updated": "2026-09-17T18:12:11.121746+08:00",
   "report_date": "2026-09-17",
-  "event_count": 30,
+  "event_count": 40,
   "events": [
     {
-      "id": "260917-05",
-      "title": "Enphase announces distributed solid-state transformer for AI data centers, targets 2028 for volume deliveries - pv-magazine-usa.com",
-      "category": [
-        "ai_dc",
-        "sst"
-      ],
-      "importance": "重点",
-      "evidence_level": "多源交叉",
-      "plain_summary": "Enphase宣布面向AI数据中心推出分布式固态变压器IQ SST，并称目标在2028年实现批量交付；多家媒体还报道其固态变压器模块已进入美国得州生产。",
-      "technical": {
-        "device": "GaN开关（来源称双向、sub-1-kV）",
-        "topology": "来源称网状阵列（meshed array）架构",
-        "key_parameters": "来源称目标5 MW供电；对齐800 V直流；批量交付目标2028年",
-        "focus": "分布式固态变压器，面向AI数据中心"
-      },
-      "industrialization": {
-        "stage": "试产",
-        "detail": "来源称固态变压器模块进入得州生产；批量交付目标为2028年，属目标而非已实现"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "Enphase宣布参加AI Infra Summit 2026并展示IQ Solid-State Transformer",
-          "来源称其固态变压器模块进入得州生产",
-          "来源称目标2028年实现批量交付"
-        ],
-        "source_claims": [
-          "来源声称采用双向GaN固态变压器，目标5 MW供电",
-          "来源声称与NVIDIA 800 V直流路线图对齐",
-          "来源声称采用sub-1-kV双向GaN开关的网状阵列架构"
-        ]
-      },
-      "sources": [
-        {
-          "source": "pv-magazine-usa.com",
-          "title": "Enphase announces distributed solid-state transformer for AI data centers, targets 2028 for volume deliveries - pv-magazine-usa.com",
-          "link": "https://pv-magazine-usa.com/2026/04/29/enphase-announces-distributed-solid-state-transformer-for-ai-data-centers-targets-2028-for-volume-deliveries/",
-          "source_type": "国际资讯"
-        },
-        {
-          "source": "HPCwire",
-          "title": "Enphase Energy to Showcase IQ Solid-State Transformer at AI Infra Summit 2026 - HPCwire",
-          "link": "https://www.hpcwire.com/aiwire/2026/09/14/enphase-energy-to-showcase-iq-solid-state-transformer-at-ai-infra-summit-2026/",
-          "source_type": "国际资讯"
-        },
-        {
-          "source": "Yahoo Finance",
-          "title": "Enphase Energy to Showcase IQ Solid-State Transformer at AI Infra Summit 2026 - Yahoo Finance",
-          "link": "https://finance.yahoo.com/energy/articles/enphase-energy-showcase-iq-solid-120000961.html",
-          "source_type": "财经媒体"
-        },
-        {
-          "source": "24/7 Wall St.",
-          "title": "Enphase Energy Rises 5% as Solid-State Transformer Modules Enter Texas Production, SolarEdge Jumps 6% - 24/7 Wall St.",
-          "link": "https://247wallst.com/investing/2026/09/08/enphase-energy-rises-5-as-solid-state-transformer-modules-enter-texas-production-solaredge-jumps-6/",
-          "source_type": "财经媒体"
-        },
-        {
-          "source": "finance.biggo.com",
-          "title": "Enphase's bidirectional GaN solid-state transformer enters production in the US, targeting 5MW power delivery for AI data centers - finance.biggo.com",
-          "link": "https://finance.biggo.com/news/5837e964-e41b-4020-ad79-0a488177e7ab",
-          "source_type": "财经媒体"
-        }
-      ],
-      "primary_source": "pv-magazine-usa.com",
-      "link": "https://pv-magazine-usa.com/2026/04/29/enphase-announces-distributed-solid-state-transformer-for-ai-data-centers-targets-2028-for-volume-deliveries/",
-      "summary_raw": "FREMONT, Calif., Sept. 14, 2026 (GLOBE NEWSWIRE) -- Enphase Energy, Inc. (NASDAQ: ENPH), a global energy technology company, today announced its participation in AI Infra Summit 2026, from Sept. 15-17, 2026 at the Santa Clara Convention Center in California. Enphase will be at Booth 1454, showcasing its approach to next-generation AI data center power infrastructure, including the IQ® Solid-State Transformer (IQ SST). On Sept. 15 at 12:00 p.m. PDT, Raghu Belur, co-founder and chief product offic",
+      "id": "260917-13",
+      "title": "Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit - Pragativadi",
       "source_type": "国际资讯",
-      "relevance_score": 81,
-      "relevance_factors": {
-        "focus_match": 74,
-        "technical_density": 99,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "800V/AI DC",
-          "SST",
-          "SiC/GaN"
-        ]
-      },
-      "heat_score": 87,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 99,
-        "source_authority": 58
-      },
-      "technical_depth_score": 71,
-      "radar_score": 79,
-      "radar_rank": 1
-    },
-    {
-      "id": "260917-07",
-      "title": "Scalable GaN-Based IQ Solid-State Transformer Architecture Eyes AI Data Centers - Electronic Design",
-      "category": [
-        "ai_dc",
-        "gan",
-        "sst"
-      ],
-      "importance": "重点",
-      "evidence_level": "专业媒体",
-      "plain_summary": "文章介绍Enphase面向AI数据中心的可扩展IQ固态变压器架构，称其与NVIDIA的800伏直流路线图一致，用大量低于1千伏的双向GaN开关组成网状阵列实现扩展。",
-      "technical": {
-        "device": "GaN开关（来源称sub-1-kV、双向）",
-        "topology": "来源称网状阵列（meshed array）",
-        "key_parameters": "来源称对齐800 V直流；开关耐压sub-1-kV",
-        "focus": "可扩展GaN固态变压器架构，面向AI数据中心"
-      },
-      "industrialization": {
-        "stage": "产品发布"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "文章介绍Enphase IQ固态变压器架构，面向AI数据中心"
-        ],
-        "source_claims": [
-          "来源声称采用sub-1-kV双向GaN开关的网状阵列",
-          "来源声称与NVIDIA 800 V直流路线图对齐"
-        ]
-      },
-      "sources": [
-        {
-          "source": "Electronic Design",
-          "title": "Scalable GaN-Based IQ Solid-State Transformer Architecture Eyes AI Data Centers - Electronic Design",
-          "link": "https://www.electronicdesign.com/technologies/power/article/55393675/electronic-design-enphase-energy-announces-scalable-iq-solid-state-transformer-architecture-for-ai-data-centers",
-          "source_type": "国际资讯"
-        }
-      ],
-      "primary_source": "Electronic Design",
-      "link": "https://www.electronicdesign.com/technologies/power/article/55393675/electronic-design-enphase-energy-announces-scalable-iq-solid-state-transformer-architecture-for-ai-data-centers",
-      "summary_raw": "Enphase’s new SST architecture, which aligns with NVIDIA’s 800-V DC roadmap, uses a meshed array of sub-1-kV bidirectional GaN switches to provide scalability and distributed ...",
-      "source_type": "国际资讯",
-      "relevance_score": 81,
-      "relevance_factors": {
-        "focus_match": 74,
-        "technical_density": 99,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "800V/AI DC",
-          "SST",
-          "SiC/GaN"
-        ]
-      },
-      "heat_score": 74,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 71,
-      "radar_score": 75,
-      "radar_rank": 2
-    },
-    {
-      "id": "260917-01",
-      "title": "基于干扰动态响应机理的SiC MOSFET驱动设计 - 电工技术学报",
+      "primary_source": "Pragativadi",
+      "published_at": "2026-09-17T07:41:15+00:00",
+      "link": "https://pragativadi.com/odisha-powers-up-indias-chip-ambitions-with-rs-3406-cr-sic-semiconductor-unit/",
       "category": [
         "sic"
       ],
-      "importance": "一般",
-      "evidence_level": "论文",
-      "plain_summary": "这是一篇中文期刊论文，研究如何根据干扰的动态响应机理来设计SiC MOSFET的驱动电路，目的是让碳化硅器件在开关时更可靠。",
+      "importance": "重点",
+      "plain_summary": "印度奥里萨邦推进一个投资 3406 亿卢比的 SiC 半导体项目。该项目被视为印度芯片制造布局的一部分。对 SiC 功率半导体产能的区域分布有影响。",
+      "technical_summary": "奥里萨邦推进投资 3406 亿卢比的 SiC 半导体项目。输入仅提供标题，未给出产线类型、产能、产品规格或投产时间。无法确认该项目覆盖外延、器件还是模块环节。",
       "technical": {
-        "device": "SiC MOSFET",
-        "focus": "驱动设计/干扰动态响应机理"
+        "device": "SiC",
+        "application": "功率半导体制造"
       },
       "industrialization": {
-        "stage": "研究论文"
+        "stage": "试点/示范",
+        "status": "项目推进"
       },
       "evidence": {
         "confirmed_facts": [
-          "来源为电工技术学报论文，主题为基于干扰动态响应机理的SiC MOSFET驱动设计"
+          "奥里萨邦推进该 SiC 半导体项目"
+        ],
+        "source_claims": [
+          "投资额 3406 亿卢比"
         ]
       },
-      "sources": [
-        {
-          "source": "电工技术学报",
-          "title": "基于干扰动态响应机理的SiC MOSFET驱动设计 - 电工技术学报",
-          "link": "https://dgjsxb.ces-transaction.com/fileup/HTML/2021-20-4204.htm",
-          "source_type": "国内论文"
-        }
-      ],
-      "primary_source": "电工技术学报",
-      "link": "https://dgjsxb.ces-transaction.com/fileup/HTML/2021-20-4204.htm",
-      "summary_raw": "基于干扰动态响应机理的SiC MOSFET驱动设计 电工技术学报",
-      "source_type": "国内论文",
-      "relevance_score": 67,
+      "summary_raw": "Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit Pragativadi",
+      "published_date": "2026-09-17",
+      "relevance_score": 53,
       "relevance_factors": {
         "focus_match": 48,
-        "technical_density": 99,
+        "technical_density": 43,
         "engineering_usability": 80,
         "matched_topics": [
           "SiC/GaN"
         ]
       },
-      "heat_score": 84,
+      "heat_score": 79,
       "heat_factors": {
         "freshness": 100,
         "multi_source": 45,
-        "source_authority": 92
+        "source_authority": 75
       },
       "technical_depth_score": 53,
-      "radar_score": 72,
-      "radar_rank": 3
-    },
-    {
-      "id": "260917-02",
-      "title": "SiC MOSFET短路保护技术综述 - 电工技术学报",
-      "category": [
-        "sic"
-      ],
-      "importance": "一般",
-      "evidence_level": "论文",
-      "plain_summary": "这是一篇综述文章，系统梳理了碳化硅MOSFET短路保护的各种技术方案，帮助工程师了解如何避免器件在短路时损坏。",
-      "technical": {
-        "device": "SiC MOSFET",
-        "focus": "短路保护技术综述"
-      },
-      "industrialization": {
-        "stage": "研究论文"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "来源为电工技术学报论文，主题为SiC MOSFET短路保护技术综述"
-        ]
-      },
+      "radar_score": 62,
+      "radar_rank": 1,
       "sources": [
         {
-          "source": "电工技术学报",
-          "title": "SiC MOSFET短路保护技术综述 - 电工技术学报",
-          "link": "https://dgjsxb.ces-transaction.com/fileup/HTML/2022-10-2538.htm",
-          "source_type": "国内论文"
+          "source": "Pragativadi",
+          "title": "Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit - Pragativadi",
+          "link": "https://pragativadi.com/odisha-powers-up-indias-chip-ambitions-with-rs-3406-cr-sic-semiconductor-unit/"
         }
-      ],
-      "primary_source": "电工技术学报",
-      "link": "https://dgjsxb.ces-transaction.com/fileup/HTML/2022-10-2538.htm",
-      "summary_raw": "SiC MOSFET短路保护技术综述 电工技术学报",
-      "source_type": "国内论文",
-      "relevance_score": 67,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 99,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "SiC/GaN"
-        ]
-      },
-      "heat_score": 84,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 45,
-        "source_authority": 92
-      },
-      "technical_depth_score": 53,
-      "radar_score": 72,
-      "radar_rank": 4
+      ]
     },
     {
-      "id": "260917-23",
-      "title": "EPC Releases Two New White Papers on GaN Power Conversion for AI Data Centers and Advanced Motor Drives - EIN News",
+      "id": "260917-03",
+      "title": "Renesas GaN: D-Mode Technology & Design Benefits - Renesas",
+      "source_type": "国际资讯",
+      "primary_source": "Renesas",
+      "published_at": "2026-09-17T04:36:36+00:00",
+      "link": "https://www.renesas.com/en/video/renesas-gan-d-mode-technology-design-benefits",
       "category": [
-        "ai_dc",
         "gan"
       ],
       "importance": "一般",
-      "evidence_level": "企业官方",
-      "plain_summary": "EPC发布两份白皮书，分别介绍面向AI数据中心和先进电机驱动的氮化镓功率变换技术。",
+      "plain_summary": "瑞萨发布了一段介绍其 GaN D-Mode 技术及设计优势的视频。内容面向使用 GaN 功率器件的设计工程师。属于厂商技术宣传材料，未披露具体产品参数。",
+      "technical_summary": "该条目为瑞萨关于 GaN D-Mode 技术与设计优势的视频页面。输入仅提供标题，未给出器件电压等级、导通电阻、开关频率或封装信息。无法判断其 D-Mode 器件的具体技术细节与产品状态。",
       "technical": {
-        "device": "GaN",
-        "focus": "GaN功率变换用于AI数据中心与电机驱动"
+        "device": "GaN D-Mode 器件"
       },
       "industrialization": {
         "stage": "未知"
       },
       "evidence": {
         "confirmed_facts": [
-          "EPC发布两份关于GaN功率变换的白皮书，面向AI数据中心与先进电机驱动"
+          "瑞萨发布该视频页面"
+        ]
+      },
+      "summary_raw": "Renesas GaN: D-Mode Technology & Design Benefits Renesas",
+      "published_date": "2026-09-17",
+      "relevance_score": 53,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "SiC/GaN"
+        ]
+      },
+      "heat_score": 79,
+      "heat_factors": {
+        "freshness": 100,
+        "multi_source": 45,
+        "source_authority": 75
+      },
+      "technical_depth_score": 44,
+      "radar_score": 60,
+      "radar_rank": 2,
+      "sources": [
+        {
+          "source": "Renesas",
+          "title": "Renesas GaN: D-Mode Technology & Design Benefits - Renesas",
+          "link": "https://www.renesas.com/en/video/renesas-gan-d-mode-technology-design-benefits"
+        }
+      ]
+    },
+    {
+      "id": "260917-12",
+      "title": "RIR Power Electronics zooms on installing SiC epitaxial wafer manufacturing reactors in Odisha facility - Investment Guru India",
+      "source_type": "国际资讯",
+      "primary_source": "Investment Guru India",
+      "published_at": "2026-09-17T07:50:28+00:00",
+      "link": "https://investmentguruindia.com/newsdetail/rir-power-electronics-zooms-on-installing-sic-epitaxial-wafer-manufacturing-reactors-in-odisha-facility588266",
+      "category": [
+        "sic"
+      ],
+      "importance": "重点",
+      "plain_summary": "RIR Power Electronics 在印度奥里萨邦工厂安装 SiC 外延晶圆制造反应炉。该动作指向 SiC 功率半导体上游外延环节的本地化产能建设。对印度半导体制造布局具有意义。",
+      "technical_summary": "RIR Power Electronics 在奥里萨邦工厂安装 SiC 外延晶圆制造反应炉。输入仅提供标题，未给出反应炉数量、外延厚度、掺杂或产能参数。无法确认其外延片规格与量产时间。",
+      "technical": {
+        "device": "SiC 外延晶圆",
+        "application": "功率半导体制造"
+      },
+      "industrialization": {
+        "stage": "试产",
+        "status": "安装反应炉"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "RIR 在奥里萨邦工厂安装 SiC 外延晶圆制造反应炉"
         ]
       },
       "sources": [
         {
-          "source": "EIN News",
-          "title": "EPC Releases Two New White Papers on GaN Power Conversion for AI Data Centers and Advanced Motor Drives - EIN News",
-          "link": "https://www.einnews.com/pr_news/942163486/epc-releases-two-new-white-papers-on-gan-power-conversion-for-ai-data-centers-and-advanced-motor-drives",
-          "source_type": "国际资讯"
+          "source": "Investment Guru India",
+          "title": "RIR Power Electronics zooms on installing SiC epitaxial wafer manufacturing reactors in Odisha facility - Investment Guru India",
+          "link": "https://investmentguruindia.com/newsdetail/rir-power-electronics-zooms-on-installing-sic-epitaxial-wafer-manufacturing-reactors-in-odisha-facility588266"
         },
         {
-          "source": "Compound Semiconductor",
-          "title": "EPC releases two new white papers on GaN power conversion - Compound Semiconductor",
-          "link": "https://compoundsemiconductor.net/article/125364/EPC_releases_two_new_white_papers_on_GaN_power_conversion",
-          "source_type": "专业媒体"
+          "source": "themachinemaker.com",
+          "source_type": "国际资讯",
+          "title": "RIR Power Electronics Installs SiC Epitaxial Wafer Manufacturing Reactors in Odisha - themachinemaker.com",
+          "link": "https://themachinemaker.com/news/rir-power-electronics-installs-sic-epitaxial-wafer-manufacturing-reactors-in-odisha/",
+          "published_at": "2026-09-17T04:09:54+00:00"
+        },
+        {
+          "source": "BW Businessworld",
+          "source_type": "国际资讯",
+          "title": "RIR Power Electronics Installs SiC Wafer Reactors In Odisha - BW Businessworld",
+          "published_at": "2026-09-16T15:16:27+00:00"
         }
       ],
-      "primary_source": "EIN News",
-      "link": "https://www.einnews.com/pr_news/942163486/epc-releases-two-new-white-papers-on-gan-power-conversion-for-ai-data-centers-and-advanced-motor-drives",
-      "summary_raw": "EPC Releases Two New White Papers on GaN Power Conversion for AI Data Centers and Advanced Motor Drives EIN News",
-      "source_type": "国际资讯",
-      "relevance_score": 74,
+      "summary_raw": "RIR Power Electronics zooms on installing SiC epitaxial wafer manufacturing reactors in Odisha facility Investment Guru India",
+      "published_date": "2026-09-17",
+      "relevance_score": 53,
       "relevance_factors": {
-        "focus_match": 61,
-        "technical_density": 99,
+        "focus_match": 48,
+        "technical_density": 43,
         "engineering_usability": 80,
         "matched_topics": [
-          "800V/AI DC",
           "SiC/GaN"
         ]
       },
@@ -316,110 +177,43 @@
         "source_authority": 58
       },
       "technical_depth_score": 53,
-      "radar_score": 70,
-      "radar_rank": 5
+      "radar_score": 60,
+      "radar_rank": 3
     },
     {
-      "id": "260917-04",
-      "title": "Sungrow launches 3 MW solid-state transformer - pv magazine Global",
-      "category": [
-        "800v",
-        "sst"
-      ],
-      "importance": "重点",
-      "evidence_level": "专业媒体",
-      "plain_summary": "阳光电源发布了一款3兆瓦固态变压器，可把中压交流电直接转成800伏直流，面向高密度AI计算负载供电。",
-      "technical": {
-        "key_parameters": "3 MW；中压交流输入；800 V直流输出",
-        "focus": "中压交流直转800 V直流，面向AI计算负载"
-      },
-      "industrialization": {
-        "stage": "产品发布"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "来源称Sungrow发布3 MW固态变压器",
-          "该固态变压器将中压交流直接转换为800 V直流，面向高密度AI计算负载"
-        ],
-        "source_claims": [
-          "来源声称该产品面向高密度AI计算负载"
-        ]
-      },
-      "sources": [
-        {
-          "source": "pv magazine Global",
-          "title": "Sungrow launches 3 MW solid-state transformer - pv magazine Global",
-          "link": "https://www.pv-magazine.com/2026/07/10/sungrow-launches-3-mw-solid-state-transformer/",
-          "source_type": "国际资讯"
-        }
-      ],
-      "primary_source": "pv magazine Global",
-      "link": "https://www.pv-magazine.com/2026/07/10/sungrow-launches-3-mw-solid-state-transformer/",
-      "summary_raw": "The Chinese manufacturer said its solid-state transformer converts medium-voltage AC directly to 800 V DC for high-density AI computing loads.",
+      "id": "260917-14",
+      "title": "RIR Power Electronics soars on SiC semiconductor facility progress in Odisha - Business Standard",
       "source_type": "国际资讯",
-      "relevance_score": 74,
-      "relevance_factors": {
-        "focus_match": 61,
-        "technical_density": 99,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "800V/AI DC",
-          "SST"
-        ]
-      },
-      "heat_score": 74,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 53,
-      "radar_score": 69,
-      "radar_rank": 6
-    },
-    {
-      "id": "260917-09",
-      "title": "Solid-State Transformers Power Next-Gen AI Data Centers - Data Center Knowledge",
+      "primary_source": "Business Standard",
+      "published_at": "2026-09-17T07:01:20+00:00",
+      "link": "https://www.business-standard.com/markets/capital-market-news/rir-power-electronics-soars-on-sic-semiconductor-facility-progress-in-odisha-126091700434_1.html",
       "category": [
-        "800v",
-        "ai_dc",
-        "sst"
+        "sic"
       ],
-      "importance": "重点",
-      "evidence_level": "专业媒体",
-      "plain_summary": "文章指出AI机架功率密度上升推动高压直流供电，固态变压器有望带来800伏直流的效率与灵活性，但成熟度和供应链仍是顾虑。",
+      "importance": "一般",
+      "plain_summary": "Business Standard 报道 RIR Power Electronics 因奥里萨邦 SiC 半导体设施进展而股价上涨。该报道属于资本市场反应。反映市场对 SiC 产能建设的关注。",
+      "technical_summary": "该报道关注 RIR 奥里萨邦 SiC 设施进展引发的股价反应。输入仅提供标题，未给出技术参数或设施细节。无法据此判断设施的技术状态。",
       "technical": {
-        "key_parameters": "800 V直流（供电电压）",
-        "focus": "固态变压器用于AI数据中心HVDC供电"
+        "device": "SiC",
+        "application": "功率半导体制造"
       },
       "industrialization": {
         "stage": "未知"
       },
       "evidence": {
         "confirmed_facts": [
-          "文章讨论固态变压器为AI数据中心提供800 V直流供电的潜力，并指出成熟度与供应链顾虑"
+          "Business Standard 报道该股价反应"
         ]
       },
-      "sources": [
-        {
-          "source": "Data Center Knowledge",
-          "title": "Solid-State Transformers Power Next-Gen AI Data Centers - Data Center Knowledge",
-          "link": "https://www.datacenterknowledge.com/energy-power-supply/solid-state-transformers-power-next-gen-ai-data-centers",
-          "source_type": "国际资讯"
-        }
-      ],
-      "primary_source": "Data Center Knowledge",
-      "link": "https://www.datacenterknowledge.com/energy-power-supply/solid-state-transformers-power-next-gen-ai-data-centers",
-      "summary_raw": "AI rack densities are pushing HVDC. Solid-state transformers promise 800 V DC efficiency and flexibility, but maturity and supply chain concerns remain.",
-      "source_type": "国际资讯",
-      "relevance_score": 74,
+      "summary_raw": "RIR Power Electronics soars on SiC semiconductor facility progress in Odisha Business Standard",
+      "published_date": "2026-09-17",
+      "relevance_score": 53,
       "relevance_factors": {
-        "focus_match": 61,
-        "technical_density": 99,
+        "focus_match": 48,
+        "technical_density": 43,
         "engineering_usability": 80,
         "matched_topics": [
-          "800V/AI DC",
-          "SST"
+          "SiC/GaN"
         ]
       },
       "heat_score": 74,
@@ -429,1370 +223,2092 @@
         "source_authority": 58
       },
       "technical_depth_score": 53,
-      "radar_score": 69,
-      "radar_rank": 7
+      "radar_score": 59,
+      "radar_rank": 4,
+      "sources": [
+        {
+          "source": "Business Standard",
+          "title": "RIR Power Electronics soars on SiC semiconductor facility progress in Odisha - Business Standard",
+          "link": "https://www.business-standard.com/markets/capital-market-news/rir-power-electronics-soars-on-sic-semiconductor-facility-progress-in-odisha-126091700434_1.html"
+        }
+      ]
+    },
+    {
+      "id": "260917-15",
+      "title": "Dev Reviews Odisha SiC Facility - tathya.in",
+      "source_type": "国际资讯",
+      "primary_source": "tathya.in",
+      "published_at": "2026-09-17T06:30:20+00:00",
+      "link": "https://tathya.in/dev-reviews-odisha-sic-facility/",
+      "category": [
+        "sic"
+      ],
+      "importance": "一般",
+      "plain_summary": "tathya.in 报道有关方面视察奥里萨邦 SiC 设施。该报道属于地方项目进展跟踪。反映该 SiC 项目受到地方关注。",
+      "technical_summary": "该报道涉及奥里萨邦 SiC 设施的视察活动。输入仅提供标题，未给出技术参数或设施状态细节。无法据此判断项目技术进展。",
+      "technical": {
+        "device": "SiC",
+        "application": "功率半导体制造"
+      },
+      "industrialization": {
+        "stage": "未知"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "tathya.in 报道该视察活动"
+        ]
+      },
+      "summary_raw": "Dev Reviews Odisha SiC Facility tathya.in",
+      "published_date": "2026-09-17",
+      "relevance_score": 53,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "SiC/GaN"
+        ]
+      },
+      "heat_score": 74,
+      "heat_factors": {
+        "freshness": 100,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 53,
+      "radar_score": 59,
+      "radar_rank": 5,
+      "sources": [
+        {
+          "source": "tathya.in",
+          "title": "Dev Reviews Odisha SiC Facility - tathya.in",
+          "link": "https://tathya.in/dev-reviews-odisha-sic-facility/"
+        }
+      ]
     },
     {
       "id": "260917-16",
-      "title": "9kV Solid-State Transformer Anchors Hyosung’s U.S. AI Grid Push - Unite.AI",
+      "title": "Huawei to Unveil New AI Technology in Shanghai; 800V High-Voltage DC Makes First Appearance in China's Computing Power Policy - finance.biggo.com",
+      "source_type": "国际资讯",
+      "primary_source": "finance.biggo.com",
+      "published_at": "2026-09-17T03:07:00+00:00",
+      "link": "https://finance.biggo.com/news/e6dfee7b-96a6-4716-aadb-e477a0c50216",
       "category": [
-        "ai_dc",
-        "sst"
+        "800v"
       ],
       "importance": "重点",
-      "evidence_level": "专业媒体",
-      "plain_summary": "报道称晓星重工加速进军美国AI数据中心供电市场，将其2022年开发的22.9千伏固态变压器与美国业务结合。",
+      "plain_summary": "报道称华为将在上海发布新的 AI 技术，同时 800V 高压直流首次出现在中国算力政策中。这显示 800V 直流供电开始进入政策视野。对 AI 数据中心供电架构演进具有信号意义。",
+      "technical_summary": "报道称华为将在上海发布新 AI 技术，800V 高压直流首次出现在中国算力政策中。输入仅提供标题，未给出电压等级细节、拓扑或供电架构参数。无法确认政策具体内容与技术路线。",
       "technical": {
-        "key_parameters": "22.9 kV（2022年开发）；标题提及9 kV",
-        "focus": "固态变压器用于美国AI数据中心供电"
+        "voltage": "800V",
+        "application": "AI 数据中心"
+      },
+      "industrialization": {
+        "stage": "未知"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "报道称华为将在上海发布新 AI 技术",
+          "报道称 800V 高压直流首次出现在中国算力政策中"
+        ]
+      },
+      "summary_raw": "Huawei to Unveil New AI Technology in Shanghai; 800V High-Voltage DC Makes First Appearance in China's Computing Power Policy finance.biggo.com",
+      "published_date": "2026-09-17",
+      "relevance_score": 53,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "800V/AI DC"
+        ]
+      },
+      "heat_score": 74,
+      "heat_factors": {
+        "freshness": 100,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 53,
+      "radar_score": 59,
+      "radar_rank": 6,
+      "sources": [
+        {
+          "source": "finance.biggo.com",
+          "title": "Huawei to Unveil New AI Technology in Shanghai; 800V High-Voltage DC Makes First Appearance in China's Computing Power Policy - finance.biggo.com",
+          "link": "https://finance.biggo.com/news/e6dfee7b-96a6-4716-aadb-e477a0c50216"
+        }
+      ]
+    },
+    {
+      "id": "260917-17",
+      "title": "Bloom Energy Estimates $3.6 Billion in Equipment Cost Savings from 800V DC Conversion for AI Data Centers - finance.biggo.com",
+      "source_type": "国际资讯",
+      "primary_source": "finance.biggo.com",
+      "published_at": "2026-09-17T03:06:00+00:00",
+      "link": "https://finance.biggo.com/news/f71004cd-4071-4e1a-9648-4f1409c98c39",
+      "category": [
+        "800v",
+        "ai_dc"
+      ],
+      "importance": "重点",
+      "plain_summary": "Bloom Energy 估计，AI 数据中心转向 800V 直流可节省约 36 亿美元设备成本。该估算指向 800V 直流供电架构的成本优势。属于企业基于自身方案的成本测算。",
+      "technical_summary": "Bloom Energy 估计 AI 数据中心 800V 直流转换可节省约 36 亿美元设备成本。输入仅提供标题，未给出测算边界、系统架构或对比基准。无法确认该估算的适用范围与假设。",
+      "technical": {
+        "voltage": "800V",
+        "application": "AI 数据中心"
+      },
+      "industrialization": {
+        "stage": "未知"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "Bloom Energy 给出该成本节省估算"
+        ],
+        "source_claims": [
+          "节省约 36 亿美元设备成本"
+        ]
+      },
+      "summary_raw": "Bloom Energy Estimates $3.6 Billion in Equipment Cost Savings from 800V DC Conversion for AI Data Centers finance.biggo.com",
+      "published_date": "2026-09-17",
+      "relevance_score": 53,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "800V/AI DC"
+        ]
+      },
+      "heat_score": 74,
+      "heat_factors": {
+        "freshness": 100,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 53,
+      "radar_score": 59,
+      "radar_rank": 7,
+      "sources": [
+        {
+          "source": "finance.biggo.com",
+          "title": "Bloom Energy Estimates $3.6 Billion in Equipment Cost Savings from 800V DC Conversion for AI Data Centers - finance.biggo.com",
+          "link": "https://finance.biggo.com/news/f71004cd-4071-4e1a-9648-4f1409c98c39"
+        }
+      ]
+    },
+    {
+      "id": "260917-11",
+      "title": "IAA TRANSPORTATION: Inmotion Technologies expands power electronics range - Industrial Vehicle Technology International",
+      "source_type": "国际资讯",
+      "primary_source": "Industrial Vehicle Technology International",
+      "published_at": "2026-09-17T09:39:11+00:00",
+      "link": "https://www.ivtinternational.com/news/exhibitions/inmotion-expands-power-electronics-range-at-iaa-transportation.html",
+      "importance": "一般",
+      "plain_summary": "Inmotion Technologies 在 IAA TRANSPORTATION 展会上扩展其电力电子产品线。该展会聚焦商用车与运输领域。属于面向车辆电动化的电力电子产品扩展。",
+      "technical_summary": "Inmotion Technologies 在 IAA TRANSPORTATION 扩展电力电子产品范围。输入仅提供标题，未给出产品电压、功率、拓扑或应用细节。无法确认其新增产品的技术规格。",
+      "technical": {
+        "application": "运输车辆"
+      },
+      "industrialization": {
+        "stage": "产品发布",
+        "status": "扩展产品线"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "Inmotion Technologies 在展会上扩展电力电子产品线"
+        ]
+      },
+      "summary_raw": "IAA TRANSPORTATION: Inmotion Technologies expands power electronics range Industrial Vehicle Technology International",
+      "published_date": "2026-09-17",
+      "relevance_score": 44,
+      "relevance_factors": {
+        "focus_match": 35,
+        "technical_density": 35,
+        "engineering_usability": 80
+      },
+      "heat_score": 79,
+      "heat_factors": {
+        "freshness": 100,
+        "multi_source": 45,
+        "source_authority": 75
+      },
+      "technical_depth_score": 44,
+      "radar_score": 56,
+      "radar_rank": 8,
+      "sources": [
+        {
+          "source": "Industrial Vehicle Technology International",
+          "title": "IAA TRANSPORTATION: Inmotion Technologies expands power electronics range - Industrial Vehicle Technology International",
+          "link": "https://www.ivtinternational.com/news/exhibitions/inmotion-expands-power-electronics-range-at-iaa-transportation.html"
+        }
+      ]
+    },
+    {
+      "id": "260917-24",
+      "title": "Bloom Energy claims cost savings with 800V DC fuel cells for AI - Investing.com",
+      "source_type": "国际资讯",
+      "primary_source": "Investing.com",
+      "published_at": "2026-09-16T13:51:28+00:00",
+      "link": "https://www.investing.com/news/company-news/bloom-energy-claims-cost-savings-with-800v-dc-fuel-cells-for-ai-93CH-4903807",
+      "category": [
+        "800v"
+      ],
+      "importance": "一般",
+      "plain_summary": "Investing.com 报道 Bloom Energy 声称其 800V 直流燃料电池方案可为 AI 应用节省成本。该报道与 Bloom Energy 的 800V 直流供电主张一致。属于企业成本主张的媒体转述。",
+      "technical_summary": "该报道转述 Bloom Energy 关于 800V 直流燃料电池为 AI 应用节省成本的主张。输入仅提供标题，未给出技术参数或测算细节。无法确认其成本节省的具体依据。",
+      "technical": {
+        "voltage": "800V",
+        "device": "燃料电池",
+        "application": "AI 数据中心"
+      },
+      "industrialization": {
+        "stage": "未知"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "Bloom Energy 提出该成本节省主张"
+        ],
+        "source_claims": [
+          "800V 直流燃料电池可节省成本"
+        ]
+      },
+      "summary_raw": "Bloom Energy claims cost savings with 800V DC fuel cells for AI Investing.com",
+      "published_date": "2026-09-16",
+      "relevance_score": 55,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 51,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "800V/AI DC"
+        ]
+      },
+      "heat_score": 72,
+      "heat_factors": {
+        "freshness": 85,
+        "multi_source": 45,
+        "source_authority": 75
+      },
+      "technical_depth_score": 62,
+      "radar_score": 62,
+      "radar_rank": 9,
+      "sources": [
+        {
+          "source": "Investing.com",
+          "title": "Bloom Energy claims cost savings with 800V DC fuel cells for AI - Investing.com",
+          "link": "https://www.investing.com/news/company-news/bloom-energy-claims-cost-savings-with-800v-dc-fuel-cells-for-ai-93CH-4903807"
+        }
+      ]
+    },
+    {
+      "id": "260917-23",
+      "title": "From innovation to a global standard. 15 years of SiC technology in public transport - Railway Gazette International",
+      "source_type": "国际资讯",
+      "primary_source": "Railway Gazette International",
+      "published_at": "2026-09-16T14:40:11+00:00",
+      "link": "https://www.railwaygazette.com/sponsored-content/2026/09/16/from-innovation-to-a-global-standard-15-years-of-sic-technology-in-public-transport/",
+      "category": [
+        "sic"
+      ],
+      "importance": "一般",
+      "plain_summary": "Railway Gazette International 刊发赞助内容，回顾 SiC 技术在公共交通领域 15 年的发展。文章称 SiC 已从创新走向全球标准。属于行业回顾性内容。",
+      "technical_summary": "该赞助内容回顾 SiC 技术在公共交通领域 15 年发展。输入仅提供标题，未给出具体器件、拓扑或参数。无法确认其涉及的具体牵引变流方案。",
+      "technical": {
+        "device": "SiC",
+        "application": "公共交通牵引"
       },
       "industrialization": {
         "stage": "商业部署"
       },
       "evidence": {
         "confirmed_facts": [
-          "晓星重工称2026年9月7日加速进军美国AI数据中心供电市场",
-          "其22.9 kV固态变压器于2022年开发"
+          "该文回顾 SiC 在公共交通领域 15 年发展"
         ],
         "source_claims": [
-          "来源标题提及9 kV固态变压器"
+          "SiC 已成为全球标准"
         ]
       },
-      "sources": [
-        {
-          "source": "Unite.AI",
-          "title": "9kV Solid-State Transformer Anchors Hyosung’s U.S. AI Grid Push - Unite.AI",
-          "link": "https://www.unite.ai/9kv-solid-state-transformer-anchors-hyosungs-u-s-ai-grid-push/",
-          "source_type": "国际资讯"
-        }
-      ],
-      "primary_source": "Unite.AI",
-      "link": "https://www.unite.ai/9kv-solid-state-transformer-anchors-hyosungs-u-s-ai-grid-push/",
-      "summary_raw": "Hyosung Heavy Industries said on September 7, 2026, that it is accelerating its push into the U.S. AI data center power market, combining the 22.9kV solid-state transformer it developed in 2022 with completed American pr...",
-      "source_type": "国际资讯",
-      "relevance_score": 74,
-      "relevance_factors": {
-        "focus_match": 61,
-        "technical_density": 99,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "800V/AI DC",
-          "SST"
-        ]
-      },
-      "heat_score": 74,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 53,
-      "radar_score": 69,
-      "radar_rank": 8
-    },
-    {
-      "id": "260917-03",
-      "title": "Renesas GaN: D-Mode Technology & Design Benefits - Renesas",
-      "category": [
-        "gan"
-      ],
-      "importance": "一般",
-      "evidence_level": "企业官方",
-      "plain_summary": "瑞萨发布视频介绍其D-Mode氮化镓技术及其设计优势，面向希望采用氮化镓做电源设计的工程师。",
-      "technical": {
-        "device": "GaN（D-Mode）",
-        "focus": "D-Mode GaN技术与设计优势"
-      },
-      "industrialization": {
-        "stage": "产品发布"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "Renesas官方发布关于GaN D-Mode技术与设计优势的内容"
-        ]
-      },
-      "sources": [
-        {
-          "source": "Renesas",
-          "title": "Renesas GaN: D-Mode Technology & Design Benefits - Renesas",
-          "link": "https://www.renesas.com/en/video/renesas-gan-d-mode-technology-design-benefits",
-          "source_type": "国际资讯"
-        }
-      ],
-      "primary_source": "Renesas",
-      "link": "https://www.renesas.com/en/video/renesas-gan-d-mode-technology-design-benefits",
-      "summary_raw": "Renesas GaN: D-Mode Technology & Design Benefits Renesas",
-      "source_type": "国际资讯",
-      "relevance_score": 67,
+      "summary_raw": "From innovation to a global standard. 15 years of SiC technology in public transport Railway Gazette International",
+      "published_date": "2026-09-16",
+      "relevance_score": 53,
       "relevance_factors": {
         "focus_match": 48,
-        "technical_density": 99,
+        "technical_density": 43,
         "engineering_usability": 80,
         "matched_topics": [
           "SiC/GaN"
         ]
       },
-      "heat_score": 79,
+      "heat_score": 72,
       "heat_factors": {
-        "freshness": 100,
+        "freshness": 85,
         "multi_source": 45,
         "source_authority": 75
       },
       "technical_depth_score": 53,
-      "radar_score": 69,
-      "radar_rank": 9
-    },
-    {
-      "id": "260917-08",
-      "title": "World’s first 22.9kV solid-state transformer developed to electrify US data centers - Interesting Engineering",
-      "category": [
-        "ai_dc",
-        "sst"
-      ],
-      "importance": "重点",
-      "evidence_level": "专业媒体",
-      "plain_summary": "报道称一款22.9千伏固态变压器被开发出来，用于应对美国数据中心快速增长用电需求下的电网现代化。",
-      "technical": {
-        "key_parameters": "22.9 kV（电压等级）",
-        "focus": "面向美国数据中心的固态变压器"
-      },
-      "industrialization": {
-        "stage": "未知",
-        "detail": "报道未明确样机、试点或量产状态"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "报道称开发出22.9 kV固态变压器，用于美国数据中心供电与电网现代化"
-        ],
-        "source_claims": [
-          "来源标题声称“世界首台（World’s first）”22.9 kV固态变压器"
-        ]
-      },
-      "sources": [
-        {
-          "source": "Interesting Engineering",
-          "title": "World’s first 22.9kV solid-state transformer developed to electrify US data centers - Interesting Engineering",
-          "link": "https://interestingengineering.com/energy/worlds-first-22-9kv-solid-state-transformer",
-          "source_type": "国际资讯"
-        }
-      ],
-      "primary_source": "Interesting Engineering",
-      "link": "https://interestingengineering.com/energy/worlds-first-22-9kv-solid-state-transformer",
-      "summary_raw": "A new 22.9kV solid-state transformer could help modernize US power networks facing rising electricity demand from massive data centers.",
-      "source_type": "国际资讯",
-      "relevance_score": 67,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 99,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "SST"
-        ]
-      },
-      "heat_score": 79,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 45,
-        "source_authority": 75
-      },
-      "technical_depth_score": 53,
-      "radar_score": 69,
-      "radar_rank": 10
-    },
-    {
-      "id": "260917-12",
-      "title": "RIR Power Electronics Installs SiC Epitaxial Wafer Manufacturing Reactors in Odisha - Machine Maker",
-      "category": [
-        "sic"
-      ],
-      "importance": "重点",
-      "evidence_level": "多源交叉",
-      "plain_summary": "印度RIR Power Electronics宣布在奥里萨邦工厂完成碳化硅外延片制造反应器的安装，消息带动其股价上涨。",
-      "technical": {
-        "device": "SiC（外延片）",
-        "focus": "SiC外延片制造反应器安装"
-      },
-      "industrialization": {
-        "stage": "试产"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "RIR Power Electronics宣布在奥里萨邦Bhubaneswar半导体工厂完成SiC外延片制造反应器安装",
-          "消息发布后公司股价上涨10.55%至199.10卢比"
-        ]
-      },
-      "sources": [
-        {
-          "source": "Machine Maker",
-          "title": "RIR Power Electronics Installs SiC Epitaxial Wafer Manufacturing Reactors in Odisha - Machine Maker",
-          "link": "https://themachinemaker.com/news/rir-power-electronics-installs-sic-epitaxial-wafer-manufacturing-reactors-in-odisha/",
-          "source_type": "国际资讯"
-        },
-        {
-          "source": "Business Standard",
-          "title": "RIR Power Electronics soars on SiC semiconductor facility progress in Odisha - Business Standard",
-          "link": "https://www.business-standard.com/markets/capital-market-news/rir-power-electronics-soars-on-sic-semiconductor-facility-progress-in-odisha-126091700434_1.html",
-          "source_type": "财经媒体"
-        },
-        {
-          "source": "businessworld.in",
-          "title": "RIR Power Electronics Installs SiC Wafer Reactors In Odisha - businessworld.in",
-          "source_type": "财经媒体"
-        },
-        {
-          "source": "scanx.trade",
-          "title": "RIR Power Electronics completes SiC reactor installation in Odisha - scanx.trade",
-          "link": "https://scanx.trade/stock-market-news/companies/rir-power-electronics-completes-sic-reactor-installation-odisha/51115329",
-          "source_type": "财经媒体"
-        },
-        {
-          "source": "EquityBulls",
-          "title": "RIR Power Electronics Completes Installation of State-of-the-Art SiC Epitaxial Wafer Manufacturing Reactors at Bhubaneswar, Odisha Facility - EquityBulls",
-          "link": "https://www.equitybulls.com/category.php?id=375275",
-          "source_type": "财经媒体"
-        },
-        {
-          "source": "Investment Guru India",
-          "title": "RIR Power Electronics zooms on installing SiC epitaxial wafer manufacturing reactors in Odisha facility - Investment Guru India",
-          "link": "https://investmentguruindia.com/newsdetail/rir-power-electronics-zooms-on-installing-sic-epitaxial-wafer-manufacturing-reactors-in-odisha-facility588266",
-          "source_type": "财经媒体"
-        }
-      ],
-      "primary_source": "Machine Maker",
-      "link": "https://themachinemaker.com/news/rir-power-electronics-installs-sic-epitaxial-wafer-manufacturing-reactors-in-odisha/",
-      "summary_raw": "RIR Power Electronics surged 10.55% to Rs 199.10 after the company announced the completion of installation of silicon carbide (SiC) epitaxial wafer manufacturing reactors at its semiconductor facility in Bhubaneswar, Odisha.",
-      "source_type": "国际资讯",
-      "relevance_score": 67,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 99,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "SiC/GaN"
-        ]
-      },
-      "heat_score": 87,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 99,
-        "source_authority": 58
-      },
-      "technical_depth_score": 53,
-      "radar_score": 69,
-      "radar_rank": 11
-    },
-    {
-      "id": "260917-18",
-      "title": "From innovation to a global standard. 15 years of SiC technology in public transport - Railway Gazette International",
-      "category": [
-        "sic"
-      ],
-      "importance": "一般",
-      "evidence_level": "专业媒体",
-      "plain_summary": "文章回顾碳化硅技术在公共交通领域15年的发展，称其已从创新走向全球标准。",
-      "technical": {
-        "device": "SiC",
-        "focus": "轨道交通用SiC技术15年回顾"
-      },
-      "industrialization": {
-        "stage": "商业部署",
-        "detail": "回顾性报道，称SiC在公共交通领域已应用15年"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "文章回顾SiC技术在公共交通领域15年的发展"
-        ],
-        "source_claims": [
-          "来源声称SiC技术已从创新走向全球标准"
-        ]
-      },
+      "radar_score": 60,
+      "radar_rank": 10,
       "sources": [
         {
           "source": "Railway Gazette International",
           "title": "From innovation to a global standard. 15 years of SiC technology in public transport - Railway Gazette International",
-          "link": "https://www.railwaygazette.com/sponsored-content/2026/09/16/from-innovation-to-a-global-standard-15-years-of-sic-technology-in-public-transport/",
-          "source_type": "国际资讯"
+          "link": "https://www.railwaygazette.com/sponsored-content/2026/09/16/from-innovation-to-a-global-standard-15-years-of-sic-technology-in-public-transport/"
         }
-      ],
-      "primary_source": "Railway Gazette International",
-      "link": "https://www.railwaygazette.com/sponsored-content/2026/09/16/from-innovation-to-a-global-standard-15-years-of-sic-technology-in-public-transport/",
-      "summary_raw": "From innovation to a global standard. 15 years of SiC technology in public transport Railway Gazette International",
+      ]
+    },
+    {
+      "id": "260917-18",
+      "title": "Is Infineon’s 800 VDC AI Data Center Breaker Role Altering The Investment Case For Infineon Technologies (XTRA:IFX)? - Yahoo Finance",
       "source_type": "国际资讯",
-      "relevance_score": 67,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 99,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "SiC/GaN"
-        ]
-      },
-      "heat_score": 79,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 45,
-        "source_authority": 75
-      },
-      "technical_depth_score": 53,
-      "radar_score": 69,
-      "radar_rank": 12
-    },
-    {
-      "id": "260917-13",
-      "title": "Intrinsic polarization superjunctions in III-nitride heterostructures for efficient power electronics - Nature",
+      "primary_source": "Yahoo Finance",
+      "published_at": "2026-09-16T23:14:37+00:00",
+      "link": "https://finance.yahoo.com/technology/ai/articles/infineon-800-vdc-ai-data-231437123.html",
       "category": [
-        "sic"
-      ],
-      "importance": "重点",
-      "evidence_level": "论文",
-      "plain_summary": "Nature论文提出利用III族氮化物异质结中的本征极化超结，在硅基氮化镓上做出高耐压功率器件，为高效电力电子提供新路径。",
-      "technical_summary": "论文利用自发与压电极化场在2DEG与2DHG间形成无故意掺杂的本征电荷平衡超结，实现GaN-on-Si极化超结肖特基势垒二极管击穿电压超3.9 kV、比导通电阻低至4.7 mΩ·cm²，以及击穿电压超3.4 kV的极化超结晶体管；3 kV内动态导通电阻退化小于15%。",
-      "technical": {
-        "device": "GaN-on-Si极化超结肖特基势垒二极管与晶体管",
-        "topology": "本征极化超结（2DEG/2DHG电荷平衡）",
-        "key_parameters": "SBD击穿电压>3.9 kV；比导通电阻低至4.7 mΩ·cm²；晶体管击穿电压>3.4 kV；3 kV内动态导通电阻退化<15%",
-        "focus": "III族氮化物异质结本征极化超结"
-      },
-      "industrialization": {
-        "stage": "研究论文"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "论文报道III族氮化物异质结中的本征极化超结",
-          "GaN-on-Si极化超结肖特基势垒二极管击穿电压超过3.9 kV，比导通电阻低至4.7 mΩ·cm²",
-          "极化超结晶体管击穿电压超过3.4 kV",
-          "器件在3 kV内动态导通电阻退化小于15%"
-        ]
-      },
-      "sources": [
-        {
-          "source": "Nature",
-          "title": "Intrinsic polarization superjunctions in III-nitride heterostructures for efficient power electronics - Nature",
-          "link": "https://www.nature.com/articles/s41928-026-01691-4",
-          "source_type": "国际资讯"
-        }
-      ],
-      "primary_source": "Nature",
-      "link": "https://www.nature.com/articles/s41928-026-01691-4",
-      "summary_raw": "III-nitride semiconductors combine a wide bandgap with low sheet resistance and, thus, can be used for efficient power electronics. Their lateral architecture also enables monolithic integration on cost-effective silicon. However, electric-field crowding, as well as surface and buffer trapping, limit the breakdown voltage, degrade dynamic performance and reduce reliability. Here we report intrinsic polarization superjunctions in III-nitride heterostructures for efficient power electronics. We use the spontaneous and piezoelectric polarization fields to induce matched mobile electrons in a two-dimensional electron gas and mobile holes in a two-dimensional hole gas, forming an intrinsically charge-balanced superjunction without intentional doping. With an ohmic contact to the two-dimensional hole gas, both carrier types can be dynamically depleted during switching, which preserves drift-region charge neutrality, producing a nearly uniform electric field and increasing the breakdown voltage under operating conditions. We use the approach to create gallium-nitride-on-silicon polarization superjunction Schottky barrier diodes with a breakdown voltage exceeding 3.9 kV and a specific ON resistance as low as 4.7 mΩ cm2, as well as polarization superjunction transistors with a breakdown voltage exceeding 3.4 kV. The devices exhibit a near-ideal dynamic ON-resistance degradation of less than 15% up to 3 kV, as well as repeatable, temperature-stable and avalanche-like breakdown. Polarization fields in III-nitride heterostructures can be used to form intrinsically charge-balanced superjunctions without intentional doping, allowing Schottky barrier diodes and transistors on gallium-nitride-on-silicon substrates to be created that exhibit high breakdown voltages.",
-      "source_type": "国际论文",
-      "relevance_score": 67,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 99,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "SiC/GaN"
-        ]
-      },
-      "heat_score": 74,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 71,
-      "radar_score": 68,
-      "radar_rank": 13
-    },
-    {
-      "id": "260917-26",
-      "title": "Intrinsic Polarization Superjunctions Boost GaN-On-Silicon Power Devices (EPFL) - Semiconductor Engineering",
-      "category": [
-        "gan",
-        "sic"
-      ],
-      "importance": "重点",
-      "evidence_level": "多源交叉",
-      "plain_summary": "半导体工程媒体报道EPFL关于本征极化超结提升硅基氮化镓功率器件的研究，与Nature论文为同一成果。",
-      "technical_summary": "报道指向EPFL同一篇论文：利用III族氮化物异质结本征极化超结，实现GaN-on-Si肖特基势垒二极管击穿电压超3.9 kV、比导通电阻低至4.7 mΩ·cm²，晶体管击穿电压超3.4 kV。",
-      "technical": {
-        "device": "GaN-on-Si极化超结肖特基势垒二极管与晶体管",
-        "topology": "本征极化超结（2DEG/2DHG电荷平衡）",
-        "key_parameters": "SBD击穿电压>3.9 kV；比导通电阻低至4.7 mΩ·cm²；晶体管击穿电压>3.4 kV",
-        "focus": "EPFL极化超结GaN-on-Si功率器件"
-      },
-      "industrialization": {
-        "stage": "研究论文"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "EPFL发表题为Intrinsic polarization superjunctions in III-nitride heterostructures for efficient power electronics的论文",
-          "报道与Nature论文为同一研究成果"
-        ]
-      },
-      "sources": [
-        {
-          "source": "Semiconductor Engineering",
-          "title": "Intrinsic Polarization Superjunctions Boost GaN-On-Silicon Power Devices (EPFL) - Semiconductor Engineering",
-          "link": "https://semiengineering.com/intrinsic-polarization-superjunctions-boost-gan-on-silicon-power-devices-epfl/",
-          "source_type": "国际资讯"
-        }
-      ],
-      "primary_source": "Semiconductor Engineering",
-      "link": "https://semiengineering.com/intrinsic-polarization-superjunctions-boost-gan-on-silicon-power-devices-epfl/",
-      "summary_raw": "Researchers from École Polytechnique Fédérale de Lausanne (EPFL) published a technical paper titled “Intrinsic polarization superjunctions in III-nitride heterostructures for efficient power electronics.” Abstract Excerpt: “III-nitride semiconductors combine a wide bandgap with low sheet resistance and, thus, can be used for efficient power electronics. Their lateral architecture also enables monolithic integration on cost-effective silicon. However,... » read more",
-      "source_type": "国际论文",
-      "relevance_score": 67,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 99,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "SiC/GaN"
-        ]
-      },
-      "heat_score": 74,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 71,
-      "radar_score": 68,
-      "radar_rank": 14
-    },
-    {
-      "id": "260917-06",
-      "title": "Is Power Electronics Outgrowing the Shunt Resistor? - Electronic Design",
-      "category": [
-        "gan",
-        "sic"
+        "800v",
+        "ai_dc"
       ],
       "importance": "一般",
-      "evidence_level": "专业媒体",
-      "plain_summary": "文章讨论随着GaN和SiC让开关频率不断提高，传统分流电阻式电流检测是否已难以满足需求，工程师开始寻找替代方案。",
+      "plain_summary": "Yahoo Finance 讨论英飞凌在 800V 直流 AI 数据中心断路器中的角色是否改变其投资逻辑。该报道将功率半导体器件与数据中心供电保护联系起来。属于投资视角的分析。",
+      "technical_summary": "该报道讨论英飞凌在 800V 直流 AI 数据中心断路器中的角色。输入仅提供标题，未给出断路器拓扑、器件类型或保护参数。无法确认英飞凌具体提供的器件方案。",
       "technical": {
-        "device": "GaN、SiC",
-        "focus": "高频开关下的电流检测（分流电阻替代）"
+        "voltage": "800V",
+        "application": "AI 数据中心"
       },
       "industrialization": {
         "stage": "未知"
       },
       "evidence": {
         "confirmed_facts": [
-          "文章讨论GaN和SiC采用推高开关频率后，工程师考虑分流电阻之外的电流检测方案"
+          "报道讨论英飞凌在 800V 直流断路器中的角色"
+        ]
+      },
+      "summary_raw": "Is Infineon’s 800 VDC AI Data Center Breaker Role Altering The Investment Case For Infineon Technologies (XTRA:IFX)? Yahoo Finance",
+      "published_date": "2026-09-16",
+      "relevance_score": 53,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "800V/AI DC"
+        ]
+      },
+      "heat_score": 67,
+      "heat_factors": {
+        "freshness": 85,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 53,
+      "radar_score": 57,
+      "radar_rank": 11,
+      "sources": [
+        {
+          "source": "Yahoo Finance",
+          "title": "Is Infineon’s 800 VDC AI Data Center Breaker Role Altering The Investment Case For Infineon Technologies (XTRA:IFX)? - Yahoo Finance",
+          "link": "https://finance.yahoo.com/technology/ai/articles/infineon-800-vdc-ai-data-231437123.html"
+        }
+      ]
+    },
+    {
+      "id": "260917-19",
+      "title": "RIR Power Electronics Completes Installation of State-of-the-Art SiC Epitaxial Wafer Manufacturing Reactors at Bhubaneswar, Odisha Facility - EquityBulls",
+      "source_type": "国际资讯",
+      "primary_source": "EquityBulls",
+      "published_at": "2026-09-16T18:21:52+00:00",
+      "link": "https://www.equitybulls.com/category.php?id=375275",
+      "category": [
+        "sic"
+      ],
+      "importance": "重点",
+      "plain_summary": "RIR Power Electronics 宣布完成在奥里萨邦布巴内斯瓦尔工厂的 SiC 外延晶圆制造反应炉安装。这标志其 SiC 外延产能建设进入新阶段。对印度 SiC 功率半导体供应链有影响。",
+      "technical_summary": "RIR 完成布巴内斯瓦尔工厂 SiC 外延晶圆制造反应炉安装。输入仅提供标题，未给出反应炉数量、外延规格、产能或投产时间。无法确认其外延片是否已进入量产。",
+      "technical": {
+        "device": "SiC 外延晶圆",
+        "application": "功率半导体制造"
+      },
+      "industrialization": {
+        "stage": "试产",
+        "status": "完成反应炉安装"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "RIR 完成 SiC 外延晶圆制造反应炉安装"
+        ]
+      },
+      "summary_raw": "RIR Power Electronics Completes Installation of State-of-the-Art SiC Epitaxial Wafer Manufacturing Reactors at Bhubaneswar, Odisha Facility EquityBulls",
+      "published_date": "2026-09-16",
+      "relevance_score": 53,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "SiC/GaN"
+        ]
+      },
+      "heat_score": 67,
+      "heat_factors": {
+        "freshness": 85,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 53,
+      "radar_score": 57,
+      "radar_rank": 12,
+      "sources": [
+        {
+          "source": "EquityBulls",
+          "title": "RIR Power Electronics Completes Installation of State-of-the-Art SiC Epitaxial Wafer Manufacturing Reactors at Bhubaneswar, Odisha Facility - EquityBulls",
+          "link": "https://www.equitybulls.com/category.php?id=375275"
+        }
+      ]
+    },
+    {
+      "id": "260917-20",
+      "title": "Bloom Energy (BE) Unveils 800V DC Native Power System For AI Data Centers - simplywall.st",
+      "source_type": "国际资讯",
+      "primary_source": "simplywall.st",
+      "published_at": "2026-09-16T17:53:29+00:00",
+      "link": "https://simplywall.st/stocks/us/capital-goods/nyse-be/bloom-energy/news/bloom-energy-be-unveils-800v-dc-native-power-system-for-ai-d/amp",
+      "category": [
+        "800v",
+        "ai_dc"
+      ],
+      "importance": "重点",
+      "plain_summary": "Bloom Energy 发布面向 AI 数据中心的 800V 直流原生供电系统。该系统以 800V 直流为原生输出，面向 AI 数据中心供电。属于 800V 直流供电架构的产品化动作。",
+      "technical_summary": "Bloom Energy 发布 800V 直流原生供电系统，面向 AI 数据中心。输入仅提供标题，未给出功率等级、拓扑、器件或效率参数。无法确认其系统架构与并网方式。",
+      "technical": {
+        "voltage": "800V",
+        "application": "AI 数据中心"
+      },
+      "industrialization": {
+        "stage": "产品发布",
+        "status": "发布"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "Bloom Energy 发布 800V 直流原生供电系统"
+        ]
+      },
+      "summary_raw": "Bloom Energy (BE) Unveils 800V DC Native Power System For AI Data Centers simplywall.st",
+      "published_date": "2026-09-16",
+      "relevance_score": 53,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "800V/AI DC"
+        ]
+      },
+      "heat_score": 67,
+      "heat_factors": {
+        "freshness": 85,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 53,
+      "radar_score": 57,
+      "radar_rank": 13,
+      "sources": [
+        {
+          "source": "simplywall.st",
+          "title": "Bloom Energy (BE) Unveils 800V DC Native Power System For AI Data Centers - simplywall.st",
+          "link": "https://simplywall.st/stocks/us/capital-goods/nyse-be/bloom-energy/news/bloom-energy-be-unveils-800v-dc-native-power-system-for-ai-d/amp"
+        }
+      ]
+    },
+    {
+      "id": "260917-22",
+      "title": "RIR Power Electronics completes SiC reactor installation in Odisha - scanx.trade",
+      "source_type": "国际资讯",
+      "primary_source": "scanx.trade",
+      "published_at": "2026-09-16T17:14:56+00:00",
+      "link": "https://scanx.trade/stock-market-news/companies/rir-power-electronics-completes-sic-reactor-installation-odisha/51115329",
+      "category": [
+        "sic"
+      ],
+      "importance": "一般",
+      "plain_summary": "scanx.trade 报道 RIR Power Electronics 完成奥里萨邦 SiC 反应炉安装。该报道与其它来源一致。属于同一事件的重复报道。",
+      "technical_summary": "该报道重复 RIR 完成奥里萨邦 SiC 反应炉安装的信息。输入仅提供标题，未给出额外技术参数。无法据此获得新的技术细节。",
+      "technical": {
+        "device": "SiC",
+        "application": "功率半导体制造"
+      },
+      "industrialization": {
+        "stage": "试产",
+        "status": "完成反应炉安装"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "RIR 完成 SiC 反应炉安装"
+        ]
+      },
+      "summary_raw": "RIR Power Electronics completes SiC reactor installation in Odisha scanx.trade",
+      "published_date": "2026-09-16",
+      "relevance_score": 53,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "SiC/GaN"
+        ]
+      },
+      "heat_score": 67,
+      "heat_factors": {
+        "freshness": 85,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 53,
+      "radar_score": 57,
+      "radar_rank": 14,
+      "sources": [
+        {
+          "source": "scanx.trade",
+          "title": "RIR Power Electronics completes SiC reactor installation in Odisha - scanx.trade",
+          "link": "https://scanx.trade/stock-market-news/companies/rir-power-electronics-completes-sic-reactor-installation-odisha/51115329"
+        }
+      ]
+    },
+    {
+      "id": "260917-25",
+      "title": "Bloom Energy’s 800V DC-Native Power Can Cut Billions from AI Data Center Costs, Reduce Power Use, and Eliminate Need for Transformers - Bloom Energy",
+      "source_type": "国际资讯",
+      "primary_source": "Bloom Energy",
+      "published_at": "2026-09-16T13:03:59+00:00",
+      "link": "https://investor.bloomenergy.com/press-releases/press-release-details/2026/Bloom-Energys-800V-DC-Native-Power-Can-Cut-Billions-from-AI-Data-Center-Costs-Reduce-Power-Use-and-Eliminate-Need-for-Transformers/default.aspx",
+      "category": [
+        "800v",
+        "ai_dc"
+      ],
+      "importance": "重点",
+      "plain_summary": "Bloom Energy 官方新闻稿称其 800V 直流原生供电可削减 AI 数据中心数十亿美元成本、降低用电并省去变压器。该主张指向 800V 直流架构对传统变压环节的替代。属于企业官方声明。",
+      "technical_summary": "Bloom Energy 官方新闻稿称 800V 直流原生供电可削减 AI 数据中心成本、降低用电并省去变压器。输入仅提供标题，未给出系统架构、功率等级或效率数据。无法确认其省去变压器的具体实现方式。",
+      "technical": {
+        "voltage": "800V",
+        "application": "AI 数据中心"
+      },
+      "industrialization": {
+        "stage": "产品发布",
+        "status": "官方声明"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "Bloom Energy 发布该官方新闻稿"
+        ],
+        "source_claims": [
+          "可削减数十亿美元成本",
+          "降低用电",
+          "省去变压器"
+        ]
+      },
+      "summary_raw": "Bloom Energy’s 800V DC-Native Power Can Cut Billions from AI Data Center Costs, Reduce Power Use, and Eliminate Need for Transformers Bloom Energy",
+      "published_date": "2026-09-16",
+      "relevance_score": 53,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "800V/AI DC"
+        ]
+      },
+      "heat_score": 67,
+      "heat_factors": {
+        "freshness": 85,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 53,
+      "radar_score": 57,
+      "radar_rank": 15,
+      "sources": [
+        {
+          "source": "Bloom Energy",
+          "title": "Bloom Energy’s 800V DC-Native Power Can Cut Billions from AI Data Center Costs, Reduce Power Use, and Eliminate Need for Transformers - Bloom Energy",
+          "link": "https://investor.bloomenergy.com/press-releases/press-release-details/2026/Bloom-Energys-800V-DC-Native-Power-Can-Cut-Billions-from-AI-Data-Center-Costs-Reduce-Power-Use-and-Eliminate-Need-for-Transformers/default.aspx"
+        }
+      ]
+    },
+    {
+      "id": "260917-26",
+      "title": "Tektronix unveils regenerative test system for 800V AI data center power - eenewseurope.com",
+      "source_type": "国际资讯",
+      "primary_source": "eenewseurope.com",
+      "published_at": "2026-09-16T11:14:34+00:00",
+      "link": "https://www.eenewseurope.com/en/tektronix-unveils-regenerative-test-system-for-800v-ai-data-center-power/",
+      "category": [
+        "800v",
+        "ai_dc"
+      ],
+      "importance": "重点",
+      "plain_summary": "泰克发布面向 800V AI 数据中心供电的能量回馈式测试系统。该设备用于验证 800V 直流供电链路。属于测试测量环节对 800V 直流趋势的响应。",
+      "technical_summary": "泰克发布面向 800V AI 数据中心供电的能量回馈式测试系统。输入仅提供标题，未给出电压电流范围、功率等级或回馈效率。无法确认其测试能力与适用拓扑。",
+      "technical": {
+        "voltage": "800V",
+        "application": "AI 数据中心测试"
+      },
+      "industrialization": {
+        "stage": "产品发布",
+        "status": "发布"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "泰克发布该能量回馈式测试系统"
+        ]
+      },
+      "summary_raw": "Tektronix unveils regenerative test system for 800V AI data center power eenewseurope.com",
+      "published_date": "2026-09-16",
+      "relevance_score": 53,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "800V/AI DC"
+        ]
+      },
+      "heat_score": 67,
+      "heat_factors": {
+        "freshness": 85,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 53,
+      "radar_score": 57,
+      "radar_rank": 16,
+      "sources": [
+        {
+          "source": "eenewseurope.com",
+          "title": "Tektronix unveils regenerative test system for 800V AI data center power - eenewseurope.com",
+          "link": "https://www.eenewseurope.com/en/tektronix-unveils-regenerative-test-system-for-800v-ai-data-center-power/"
+        }
+      ]
+    },
+    {
+      "id": "260917-27",
+      "title": "From grid code to grid connection: what makes a grid-forming BESS work in the real world? - Energy-Storage.News",
+      "source_type": "国际资讯",
+      "primary_source": "Energy-Storage.News",
+      "published_at": "2026-09-16T09:31:07+00:00",
+      "link": "https://www.energy-storage.news/from-grid-code-to-grid-connection-what-makes-a-grid-forming-bess-work-in-the-real-world/",
+      "category": [
+        "gfm"
+      ],
+      "importance": "重点",
+      "plain_summary": "Energy-Storage.News 刊文讨论构网型 BESS 从电网规范到实际并网需要具备哪些条件。文章聚焦构网型储能在真实电网环境中的落地要素。对构网型储能工程化有参考价值。",
+      "technical_summary": "该文讨论构网型 BESS 从电网规范到实际并网的关键要素。输入仅提供标题，未给出控制策略、并网标准或测试数据。无法确认其涉及的具体构网控制实现。",
+      "technical": {
+        "control": "构网型控制",
+        "application": "储能系统"
+      },
+      "industrialization": {
+        "stage": "未知"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "Energy-Storage.News 刊发该文"
+        ]
+      },
+      "summary_raw": "From grid code to grid connection: what makes a grid-forming BESS work in the real world? Energy-Storage.News",
+      "published_date": "2026-09-16",
+      "relevance_score": 53,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "GFM/PCS"
+        ]
+      },
+      "heat_score": 67,
+      "heat_factors": {
+        "freshness": 85,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 53,
+      "radar_score": 57,
+      "radar_rank": 17,
+      "sources": [
+        {
+          "source": "Energy-Storage.News",
+          "title": "From grid code to grid connection: what makes a grid-forming BESS work in the real world? - Energy-Storage.News",
+          "link": "https://www.energy-storage.news/from-grid-code-to-grid-connection-what-makes-a-grid-forming-bess-work-in-the-real-world/"
+        }
+      ]
+    },
+    {
+      "id": "260917-28",
+      "title": "NVIDIA Leading AI Data Center Major Transformation: Chinese Manufacturers Aim to Avoid Sidelining - 36 Kr",
+      "source_type": "国际资讯",
+      "primary_source": "36 Kr",
+      "published_at": "2026-09-16T07:00:36+00:00",
+      "link": "https://eu.36kr.com/en/p/3985697915042560",
+      "category": [
+        "ai_dc"
+      ],
+      "importance": "一般",
+      "plain_summary": "36 Kr 报道英伟达引领 AI 数据中心重大变革，中国制造商力图避免被边缘化。该报道关注 AI 数据中心供应链格局变化。属于产业竞争态势分析。",
+      "technical_summary": "该报道讨论英伟达引领的 AI 数据中心变革及中国制造商应对。输入仅提供标题，未给出具体技术路线或供电架构参数。无法据此判断涉及的具体电力电子技术。",
+      "technical": {
+        "application": "AI 数据中心"
+      },
+      "industrialization": {
+        "stage": "未知"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "36 Kr 刊发该报道"
+        ]
+      },
+      "summary_raw": "NVIDIA Leading AI Data Center Major Transformation: Chinese Manufacturers Aim to Avoid Sidelining 36 Kr",
+      "published_date": "2026-09-16",
+      "relevance_score": 51,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 35,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "800V/AI DC"
+        ]
+      },
+      "heat_score": 67,
+      "heat_factors": {
+        "freshness": 85,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 44,
+      "radar_score": 55,
+      "radar_rank": 18,
+      "sources": [
+        {
+          "source": "36 Kr",
+          "title": "NVIDIA Leading AI Data Center Major Transformation: Chinese Manufacturers Aim to Avoid Sidelining - 36 Kr",
+          "link": "https://eu.36kr.com/en/p/3985697915042560"
+        }
+      ]
+    },
+    {
+      "id": "260917-21",
+      "title": "RIR Power Electronics reports FY26 PAT of ₹6.72 crore - scanx.trade",
+      "source_type": "国际资讯",
+      "primary_source": "scanx.trade",
+      "published_at": "2026-09-16T17:38:21+00:00",
+      "link": "https://scanx.trade/stock-market-news/companies/rir-power-electronics-board-to-meet-on-may-28/41170221",
+      "importance": "一般",
+      "plain_summary": "RIR Power Electronics 公布 FY26 税后利润为 6720 万卢比。该信息属于公司财务披露。可作为其 SiC 业务投入的背景参考。",
+      "technical_summary": "该条目为 RIR Power Electronics 的 FY26 税后利润披露。输入仅提供标题，未给出技术或产品信息。与电力电子技术分析关联有限。",
+      "industrialization": {
+        "stage": "未知"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "RIR 公布 FY26 税后利润 6720 万卢比"
+        ]
+      },
+      "summary_raw": "RIR Power Electronics reports FY26 PAT of ₹6.72 crore scanx.trade",
+      "published_date": "2026-09-16",
+      "relevance_score": 51,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 35,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "SiC/GaN"
+        ]
+      },
+      "heat_score": 67,
+      "heat_factors": {
+        "freshness": 85,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 35,
+      "radar_score": 53,
+      "radar_rank": 19,
+      "sources": [
+        {
+          "source": "scanx.trade",
+          "title": "RIR Power Electronics reports FY26 PAT of ₹6.72 crore - scanx.trade",
+          "link": "https://scanx.trade/stock-market-news/companies/rir-power-electronics-board-to-meet-on-may-28/41170221"
+        }
+      ]
+    },
+    {
+      "id": "260917-08",
+      "title": "Is Power Electronics Outgrowing the Shunt Resistor? - Electronic Design",
+      "source_type": "国际资讯",
+      "primary_source": "Electronic Design",
+      "published_at": "2026-09-16T17:08:39+00:00",
+      "link": "https://www.electronicdesign.com/technologies/power/article/55405512/allegro-microsystems-is-power-electronics-outgrowing-shunt-based-current-sensors",
+      "importance": "一般",
+      "plain_summary": "Electronic Design 刊文讨论电力电子是否正在超越分流电阻式电流检测方案。文章由 Allegro MicroSystems 相关方提供，探讨电流传感技术路线。对功率变换器设计中的检测方案选择有参考意义。",
+      "technical_summary": "该文讨论电力电子中分流电阻式电流传感是否已不能满足需求，涉及电流检测技术路线。输入仅提供标题，未给出具体传感方案、精度、带宽或隔离参数。无法确认其推荐的技术替代路径。",
+      "technical": {
+        "application": "电流检测"
+      },
+      "industrialization": {
+        "stage": "未知"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "Electronic Design 刊发该文章"
         ]
       },
       "sources": [
         {
           "source": "Electronic Design",
           "title": "Is Power Electronics Outgrowing the Shunt Resistor? - Electronic Design",
-          "link": "https://www.electronicdesign.com/technologies/power/article/55405512/allegro-microsystems-is-power-electronics-outgrowing-shunt-based-current-sensors",
-          "source_type": "国际资讯"
+          "link": "https://www.electronicdesign.com/technologies/power/article/55405512/allegro-microsystems-is-power-electronics-outgrowing-shunt-based-current-sensors"
         },
         {
           "source": "Electronic Design",
+          "source_type": "国际资讯",
           "title": "Is Power Electronics Outgrowing the Shunt Resistor? (Download) - Electronic Design",
           "link": "https://www.electronicdesign.com/technologies/power/document/55405521/is-power-electronics-outgrowing-the-shunt-resistor-download",
-          "source_type": "国际资讯"
+          "published_at": "2026-09-16T15:57:30+00:00"
         }
       ],
-      "primary_source": "Electronic Design",
-      "link": "https://www.electronicdesign.com/technologies/power/article/55405512/allegro-microsystems-is-power-electronics-outgrowing-shunt-based-current-sensors",
-      "summary_raw": "As switching frequencies continue to rise with the adoption of GaN and SiC, power engineers are eyeing alternatives to the shunt resistor for current sensing.",
-      "source_type": "国际资讯",
-      "relevance_score": 67,
+      "summary_raw": "Is Power Electronics Outgrowing the Shunt Resistor? (Download) Electronic Design",
+      "published_date": "2026-09-16",
+      "relevance_score": 44,
       "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 99,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "SiC/GaN"
-        ]
+        "focus_match": 35,
+        "technical_density": 35,
+        "engineering_usability": 80
       },
-      "heat_score": 78,
+      "heat_score": 67,
       "heat_factors": {
-        "freshness": 100,
-        "multi_source": 63,
-        "source_authority": 58
-      },
-      "technical_depth_score": 53,
-      "radar_score": 67,
-      "radar_rank": 15
-    },
-    {
-      "id": "260917-19",
-      "title": "Aluminium Nitride Thermal Substrates Market To 2035: Wide-Bandgap Semiconductor Demand Fuels Growth - News and Statistics - IndexBox",
-      "category": [
-        "gan",
-        "sic"
-      ],
-      "importance": "一般",
-      "evidence_level": "专业媒体",
-      "plain_summary": "市场报告称氮化铝热基板市场到2035年将以8%至12%的年复合增长率增长，受SiC和GaN电力电子需求推动。",
-      "technical": {
-        "device": "SiC、GaN（应用侧）",
-        "key_parameters": "市场CAGR 8-12%（至2035年）",
-        "focus": "氮化铝热基板市场"
-      },
-      "industrialization": {
-        "stage": "未知"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "报告预测氮化铝热基板市场至2035年CAGR为8-12%"
-        ],
-        "source_claims": [
-          "来源声称增长由SiC和GaN电力电子在EV逆变器与工业领域的需求驱动"
-        ]
-      },
-      "sources": [
-        {
-          "source": "IndexBox",
-          "title": "Aluminium Nitride Thermal Substrates Market To 2035: Wide-Bandgap Semiconductor Demand Fuels Growth - News and Statistics - IndexBox",
-          "link": "https://www.indexbox.io/blog/aluminium-nitride-thermal-substrates-market-forecast-to-2035-sic-and-gan-power-electronics-demand-drives-8-12-cagr/",
-          "source_type": "国际资讯"
-        }
-      ],
-      "primary_source": "IndexBox",
-      "link": "https://www.indexbox.io/blog/aluminium-nitride-thermal-substrates-market-forecast-to-2035-sic-and-gan-power-electronics-demand-drives-8-12-cagr/",
-      "summary_raw": "The Aluminium Nitride Thermal Substrates market is set to expand at 8-12% CAGR through 2035, driven by rising demand from SiC and GaN power electronics in EV inverters and industri",
-      "source_type": "国际资讯",
-      "relevance_score": 67,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 99,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "SiC/GaN"
-        ]
-      },
-      "heat_score": 74,
-      "heat_factors": {
-        "freshness": 100,
+        "freshness": 85,
         "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 62,
-      "radar_score": 67,
-      "radar_rank": 16
-    },
-    {
-      "id": "260917-22",
-      "title": "Polarization Superjunctions Push Gallium Nitride Power Transistors Toward Their Theoretical Limits - Bioengineer.org",
-      "category": [
-        "ai_dc",
-        "gan"
-      ],
-      "importance": "一般",
-      "evidence_level": "普通媒体",
-      "plain_summary": "文章报道极化超结技术推动氮化镓功率晶体管接近理论极限，应用场景涵盖电动车、数据中心与电网。",
-      "technical": {
-        "device": "GaN",
-        "topology": "极化超结（报道层面）",
-        "focus": "极化超结GaN功率晶体管"
-      },
-      "industrialization": {
-        "stage": "研究论文"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "文章报道极化超结技术推动GaN功率晶体管接近理论极限"
-        ]
-      },
-      "sources": [
-        {
-          "source": "Bioengineer.org",
-          "title": "Polarization Superjunctions Push Gallium Nitride Power Transistors Toward Their Theoretical Limits - Bioengineer.org",
-          "link": "https://bioengineer.org/polarization-superjunctions-push-gallium-nitride-power-transistors-toward-their-theoretical-limits/",
-          "source_type": "国际资讯"
-        }
-      ],
-      "primary_source": "Bioengineer.org",
-      "link": "https://bioengineer.org/polarization-superjunctions-push-gallium-nitride-power-transistors-toward-their-theoretical-limits/",
-      "summary_raw": "Power electronics is having a moment. From electric vehicles to data centers, grid infrastructure to fast chargers, the world’s appetite for converting and controlling electrical energy has never been greater, and the transistors that do this work sit at the heart of a quiet but relentless performance race. A",
-      "source_type": "国际资讯",
-      "relevance_score": 67,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 99,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "SiC/GaN"
-        ]
-      },
-      "heat_score": 74,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 62,
-      "radar_score": 67,
-      "radar_rank": 17
-    },
-    {
-      "id": "260917-30",
-      "title": "LS ELECTRIC, KEPCO to Jointly Develop Distribution Grid-Forming Technology - thelec.net",
-      "category": [
-        "gfm"
-      ],
-      "importance": "重点",
-      "evidence_level": "多源交叉",
-      "plain_summary": "韩国LS Electric与韩国电力公社KEPCO将联合开发配电网构网型技术，用于提升电网稳定性。",
-      "technical": {
-        "focus": "配电网构网型技术联合开发"
-      },
-      "industrialization": {
-        "stage": "未知"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "LS Electric与KEPCO启动配电网构网型技术联合开发，用于稳定电网"
-        ]
-      },
-      "sources": [
-        {
-          "source": "thelec.net",
-          "title": "LS ELECTRIC, KEPCO to Jointly Develop Distribution Grid-Forming Technology - thelec.net",
-          "link": "https://www.thelec.net/news/articleView.html?idxno=13919",
-          "source_type": "国际资讯"
-        },
-        {
-          "source": "매일경제",
-          "title": "LS Electric, KEPCO team up to develop grid-forming technology - 매일경제",
-          "link": "https://pulse.mk.co.kr/news/english/12154069",
-          "source_type": "财经媒体"
-        },
-        {
-          "source": "finance.biggo.com",
-          "title": "LS Electric, KEPCO to Jointly Develop Grid-Forming Technology for Distribution Grid Stabilization - finance.biggo.com",
-          "link": "https://finance.biggo.com/news/7be01269-ce5c-4952-aba0-cc7e489b1f3f",
-          "source_type": "财经媒体"
-        }
-      ],
-      "primary_source": "thelec.net",
-      "link": "https://www.thelec.net/news/articleView.html?idxno=13919",
-      "summary_raw": "South Korea's LS Electric and Korea Electric Power Corporation (KEPCO) have embarked on joint development of \"grid-forming\" technology to stabilize…",
-      "source_type": "国际资讯",
-      "relevance_score": 67,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 99,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "GFM/PCS"
-        ]
-      },
-      "heat_score": 83,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 81,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 67,
-      "radar_rank": 18
-    },
-    {
-      "id": "260917-14",
-      "title": "DAHWS Introduces Its Power Electronics Portfolio for Industrial Applications - EIN Presswire",
-      "category": [
-        "gan",
-        "sic"
-      ],
-      "importance": "一般",
-      "evidence_level": "企业官方",
-      "plain_summary": "DAHWS发布面向工业应用的电力电子产品组合，包括SiC/GaN功率模块、薄膜电容和板内陶瓷技术。",
-      "technical": {
-        "device": "SiC/GaN功率模块",
-        "focus": "工业用SiC/GaN模块、薄膜电容与板内陶瓷"
-      },
-      "industrialization": {
-        "stage": "产品发布"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "DAHWS发布面向工业应用的SiC/GaN功率模块、薄膜电容与Ceramic-in-Board技术组合"
-        ]
-      },
-      "sources": [
-        {
-          "source": "EIN Presswire",
-          "title": "DAHWS Introduces Its Power Electronics Portfolio for Industrial Applications - EIN Presswire",
-          "link": "https://www.einpresswire.com/article/931313919/dahws-introduces-its-power-electronics-portfolio-for-industrial-applications",
-          "source_type": "国际资讯"
-        }
-      ],
-      "primary_source": "EIN Presswire",
-      "link": "https://www.einpresswire.com/article/931313919/dahws-introduces-its-power-electronics-portfolio-for-industrial-applications",
-      "summary_raw": "DAHWS introduces its portfolio of SiC/GaN power modules, film capacitors, and Ceramic-in-Board technologies for industrial power electronics applications.",
-      "source_type": "国际资讯",
-      "relevance_score": 67,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 99,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "SiC/GaN"
-        ]
-      },
-      "heat_score": 74,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 53,
-      "radar_score": 66,
-      "radar_rank": 19
-    },
-    {
-      "id": "260917-20",
-      "title": "Silicon Carbide (SiC) Devices Market Size, Share | Trends [2034] - Fortune Business Insights",
-      "category": [
-        "sic"
-      ],
-      "importance": "一般",
-      "evidence_level": "专业媒体",
-      "plain_summary": "市场研究机构发布碳化硅器件市场规模、份额与趋势报告，展望至2034年。",
-      "technical": {
-        "device": "SiC",
-        "focus": "SiC器件市场规模与趋势"
-      },
-      "industrialization": {
-        "stage": "未知"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "Fortune Business Insights发布SiC器件市场规模、份额与趋势报告（展望至2034年）"
-        ]
-      },
-      "sources": [
-        {
-          "source": "Fortune Business Insights",
-          "title": "Silicon Carbide (SiC) Devices Market Size, Share | Trends [2034] - Fortune Business Insights",
-          "link": "https://www.fortunebusinessinsights.com/silicon-carbide-sic-devices-market-112103",
-          "source_type": "国际资讯"
-        }
-      ],
-      "primary_source": "Fortune Business Insights",
-      "link": "https://www.fortunebusinessinsights.com/silicon-carbide-sic-devices-market-112103",
-      "summary_raw": "Silicon Carbide (SiC) Devices Market Size, Share | Trends [2034] Fortune Business Insights",
-      "source_type": "国际资讯",
-      "relevance_score": 67,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 99,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "SiC/GaN"
-        ]
-      },
-      "heat_score": 74,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 53,
-      "radar_score": 66,
+      "radar_score": 51,
       "radar_rank": 20
     },
     {
-      "id": "260917-21",
-      "title": "Nexperia and Aurobay to explore GaN and SiC power devices for electrified powertrains - Charged EVs",
+      "id": "260917-33",
+      "title": "Navitas Extending GaN and SiC Strategy with Claros Acquisition - EE Times Asia",
+      "source_type": "国际资讯",
+      "primary_source": "EE Times Asia",
+      "published_at": "2026-09-15T03:36:19+00:00",
+      "link": "https://www.eetasia.com/navitas-extending-gan-and-sic-strategy-with-claros-acquisition/",
       "category": [
         "gan",
         "sic"
       ],
-      "importance": "一般",
-      "evidence_level": "专业媒体",
-      "plain_summary": "Nexperia与Aurobay Technologies将合作探索用于电动化动力总成的GaN和SiC功率器件，目标是提升效率。",
-      "technical": {
-        "device": "GaN、SiC功率器件",
-        "focus": "电动化动力总成用GaN/SiC器件"
-      },
-      "industrialization": {
-        "stage": "未知"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "Nexperia与Aurobay Technologies将合作探索用于电动化动力总成的GaN和SiC功率器件"
-        ]
-      },
-      "sources": [
-        {
-          "source": "Charged EVs",
-          "title": "Nexperia and Aurobay to explore GaN and SiC power devices for electrified powertrains - Charged EVs",
-          "link": "https://chargedevs.com/newswire/nexperia-and-aurobay-to-explore-gan-and-sic-power-devices-for-electrified-powertrains/",
-          "source_type": "国际资讯"
-        }
-      ],
-      "primary_source": "Charged EVs",
-      "link": "https://chargedevs.com/newswire/nexperia-and-aurobay-to-explore-gan-and-sic-power-devices-for-electrified-powertrains/",
-      "summary_raw": "Nexperia and Aurobay Technologies collaborate on GaN and SiC power semiconductors to improve efficiency in electrified and hybrid vehicle powertrains.",
-      "source_type": "国际资讯",
-      "relevance_score": 67,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 99,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "SiC/GaN"
-        ]
-      },
-      "heat_score": 74,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 53,
-      "radar_score": 66,
-      "radar_rank": 21
-    },
-    {
-      "id": "260917-24",
-      "title": "How SiC and GaN are reshaping automotive power electronics - EDN - Voice of the Engineer",
-      "category": [
-        "gan",
-        "sic"
-      ],
-      "importance": "一般",
-      "evidence_level": "专业媒体",
-      "plain_summary": "文章介绍SiC和GaN如何改变汽车电力电子，推动电动与混动汽车功率系统升级。",
-      "technical": {
-        "device": "SiC、GaN",
-        "focus": "汽车电力电子中的SiC与GaN"
-      },
-      "industrialization": {
-        "stage": "未知"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "文章讨论SiC和GaN如何重塑汽车电力电子"
-        ]
-      },
-      "sources": [
-        {
-          "source": "EDN - Voice of the Engineer",
-          "title": "How SiC and GaN are reshaping automotive power electronics - EDN - Voice of the Engineer",
-          "link": "https://www.edn.com/how-sic-and-gan-are-reshaping-automotive-power-electronics/",
-          "source_type": "国际资讯"
-        }
-      ],
-      "primary_source": "EDN - Voice of the Engineer",
-      "link": "https://www.edn.com/how-sic-and-gan-are-reshaping-automotive-power-electronics/",
-      "summary_raw": "How SiC and GaN are reshaping automotive power electronics EDN - Voice of the Engineer",
-      "source_type": "国际资讯",
-      "relevance_score": 67,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 99,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "SiC/GaN"
-        ]
-      },
-      "heat_score": 74,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 53,
-      "radar_score": 66,
-      "radar_rank": 22
-    },
-    {
-      "id": "260917-27",
-      "title": "What Makes Gallium Nitride Important for Power Electronics? - AZoM",
-      "category": [
-        "gan"
-      ],
-      "importance": "一般",
-      "evidence_level": "普通媒体",
-      "plain_summary": "科普文章介绍氮化镓为何在电力电子中重要，强调其效率、开关速度和功率密度优势。",
-      "technical": {
-        "device": "GaN",
-        "focus": "GaN电力电子优势科普"
-      },
-      "industrialization": {
-        "stage": "未知"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "文章介绍GaN在电力电子中的效率、开关速度与功率密度优势"
-        ]
-      },
-      "sources": [
-        {
-          "source": "AZoM",
-          "title": "What Makes Gallium Nitride Important for Power Electronics? - AZoM",
-          "link": "https://www.azom.com/article.aspx?ArticleID=25225",
-          "source_type": "国际资讯"
-        }
-      ],
-      "primary_source": "AZoM",
-      "link": "https://www.azom.com/article.aspx?ArticleID=25225",
-      "summary_raw": "Gallium nitride power electronics improve efficiency, switching speed, and power density, making GaN a strong alternative to silicon in modern systems.",
-      "source_type": "国际资讯",
-      "relevance_score": 67,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 99,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "SiC/GaN"
-        ]
-      },
-      "heat_score": 74,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 53,
-      "radar_score": 66,
-      "radar_rank": 23
-    },
-    {
-      "id": "260917-29",
-      "title": "Simulating the Role of Grid-Forming Inverters in the Future Electric Grid - Department of Energy (.gov)",
-      "category": [
-        "gfm"
-      ],
       "importance": "重点",
-      "evidence_level": "企业官方",
-      "plain_summary": "美国能源部介绍PNNL开发的新型计算机模型，用于模拟构网型逆变器在未来电网中的作用，帮助风电光伏更稳定地并网。",
+      "plain_summary": "Navitas 通过收购 Claros 扩展其 GaN 与 SiC 战略。该收购指向宽禁带功率半导体领域的整合。属于企业战略动作。",
+      "technical_summary": "Navitas 通过收购 Claros 扩展 GaN 与 SiC 战略。输入仅提供标题，未给出收购金额、技术整合方向或产品路线。无法确认 Claros 的具体技术资产。",
       "technical": {
-        "device": "构网型逆变器",
-        "focus": "构网型逆变器电网仿真建模"
+        "device": "GaN、SiC"
       },
       "industrialization": {
-        "stage": "研究论文"
+        "stage": "未知",
+        "status": "收购"
       },
       "evidence": {
         "confirmed_facts": [
-          "PNNL研究人员开发了构网型逆变器的新计算机模型，用于评估可再生能源并网的系统韧性与稳定性"
+          "Navitas 收购 Claros"
         ]
       },
-      "sources": [
-        {
-          "source": "Department of Energy (.gov)",
-          "title": "Simulating the Role of Grid-Forming Inverters in the Future Electric Grid - Department of Energy (.gov)",
-          "link": "https://www.energy.gov/cmei/systems/articles/simulating-role-grid-forming-inverters-future-electric-grid",
-          "source_type": "国际资讯"
-        }
-      ],
-      "primary_source": "Department of Energy (.gov)",
-      "link": "https://www.energy.gov/cmei/systems/articles/simulating-role-grid-forming-inverters-future-electric-grid",
-      "summary_raw": "PNNL researchers developed a new computer model of a device that acts like a translator, enabling renewable power sources like wind and solar to provide electricity to the grid while increasing system resiliency and stability.",
-      "source_type": "国际资讯",
-      "relevance_score": 67,
+      "summary_raw": "Navitas Extending GaN and SiC Strategy with Claros Acquisition EE Times Asia",
+      "published_date": "2026-09-15",
+      "relevance_score": 53,
       "relevance_factors": {
         "focus_match": 48,
-        "technical_density": 99,
+        "technical_density": 43,
         "engineering_usability": 80,
         "matched_topics": [
-          "GFM/PCS"
+          "SiC/GaN"
         ]
       },
-      "heat_score": 74,
+      "heat_score": 65,
       "heat_factors": {
-        "freshness": 100,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 53,
-      "radar_score": 66,
-      "radar_rank": 24
-    },
-    {
-      "id": "260917-11",
-      "title": "DoGo Power Empowers New Power Systems with AI and Grid-Forming Energy Storage - PR Newswire",
-      "category": [
-        "gfm"
-      ],
-      "importance": "一般",
-      "evidence_level": "企业官方",
-      "plain_summary": "DoGo Power在拉美Intersolar展会上介绍其结合AI与构网型储能的方案，用于支撑新型电力系统。",
-      "technical": {
-        "focus": "AI与构网型储能"
-      },
-      "industrialization": {
-        "stage": "产品发布"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "DoGo Power在Intersolar South America 2026介绍AI与构网型储能方案"
-        ]
-      },
-      "sources": [
-        {
-          "source": "PR Newswire",
-          "title": "DoGo Power Empowers New Power Systems with AI and Grid-Forming Energy Storage - PR Newswire",
-          "link": "https://www.prnewswire.com/news-releases/dogo-power-empowers-new-power-systems-with-ai-and-grid-forming-energy-storage-302864517.html",
-          "source_type": "国际资讯"
-        }
-      ],
-      "primary_source": "PR Newswire",
-      "link": "https://www.prnewswire.com/news-releases/dogo-power-empowers-new-power-systems-with-ai-and-grid-forming-energy-storage-302864517.html",
-      "summary_raw": "/PRNewswire/ -- Intersolar South America 2026, one of the leading exhibitions and conferences in the Latin American solar industry, took place in São Paulo...",
-      "source_type": "国际资讯",
-      "relevance_score": 67,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 99,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "GFM/PCS"
-        ]
-      },
-      "heat_score": 74,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 44,
-      "radar_score": 64,
-      "radar_rank": 25
-    },
-    {
-      "id": "260917-15",
-      "title": "Solid State Transformers Could Reshape AI Infrastructure - Data Center Richness | Substack",
-      "category": [
-        "ai_dc",
-        "sst"
-      ],
-      "importance": "一般",
-      "evidence_level": "普通媒体",
-      "plain_summary": "一篇Substack文章讨论固态变压器可能重塑AI基础设施供电方式。",
-      "technical": {
-        "focus": "固态变压器与AI基础设施"
-      },
-      "industrialization": {
-        "stage": "未知"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "文章讨论固态变压器可能重塑AI基础设施"
-        ]
-      },
-      "sources": [
-        {
-          "source": "Data Center Richness | Substack",
-          "title": "Solid State Transformers Could Reshape AI Infrastructure - Data Center Richness | Substack",
-          "link": "https://datacenterrichness.substack.com/p/solid-state-transformers-could-reshape",
-          "source_type": "国际资讯"
-        }
-      ],
-      "primary_source": "Data Center Richness | Substack",
-      "link": "https://datacenterrichness.substack.com/p/solid-state-transformers-could-reshape",
-      "summary_raw": "Solid State Transformers Could Reshape AI Infrastructure Data Center Richness | Substack",
-      "source_type": "国际资讯",
-      "relevance_score": 67,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 99,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "SST"
-        ]
-      },
-      "heat_score": 74,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 44,
-      "radar_score": 64,
-      "radar_rank": 26
-    },
-    {
-      "id": "260917-17",
-      "title": "Exclusive: Why investors are going gaga over solid-state transformers - TechCrunch",
-      "category": [
-        "sst"
-      ],
-      "importance": "一般",
-      "evidence_level": "财经媒体",
-      "plain_summary": "TechCrunch报道投资者对固态变压器兴趣浓厚，认为该技术有望用一个可控、可升级的装置替代电网中的多个部件。",
-      "technical": {
-        "focus": "固态变压器投资热度"
-      },
-      "industrialization": {
-        "stage": "未知"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "TechCrunch报道投资者对固态变压器兴趣上升"
-        ],
-        "source_claims": [
-          "来源声称该技术有望用一个可控、可升级的装置替代电网多个部件"
-        ]
-      },
-      "sources": [
-        {
-          "source": "TechCrunch",
-          "title": "Exclusive: Why investors are going gaga over solid-state transformers - TechCrunch",
-          "link": "https://techcrunch.com/2026/02/20/why-investors-are-going-gaga-over-solid-state-transformers/",
-          "source_type": "国际资讯"
-        }
-      ],
-      "primary_source": "TechCrunch",
-      "link": "https://techcrunch.com/2026/02/20/why-investors-are-going-gaga-over-solid-state-transformers/",
-      "summary_raw": "The technology promises to replace several parts of the grid with one device that’s both controllable and updatable.",
-      "source_type": "国际资讯",
-      "relevance_score": 67,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 99,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "SST"
-        ]
-      },
-      "heat_score": 74,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 44,
-      "radar_score": 64,
-      "radar_rank": 27
-    },
-    {
-      "id": "260917-28",
-      "title": "From grid code to grid connection: what makes a grid-forming BESS work in the real world? - energy-storage.news",
-      "category": [
-        "gfm"
-      ],
-      "importance": "重点",
-      "evidence_level": "专业媒体",
-      "plain_summary": "文章通过Sinexcel技术负责人访谈，讨论构网型电池储能系统从满足电网规范到实际并网需要具备哪些条件。",
-      "technical": {
-        "focus": "构网型BESS实际并网工程要点"
-      },
-      "industrialization": {
-        "stage": "商业部署"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "Sinexcel技术总监Luke Lu在文章中讨论构网型BESS项目成功要素"
-        ]
-      },
-      "sources": [
-        {
-          "source": "energy-storage.news",
-          "title": "From grid code to grid connection: what makes a grid-forming BESS work in the real world? - energy-storage.news",
-          "link": "https://www.energy-storage.news/from-grid-code-to-grid-connection-what-makes-a-grid-forming-bess-work-in-the-real-world/",
-          "source_type": "国际资讯"
-        }
-      ],
-      "primary_source": "energy-storage.news",
-      "link": "https://www.energy-storage.news/from-grid-code-to-grid-connection-what-makes-a-grid-forming-bess-work-in-the-real-world/",
-      "summary_raw": "Sinexcel technical director Luke Lu discusses what goes into a successful grid-forming battery energy storage system (BESS) project.",
-      "source_type": "国际资讯",
-      "relevance_score": 67,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 99,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "GFM/PCS"
-        ]
-      },
-      "heat_score": 74,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 44,
-      "radar_score": 64,
-      "radar_rank": 28
-    },
-    {
-      "id": "260917-25",
-      "title": "HiPower 5.0: Driving sustainable power electronics for European electric mobility - Innovation News Network",
-      "importance": "一般",
-      "evidence_level": "专业媒体",
-      "plain_summary": "HiPower 5.0项目汇集45家欧洲合作伙伴，共同开发面向未来出行的可持续电力电子技术。",
-      "technical": {
-        "focus": "欧洲电动出行电力电子研发合作"
-      },
-      "industrialization": {
-        "stage": "未知"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "HiPower 5.0汇集45家欧洲合作伙伴，开发面向未来出行的电力电子技术"
-        ]
-      },
-      "sources": [
-        {
-          "source": "Innovation News Network",
-          "title": "HiPower 5.0: Driving sustainable power electronics for European electric mobility - Innovation News Network",
-          "link": "https://www.innovationnewsnetwork.com/hipower-5-0-power-electronics-for-europes-electric-mobility/73622/",
-          "source_type": "国际资讯"
-        }
-      ],
-      "primary_source": "Innovation News Network",
-      "link": "https://www.innovationnewsnetwork.com/hipower-5-0-power-electronics-for-europes-electric-mobility/73622/",
-      "summary_raw": "HiPower 5.0 brings 45 European partners together to develop efficient, reliable and sustainable power electronics for future mobility.",
-      "source_type": "国内论文",
-      "relevance_score": 60,
-      "relevance_factors": {
-        "focus_match": 35,
-        "technical_density": 99,
-        "engineering_usability": 80
-      },
-      "heat_score": 79,
-      "heat_factors": {
-        "freshness": 100,
+        "freshness": 70,
         "multi_source": 45,
         "source_authority": 75
       },
       "technical_depth_score": 44,
-      "radar_score": 64,
-      "radar_rank": 29
+      "radar_score": 57,
+      "radar_rank": 21,
+      "sources": [
+        {
+          "source": "EE Times Asia",
+          "title": "Navitas Extending GaN and SiC Strategy with Claros Acquisition - EE Times Asia",
+          "link": "https://www.eetasia.com/navitas-extending-gan-and-sic-strategy-with-claros-acquisition/"
+        }
+      ]
     },
     {
-      "id": "260917-10",
-      "title": "TMEIC Opens New Power Electronics Flagship Manufacturing Facility in Waller County, Texas - PR Newswire",
+      "id": "260917-29",
+      "title": "Tektronix Launches Dynamic Test System for 800-V AI Data Centers - embedded.com",
+      "source_type": "国际资讯",
+      "primary_source": "embedded.com",
+      "published_at": "2026-09-15T21:40:04+00:00",
+      "link": "https://www.embedded.com/tektronix-launches-dynamic-test-system-for-800-v-ai-data-centers/",
+      "category": [
+        "ai_dc"
+      ],
       "importance": "一般",
-      "evidence_level": "企业官方",
-      "plain_summary": "TMEIC宣布在美国得州Waller县开设新的电力电子旗舰制造工厂，扩大其在北美的产能布局。",
+      "plain_summary": "embedded.com 报道泰克推出面向 800V AI 数据中心的动态测试系统。该报道与泰克能量回馈式测试系统发布相关。属于测试测量产品报道。",
+      "technical_summary": "该报道涉及泰克面向 800V AI 数据中心的动态测试系统。输入仅提供标题，未给出测试参数或系统能力。无法确认其与能量回馈式系统的关系。",
       "technical": {
-        "focus": "电力电子制造产能扩张"
+        "voltage": "800V",
+        "application": "AI 数据中心测试"
       },
       "industrialization": {
-        "stage": "商业部署"
+        "stage": "产品发布",
+        "status": "发布"
       },
       "evidence": {
         "confirmed_facts": [
-          "TMEIC宣布在得州Waller县开设新的电力电子旗舰制造工厂"
+          "embedded.com 报道该测试系统"
+        ]
+      },
+      "summary_raw": "Tektronix Launches Dynamic Test System for 800-V AI Data Centers embedded.com",
+      "published_date": "2026-09-15",
+      "relevance_score": 53,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "800V/AI DC"
+        ]
+      },
+      "heat_score": 60,
+      "heat_factors": {
+        "freshness": 70,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 53,
+      "radar_score": 55,
+      "radar_rank": 22,
+      "sources": [
+        {
+          "source": "embedded.com",
+          "title": "Tektronix Launches Dynamic Test System for 800-V AI Data Centers - embedded.com",
+          "link": "https://www.embedded.com/tektronix-launches-dynamic-test-system-for-800-v-ai-data-centers/"
+        }
+      ]
+    },
+    {
+      "id": "260917-31",
+      "title": "Infineon, SolarEdge Extend 800 VDC AI Data Center Collaboration - I-Connect007",
+      "source_type": "国际资讯",
+      "primary_source": "I-Connect007",
+      "published_at": "2026-09-15T13:58:00+00:00",
+      "link": "https://iconnect007.com/article/151601/infineon-solaredge-extend-800-vdc-ai-data-center-collaboration/151598/pcb",
+      "category": [
+        "800v",
+        "ai_dc"
+      ],
+      "importance": "重点",
+      "plain_summary": "英飞凌与 SolarEdge 扩大在 800V 直流 AI 数据中心方面的合作。该合作指向 800V 直流供电链路的器件与系统协同。属于产业链协作动作。",
+      "technical_summary": "英飞凌与 SolarEdge 扩大 800V 直流 AI 数据中心合作。输入仅提供标题，未给出合作涉及的具体器件、拓扑或功率等级。无法确认双方分工与技术路线。",
+      "technical": {
+        "voltage": "800V",
+        "application": "AI 数据中心"
+      },
+      "industrialization": {
+        "stage": "未知",
+        "status": "扩大合作"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "英飞凌与 SolarEdge 扩大 800V 直流合作"
+        ]
+      },
+      "summary_raw": "Infineon, SolarEdge Extend 800 VDC AI Data Center Collaboration I-Connect007",
+      "published_date": "2026-09-15",
+      "relevance_score": 53,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "800V/AI DC"
+        ]
+      },
+      "heat_score": 60,
+      "heat_factors": {
+        "freshness": 70,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 53,
+      "radar_score": 55,
+      "radar_rank": 23,
+      "sources": [
+        {
+          "source": "I-Connect007",
+          "title": "Infineon, SolarEdge Extend 800 VDC AI Data Center Collaboration - I-Connect007",
+          "link": "https://iconnect007.com/article/151601/infineon-solaredge-extend-800-vdc-ai-data-center-collaboration/151598/pcb"
+        }
+      ]
+    },
+    {
+      "id": "260917-32",
+      "title": "800V直流供电成AI算力新底座，阳光电源如何落子 - 碳索储能网",
+      "source_type": "国内资讯",
+      "primary_source": "碳索储能网",
+      "published_at": "2026-09-15T06:31:26+00:00",
+      "link": "https://mcn.solarbe.com/news/20260915/50029137.html",
+      "category": [
+        "800v"
+      ],
+      "importance": "重点",
+      "plain_summary": "碳索储能网刊文讨论 800V 直流供电成为 AI 算力新底座，以及阳光电源的布局。文章关注阳光电源在 800V 直流供电领域的动作。属于国内产业观察。",
+      "technical_summary": "该文讨论 800V 直流供电作为 AI 算力底座及阳光电源的布局。输入仅提供标题，未给出具体产品、拓扑或参数。无法确认阳光电源的具体技术方案。",
+      "technical": {
+        "voltage": "800V",
+        "application": "AI 数据中心"
+      },
+      "industrialization": {
+        "stage": "未知"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "碳索储能网刊发该文"
+        ]
+      },
+      "summary_raw": "800V直流供电成AI算力新底座，阳光电源如何落子 碳索储能网",
+      "published_date": "2026-09-15",
+      "relevance_score": 53,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "800V/AI DC"
+        ]
+      },
+      "heat_score": 60,
+      "heat_factors": {
+        "freshness": 70,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 53,
+      "radar_score": 55,
+      "radar_rank": 24,
+      "sources": [
+        {
+          "source": "碳索储能网",
+          "title": "800V直流供电成AI算力新底座，阳光电源如何落子 - 碳索储能网",
+          "link": "https://mcn.solarbe.com/news/20260915/50029137.html"
+        }
+      ]
+    },
+    {
+      "id": "260917-30",
+      "title": "TMEIC Opens New Power Electronics Flagship Manufacturing Facility in Waller County, Texas - Morningstar",
+      "source_type": "国际资讯",
+      "primary_source": "Morningstar",
+      "published_at": "2026-09-15T17:37:00+00:00",
+      "link": "https://www.morningstar.com/news/pr-newswire/20260915ph45329/tmeic-opens-new-power-electronics-flagship-manufacturing-facility-in-waller-county-texas",
+      "summary_raw": "TMEIC Opens New Power Electronics Flagship Manufacturing Facility in Waller County, Texas Morningstar",
+      "importance": "一般",
+      "plain_summary": "TMEIC 在得克萨斯州 Waller 县开设新的电力电子旗舰制造工厂。该动作扩大其电力电子制造产能。属于区域制造布局调整。",
+      "technical_summary": "TMEIC 在得州 Waller 县开设电力电子旗舰制造工厂。输入仅提供标题，未给出产品类型、产能或技术参数。无法确认其生产的具体电力电子产品。",
+      "industrialization": {
+        "stage": "商业部署",
+        "status": "开设工厂"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "TMEIC 在得州开设电力电子制造工厂"
+        ]
+      },
+      "published_date": "2026-09-15",
+      "relevance_score": 44,
+      "relevance_factors": {
+        "focus_match": 35,
+        "technical_density": 35,
+        "engineering_usability": 80
+      },
+      "heat_score": 60,
+      "heat_factors": {
+        "freshness": 70,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 35,
+      "radar_score": 48,
+      "radar_rank": 25,
+      "sources": [
+        {
+          "source": "Morningstar",
+          "title": "TMEIC Opens New Power Electronics Flagship Manufacturing Facility in Waller County, Texas - Morningstar",
+          "link": "https://www.morningstar.com/news/pr-newswire/20260915ph45329/tmeic-opens-new-power-electronics-flagship-manufacturing-facility-in-waller-county-texas"
+        }
+      ]
+    },
+    {
+      "id": "260917-36",
+      "title": "EPC releases two new white papers on GaN power conversion - Compound Semiconductor",
+      "source_type": "国际资讯",
+      "primary_source": "Compound Semiconductor",
+      "published_at": "2026-09-14T19:18:18+00:00",
+      "link": "https://compoundsemiconductor.net/article/125364/EPC_releases_two_new_white_papers_on_GaN_power_conversion",
+      "category": [
+        "ai_dc",
+        "gan"
+      ],
+      "importance": "一般",
+      "plain_summary": "EPC 发布两份关于 GaN 功率转换的新白皮书，面向 AI 数据中心与先进电机驱动。该白皮书属于厂商技术推广材料。对 GaN 应用设计有参考价值。",
+      "technical_summary": "EPC 发布两份 GaN 功率转换白皮书，面向 AI 数据中心与先进电机驱动。输入仅提供标题，未给出具体拓扑、器件或效率数据。无法确认白皮书的技术内容。",
+      "technical": {
+        "device": "GaN",
+        "application": "AI 数据中心、电机驱动"
+      },
+      "industrialization": {
+        "stage": "未知"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "EPC 发布两份 GaN 功率转换白皮书"
         ]
       },
       "sources": [
         {
-          "source": "PR Newswire",
-          "title": "TMEIC Opens New Power Electronics Flagship Manufacturing Facility in Waller County, Texas - PR Newswire",
-          "link": "https://www.prnewswire.com/news-releases/tmeic-opens-new-power-electronics-flagship-manufacturing-facility-in-waller-county-texas-302876047.html",
-          "source_type": "国际资讯"
+          "source": "Compound Semiconductor",
+          "title": "EPC releases two new white papers on GaN power conversion - Compound Semiconductor",
+          "link": "https://compoundsemiconductor.net/article/125364/EPC_releases_two_new_white_papers_on_GaN_power_conversion"
+        },
+        {
+          "source": "EIN News",
+          "source_type": "国际资讯",
+          "title": "EPC Releases Two New White Papers on GaN Power Conversion for AI Data Centers and Advanced Motor Drives - EIN News",
+          "link": "https://www.einnews.com/pr_news/942163486/epc-releases-two-new-white-papers-on-gan-power-conversion-for-ai-data-centers-and-advanced-motor-drives",
+          "published_at": "2026-09-14T16:00:00+00:00"
         }
       ],
-      "primary_source": "PR Newswire",
-      "link": "https://www.prnewswire.com/news-releases/tmeic-opens-new-power-electronics-flagship-manufacturing-facility-in-waller-county-texas-302876047.html",
-      "summary_raw": "/PRNewswire/ -- TMEIC Corporation Americas (TMEIC), a group company of TMEIC Corporation (Japan), announces the opening of its new Twinwood manufacturing...",
-      "source_type": "国际资讯",
+      "summary_raw": "EPC Releases Two New White Papers on GaN Power Conversion for AI Data Centers and Advanced Motor Drives EIN News",
+      "published_date": "2026-09-14",
       "relevance_score": 60,
       "relevance_factors": {
-        "focus_match": 35,
-        "technical_density": 99,
-        "engineering_usability": 80
+        "focus_match": 61,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "800V/AI DC",
+          "SiC/GaN"
+        ]
       },
-      "heat_score": 74,
+      "heat_score": 53,
       "heat_factors": {
-        "freshness": 100,
+        "freshness": 55,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 53,
+      "radar_score": 57,
+      "radar_rank": 26
+    },
+    {
+      "id": "260917-34",
+      "title": "Aluminium Nitride Thermal Substrates Market To 2035: Wide-Bandgap Semiconductor Demand Fuels Growth - News and Statistics - IndexBox",
+      "source_type": "国际资讯",
+      "primary_source": "IndexBox",
+      "published_at": "2026-09-14T22:51:17+00:00",
+      "link": "https://www.indexbox.io/blog/aluminium-nitride-thermal-substrates-market-forecast-to-2035-sic-and-gan-power-electronics-demand-drives-8-12-cagr/",
+      "importance": "一般",
+      "plain_summary": "IndexBox 发布氮化铝热基板市场到 2035 年的预测，称 SiC 与 GaN 功率电子需求推动增长。该预测给出 8-12% 的复合年增长率。属于市场研究内容。",
+      "technical_summary": "该市场报告预测氮化铝热基板到 2035 年增长，称受 SiC 与 GaN 功率电子需求驱动。输入仅提供标题，未给出具体数据来源或细分市场。无法确认预测方法。",
+      "technical": {
+        "device": "SiC、GaN",
+        "application": "功率半导体封装"
+      },
+      "industrialization": {
+        "stage": "未知"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "IndexBox 发布该市场预测"
+        ],
+        "source_claims": [
+          "8-12% 复合年增长率"
+        ]
+      },
+      "summary_raw": "Aluminium Nitride Thermal Substrates Market To 2035: Wide-Bandgap Semiconductor Demand Fuels Growth - News and Statistics IndexBox",
+      "published_date": "2026-09-14",
+      "relevance_score": 53,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "SiC/GaN"
+        ]
+      },
+      "heat_score": 53,
+      "heat_factors": {
+        "freshness": 55,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 53,
+      "radar_score": 54,
+      "radar_rank": 27,
+      "sources": [
+        {
+          "source": "IndexBox",
+          "title": "Aluminium Nitride Thermal Substrates Market To 2035: Wide-Bandgap Semiconductor Demand Fuels Growth - News and Statistics - IndexBox",
+          "link": "https://www.indexbox.io/blog/aluminium-nitride-thermal-substrates-market-forecast-to-2035-sic-and-gan-power-electronics-demand-drives-8-12-cagr/"
+        }
+      ]
+    },
+    {
+      "id": "260917-38",
+      "title": "Compal Electronics Partners with Exascale to Build 800 VDC AI Data Center Validation Platform in the U.S. - finance.biggo.com",
+      "source_type": "国际资讯",
+      "primary_source": "finance.biggo.com",
+      "published_at": "2026-09-14T10:32:18+00:00",
+      "link": "https://finance.biggo.com/news/6c66c44a-9604-4977-847f-e417cb91dddd",
+      "category": [
+        "800v",
+        "ai_dc"
+      ],
+      "importance": "重点",
+      "plain_summary": "仁宝电脑与 Exascale 合作，在美国建设 800V 直流 AI 数据中心验证平台。该平台用于验证 800V 直流供电方案。属于 800V 直流生态的验证环节建设。",
+      "technical_summary": "仁宝与 Exascale 合作在美国建设 800V 直流 AI 数据中心验证平台。输入仅提供标题，未给出平台规模、验证内容或技术参数。无法确认其验证的具体供电架构。",
+      "technical": {
+        "voltage": "800V",
+        "application": "AI 数据中心"
+      },
+      "industrialization": {
+        "stage": "试点/示范",
+        "status": "建设验证平台"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "仁宝与 Exascale 合作建设 800V 直流验证平台"
+        ]
+      },
+      "summary_raw": "Compal Electronics Partners with Exascale to Build 800 VDC AI Data Center Validation Platform in the U.S. finance.biggo.com",
+      "published_date": "2026-09-14",
+      "relevance_score": 53,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "800V/AI DC"
+        ]
+      },
+      "heat_score": 53,
+      "heat_factors": {
+        "freshness": 55,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 53,
+      "radar_score": 54,
+      "radar_rank": 28,
+      "sources": [
+        {
+          "source": "finance.biggo.com",
+          "title": "Compal Electronics Partners with Exascale to Build 800 VDC AI Data Center Validation Platform in the U.S. - finance.biggo.com",
+          "link": "https://finance.biggo.com/news/6c66c44a-9604-4977-847f-e417cb91dddd"
+        }
+      ]
+    },
+    {
+      "id": "260917-35",
+      "title": "Polarization Superjunctions Push Gallium Nitride Power Transistors Toward Their Theoretical Limits - Bioengineer.org",
+      "source_type": "国际论文",
+      "primary_source": "Bioengineer.org",
+      "published_at": "2026-09-14T22:43:04+00:00",
+      "link": "https://bioengineer.org/polarization-superjunctions-push-gallium-nitride-power-transistors-toward-their-theoretical-limits/",
+      "category": [
+        "gan"
+      ],
+      "importance": "一般",
+      "plain_summary": "Bioengineer.org 报道极化超结推动 GaN 功率晶体管接近理论极限。该报道与前述 III 族氮化物极化超结研究相关。属于基础器件研究进展。",
+      "technical_summary": "该报道称极化超结推动 GaN 功率晶体管接近理论极限。输入仅提供标题，未给出器件结构、击穿电压或导通电阻数据。无法确认其与 Nature 论文的关系。",
+      "technical": {
+        "device": "GaN 功率晶体管"
+      },
+      "industrialization": {
+        "stage": "研究论文"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "Bioengineer.org 刊发该报道"
+        ],
+        "source_claims": [
+          "极化超结推动 GaN 晶体管接近理论极限"
+        ]
+      },
+      "summary_raw": "Polarization Superjunctions Push Gallium Nitride Power Transistors Toward Their Theoretical Limits Bioengineer.org",
+      "published_date": "2026-09-14",
+      "relevance_score": 53,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "SiC/GaN"
+        ]
+      },
+      "heat_score": 53,
+      "heat_factors": {
+        "freshness": 55,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 61,
+      "radar_score": 52,
+      "radar_rank": 29,
+      "sources": [
+        {
+          "source": "Bioengineer.org",
+          "title": "Polarization Superjunctions Push Gallium Nitride Power Transistors Toward Their Theoretical Limits - Bioengineer.org",
+          "link": "https://bioengineer.org/polarization-superjunctions-push-gallium-nitride-power-transistors-toward-their-theoretical-limits/"
+        }
+      ]
+    },
+    {
+      "id": "260917-10",
+      "title": "Enphase Energy to Showcase IQ Solid-State Transformer at AI Infra Summit 2026 - HPCwire",
+      "source_type": "国际资讯",
+      "primary_source": "HPCwire",
+      "published_at": "2026-09-14T19:24:19+00:00",
+      "link": "https://www.hpcwire.com/aiwire/2026/09/14/enphase-energy-to-showcase-iq-solid-state-transformer-at-ai-infra-summit-2026/",
+      "category": [
+        "sst"
+      ],
+      "importance": "一般",
+      "plain_summary": "Enphase 将在 AI Infra Summit 2026 上展示其 IQ 固态变压器。该活动面向 AI 基础设施领域。属于产品展示与市场推广动作。",
+      "technical_summary": "Enphase 将在 AI Infra Summit 2026 展示 IQ 固态变压器。输入仅提供标题，未给出技术参数或展示内容细节。无法确认其展示的是样机还是产品。",
+      "technical": {
+        "application": "AI 数据中心"
+      },
+      "industrialization": {
+        "stage": "产品发布",
+        "status": "展示"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "Enphase 将在该峰会展示 IQ 固态变压器"
+        ]
+      },
+      "sources": [
+        {
+          "source": "HPCwire",
+          "title": "Enphase Energy to Showcase IQ Solid-State Transformer at AI Infra Summit 2026 - HPCwire",
+          "link": "https://www.hpcwire.com/aiwire/2026/09/14/enphase-energy-to-showcase-iq-solid-state-transformer-at-ai-infra-summit-2026/"
+        },
+        {
+          "source": "Yahoo Finance",
+          "source_type": "国际资讯",
+          "title": "Enphase Energy to Showcase IQ Solid-State Transformer at AI Infra Summit 2026 - Yahoo Finance",
+          "link": "https://finance.yahoo.com/energy/articles/enphase-energy-showcase-iq-solid-120000961.html",
+          "published_at": "2026-09-14T12:00:00+00:00"
+        }
+      ],
+      "summary_raw": "Enphase Energy to Showcase IQ Solid-State Transformer at AI Infra Summit 2026 Yahoo Finance",
+      "published_date": "2026-09-14",
+      "relevance_score": 51,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 35,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "SST"
+        ]
+      },
+      "heat_score": 53,
+      "heat_factors": {
+        "freshness": 55,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 44,
+      "radar_score": 51,
       "radar_rank": 30
+    },
+    {
+      "id": "260917-37",
+      "title": "Report from 800 Former EPA Staff Links AI Data Center Power Demand to Asthma and Early Deaths - Medical Daily",
+      "source_type": "国际资讯",
+      "primary_source": "Medical Daily",
+      "published_at": "2026-09-14T19:01:13+00:00",
+      "link": "https://www.medicaldaily.com/former-epa-staff-ai-data-center-pollution-asthma-health-report-478631",
+      "category": [
+        "ai_dc"
+      ],
+      "importance": "一般",
+      "plain_summary": "Medical Daily 报道 800 名前 EPA 员工发布的报告，将 AI 数据中心电力需求与哮喘和早逝关联。该报告关注数据中心供电带来的环境健康影响。属于非技术性社会议题。",
+      "technical_summary": "该报道涉及前 EPA 员工关于 AI 数据中心电力需求与健康影响的报告。输入仅提供标题，未给出电力电子技术内容。与器件、拓扑分析关联有限。",
+      "technical": {
+        "application": "AI 数据中心"
+      },
+      "industrialization": {
+        "stage": "未知"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "Medical Daily 刊发该报道"
+        ],
+        "source_claims": [
+          "AI 数据中心电力需求与哮喘和早逝关联"
+        ]
+      },
+      "summary_raw": "Report from 800 Former EPA Staff Links AI Data Center Power Demand to Asthma and Early Deaths Medical Daily",
+      "published_date": "2026-09-14",
+      "relevance_score": 51,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 35,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "800V/AI DC"
+        ]
+      },
+      "heat_score": 53,
+      "heat_factors": {
+        "freshness": 55,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 44,
+      "radar_score": 51,
+      "radar_rank": 31,
+      "sources": [
+        {
+          "source": "Medical Daily",
+          "title": "Report from 800 Former EPA Staff Links AI Data Center Power Demand to Asthma and Early Deaths - Medical Daily",
+          "link": "https://www.medicaldaily.com/former-epa-staff-ai-data-center-pollution-asthma-health-report-478631"
+        }
+      ]
+    },
+    {
+      "id": "260917-40",
+      "title": "DAHWS Introduces Its Power Electronics Portfolio for Industrial Applications - EIN Presswire",
+      "source_type": "国际资讯",
+      "primary_source": "EIN Presswire",
+      "published_at": "2026-09-14T05:22:00+00:00",
+      "link": "https://www.einpresswire.com/article/931313919/dahws-introduces-its-power-electronics-portfolio-for-industrial-applications",
+      "importance": "一般",
+      "plain_summary": "DAHWS 推出面向工业应用的电力电子产品组合。该发布扩展其工业电力电子产品线。属于厂商产品组合发布。",
+      "technical_summary": "DAHWS 推出面向工业应用的电力电子产品组合。输入仅提供标题，未给出产品电压、功率、拓扑或参数。无法确认其产品技术规格。",
+      "technical": {
+        "application": "工业应用"
+      },
+      "industrialization": {
+        "stage": "产品发布",
+        "status": "发布产品组合"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "DAHWS 推出工业电力电子产品组合"
+        ]
+      },
+      "summary_raw": "DAHWS Introduces Its Power Electronics Portfolio for Industrial Applications EIN Presswire",
+      "published_date": "2026-09-14",
+      "relevance_score": 44,
+      "relevance_factors": {
+        "focus_match": 35,
+        "technical_density": 35,
+        "engineering_usability": 80
+      },
+      "heat_score": 53,
+      "heat_factors": {
+        "freshness": 55,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 44,
+      "radar_score": 48,
+      "radar_rank": 32,
+      "sources": [
+        {
+          "source": "EIN Presswire",
+          "title": "DAHWS Introduces Its Power Electronics Portfolio for Industrial Applications - EIN Presswire",
+          "link": "https://www.einpresswire.com/article/931313919/dahws-introduces-its-power-electronics-portfolio-for-industrial-applications"
+        }
+      ]
+    },
+    {
+      "id": "260917-39",
+      "title": "Taiwan power electronics maker Delta seeks $1.5 billion in Thai share-linked bonds, term sheet shows - TradingView",
+      "source_type": "国际资讯",
+      "primary_source": "TradingView",
+      "published_at": "2026-09-14T09:50:50+00:00",
+      "link": "https://www.tradingview.com/news/reuters.com,2026:newsml_L4N4560LV:0-taiwan-power-electronics-maker-delta-seeks-1-5-billion-in-thai-share-linked-bonds-term-sheet-shows/",
+      "importance": "一般",
+      "plain_summary": "台达电子寻求在泰国发行 15 亿美元的股份挂钩债券。该融资动作属于公司资本运作。可作为其电力电子业务扩张的背景信息。",
+      "technical_summary": "该条目为台达电子寻求在泰国发行 15 亿美元股份挂钩债券的融资信息。输入仅提供标题，未给出技术或产品内容。与电力电子技术分析关联有限。",
+      "industrialization": {
+        "stage": "未知"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "台达寻求发行 15 亿美元股份挂钩债券"
+        ]
+      },
+      "summary_raw": "Taiwan power electronics maker Delta seeks $1.5 billion in Thai share-linked bonds, term sheet shows TradingView",
+      "published_date": "2026-09-14",
+      "relevance_score": 44,
+      "relevance_factors": {
+        "focus_match": 35,
+        "technical_density": 35,
+        "engineering_usability": 80
+      },
+      "heat_score": 53,
+      "heat_factors": {
+        "freshness": 55,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 35,
+      "radar_score": 46,
+      "radar_rank": 33,
+      "sources": [
+        {
+          "source": "TradingView",
+          "title": "Taiwan power electronics maker Delta seeks $1.5 billion in Thai share-linked bonds, term sheet shows - TradingView",
+          "link": "https://www.tradingview.com/news/reuters.com,2026:newsml_L4N4560LV:0-taiwan-power-electronics-maker-delta-seeks-1-5-billion-in-thai-share-linked-bonds-term-sheet-shows/"
+        }
+      ]
+    },
+    {
+      "id": "260917-01",
+      "title": "From Grid to Load: Advanced Power Electronics for Next-Generation Data Centers - nature.com",
+      "source_type": "国际论文",
+      "primary_source": "nature.com",
+      "published_at": "2026-09-08T16:49:06+00:00",
+      "link": "https://www.nature.com/collections/dadbijgbbj",
+      "category": [
+        "ai_dc"
+      ],
+      "importance": "一般",
+      "plain_summary": "Nature 网站上线了一个专题合集，主题是从电网到负载、面向下一代数据中心的先进电力电子技术。该合集聚焦数据中心供电链路中的电力电子环节。对关注 AI 数据中心供电架构演进的读者具有参考价值。",
+      "technical_summary": "该条目为 Nature 专题合集页面，标题指向从电网到负载的下一代数据中心先进电力电子技术。输入仅提供标题与链接，未给出具体器件、拓扑、控制或测试数据。无法据此判断涉及的具体技术路线。",
+      "technical": {
+        "application": "数据中心供电"
+      },
+      "industrialization": {
+        "stage": "未知"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "Nature 网站存在该专题合集页面"
+        ]
+      },
+      "summary_raw": "From Grid to Load: Advanced Power Electronics for Next-Generation Data Centers nature.com",
+      "published_date": "2026-09-08",
+      "relevance_score": 44,
+      "relevance_factors": {
+        "focus_match": 35,
+        "technical_density": 35,
+        "engineering_usability": 80
+      },
+      "heat_score": 38,
+      "heat_factors": {
+        "freshness": 20,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 44,
+      "radar_score": 44,
+      "radar_rank": 34,
+      "sources": [
+        {
+          "source": "nature.com",
+          "title": "From Grid to Load: Advanced Power Electronics for Next-Generation Data Centers - nature.com",
+          "link": "https://www.nature.com/collections/dadbijgbbj"
+        }
+      ]
+    },
+    {
+      "id": "260917-02",
+      "title": "Intrinsic polarization superjunctions in III-nitride heterostructures for efficient power electronics - nature.com",
+      "source_type": "国际论文",
+      "primary_source": "nature.com",
+      "published_at": "2026-08-28T07:00:00+00:00",
+      "link": "https://www.nature.com/articles/s41928-026-01691-4",
+      "category": [
+        "sic"
+      ],
+      "importance": "一般",
+      "plain_summary": "Nature 旗下期刊发表了一篇关于 III 族氮化物异质结中本征极化超结的研究论文，面向高效电力电子。该工作探索利用材料本征极化特性改善功率器件性能。属于基础器件研究，距离工程化尚远。",
+      "technical_summary": "论文主题为 III 族氮化物异质结构中的本征极化超结，用于高效电力电子。输入仅提供标题，未给出器件结构细节、击穿电压、导通电阻或实验数据。无法确认具体材料体系、外延方案或器件类型。",
+      "technical": {
+        "device": "III族氮化物异质结功率器件",
+        "application": "电力电子"
+      },
+      "industrialization": {
+        "stage": "研究论文"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "Nature 期刊发表该论文"
+        ]
+      },
+      "summary_raw": "Intrinsic polarization superjunctions in III-nitride heterostructures for efficient power electronics nature.com",
+      "published_date": "2026-08-28",
+      "relevance_score": 53,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "SiC/GaN"
+        ]
+      },
+      "heat_score": 38,
+      "heat_factors": {
+        "freshness": 20,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 53,
+      "radar_score": 50,
+      "radar_rank": 35,
+      "sources": [
+        {
+          "source": "nature.com",
+          "title": "Intrinsic polarization superjunctions in III-nitride heterostructures for efficient power electronics - nature.com",
+          "link": "https://www.nature.com/articles/s41928-026-01691-4"
+        }
+      ]
+    },
+    {
+      "id": "260917-09",
+      "title": "Scalable GaN-Based IQ Solid-State Transformer Architecture Eyes AI Data Centers - Electronic Design",
+      "source_type": "国际资讯",
+      "primary_source": "Electronic Design",
+      "published_at": "2026-07-27T07:00:00+00:00",
+      "link": "https://www.electronicdesign.com/technologies/power/article/55393675/electronic-design-enphase-energy-announces-scalable-iq-solid-state-transformer-architecture-for-ai-data-centers",
+      "category": [
+        "ai_dc",
+        "gan",
+        "sst"
+      ],
+      "importance": "重点",
+      "plain_summary": "Electronic Design 报道 Enphase 发布可扩展的 GaN 基 IQ 固态变压器架构，面向 AI 数据中心。该架构采用 GaN 器件并强调可扩展性。属于面向数据中心供电的固态变压器方案。",
+      "technical_summary": "Enphase 发布可扩展 GaN 基 IQ 固态变压器架构，面向 AI 数据中心。输入仅提供标题，未给出电压等级、功率、拓扑、开关频率或效率。无法确认其是否采用中频隔离或模块化结构。",
+      "technical": {
+        "device": "GaN",
+        "application": "AI 数据中心"
+      },
+      "industrialization": {
+        "stage": "产品发布",
+        "status": "架构发布"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "Enphase 发布 GaN 基 IQ 固态变压器架构"
+        ]
+      },
+      "summary_raw": "Scalable GaN-Based IQ Solid-State Transformer Architecture Eyes AI Data Centers Electronic Design",
+      "published_date": "2026-07-27",
+      "relevance_score": 67,
+      "relevance_factors": {
+        "focus_match": 74,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "800V/AI DC",
+          "SST",
+          "SiC/GaN"
+        ]
+      },
+      "heat_score": 38,
+      "heat_factors": {
+        "freshness": 20,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 53,
+      "radar_score": 57,
+      "radar_rank": 36,
+      "sources": [
+        {
+          "source": "Electronic Design",
+          "title": "Scalable GaN-Based IQ Solid-State Transformer Architecture Eyes AI Data Centers - Electronic Design",
+          "link": "https://www.electronicdesign.com/technologies/power/article/55393675/electronic-design-enphase-energy-announces-scalable-iq-solid-state-transformer-architecture-for-ai-data-centers"
+        }
+      ]
+    },
+    {
+      "id": "260917-04",
+      "title": "Sungrow launches 3 MW solid-state transformer - pv magazine Global",
+      "source_type": "国际资讯",
+      "primary_source": "pv magazine Global",
+      "published_at": "2026-07-10T07:00:00+00:00",
+      "link": "https://www.pv-magazine.com/2026/07/10/sungrow-launches-3-mw-solid-state-transformer/",
+      "category": [
+        "sst"
+      ],
+      "importance": "重点",
+      "plain_summary": "阳光电源发布了一款 3 MW 固态变压器产品。固态变压器用电力电子变换替代传统工频变压器，可用于新能源与数据中心等场景。该产品功率等级较高，值得关注其应用定位与工程化状态。",
+      "technical_summary": "阳光电源发布 3 MW 固态变压器。输入仅提供标题，未给出输入输出电压、拓扑结构、器件类型、开关频率、效率或隔离方式。无法确认其是否采用中频变压器或模块化结构。",
+      "technical": {
+        "power": "3 MW"
+      },
+      "industrialization": {
+        "stage": "产品发布"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "阳光电源发布 3 MW 固态变压器"
+        ]
+      },
+      "summary_raw": "Sungrow launches 3 MW solid-state transformer pv magazine Global",
+      "published_date": "2026-07-10",
+      "relevance_score": 53,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "SST"
+        ]
+      },
+      "heat_score": 38,
+      "heat_factors": {
+        "freshness": 20,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 44,
+      "radar_score": 48,
+      "radar_rank": 37,
+      "sources": [
+        {
+          "source": "pv magazine Global",
+          "title": "Sungrow launches 3 MW solid-state transformer - pv magazine Global",
+          "link": "https://www.pv-magazine.com/2026/07/10/sungrow-launches-3-mw-solid-state-transformer/"
+        }
+      ]
+    },
+    {
+      "id": "260917-05",
+      "title": "Enphase announces distributed solid-state transformer for AI data centers, targets 2028 for volume deliveries - pv magazine USA",
+      "source_type": "国际资讯",
+      "primary_source": "pv magazine USA",
+      "published_at": "2026-04-29T07:00:00+00:00",
+      "link": "https://pv-magazine-usa.com/2026/04/29/enphase-announces-distributed-solid-state-transformer-for-ai-data-centers-targets-2028-for-volume-deliveries/",
+      "category": [
+        "ai_dc",
+        "sst"
+      ],
+      "importance": "重点",
+      "plain_summary": "Enphase 宣布面向 AI 数据中心的分布式固态变压器方案，并称目标在 2028 年实现批量交付。该方案将固态变压器用于数据中心供电链路。目标时间属于规划，不代表已实现。",
+      "technical_summary": "Enphase 宣布面向 AI 数据中心的分布式固态变压器，来源称目标 2028 年批量交付。输入未给出电压等级、功率、拓扑、器件或效率参数。无法确认其技术路线与当前样机状态。",
+      "technical": {
+        "application": "AI 数据中心"
+      },
+      "industrialization": {
+        "stage": "产品发布",
+        "status": "宣布",
+        "target": "来源称目标 2028 年批量交付"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "Enphase 宣布该分布式固态变压器方案"
+        ],
+        "source_claims": [
+          "目标 2028 年批量交付"
+        ]
+      },
+      "summary_raw": "Enphase announces distributed solid-state transformer for AI data centers, targets 2028 for volume deliveries pv magazine USA",
+      "published_date": "2026-04-29",
+      "relevance_score": 58,
+      "relevance_factors": {
+        "focus_match": 61,
+        "technical_density": 35,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "800V/AI DC",
+          "SST"
+        ]
+      },
+      "heat_score": 38,
+      "heat_factors": {
+        "freshness": 20,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 44,
+      "radar_score": 51,
+      "radar_rank": 38,
+      "sources": [
+        {
+          "source": "pv magazine USA",
+          "title": "Enphase announces distributed solid-state transformer for AI data centers, targets 2028 for volume deliveries - pv magazine USA",
+          "link": "https://pv-magazine-usa.com/2026/04/29/enphase-announces-distributed-solid-state-transformer-for-ai-data-centers-targets-2028-for-volume-deliveries/"
+        }
+      ]
+    },
+    {
+      "id": "260917-06",
+      "title": "TBEA unveils grid-forming converter for large-scale storage, renewables - pv magazine Global",
+      "source_type": "国际资讯",
+      "primary_source": "pv magazine Global",
+      "published_at": "2026-04-07T07:00:00+00:00",
+      "link": "https://www.pv-magazine.com/2026/04/07/tbea-unveils-grid-forming-converter-for-large-scale-storage-renewables/",
+      "category": [
+        "gfm"
+      ],
+      "importance": "重点",
+      "plain_summary": "特变电工发布面向大规模储能与新能源的构网型变流器。构网型变流器可主动支撑电网电压与频率，是新能源高比例接入下的关键技术。该产品面向大型储能与可再生能源场景。",
+      "technical_summary": "特变电工发布构网型变流器，面向大规模储能与可再生能源。输入仅提供标题，未给出功率等级、控制策略、并网标准或测试结果。无法确认其构网控制实现方式与工程化状态。",
+      "technical": {
+        "control": "构网型控制",
+        "application": "大规模储能、可再生能源"
+      },
+      "industrialization": {
+        "stage": "产品发布"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "特变电工发布构网型变流器"
+        ]
+      },
+      "summary_raw": "TBEA unveils grid-forming converter for large-scale storage, renewables pv magazine Global",
+      "published_date": "2026-04-07",
+      "relevance_score": 53,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "GFM/PCS"
+        ]
+      },
+      "heat_score": 38,
+      "heat_factors": {
+        "freshness": 20,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 53,
+      "radar_score": 50,
+      "radar_rank": 39,
+      "sources": [
+        {
+          "source": "pv magazine Global",
+          "title": "TBEA unveils grid-forming converter for large-scale storage, renewables - pv magazine Global",
+          "link": "https://www.pv-magazine.com/2026/04/07/tbea-unveils-grid-forming-converter-for-large-scale-storage-renewables/"
+        }
+      ]
+    },
+    {
+      "id": "260917-07",
+      "title": "Sungrow brings grid-forming PowerTitan 3.0 storage system to Europe - pv magazine Global",
+      "source_type": "国际资讯",
+      "primary_source": "pv magazine Global",
+      "published_at": "2026-01-29T08:00:00+00:00",
+      "link": "https://www.pv-magazine.com/2026/01/29/sungrow-brings-grid-forming-powertitan-3-0-energy-storage-system-to-europe/",
+      "category": [
+        "gfm"
+      ],
+      "importance": "重点",
+      "plain_summary": "阳光电源将构网型 PowerTitan 3.0 储能系统引入欧洲市场。该系统具备构网能力，可支撑电网稳定。属于产品进入区域市场的商业动作。",
+      "technical_summary": "阳光电源将构网型 PowerTitan 3.0 储能系统推向欧洲。输入仅提供标题，未给出容量、功率、构网控制细节或并网认证信息。无法确认其技术参数与在欧洲的部署状态。",
+      "technical": {
+        "control": "构网型控制",
+        "application": "储能系统"
+      },
+      "industrialization": {
+        "stage": "商业部署",
+        "status": "进入欧洲市场"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "阳光电源将 PowerTitan 3.0 引入欧洲"
+        ]
+      },
+      "summary_raw": "Sungrow brings grid-forming PowerTitan 3.0 storage system to Europe pv magazine Global",
+      "published_date": "2026-01-29",
+      "relevance_score": 53,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "GFM/PCS"
+        ]
+      },
+      "heat_score": 38,
+      "heat_factors": {
+        "freshness": 20,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 53,
+      "radar_score": 50,
+      "radar_rank": 40,
+      "sources": [
+        {
+          "source": "pv magazine Global",
+          "title": "Sungrow brings grid-forming PowerTitan 3.0 storage system to Europe - pv magazine Global",
+          "link": "https://www.pv-magazine.com/2026/01/29/sungrow-brings-grid-forming-powertitan-3-0-energy-storage-system-to-europe/"
+        }
+      ]
     }
   ],
   "directions": {
-    "SST": "固态变压器成为本期最密集主题，围绕AI数据中心供电形成三条主线：一是中压交流直转800 V直流的产品化（Sungrow 3 MW、Enphase IQ SST、Hyosung 22.9 kV/9 kV），二是GaN器件与可扩展架构（Enphase称采用sub-1-kV双向GaN网状阵列并对齐NVIDIA 800 V路线图），三是投资与产业关注度上升（TechCrunch、Data Center Knowledge）。多数来源未披露拓扑、开关频率、效率与磁件参数，成熟度与供应链仍是公开讨论的主要顾虑。",
-    "SiC_GaN": "SiC与GaN并行推进：器件层面有EPFL/Nature的本征极化超结GaN-on-Si（SBD>3.9 kV、4.7 mΩ·cm²，晶体管>3.4 kV），驱动与保护层面有SiC MOSFET驱动设计与短路保护综述，产业层面有RIR在印度安装SiC外延反应器、Nexperia与Aurobay探索车用GaN/SiC、DAHWS发布SiC/GaN模块组合，以及EPC发布GaN白皮书。高频开关还带动电流检测（分流电阻替代）与氮化铝热基板等配套议题。",
-    "GFM_PCS": "构网型技术从并网工程、仿真建模到配电网联合开发多点推进：energy-storage.news讨论构网型BESS实际并网要点，美国能源部/PNNL发布构网型逆变器仿真模型，LS Electric与KEPCO联合开发配电网构网型技术，DoGo Power在拉美展会推广AI+构网型储能。各来源均未披露具体控制策略与变流器参数。",
-    "800V_AI_DC": "800 V直流成为AI数据中心供电的集中叙事：Sungrow 3 MW SST直接输出800 V直流，Enphase IQ SST称对齐NVIDIA 800 V直流路线图，Data Center Knowledge讨论SST支撑800 V直流HVDC的效率与灵活性但提示成熟度与供应链风险。该方向与SST、GaN器件高度耦合。",
-    "topology_magnetics": "拓扑层面公开信息有限：Enphase称采用sub-1-kV双向GaN开关的网状阵列架构，EPFL/Nature提出本征极化超结（2DEG/2DHG电荷平衡）结构；高频磁件、DAB/CLLC/LLC等具体拓扑在输入中均未被明确提及，不应据bidirectional/high-frequency等描述推断。"
+    "SST": "阳光电源发布 3 MW 固态变压器；Enphase 宣布面向 AI 数据中心的分布式固态变压器并称目标 2028 年批量交付，同时发布可扩展 GaN 基 IQ 固态变压器架构并计划在 AI Infra Summit 2026 展示。固态变压器在数据中心与新能源场景持续升温，但输入未提供电压、拓扑、器件与效率参数。",
+    "SiC_GaN": "SiC 方面，RIR Power Electronics 在印度奥里萨邦完成 SiC 外延晶圆制造反应炉安装，奥里萨邦推进 3406 亿卢比 SiC 半导体项目；SiC 在公共交通牵引领域被回顾为 15 年发展历程。GaN 方面，瑞萨介绍 D-Mode 技术，EPC 发布两份 GaN 功率转换白皮书，Navitas 通过收购 Claros 扩展 GaN 与 SiC 战略，另有 III 族氮化物极化超结研究报道。",
+    "GFM_PCS": "特变电工发布面向大规模储能与新能源的构网型变流器；阳光电源将构网型 PowerTitan 3.0 储能系统引入欧洲；Energy-Storage.News 讨论构网型 BESS 从电网规范到实际并网的关键要素。构网型储能与变流器持续向工程化与区域市场落地推进。",
+    "800V_AI_DC": "800V 直流成为本期最密集方向：华为相关报道称 800V 高压直流首次出现在中国算力政策中；Bloom Energy 发布 800V 直流原生供电系统并声称可削减数十亿美元成本、省去变压器；英飞凌与 SolarEdge 扩大 800V 直流合作；泰克发布面向 800V AI 数据中心的能量回馈式与动态测试系统；仁宝与 Exascale 在美国建设 800V 直流验证平台；阳光电源被讨论其在 800V 直流供电的布局。",
+    "topology_magnetics": "输入未提供具体拓扑与磁元件参数。相关线索包括固态变压器、构网型变流器、GaN/SiC 器件与氮化铝热基板市场预测，但均无拓扑或磁设计细节。"
   },
   "observations": [
-    "本期固态变压器（SST）事件高度集中于AI数据中心供电，且普遍与800 V直流路线图绑定，SST正从电网设备叙事转向数据中心供电设备叙事。",
-    "Enphase事件为多源交叉：企业公告、专业媒体与财经媒体同时出现，但“进入得州生产”与“2028年批量交付目标”需区分，前者为生产状态、后者为目标。",
-    "EPFL的极化超结GaN-on-Si成果由Nature论文与Semiconductor Engineering报道交叉印证，参数（>3.9 kV、4.7 mΩ·cm²、>3.4 kV）来自论文摘要，属研究阶段成果。",
-    "RIR Power Electronics事件中财经媒体仅作为同一技术事件的辅助来源，未单独创建财经事件；股价变动作为辅助事实保留。",
-    "多个来源使用“world’s first”“全球首个”等表述（如22.9 kV SST），按规则仅记为来源声称，未改写为事实。",
-    "多数SST与GaN/SiC事件未披露拓扑、开关频率、效率、功率密度与磁件参数，情报颗粒度受限于公开信息。"
+    "800V 直流 AI 数据中心供电是本期最密集主题，覆盖政策信号、电源系统、器件合作、测试设备与验证平台。",
+    "固态变压器方向出现 3 MW 级产品发布与面向 AI 数据中心的分布式架构，但输入均未提供电压、拓扑与效率参数。",
+    "SiC 上游外延产能建设在印度奥里萨邦集中出现，RIR Power Electronics 完成反应炉安装，另有 3406 亿卢比项目推进。",
+    "构网型储能与变流器持续落地，特变电工发布新产品，阳光电源进入欧洲市场，行业媒体讨论实际并网要素。",
+    "GaN 方向以厂商技术推广与白皮书为主，另有 III 族氮化物极化超结基础研究报道。",
+    "多条事件为同一主题的重复报道（如 RIR SiC 反应炉安装、Enphase 固态变压器、Bloom Energy 800V 直流），需注意去重。"
   ],
-  "daily_summary": "今日收录 30 条技术事件。来源结构：国内论文 3 条、国际论文 2 条、国际资讯 25 条。今日关注度最高的技术方向按收录量计为：SiC/GaN（18）、SST（8）、800V/AI DC（6）、GFM/PCS（4）。",
+  "quality_notes": "输入均为标题与链接，缺少正文与参数细节，多数技术字段留空。部分事件为同一主题的重复报道，已分别保留原 id。来源声称的全球首个/首次、成本节省、目标时间等均按来源声称处理，未视为已实现事实。production 与量产、target 与已实现未混同。未根据 bidirectional/high-frequency/modular 等词推断具体拓扑。",
+  "daily_summary": "2026-09-17 收录 8 条当天发布/更新的电力电子技术事件。今日值得先读：Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit - Pragativadi；Renesas GaN: D-Mode Technology & Design Benefits - Renesas；RIR Power Electronics zooms on installing SiC epitaxial wafer manufacturing reactors in Odisha facility - Investment Guru India。今日主题分布以 SiC/GaN、800V/AI DC 为主。历史数据按发布时间保留，可按今天、昨天、近7天和全部切换；热度只表示站内新鲜度、多源出现和来源权威度等信号。",
   "daily_highlights": [
     {
       "rank": 1,
-      "title": "Enphase announces distributed solid-state transformer for AI data centers, targets 2028 for volume deliveries - pv-magazine-usa.com",
+      "title": "Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit - Pragativadi",
       "source_type": "国际资讯",
-      "source": "pv-magazine-usa.com",
-      "radar_score": 79,
-      "relevance_score": 81,
-      "heat_score": 87,
-      "link": "https://pv-magazine-usa.com/2026/04/29/enphase-announces-distributed-solid-state-transformer-for-ai-data-centers-targets-2028-for-volume-deliveries/"
+      "source": "Pragativadi",
+      "published_date": "2026-09-17",
+      "radar_score": 62,
+      "relevance_score": 53,
+      "heat_score": 79,
+      "link": "https://pragativadi.com/odisha-powers-up-indias-chip-ambitions-with-rs-3406-cr-sic-semiconductor-unit/"
+    },
+    {
+      "rank": 9,
+      "title": "Bloom Energy claims cost savings with 800V DC fuel cells for AI - Investing.com",
+      "source_type": "国际资讯",
+      "source": "Investing.com",
+      "published_date": "2026-09-16",
+      "radar_score": 62,
+      "relevance_score": 55,
+      "heat_score": 72,
+      "link": "https://www.investing.com/news/company-news/bloom-energy-claims-cost-savings-with-800v-dc-fuel-cells-for-ai-93CH-4903807"
     },
     {
       "rank": 2,
-      "title": "Scalable GaN-Based IQ Solid-State Transformer Architecture Eyes AI Data Centers - Electronic Design",
+      "title": "Renesas GaN: D-Mode Technology & Design Benefits - Renesas",
       "source_type": "国际资讯",
-      "source": "Electronic Design",
-      "radar_score": 75,
-      "relevance_score": 81,
-      "heat_score": 74,
-      "link": "https://www.electronicdesign.com/technologies/power/article/55393675/electronic-design-enphase-energy-announces-scalable-iq-solid-state-transformer-architecture-for-ai-data-centers"
+      "source": "Renesas",
+      "published_date": "2026-09-17",
+      "radar_score": 60,
+      "relevance_score": 53,
+      "heat_score": 79,
+      "link": "https://www.renesas.com/en/video/renesas-gan-d-mode-technology-design-benefits"
     },
     {
       "rank": 3,
-      "title": "基于干扰动态响应机理的SiC MOSFET驱动设计 - 电工技术学报",
-      "source_type": "国内论文",
-      "source": "电工技术学报",
-      "radar_score": 72,
-      "relevance_score": 67,
-      "heat_score": 84,
-      "link": "https://dgjsxb.ces-transaction.com/fileup/HTML/2021-20-4204.htm"
+      "title": "RIR Power Electronics zooms on installing SiC epitaxial wafer manufacturing reactors in Odisha facility - Investment Guru India",
+      "source_type": "国际资讯",
+      "source": "Investment Guru India",
+      "published_date": "2026-09-17",
+      "radar_score": 60,
+      "relevance_score": 53,
+      "heat_score": 78,
+      "link": "https://investmentguruindia.com/newsdetail/rir-power-electronics-zooms-on-installing-sic-epitaxial-wafer-manufacturing-reactors-in-odisha-facility588266"
+    },
+    {
+      "rank": 10,
+      "title": "From innovation to a global standard. 15 years of SiC technology in public transport - Railway Gazette International",
+      "source_type": "国际资讯",
+      "source": "Railway Gazette International",
+      "published_date": "2026-09-16",
+      "radar_score": 60,
+      "relevance_score": 53,
+      "heat_score": 72,
+      "link": "https://www.railwaygazette.com/sponsored-content/2026/09/16/from-innovation-to-a-global-standard-15-years-of-sic-technology-in-public-transport/"
     },
     {
       "rank": 4,
-      "title": "SiC MOSFET短路保护技术综述 - 电工技术学报",
-      "source_type": "国内论文",
-      "source": "电工技术学报",
-      "radar_score": 72,
-      "relevance_score": 67,
-      "heat_score": 84,
-      "link": "https://dgjsxb.ces-transaction.com/fileup/HTML/2022-10-2538.htm"
+      "title": "RIR Power Electronics soars on SiC semiconductor facility progress in Odisha - Business Standard",
+      "source_type": "国际资讯",
+      "source": "Business Standard",
+      "published_date": "2026-09-17",
+      "radar_score": 59,
+      "relevance_score": 53,
+      "heat_score": 74,
+      "link": "https://www.business-standard.com/markets/capital-market-news/rir-power-electronics-soars-on-sic-semiconductor-facility-progress-in-odisha-126091700434_1.html"
     },
     {
       "rank": 5,
-      "title": "EPC Releases Two New White Papers on GaN Power Conversion for AI Data Centers and Advanced Motor Drives - EIN News",
+      "title": "Dev Reviews Odisha SiC Facility - tathya.in",
       "source_type": "国际资讯",
-      "source": "EIN News",
-      "radar_score": 70,
-      "relevance_score": 74,
-      "heat_score": 78,
-      "link": "https://www.einnews.com/pr_news/942163486/epc-releases-two-new-white-papers-on-gan-power-conversion-for-ai-data-centers-and-advanced-motor-drives"
+      "source": "tathya.in",
+      "published_date": "2026-09-17",
+      "radar_score": 59,
+      "relevance_score": 53,
+      "heat_score": 74,
+      "link": "https://tathya.in/dev-reviews-odisha-sic-facility/"
+    },
+    {
+      "rank": 6,
+      "title": "Huawei to Unveil New AI Technology in Shanghai; 800V High-Voltage DC Makes First Appearance in China's Computing Power Policy - finance.biggo.com",
+      "source_type": "国际资讯",
+      "source": "finance.biggo.com",
+      "published_date": "2026-09-17",
+      "radar_score": 59,
+      "relevance_score": 53,
+      "heat_score": 74,
+      "link": "https://finance.biggo.com/news/e6dfee7b-96a6-4716-aadb-e477a0c50216"
     }
   ],
   "daily_focus": [
     {
+      "topic": "800V/AI DC",
+      "count": 16
+    },
+    {
       "topic": "SiC/GaN",
-      "count": 18
+      "count": 15
     },
     {
       "topic": "SST",
-      "count": 8
-    },
-    {
-      "topic": "800V/AI DC",
-      "count": 6
+      "count": 4
     },
     {
       "topic": "GFM/PCS",
-      "count": 4
+      "count": 3
     }
   ],
   "daily_stats": {
-    "event_count": 30,
+    "event_count": 40,
+    "today_count": 8,
     "source_types": {
-      "国际资讯": 25,
-      "国内论文": 3,
-      "国际论文": 2
+      "国际资讯": 36,
+      "国内资讯": 1,
+      "国际论文": 3
     },
-    "scored_events": 30
+    "dates": {
+      "2026-09-17": 8,
+      "2026-09-16": 12,
+      "2026-09-15": 5,
+      "2026-09-14": 8,
+      "2026-09-08": 1,
+      "2026-08-28": 1,
+      "2026-07-27": 1,
+      "2026-07-10": 1,
+      "2026-04-29": 1,
+      "2026-04-07": 1,
+      "2026-01-29": 1
+    },
+    "scored_events": 40
   },
-  "scoring_note": "热度为可解释的站内信号分数（新鲜度、多源出现、来源权威度）；相关度为与预设电力电子技术重点方向及技术信息密度的匹配分数，不代表外部平台热搜排名。"
+  "scoring_note": "热度为可解释的站内信号分数（发布时间新鲜度、多源出现、来源权威度）；相关度为与预设电力电子技术重点方向及技术信息密度的匹配分数，不代表外部平台热搜排名。"
 }
