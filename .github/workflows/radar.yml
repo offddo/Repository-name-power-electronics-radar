@@ -8,6 +8,7 @@ on:
     paths:
       - "scripts/radar.py"
       - "scripts/radar_runner.py"
+      - "scripts/postprocess.py"
       - ".github/workflows/radar.yml"
 
 permissions:
@@ -47,6 +48,7 @@ jobs:
           p.write_text(s, encoding="utf-8")
           PY
           python scripts/radar_runner.py
+          python scripts/postprocess.py
 
       - name: Clean and validate AI output
         run: |
@@ -56,7 +58,8 @@ jobs:
 
           path = Path("data.json")
           data = json.loads(path.read_text(encoding="utf-8"))
-          forbidden = ("原文未提供", "未知", "暂无数据", "N/A", "n/a")
+          forbidden = ("原文未提供", "暂无数据", "N/A", "n/a")
+          allowed_types = {"国内资讯", "国内论文", "国际资讯", "国际论文"}
 
           def clean(v):
               if isinstance(v, dict):
@@ -89,15 +92,21 @@ jobs:
               if e.get("link") and not any(isinstance(s, dict) and s.get("link") == e.get("link") for s in sources):
                   sources.insert(0, {"source": e.get("primary_source", "原始来源"), "title": e.get("title", ""), "link": e["link"]})
               e["sources"] = sources
-              if e.get("source_type") not in {"国内资讯", "国内论文", "国际资讯", "国际论文"}:
+              if e.get("source_type") not in allowed_types:
                   e["source_type"] = "国内资讯" if any(x in str(e.get("primary_source", "")) for x in ["中国", "电力电子技术", "电力自动化设备", "电力系统自动化", "电工技术学报", "中国电机工程学报"]) else "国际资讯"
+              for key in ["heat_score", "relevance_score", "technical_depth_score", "radar_score"]:
+                  value = e.get(key)
+                  if not isinstance(value, (int, float)) or not 0 <= value <= 100:
+                      raise SystemExit(f"Invalid {key} for {e.get('title', '')}: {value}")
 
           data["event_count"] = len(data.get("events", []))
+          if not data.get("daily_summary"):
+              raise SystemExit("daily_summary missing")
           if "AI结构化分析失败" in data.get("quality_notes", ""):
               raise SystemExit("DeepSeek structured analysis failed")
 
           path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-          print(f"Validated {data.get('event_count', 0)} events")
+          print(f"Validated {data.get('event_count', 0)} events with scores and daily brief")
           PY
 
       - name: Commit results safely
