@@ -9,6 +9,7 @@ on:
       - "scripts/radar.py"
       - "scripts/radar_runner.py"
       - "scripts/radar_impl.py"
+      - "scripts/source_fetcher.py"
       - "scripts/postprocess.py"
       - ".github/workflows/radar.yml"
 
@@ -67,7 +68,6 @@ jobs:
           def key(e):
               return str(e.get("link") or "").split("#", 1)[0].rstrip("/") or str(e.get("title") or "").strip().lower()
 
-          # Current run wins; older events are appended only when genuinely new.
           for e in current_events + previous_events:
               k = key(e)
               if not k or k in seen:
@@ -75,7 +75,6 @@ jobs:
               seen.add(k)
               merged.append(e)
 
-          # Keep the archive bounded while retaining a long rolling history.
           merged.sort(key=lambda e: (str(e.get("published_date") or e.get("published_at") or e.get("report_date") or ""), str(e.get("id") or "")), reverse=True)
           current["events"] = merged[:2000]
           current["event_count"] = len(current["events"])
