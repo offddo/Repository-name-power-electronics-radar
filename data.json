@@ -1,53 +1,66 @@
 {
   "schema_version": "2.1",
-  "updated": "2026-09-17T16:01:06.605768+08:00",
+  "updated": "2026-09-17T16:07:55.616903+08:00",
   "report_date": "2026-09-17",
   "event_count": 15,
   "events": [
     {
       "id": "260917-01",
-      "title": "Intrinsic polarization superjunctions in III-nitride heterostructures for efficient power electronics - nature.com",
+      "title": "Intrinsic polarization superjunctions in III-nitride heterostructures for efficient power electronics",
       "category": [
         "sic"
       ],
-      "primary_source": "nature.com",
-      "link": "https://www.nature.com/articles/s41928-026-01691-4",
-      "summary_raw": "III-nitride semiconductors combine a wide bandgap with low sheet resistance and, thus, can be used for efficient power electronics. Their lateral architecture also enables monolithic integration on cost-effective silicon. However, electric-field crowding, as well as surface and buffer trapping, limit the breakdown voltage, degrade dynamic performance and reduce reliability. Here we report intrinsic polarization superjunctions in III-nitride heterostructures for efficient power electronics. We use the spontaneous and piezoelectric polarization fields to induce matched mobile electrons in a two-dimensional electron gas and mobile holes in a two-dimensional hole gas, forming an intrinsically charge-balanced superjunction without intentional doping. With an ohmic contact to the two-dimensional hole gas, both carrier types can be dynamically depleted during switching, which preserves drift-region charge neutrality, producing a nearly uniform electric field and increasing the breakdown voltage under operating conditions. We use the approach to create gallium-nitride-on-silicon polarization superjunction Schottky barrier diodes with a breakdown voltage exceeding 3.9 kV and a specific ON resistance as low as 4.7 mΩ cm2, as well as polarization superjunction transistors with a breakdown voltage exceeding 3.4 kV. The devices exhibit a near-ideal dynamic ON-resistance degradation of less than 15% up to 3 kV, as well as repeatable, temperature-stable and avalanche-like breakdown. Polarization fields in III-nitride heterostructures can be used to form intrinsically charge-balanced superjunctions without intentional doping, allowing Schottky barrier diodes and transistors on gallium-nitride-on-silicon substrates to be created that exhibit high breakdown voltages.",
-      "sources": [],
+      "importance": "重点",
+      "evidence_level": "论文",
+      "summary": "[已证实] 论文报道利用III族氮化物自发与压极化场形成无故意掺杂的电荷平衡超结，制备GaN-on-Si肖特基势垒二极管击穿电压超3.9 kV、比导通电阻低至4.7 mΩ·cm²，晶体管击穿电压超3.4 kV。",
       "technical": {
-        "voltage": "原文未提供",
+        "voltage": "肖特基势垒二极管击穿电压超过3.9 kV；晶体管击穿电压超过3.4 kV",
         "power": "原文未提供",
-        "topology": "原文未提供",
-        "device": "原文未提供",
+        "topology": "本征极化超结（intrinsic polarization superjunction）",
+        "device": "GaN-on-Si极化超结肖特基势垒二极管与极化超结晶体管",
         "switching_frequency": "原文未提供",
         "efficiency": "原文未提供",
         "power_density": "原文未提供",
         "isolation": "原文未提供",
         "control": "原文未提供",
-        "application": "原文未提供"
+        "application": "高效电力电子"
       },
       "industrialization": {
-        "stage": "未知",
-        "status": "原文未提供",
+        "stage": "实验室样机",
+        "status": "论文报道器件已制备并测试",
         "target": "原文未提供"
       },
       "evidence": {
-        "confirmed_facts": [],
+        "confirmed_facts": [
+          "使用自发与压电极化场在二维电子气和二维空穴气中诱导匹配的移动电子与空穴，形成无故意掺杂的本征电荷平衡超结",
+          "制备的GaN-on-Si极化超结肖特基势垒二极管击穿电压超过3.9 kV，比导通电阻低至4.7 mΩ·cm²",
+          "极化超结晶体管击穿电压超过3.4 kV",
+          "器件在最高3 kV下动态导通电阻退化小于15%，并具有可重复、温度稳定的类雪崩击穿"
+        ],
         "source_claims": [],
         "inferences": [],
-        "unknowns": []
-      }
+        "unknowns": [
+          "开关频率",
+          "效率",
+          "功率密度",
+          "隔离方式",
+          "控制方式"
+        ]
+      },
+      "sources": [],
+      "primary_source": "nature.com",
+      "link": "https://www.nature.com/articles/s41928-026-01691-4",
+      "summary_raw": "III-nitride semiconductors combine a wide bandgap with low sheet resistance and, thus, can be used for efficient power electronics. Their lateral architecture also enables monolithic integration on cost-effective silicon. However, electric-field crowding, as well as surface and buffer trapping, limit the breakdown voltage, degrade dynamic performance and reduce reliability. Here we report intrinsic polarization superjunctions in III-nitride heterostructures for efficient power electronics. We use the spontaneous and piezoelectric polarization fields to induce matched mobile electrons in a two-dimensional electron gas and mobile holes in a two-dimensional hole gas, forming an intrinsically charge-balanced superjunction without intentional doping. With an ohmic contact to the two-dimensional hole gas, both carrier types can be dynamically depleted during switching, which preserves drift-region charge neutrality, producing a nearly uniform electric field and increasing the breakdown voltage under operating conditions. We use the approach to create gallium-nitride-on-silicon polarization superjunction Schottky barrier diodes with a breakdown voltage exceeding 3.9 kV and a specific ON resistance as low as 4.7 mΩ cm2, as well as polarization superjunction transistors with a breakdown voltage exceeding 3.4 kV. The devices exhibit a near-ideal dynamic ON-resistance degradation of less than 15% up to 3 kV, as well as repeatable, temperature-stable and avalanche-like breakdown. Polarization fields in III-nitride heterostructures can be used to form intrinsically charge-balanced superjunctions without intentional doping, allowing Schottky barrier diodes and transistors on gallium-nitride-on-silicon substrates to be created that exhibit high breakdown voltages."
     },
     {
       "id": "260917-02",
-      "title": "From Grid to Load: Advanced Power Electronics for Next-Generation Data Centers - nature.com",
+      "title": "From Grid to Load: Advanced Power Electronics for Next-Generation Data Centers",
       "category": [
         "ai_dc"
       ],
-      "primary_source": "nature.com",
-      "link": "https://www.nature.com/collections/dadbijgbbj",
-      "summary_raw": "From Grid to Load: Advanced Power Electronics for Next-Generation Data Centers nature.com",
-      "sources": [],
+      "importance": "一般",
+      "evidence_level": "信息不足",
+      "summary": "[信息不足] 该条目仅为Nature合集页面标题，未提供任何技术参数或事件细节。",
       "technical": {
         "voltage": "原文未提供",
         "power": "原文未提供",
@@ -58,7 +71,7 @@
         "power_density": "原文未提供",
         "isolation": "原文未提供",
         "control": "原文未提供",
-        "application": "原文未提供"
+        "application": "下一代数据中心"
       },
       "industrialization": {
         "stage": "未知",
@@ -69,89 +82,123 @@
         "confirmed_facts": [],
         "source_claims": [],
         "inferences": [],
-        "unknowns": []
-      }
+        "unknowns": [
+          "全部技术参数与事件细节"
+        ]
+      },
+      "sources": [],
+      "primary_source": "nature.com",
+      "link": "https://www.nature.com/collections/dadbijgbbj",
+      "summary_raw": "From Grid to Load: Advanced Power Electronics for Next-Generation Data Centers nature.com"
     },
     {
       "id": "260917-03",
-      "title": "A megawatt ultra-wide bandgap semiconductor module for pulsed power electronics - nature.com",
+      "title": "A megawatt ultra-wide bandgap semiconductor module for pulsed power electronics",
       "category": [],
-      "primary_source": "nature.com",
-      "link": "https://www.nature.com/articles/s41467-026-71274-6",
-      "summary_raw": "Ultra-wide bandgap semiconductors exhibit advantageous electronic properties that make them promising for high-voltage, high-power electronics applications. Building on over a decade of progress in material growth and device fabrication, discrete ultra-wide bandgap devices with power-switching capacities up to the kilowatt level have been recently demonstrated. However, a packaged, multi-die ultra-wide bandgap power module – essential for further power scaling toward industrial, biomedical, grid, and aerospace applications – has yet to be realized. Here, we present a flip-chip packaged gallium oxide power module capable of 1000 A, 1000 V pulsed power switching with fast speed and minimal reverse recovery, advancing the power capacity of ultra-wide bandgap electronics by over two orders of magnitude. To address challenges posed by high electric fields and transient power surges, we employ a high-permittivity interface design enabling device-package electrothermal co-optimization. This optimization maximizes the module’s transient thermal performance and enables full exploitation of the high volumetric heat capacity of gallium oxide—a largely untapped advantage in prior device development—alongside its high-temperature stability. The optimized ultra-wide bandgap module achieves over 1.8 MW/cm2 pulsed power capacity density, outperforming silicon and wide-bandgap semiconductor counterparts and suggesting the promise of ultra-wide bandgap electronics in next-generation high-power systems. Achieving high power scaling in ultrawide bandgap electronics remains challenging. Here, the authors present a Ga₂O₃ module using a high permittivity interface that enables fast megawatt pulsed switching with improved thermal performance.",
-      "sources": [],
+      "importance": "重点",
+      "evidence_level": "论文",
+      "summary": "[已证实] 论文报道倒装芯片封装氧化镓功率模块实现1000 A、1000 V脉冲功率开关，脉冲功率容量密度超过1.8 MW/cm²。",
       "technical": {
-        "voltage": "原文未提供",
-        "power": "原文未提供",
+        "voltage": "1000 V（脉冲）",
+        "power": "1000 A（脉冲）；脉冲功率容量密度超过1.8 MW/cm²",
         "topology": "原文未提供",
-        "device": "原文未提供",
-        "switching_frequency": "原文未提供",
+        "device": "倒装芯片封装氧化镓（Ga₂O₃）功率模块",
+        "switching_frequency": "原文未提供（仅称快速开关）",
         "efficiency": "原文未提供",
-        "power_density": "原文未提供",
+        "power_density": "脉冲功率容量密度超过1.8 MW/cm²",
         "isolation": "原文未提供",
         "control": "原文未提供",
-        "application": "原文未提供"
+        "application": "脉冲功率电子，面向工业、生物医学、电网与航空航天"
       },
       "industrialization": {
-        "stage": "未知",
-        "status": "原文未提供",
+        "stage": "实验室样机",
+        "status": "论文报道模块已实现脉冲功率开关演示",
         "target": "原文未提供"
       },
       "evidence": {
-        "confirmed_facts": [],
-        "source_claims": [],
+        "confirmed_facts": [
+          "提出倒装芯片封装的氧化镓功率模块，可实现1000 A、1000 V脉冲功率开关，速度快、反向恢复小",
+          "采用高介电常数界面设计实现器件-封装电热协同优化",
+          "优化后模块脉冲功率容量密度超过1.8 MW/cm²"
+        ],
+        "source_claims": [
+          "将超宽禁带电子学的功率能力提升超过两个数量级"
+        ],
         "inferences": [],
-        "unknowns": []
-      }
+        "unknowns": [
+          "开关频率",
+          "效率",
+          "隔离方式",
+          "控制方式",
+          "连续工作功率能力"
+        ]
+      },
+      "sources": [],
+      "primary_source": "nature.com",
+      "link": "https://www.nature.com/articles/s41467-026-71274-6",
+      "summary_raw": "Ultra-wide bandgap semiconductors exhibit advantageous electronic properties that make them promising for high-voltage, high-power electronics applications. Building on over a decade of progress in material growth and device fabrication, discrete ultra-wide bandgap devices with power-switching capacities up to the kilowatt level have been recently demonstrated. However, a packaged, multi-die ultra-wide bandgap power module – essential for further power scaling toward industrial, biomedical, grid, and aerospace applications – has yet to be realized. Here, we present a flip-chip packaged gallium oxide power module capable of 1000 A, 1000 V pulsed power switching with fast speed and minimal reverse recovery, advancing the power capacity of ultra-wide bandgap electronics by over two orders of magnitude. To address challenges posed by high electric fields and transient power surges, we employ a high-permittivity interface design enabling device-package electrothermal co-optimization. This optimization maximizes the module’s transient thermal performance and enables full exploitation of the high volumetric heat capacity of gallium oxide—a largely untapped advantage in prior device development—alongside its high-temperature stability. The optimized ultra-wide bandgap module achieves over 1.8 MW/cm2 pulsed power capacity density, outperforming silicon and wide-bandgap semiconductor counterparts and suggesting the promise of ultra-wide bandgap electronics in next-generation high-power systems. Achieving high power scaling in ultrawide bandgap electronics remains challenging. Here, the authors present a Ga₂O₃ module using a high permittivity interface that enables fast megawatt pulsed switching with improved thermal performance."
     },
     {
       "id": "260917-04",
-      "title": "Atomically confined insertion for 2D strain and polarization engineered GaN electronics - nature.com",
+      "title": "Atomically confined insertion for 2D strain and polarization engineered GaN electronics",
       "category": [
         "gan"
       ],
-      "primary_source": "nature.com",
-      "link": "https://www.nature.com/articles/s41467-026-74233-3",
-      "summary_raw": "Gallium nitride semiconductors are essential for advanced electronics, but realizing their potential requires robust normally-off devices. The P-GaN gate high-electron-mobility transistor is the dominant architecture, yet its threshold voltage is restricted to less than 2 volts by the low activation efficiency of magnesium acceptors. Here, we demonstrate atomically confined insertion to overcome this bottleneck. This technique creates self-terminating, two-dimensional magnesium layers within a complex heterostructure, inducing localized strain and polarity inversion. The resulting atomic-scale polarization fields increase the average effective hole concentration several-fold. When integrated into a P-GaN gate high-electron-mobility transistor, atomically confined insertion boosts the threshold voltage from 1.5 to 4.3 volts while mitigating the degradation in transconductance and output current typical of conventional methods. Furthermore, this approach substantially suppresses the current collapse effect via an efficient vertical hole injection mechanism. This work establishes atomic-scale field engineering as a viable axis for performance control and optimization in semiconductor devices. P-type doping limits GaN power device performance. Using atomically confined insertion, the authors create 2D Mg layers that increase hole concentration, enabling high-threshold transistors and reducing the transconductance and saturation current losses seen in conventional approaches.",
-      "sources": [],
+      "importance": "重点",
+      "evidence_level": "论文",
+      "summary": "[已证实] 论文报道原子级受限插入技术在P-GaN栅HEMT中形成二维Mg层，将阈值电压从1.5 V提升至4.3 V，并抑制电流崩塌。",
       "technical": {
         "voltage": "原文未提供",
         "power": "原文未提供",
-        "topology": "原文未提供",
-        "device": "原文未提供",
+        "topology": "P-GaN栅高电子迁移率晶体管（HEMT）",
+        "device": "P-GaN栅HEMT，含原子级受限插入形成的二维Mg层",
         "switching_frequency": "原文未提供",
         "efficiency": "原文未提供",
         "power_density": "原文未提供",
         "isolation": "原文未提供",
         "control": "原文未提供",
-        "application": "原文未提供"
+        "application": "常关型GaN功率电子器件"
       },
       "industrialization": {
-        "stage": "未知",
-        "status": "原文未提供",
+        "stage": "实验室样机",
+        "status": "论文报道器件已制备并测试",
         "target": "原文未提供"
       },
       "evidence": {
-        "confirmed_facts": [],
+        "confirmed_facts": [
+          "原子级受限插入技术在异质结构内形成自终止二维镁层，诱导局部应变与极性反转",
+          "原子尺度极化场使平均有效空穴浓度提高数倍",
+          "集成到P-GaN栅HEMT后阈值电压从1.5 V提升至4.3 V，同时缓解跨导与输出电流退化",
+          "通过有效垂直空穴注入机制显著抑制电流崩塌效应"
+        ],
         "source_claims": [],
         "inferences": [],
-        "unknowns": []
-      }
+        "unknowns": [
+          "耐压",
+          "功率等级",
+          "开关频率",
+          "效率",
+          "功率密度"
+        ]
+      },
+      "sources": [],
+      "primary_source": "nature.com",
+      "link": "https://www.nature.com/articles/s41467-026-74233-3",
+      "summary_raw": "Gallium nitride semiconductors are essential for advanced electronics, but realizing their potential requires robust normally-off devices. The P-GaN gate high-electron-mobility transistor is the dominant architecture, yet its threshold voltage is restricted to less than 2 volts by the low activation efficiency of magnesium acceptors. Here, we demonstrate atomically confined insertion to overcome this bottleneck. This technique creates self-terminating, two-dimensional magnesium layers within a complex heterostructure, inducing localized strain and polarity inversion. The resulting atomic-scale polarization fields increase the average effective hole concentration several-fold. When integrated into a P-GaN gate high-electron-mobility transistor, atomically confined insertion boosts the threshold voltage from 1.5 to 4.3 volts while mitigating the degradation in transconductance and output current typical of conventional methods. Furthermore, this approach substantially suppresses the current collapse effect via an efficient vertical hole injection mechanism. This work establishes atomic-scale field engineering as a viable axis for performance control and optimization in semiconductor devices. P-type doping limits GaN power device performance. Using atomically confined insertion, the authors create 2D Mg layers that increase hole concentration, enabling high-threshold transistors and reducing the transconductance and saturation current losses seen in conventional approaches."
     },
     {
       "id": "260917-05",
-      "title": "Renesas GaN: D-Mode Technology & Design Benefits - Renesas",
+      "title": "Renesas GaN: D-Mode Technology & Design Benefits",
       "category": [
         "gan"
       ],
-      "primary_source": "Renesas",
-      "link": "https://www.renesas.com/en/video/renesas-gan-d-mode-technology-design-benefits",
-      "summary_raw": "Renesas GaN: D-Mode Technology & Design Benefits Renesas",
-      "sources": [],
+      "importance": "一般",
+      "evidence_level": "企业官方",
+      "summary": "[信息不足] 该条目仅为Renesas关于GaN D-Mode技术与设计优势的视频页面标题，未提供具体参数或事件细节。",
       "technical": {
         "voltage": "原文未提供",
         "power": "原文未提供",
-        "topology": "原文未提供",
+        "topology": "D-Mode（耗尽型）GaN技术",
         "device": "原文未提供",
         "switching_frequency": "原文未提供",
         "efficiency": "原文未提供",
@@ -169,54 +216,113 @@
         "confirmed_facts": [],
         "source_claims": [],
         "inferences": [],
-        "unknowns": []
-      }
+        "unknowns": [
+          "全部技术参数与产品状态"
+        ]
+      },
+      "sources": [],
+      "primary_source": "Renesas",
+      "link": "https://www.renesas.com/en/video/renesas-gan-d-mode-technology-design-benefits",
+      "summary_raw": "Renesas GaN: D-Mode Technology & Design Benefits Renesas"
     },
     {
       "id": "260917-06",
-      "title": "Sungrow launches 3 MW solid-state transformer - pv magazine Global",
+      "title": "Sungrow launches 3 MW solid-state transformer",
       "category": [
         "800v",
         "sst"
       ],
-      "primary_source": "pv magazine Global",
-      "link": "https://www.pv-magazine.com/2026/07/10/sungrow-launches-3-mw-solid-state-transformer/",
-      "summary_raw": "The Chinese manufacturer said its solid-state transformer converts medium-voltage AC directly to 800 V DC for high-density AI computing loads.",
-      "sources": [],
+      "importance": "重点",
+      "evidence_level": "专业媒体",
+      "summary": "[来源声称] 阳光电源发布3 MW固态变压器，称可将中压交流直接转换为800 V直流，面向高密度AI计算负载。",
       "technical": {
-        "voltage": "原文未提供",
-        "power": "原文未提供",
-        "topology": "原文未提供",
+        "voltage": "中压交流输入；800 V直流输出",
+        "power": "3 MW",
+        "topology": "固态变压器（SST）",
         "device": "原文未提供",
         "switching_frequency": "原文未提供",
         "efficiency": "原文未提供",
         "power_density": "原文未提供",
         "isolation": "原文未提供",
         "control": "原文未提供",
-        "application": "原文未提供"
+        "application": "高密度AI计算负载供电"
       },
       "industrialization": {
-        "stage": "未知",
-        "status": "原文未提供",
+        "stage": "产品发布",
+        "status": "来源称已发布",
         "target": "原文未提供"
       },
       "evidence": {
         "confirmed_facts": [],
-        "source_claims": [],
+        "source_claims": [
+          "阳光电源发布3 MW固态变压器",
+          "该固态变压器将中压交流直接转换为800 V直流，面向高密度AI计算负载"
+        ],
         "inferences": [],
-        "unknowns": []
-      }
+        "unknowns": [
+          "拓扑细节",
+          "器件类型",
+          "开关频率",
+          "效率",
+          "功率密度",
+          "隔离方式",
+          "控制方式",
+          "量产状态"
+        ]
+      },
+      "sources": [],
+      "primary_source": "pv magazine Global",
+      "link": "https://www.pv-magazine.com/2026/07/10/sungrow-launches-3-mw-solid-state-transformer/",
+      "summary_raw": "The Chinese manufacturer said its solid-state transformer converts medium-voltage AC directly to 800 V DC for high-density AI computing loads."
     },
     {
       "id": "260917-07",
-      "title": "Enphase announces distributed solid-state transformer for AI data centers, targets 2028 for volume deliveries - pv magazine USA",
+      "title": "Enphase announces distributed solid-state transformer for AI data centers, targets 2028 for volume deliveries",
       "category": [
         "ai_dc",
         "sst"
       ],
-      "primary_source": "pv magazine USA",
-      "link": "https://pv-magazine-usa.com/2026/04/29/enphase-announces-distributed-solid-state-transformer-for-ai-data-centers-targets-2028-for-volume-deliveries/",
-      "summary_raw": "FREMONT, Calif., Sept. 14, 2026 (GLOBE NEWSWIRE) -- Enphase Energy, Inc. (NASDAQ: ENPH), a global energy technology company, today announced its participation in AI Infra Summit 2026, from Sept. 15-17, 2026 at the Santa Clara Convention Center in California. Enphase will be at Booth 1454, showcasing its approach to next-generation AI data center power infrastructure, including the IQ® Solid-State Transformer (IQ SST). On Sept. 15 at 12:00 p.m. PDT, Raghu Belur, co-founder and chief product offic",
+      "importance": "重点",
+      "evidence_level": "多源交叉",
+      "summary": "[来源声称] Enphase宣布面向AI数据中心的IQ固态变压器，称功率模块已在得克萨斯州生产，目标2028年批量交付。",
+      "technical": {
+        "voltage": "原文未提供",
+        "power": "原文未提供（辅助来源称目标5 MW功率输送）",
+        "topology": "固态变压器（SST）；辅助来源称采用双向GaN开关的网状阵列架构",
+        "device": "辅助来源称采用亚1 kV双向GaN开关",
+        "switching_frequency": "原文未提供",
+        "efficiency": "原文未提供",
+        "power_density": "原文未提供",
+        "isolation": "原文未提供",
+        "control": "原文未提供",
+        "application": "AI数据中心供电基础设施"
+      },
+      "industrialization": {
+        "stage": "试产",
+        "status": "来源称功率模块正在得克萨斯州生产；产品在AI Infra Summit 2026展示",
+        "target": "目标2028年批量交付"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "Enphase宣布参加2026年9月15-17日举行的AI Infra Summit 2026并展示IQ固态变压器"
+        ],
+        "source_claims": [
+          "Enphase宣布面向AI数据中心的IQ固态变压器",
+          "IQ SST功率模块正在得克萨斯州生产",
+          "目标2028年实现批量交付",
+          "辅助来源称该SST为双向GaN方案，目标5 MW功率输送",
+          "辅助来源称架构采用亚1 kV双向GaN开关的网状阵列，对齐NVIDIA 800 V直流路线图"
+        ],
+        "inferences": [],
+        "unknowns": [
+          "输入电压等级",
+          "效率",
+          "功率密度",
+          "隔离方式",
+          "控制方式",
+          "实际量产时间"
+        ]
+      },
       "sources": [
         {
           "source": "HPCwire",
@@ -254,41 +360,20 @@
           "link": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN45002K:0-enphase-advances-iq-solid-state-transformer-development-for-ai-data-centers-with-power-modules-now-being-built-in-texas/"
         }
       ],
-      "technical": {
-        "voltage": "原文未提供",
-        "power": "原文未提供",
-        "topology": "原文未提供",
-        "device": "原文未提供",
-        "switching_frequency": "原文未提供",
-        "efficiency": "原文未提供",
-        "power_density": "原文未提供",
-        "isolation": "原文未提供",
-        "control": "原文未提供",
-        "application": "原文未提供"
-      },
-      "industrialization": {
-        "stage": "未知",
-        "status": "原文未提供",
-        "target": "原文未提供"
-      },
-      "evidence": {
-        "confirmed_facts": [],
-        "source_claims": [],
-        "inferences": [],
-        "unknowns": []
-      }
+      "primary_source": "pv magazine USA",
+      "link": "https://pv-magazine-usa.com/2026/04/29/enphase-announces-distributed-solid-state-transformer-for-ai-data-centers-targets-2028-for-volume-deliveries/",
+      "summary_raw": "FREMONT, Calif., Sept. 14, 2026 (GLOBE NEWSWIRE) -- Enphase Energy, Inc. (NASDAQ: ENPH), a global energy technology company, today announced its participation in AI Infra Summit 2026, from Sept. 15-17, 2026 at the Santa Clara Convention Center in California. Enphase will be at Booth 1454, showcasing its approach to next-generation AI data center power infrastructure, including the IQ® Solid-State Transformer (IQ SST). On Sept. 15 at 12:00 p.m. PDT, Raghu Belur, co-founder and chief product offic"
     },
     {
       "id": "260917-08",
-      "title": "Data center power shifts favor BESS, solid-state transformers - pv magazine USA",
+      "title": "Data center power shifts favor BESS, solid-state transformers",
       "category": [
         "ai_dc",
         "sst"
       ],
-      "primary_source": "pv magazine USA",
-      "link": "https://pv-magazine-usa.com/2026/07/15/data-center-power-shifts-favor-bess-solid-state-transformers/",
-      "summary_raw": "A recent webinar hosted by ROTH Capital Partners highlights how hyperscale developers are reducing diesel generator reliance and exploring alternative power architectures.",
-      "sources": [],
+      "importance": "一般",
+      "evidence_level": "专业媒体",
+      "summary": "[趋势判断] 报道称ROTH Capital Partners网络研讨会指出超大规模数据中心开发商正减少对柴油发电机依赖并探索替代供电架构，利好储能与固态变压器。",
       "technical": {
         "voltage": "原文未提供",
         "power": "原文未提供",
@@ -299,30 +384,73 @@
         "power_density": "原文未提供",
         "isolation": "原文未提供",
         "control": "原文未提供",
-        "application": "原文未提供"
+        "application": "数据中心供电架构"
       },
       "industrialization": {
         "stage": "未知",
-        "status": "原文未提供",
+        "status": "行业趋势讨论",
         "target": "原文未提供"
       },
       "evidence": {
-        "confirmed_facts": [],
-        "source_claims": [],
+        "confirmed_facts": [
+          "ROTH Capital Partners举办网络研讨会，讨论数据中心供电架构变化"
+        ],
+        "source_claims": [
+          "超大规模开发商正减少对柴油发电机的依赖并探索替代供电架构",
+          "数据中心供电趋势利好BESS与固态变压器"
+        ],
         "inferences": [],
-        "unknowns": []
-      }
+        "unknowns": [
+          "具体技术参数",
+          "采用规模",
+          "时间表"
+        ]
+      },
+      "sources": [],
+      "primary_source": "pv magazine USA",
+      "link": "https://pv-magazine-usa.com/2026/07/15/data-center-power-shifts-favor-bess-solid-state-transformers/",
+      "summary_raw": "A recent webinar hosted by ROTH Capital Partners highlights how hyperscale developers are reducing diesel generator reliance and exploring alternative power architectures."
     },
     {
       "id": "260917-09",
-      "title": "Is Power Electronics Outgrowing the Shunt Resistor? - Electronic Design",
+      "title": "Is Power Electronics Outgrowing the Shunt Resistor?",
       "category": [
         "gan",
         "sic"
       ],
-      "primary_source": "Electronic Design",
-      "link": "https://www.electronicdesign.com/technologies/power/article/55405512/allegro-microsystems-is-power-electronics-outgrowing-shunt-based-current-sensors",
-      "summary_raw": "As switching frequencies continue to rise with the adoption of GaN and SiC, power engineers are eyeing alternatives to the shunt resistor for current sensing.",
+      "importance": "一般",
+      "evidence_level": "专业媒体",
+      "summary": "[趋势判断] 报道称随着GaN与SiC推动开关频率上升，功率工程师正考虑用分流电阻以外的方案进行电流检测。",
+      "technical": {
+        "voltage": "原文未提供",
+        "power": "原文未提供",
+        "topology": "原文未提供",
+        "device": "原文未提供",
+        "switching_frequency": "原文未提供（仅称随GaN/SiC采用而上升）",
+        "efficiency": "原文未提供",
+        "power_density": "原文未提供",
+        "isolation": "原文未提供",
+        "control": "原文未提供",
+        "application": "功率电子电流检测"
+      },
+      "industrialization": {
+        "stage": "未知",
+        "status": "行业趋势讨论",
+        "target": "原文未提供"
+      },
+      "evidence": {
+        "confirmed_facts": [],
+        "source_claims": [
+          "随着GaN与SiC的采用，开关频率持续上升",
+          "功率工程师正关注分流电阻之外的电流检测替代方案"
+        ],
+        "inferences": [],
+        "unknowns": [
+          "具体替代技术方案",
+          "参数指标",
+          "采用时间表"
+        ]
+      },
       "sources": [
         {
           "source": "Electronic Design",
@@ -330,181 +458,212 @@
           "link": "https://www.electronicdesign.com/technologies/power/document/55405521/is-power-electronics-outgrowing-the-shunt-resistor-download"
         }
       ],
-      "technical": {
-        "voltage": "原文未提供",
-        "power": "原文未提供",
-        "topology": "原文未提供",
-        "device": "原文未提供",
-        "switching_frequency": "原文未提供",
-        "efficiency": "原文未提供",
-        "power_density": "原文未提供",
-        "isolation": "原文未提供",
-        "control": "原文未提供",
-        "application": "原文未提供"
-      },
-      "industrialization": {
-        "stage": "未知",
-        "status": "原文未提供",
-        "target": "原文未提供"
-      },
-      "evidence": {
-        "confirmed_facts": [],
-        "source_claims": [],
-        "inferences": [],
-        "unknowns": []
-      }
+      "primary_source": "Electronic Design",
+      "link": "https://www.electronicdesign.com/technologies/power/article/55405512/allegro-microsystems-is-power-electronics-outgrowing-shunt-based-current-sensors",
+      "summary_raw": "As switching frequencies continue to rise with the adoption of GaN and SiC, power engineers are eyeing alternatives to the shunt resistor for current sensing."
     },
     {
       "id": "260917-10",
-      "title": "Scalable GaN-Based IQ Solid-State Transformer Architecture Eyes AI Data Centers - Electronic Design",
+      "title": "Scalable GaN-Based IQ Solid-State Transformer Architecture Eyes AI Data Centers",
       "category": [
         "ai_dc",
         "gan",
         "sst"
       ],
-      "primary_source": "Electronic Design",
-      "link": "https://www.electronicdesign.com/technologies/power/article/55393675/electronic-design-enphase-energy-announces-scalable-iq-solid-state-transformer-architecture-for-ai-data-centers",
-      "summary_raw": "Enphase’s new SST architecture, which aligns with NVIDIA’s 800-V DC roadmap, uses a meshed array of sub-1-kV bidirectional GaN switches to provide scalability and distributed ...",
-      "sources": [],
+      "importance": "重点",
+      "evidence_level": "专业媒体",
+      "summary": "[来源声称] 报道称Enphase的IQ固态变压器架构对齐NVIDIA 800 V直流路线图，采用亚1 kV双向GaN开关的网状阵列以实现可扩展与分布式供电。",
       "technical": {
-        "voltage": "原文未提供",
+        "voltage": "亚1 kV双向GaN开关；对齐800 V直流路线图",
         "power": "原文未提供",
-        "topology": "原文未提供",
-        "device": "原文未提供",
+        "topology": "网状阵列（meshed array）架构",
+        "device": "亚1 kV双向GaN开关",
         "switching_frequency": "原文未提供",
         "efficiency": "原文未提供",
         "power_density": "原文未提供",
         "isolation": "原文未提供",
         "control": "原文未提供",
-        "application": "原文未提供"
+        "application": "AI数据中心"
       },
       "industrialization": {
-        "stage": "未知",
-        "status": "原文未提供",
+        "stage": "产品发布",
+        "status": "架构已公布",
         "target": "原文未提供"
       },
       "evidence": {
         "confirmed_facts": [],
-        "source_claims": [],
+        "source_claims": [
+          "Enphase的IQ固态变压器架构对齐NVIDIA的800 V直流路线图",
+          "该架构使用亚1 kV双向GaN开关的网状阵列以提供可扩展性与分布式供电"
+        ],
         "inferences": [],
-        "unknowns": []
-      }
+        "unknowns": [
+          "功率等级",
+          "效率",
+          "功率密度",
+          "隔离方式",
+          "控制方式",
+          "量产状态"
+        ]
+      },
+      "sources": [],
+      "primary_source": "Electronic Design",
+      "link": "https://www.electronicdesign.com/technologies/power/article/55393675/electronic-design-enphase-energy-announces-scalable-iq-solid-state-transformer-architecture-for-ai-data-centers",
+      "summary_raw": "Enphase’s new SST architecture, which aligns with NVIDIA’s 800-V DC roadmap, uses a meshed array of sub-1-kV bidirectional GaN switches to provide scalability and distributed ..."
     },
     {
       "id": "260917-11",
-      "title": "Novel Solid-State Transformer Supports 800-V DC Power in AI Data Centers - Electronic Design",
+      "title": "Novel Solid-State Transformer Supports 800-V DC Power in AI Data Centers",
       "category": [
         "ai_dc",
         "sic",
         "sst"
       ],
-      "primary_source": "Electronic Design",
-      "link": "https://www.electronicdesign.com/technologies/power/product/55371996/electronic-design-novel-solid-state-transformer-supports-800-v-dc-power-in-ai-data-centers",
-      "summary_raw": "Developed by EPFL, the transformers are integrated into Navitas’ GeneSiC 3,300- and 1,200-V SiC devices with the goal of helping the adoption of high-voltage DC AI data centers...",
-      "sources": [],
+      "importance": "重点",
+      "evidence_level": "专业媒体",
+      "summary": "[来源声称] 报道称EPFL开发的固态变压器集成Navitas GeneSiC 3300 V与1200 V SiC器件，目标支持AI数据中心高压直流供电。",
       "technical": {
-        "voltage": "原文未提供",
+        "voltage": "3300 V与1200 V SiC器件；支持800 V直流",
         "power": "原文未提供",
-        "topology": "原文未提供",
-        "device": "原文未提供",
+        "topology": "固态变压器（SST）",
+        "device": "Navitas GeneSiC 3300 V与1200 V SiC器件",
         "switching_frequency": "原文未提供",
         "efficiency": "原文未提供",
         "power_density": "原文未提供",
         "isolation": "原文未提供",
         "control": "原文未提供",
-        "application": "原文未提供"
+        "application": "高压直流AI数据中心"
       },
       "industrialization": {
-        "stage": "未知",
-        "status": "原文未提供",
-        "target": "原文未提供"
+        "stage": "实验室样机",
+        "status": "由EPFL开发并集成Navitas SiC器件",
+        "target": "帮助推动高压直流AI数据中心采用"
       },
       "evidence": {
         "confirmed_facts": [],
-        "source_claims": [],
+        "source_claims": [
+          "该固态变压器由EPFL开发",
+          "集成Navitas GeneSiC 3300 V与1200 V SiC器件",
+          "目标是帮助高压直流AI数据中心的采用"
+        ],
         "inferences": [],
-        "unknowns": []
-      }
+        "unknowns": [
+          "功率等级",
+          "效率",
+          "功率密度",
+          "隔离方式",
+          "控制方式",
+          "成熟度"
+        ]
+      },
+      "sources": [],
+      "primary_source": "Electronic Design",
+      "link": "https://www.electronicdesign.com/technologies/power/product/55371996/electronic-design-novel-solid-state-transformer-supports-800-v-dc-power-in-ai-data-centers",
+      "summary_raw": "Developed by EPFL, the transformers are integrated into Navitas’ GeneSiC 3,300- and 1,200-V SiC devices with the goal of helping the adoption of high-voltage DC AI data centers..."
     },
     {
       "id": "260917-12",
-      "title": "World’s first 22.9kV solid-state transformer developed to electrify US data centers - Interesting Engineering",
+      "title": "World’s first 22.9kV solid-state transformer developed to electrify US data centers",
       "category": [
         "ai_dc",
         "sst"
       ],
-      "primary_source": "Interesting Engineering",
-      "link": "https://interestingengineering.com/energy/worlds-first-22-9kv-solid-state-transformer",
-      "summary_raw": "A new 22.9kV solid-state transformer could help modernize US power networks facing rising electricity demand from massive data centers.",
-      "sources": [],
+      "importance": "重点",
+      "evidence_level": "普通媒体",
+      "summary": "[来源声称] 报道称开发出22.9 kV固态变压器，来源声称其为全球首个，旨在帮助美国数据中心供电网络现代化。",
       "technical": {
-        "voltage": "原文未提供",
+        "voltage": "22.9 kV",
         "power": "原文未提供",
-        "topology": "原文未提供",
+        "topology": "固态变压器（SST）",
         "device": "原文未提供",
         "switching_frequency": "原文未提供",
         "efficiency": "原文未提供",
         "power_density": "原文未提供",
         "isolation": "原文未提供",
         "control": "原文未提供",
-        "application": "原文未提供"
+        "application": "美国数据中心供电网络"
       },
       "industrialization": {
         "stage": "未知",
-        "status": "原文未提供",
+        "status": "来源称已开发",
         "target": "原文未提供"
       },
       "evidence": {
         "confirmed_facts": [],
-        "source_claims": [],
+        "source_claims": [
+          "开发出22.9 kV固态变压器",
+          "来源声称其为全球首个22.9 kV固态变压器",
+          "该变压器可帮助美国电网应对数据中心用电需求增长"
+        ],
         "inferences": [],
-        "unknowns": []
-      }
+        "unknowns": [
+          "开发方",
+          "功率等级",
+          "效率",
+          "功率密度",
+          "隔离方式",
+          "控制方式",
+          "成熟度"
+        ]
+      },
+      "sources": [],
+      "primary_source": "Interesting Engineering",
+      "link": "https://interestingengineering.com/energy/worlds-first-22-9kv-solid-state-transformer",
+      "summary_raw": "A new 22.9kV solid-state transformer could help modernize US power networks facing rising electricity demand from massive data centers."
     },
     {
       "id": "260917-13",
-      "title": "Solid-State Transformers Power Next-Gen AI Data Centers - Data Center Knowledge",
+      "title": "Solid-State Transformers Power Next-Gen AI Data Centers",
       "category": [
         "800v",
         "ai_dc",
         "sst"
       ],
-      "primary_source": "Data Center Knowledge",
-      "link": "https://www.datacenterknowledge.com/energy-power-supply/solid-state-transformers-power-next-gen-ai-data-centers",
-      "summary_raw": "AI rack densities are pushing HVDC. Solid-state transformers promise 800 V DC efficiency and flexibility, but maturity and supply chain concerns remain.",
-      "sources": [],
+      "importance": "一般",
+      "evidence_level": "专业媒体",
+      "summary": "[趋势判断] 报道称AI机架密度推动高压直流，固态变压器有望实现800 V直流效率与灵活性，但成熟度与供应链仍存顾虑。",
       "technical": {
-        "voltage": "原文未提供",
+        "voltage": "800 V直流",
         "power": "原文未提供",
-        "topology": "原文未提供",
+        "topology": "固态变压器（SST）",
         "device": "原文未提供",
         "switching_frequency": "原文未提供",
         "efficiency": "原文未提供",
         "power_density": "原文未提供",
         "isolation": "原文未提供",
         "control": "原文未提供",
-        "application": "原文未提供"
+        "application": "下一代AI数据中心"
       },
       "industrialization": {
         "stage": "未知",
-        "status": "原文未提供",
+        "status": "行业趋势讨论，成熟度与供应链存在顾虑",
         "target": "原文未提供"
       },
       "evidence": {
         "confirmed_facts": [],
-        "source_claims": [],
+        "source_claims": [
+          "AI机架密度推动高压直流供电",
+          "固态变压器有望提供800 V直流效率与灵活性",
+          "固态变压器成熟度与供应链仍存顾虑"
+        ],
         "inferences": [],
-        "unknowns": []
-      }
+        "unknowns": [
+          "具体技术参数",
+          "采用时间表"
+        ]
+      },
+      "sources": [],
+      "primary_source": "Data Center Knowledge",
+      "link": "https://www.datacenterknowledge.com/energy-power-supply/solid-state-transformers-power-next-gen-ai-data-centers",
+      "summary_raw": "AI rack densities are pushing HVDC. Solid-state transformers promise 800 V DC efficiency and flexibility, but maturity and supply chain concerns remain."
     },
     {
       "id": "260917-14",
-      "title": "TMEIC Opens New Power Electronics Flagship Manufacturing Facility in Waller County, Texas - PR Newswire",
+      "title": "TMEIC Opens New Power Electronics Flagship Manufacturing Facility in Waller County, Texas",
       "category": [],
-      "primary_source": "PR Newswire",
-      "link": "https://www.prnewswire.com/news-releases/tmeic-opens-new-power-electronics-flagship-manufacturing-facility-in-waller-county-texas-302876047.html",
-      "summary_raw": "/PRNewswire/ -- TMEIC Corporation Americas (TMEIC), a group company of TMEIC Corporation (Japan), announces the opening of its new Twinwood manufacturing...",
-      "sources": [],
+      "importance": "一般",
+      "evidence_level": "企业官方",
+      "summary": "[已证实] TMEIC宣布在美国得克萨斯州Waller县开设新的电力电子旗舰制造工厂。",
       "technical": {
         "voltage": "原文未提供",
         "power": "原文未提供",
@@ -515,30 +674,39 @@
         "power_density": "原文未提供",
         "isolation": "原文未提供",
         "control": "原文未提供",
-        "application": "原文未提供"
+        "application": "电力电子产品制造"
       },
       "industrialization": {
-        "stage": "未知",
-        "status": "原文未提供",
+        "stage": "商业部署",
+        "status": "新制造工厂已开业",
         "target": "原文未提供"
       },
       "evidence": {
-        "confirmed_facts": [],
+        "confirmed_facts": [
+          "TMEIC Corporation Americas宣布其Twinwood新制造工厂开业，位于得克萨斯州Waller县"
+        ],
         "source_claims": [],
         "inferences": [],
-        "unknowns": []
-      }
+        "unknowns": [
+          "产能",
+          "产品类型",
+          "投资规模"
+        ]
+      },
+      "sources": [],
+      "primary_source": "PR Newswire",
+      "link": "https://www.prnewswire.com/news-releases/tmeic-opens-new-power-electronics-flagship-manufacturing-facility-in-waller-county-texas-302876047.html",
+      "summary_raw": "/PRNewswire/ -- TMEIC Corporation Americas (TMEIC), a group company of TMEIC Corporation (Japan), announces the opening of its new Twinwood manufacturing..."
     },
     {
       "id": "260917-15",
-      "title": "Solid-state Transformer Market worth $1.52 billion by 2035 - Exclusive Report by MarketsandMarkets™ - PR Newswire",
+      "title": "Solid-state Transformer Market worth $1.52 billion by 2035 - Exclusive Report by MarketsandMarkets™",
       "category": [
         "sst"
       ],
-      "primary_source": "PR Newswire",
-      "link": "https://www.prnewswire.com/news-releases/solid-state-transformer-market-worth-1-52-billion-by-2035---exclusive-report-by-marketsandmarkets-302728453.html",
-      "summary_raw": "/PRNewswire/ -- According to MarketsandMarkets™, the solid-state transformer market is projected to reach USD 1.52 billion by 2035 from USD 0.28 billion in...",
-      "sources": [],
+      "importance": "一般",
+      "evidence_level": "财经媒体",
+      "summary": "[来源声称] MarketsandMarkets报告预测固态变压器市场将从2025年2.8亿美元增长至2035年15.2亿美元。",
       "technical": {
         "voltage": "原文未提供",
         "power": "原文未提供",
@@ -549,22 +717,45 @@
         "power_density": "原文未提供",
         "isolation": "原文未提供",
         "control": "原文未提供",
-        "application": "原文未提供"
+        "application": "固态变压器市场"
       },
       "industrialization": {
         "stage": "未知",
-        "status": "原文未提供",
-        "target": "原文未提供"
+        "status": "市场预测报告",
+        "target": "2035年市场规模15.2亿美元"
       },
       "evidence": {
         "confirmed_facts": [],
-        "source_claims": [],
+        "source_claims": [
+          "MarketsandMarkets预测固态变压器市场到2035年将达到15.2亿美元",
+          "2025年市场规模为2.8亿美元"
+        ],
         "inferences": [],
-        "unknowns": []
-      }
+        "unknowns": [
+          "预测方法",
+          "细分市场构成"
+        ]
+      },
+      "sources": [],
+      "primary_source": "PR Newswire",
+      "link": "https://www.prnewswire.com/news-releases/solid-state-transformer-market-worth-1-52-billion-by-2035---exclusive-report-by-marketsandmarkets-302728453.html",
+      "summary_raw": "/PRNewswire/ -- According to MarketsandMarkets™, the solid-state transformer market is projected to reach USD 1.52 billion by 2035 from USD 0.28 billion in..."
     }
   ],
-  "directions": {},
-  "observations": [],
-  "quality_notes": "AI结构化分析失败，本次保留事件数据；技术参数均标记为原文未提供。"
+  "directions": {
+    "SST": "多条来源聚焦AI数据中心用固态变压器：阳光电源称发布3 MW、中压交流直转800 V直流的SST；Enphase称IQ SST功率模块已在得州生产、目标2028年批量交付，并称采用亚1 kV双向GaN开关网状阵列、对齐NVIDIA 800 V直流路线图；EPFL方案集成Navitas 3300 V/1200 V SiC器件；另有来源声称开发出22.9 kV SST。行业报道同时提示成熟度与供应链顾虑，MarketsandMarkets预测2035年市场达15.2亿美元。",
+    "SiC_GaN": "GaN方向：论文报道III族氮化物本征极化超结实现3.9 kV级GaN-on-Si器件；论文报道原子级受限插入将P-GaN栅HEMT阈值电压从1.5 V提升至4.3 V；Renesas宣传D-Mode GaN技术。SiC方向：EPFL SST方案集成Navitas GeneSiC 3300 V与1200 V器件。另有报道称GaN/SiC推动开关频率上升，促使电流检测方案从分流电阻转向替代方案。",
+    "GFM_PCS": "输入未提供构网型（GFM）变流器相关信息。",
+    "800V_AI_DC": "多条来源围绕AI数据中心800 V直流供电：阳光电源SST称中压交流直转800 V直流；Enphase架构称对齐NVIDIA 800 V直流路线图；EPFL/Navitas方案称支持800 V直流；行业报道称AI机架密度推动高压直流，但成熟度与供应链仍存顾虑。",
+    "topology_magnetics": "拓扑相关：论文提出本征极化超结（无故意掺杂、电荷平衡）；Enphase架构称采用亚1 kV双向GaN开关的网状阵列；论文报道倒装芯片封装氧化镓模块采用高介电常数界面设计。输入未提供磁元件设计细节。"
+  },
+  "observations": [
+    "固态变压器（SST）是本期最集中的主题，且几乎全部与AI数据中心800 V直流供电绑定。",
+    "Enphase事件为多源交叉，但功率、效率、隔离等关键参数仍缺失，且‘生产’不等于‘量产’，批量交付目标为2028年。",
+    "22.9 kV SST的‘全球首个’仅为来源声称，输入未提供开发方与参数。",
+    "GaN器件研究出现两条提升耐压/阈值电压的路径：极化超结与原子级受限插入，均处于论文/实验室阶段。",
+    "氧化镓模块论文给出1000 A/1000 V脉冲与1.8 MW/cm²脉冲功率密度，但为脉冲工况，非连续功率能力。",
+    "财经媒体（MarketsandMarkets预测、股价报道）仅作为SST技术事件的辅助来源，未创建独立事件。"
+  ],
+  "quality_notes": "多数事件仅有标题或极简摘要（260917-02、05），技术参数大量缺失，已按规则标注‘原文未提供’。‘全球首个’（260917-12）与‘提升两个数量级’（260917-03）等表述均按来源声称处理。Enphase事件中5 MW、双向GaN、网状阵列等来自辅助来源，已标注为来源声称。未根据bidirectional/high-frequency/modular推断任何具体拓扑。"
 }
