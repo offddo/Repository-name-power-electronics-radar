@@ -7,7 +7,6 @@ on:
 
   workflow_dispatch:
 
-  # 修改雷达程序后自动生成一份新数据，避免必须手动点击 Actions。
   push:
     paths:
       - "scripts/radar.py"
@@ -19,6 +18,7 @@ permissions:
 jobs:
   radar:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - name: Checkout
@@ -34,32 +34,29 @@ jobs:
           python -m pip install --upgrade pip
           pip install feedparser requests googlenewsdecoder
 
-      - name: Fix prompt template
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          p = Path("scripts/radar.py")
-          s = p.read_text(encoding="utf-8")
-          s = s.replace("prompt = f'''", "prompt = '''", 1)
-          needle = "    r = requests.post("
-          patch = "    prompt = prompt.replace('{date}', date).replace('{json.dumps(events, ensure_ascii=False)}', json.dumps(events, ensure_ascii=False))\n\n"
-          if patch not in s:
-              s = s.replace(needle, patch + needle, 1)
-          p.write_text(s, encoding="utf-8")
-          PY
-
       - name: Run radar
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
           python scripts/radar.py
 
-      - name: Commit results
+      - name: Commit results safely
         run: |
+          set -e
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          # 保存本次生成的数据。运行期间如果 main 有新提交，先同步最新 main，
+          # 再把刚生成的 data.json 放回去，避免 pull/rebase 与未提交文件冲突。
+          cp data.json /tmp/radar-data.json
+          git fetch origin main
+          git reset --hard origin/main
+          cp /tmp/radar-data.json data.json
+
           git add data.json
-          git diff --cached --quiet || git commit -m "Update power electronics radar"
-          git pull --rebase origin main
-          git push
+          if git diff --cached --quiet; then
+            echo "No data changes."
+            exit 0
+          fi
+          git commit -m "Update power electronics radar"
+          git push origin main
