@@ -34,7 +34,15 @@ jobs:
       - name: Run radar
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-        run: python scripts/radar_runner.py
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path("scripts/radar_runner.py")
+          s = p.read_text(encoding="utf-8")
+          s = s.replace('marker[:-1] + extra + "\\n]"', 'marker[:-1] + extra[:-1] + "\\n]"', 1)
+          p.write_text(s, encoding="utf-8")
+          PY
+          python scripts/radar_runner.py
 
       - name: Clean and validate AI output
         run: |
@@ -75,11 +83,7 @@ jobs:
           for e in data.get("events", []):
               sources = e.get("sources") or []
               if e.get("link") and not any(isinstance(s, dict) and s.get("link") == e.get("link") for s in sources):
-                  sources.insert(0, {
-                      "source": e.get("primary_source", "原始来源"),
-                      "title": e.get("title", ""),
-                      "link": e["link"]
-                  })
+                  sources.insert(0, {"source": e.get("primary_source", "原始来源"), "title": e.get("title", ""), "link": e["link"]})
               e["sources"] = sources
               if e.get("source_type") not in {"国内资讯", "国内论文", "国际资讯", "国际论文"}:
                   e["source_type"] = "国内资讯" if any(x in str(e.get("primary_source", "")) for x in ["中国", "电力电子技术", "电力自动化设备", "电力系统自动化", "电工技术学报"]) else "国际资讯"
