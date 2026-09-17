@@ -1,38 +1,85 @@
 {
-  "updated": "2026-09-17T15:43:19.816980+08:00",
+  "schema_version": "2.0",
+  "updated": "2026-09-17T15:44:38.461872+08:00",
   "report_date": "2026-09-17",
-  "article_count": 20,
-  "articles": [
+  "event_count": 15,
+  "events": [
     {
-      "source": "nature.com",
+      "id": "260917-01",
       "title": "Intrinsic polarization superjunctions in III-nitride heterostructures for efficient power electronics - nature.com",
-      "summary": "Intrinsic polarization superjunctions in III-nitride heterostructures for efficient power electronics nature.com",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9RZktjZ2YtMVgzT2pFMUQtNUV6WjhoNHlFVUhIX0M1Y0poeWZVRGdPQ3hVNm9WdkprVHQzUFVxeUV1dG9OVzF4cUlUYWd0YXhYOWVkbTk3Q3NtSFZWa2tz?oc=5"
+      "category": [
+        "sic"
+      ],
+      "primary_source": "nature.com",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9RZktjZ2YtMVgzT2pFMUQtNUV6WjhoNHlFVUhIX0M1Y0poeWZVRGdPQ3hVNm9WdkprVHQzUFVxeUV1dG9OVzF4cUlUYWd0YXhYOWVkbTk3Q3NtSFZWa2tz?oc=5",
+      "summary_raw": "Intrinsic polarization superjunctions in III-nitride heterostructures for efficient power electronics nature.com",
+      "sources": []
     },
     {
-      "source": "nature.com",
+      "id": "260917-02",
       "title": "From Grid to Load: Advanced Power Electronics for Next-Generation Data Centers - nature.com",
-      "summary": "From Grid to Load: Advanced Power Electronics for Next-Generation Data Centers nature.com",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9vc1YwX2FtT3M0NE5xVGRBdTJhUmxfM2NzNmNWU1JFcFdkUTNJQTh1ejhGWHUzVVF3OEZiejF3NWY5ZzlFVTFNalkwTzBLNUxmc1UzSzYxaHY?oc=5"
+      "category": [
+        "ai_dc"
+      ],
+      "primary_source": "nature.com",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9vc1YwX2FtT3M0NE5xVGRBdTJhUmxfM2NzNmNWU1JFcFdkUTNJQTh1ejhGWHUzVVF3OEZiejF3NWY5ZzlFVTFNalkwTzBLNUxmc1UzSzYxaHY?oc=5",
+      "summary_raw": "From Grid to Load: Advanced Power Electronics for Next-Generation Data Centers nature.com",
+      "sources": []
     },
     {
-      "source": "Renesas",
+      "id": "260917-03",
+      "title": "A megawatt ultra-wide bandgap semiconductor module for pulsed power electronics - nature.com",
+      "category": [],
+      "primary_source": "nature.com",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB4am5qRER2ZHNaVWE5VVJVcTFLY2lHMzF4eWdtZ1dIVm8taGpCQThzWFdBdWo5bGZ6SW9HTmdOU09yZkIyQnpnZnh0cmx5a28yb1ZrQWw0WVJXMmV3SHFF?oc=5",
+      "summary_raw": "A megawatt ultra-wide bandgap semiconductor module for pulsed power electronics nature.com",
+      "sources": []
+    },
+    {
+      "id": "260917-04",
+      "title": "Atomically confined insertion for 2D strain and polarization engineered GaN electronics - nature.com",
+      "category": [
+        "gan"
+      ],
+      "primary_source": "nature.com",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8zYXpRWmdFMXc5MU5BbndvVkQ2N3FtME4zOHJTOUtodTNKWV90akU0aDE5WkVmcW52NFdIYXZKRThIaWlQMjVaMXlmMF8wZWhra0RRYkVRZFBubmpJamJZ?oc=5",
+      "summary_raw": "Atomically confined insertion for 2D strain and polarization engineered GaN electronics nature.com",
+      "sources": []
+    },
+    {
+      "id": "260917-05",
       "title": "Renesas GaN: D-Mode Technology & Design Benefits - Renesas",
-      "summary": "Renesas GaN: D-Mode Technology & Design Benefits Renesas",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYlJETUx1MkFLR2t2WW03RkFWSmJZR3IxOWNScDhQdURoZGhQYml3aFhGSU9BTHJlUzFUa0tyUVB2Z1NWSlJwTG5XRWR0czg4dUE5OGx4MlRuenpUOVc2SjZFUjkzV1ViVHJSaTRaaXBySUpwTHBfc0t3OF9wTDJ4eEgyOWs?oc=5"
+      "category": [
+        "gan"
+      ],
+      "primary_source": "Renesas",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYlJETUx1MkFLR2t2WW03RkFWSmJZR3IxOWNScDhQdURoZGhQYml3aFhGSU9BTHJlUzFUa0tyUVB2Z1NWSlJwTG5XRWR0czg4dUE5OGx4MlRuenpUOVc2SjZFUjkzV1ViVHJSaTRaaXBySUpwTHBfc0t3OF9wTDJ4eEgyOWs?oc=5",
+      "summary_raw": "Renesas GaN: D-Mode Technology & Design Benefits Renesas",
+      "sources": []
     },
     {
-      "source": "pv magazine Global",
+      "id": "260917-06",
       "title": "Sungrow launches 3 MW solid-state transformer - pv magazine Global",
-      "summary": "Sungrow launches 3 MW solid-state transformer pv magazine Global",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOczZsaEVCOXY3RTd2bkFYVjNNU1VJV1RBMnJNM3BsMHFXM3J0SEtWelB3SUF2ZDJiZ2lhZ1J6Q2N3WDJJM0VZMGVONzM5NkZhY29IMmxDbmdtYzZkd0t3bFk3MEJ0cWYyMndobncyTm0wZFJCaDRXajRLbmpfLXJQX0UwcXpTWTZHME5mMmtB?oc=5"
+      "category": [
+        "sst"
+      ],
+      "primary_source": "pv magazine Global",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOczZsaEVCOXY3RTd2bkFYVjNNU1VJV1RBMnJNM3BsMHFXM3J0SEtWelB3SUF2ZDJiZ2lhZ1J6Q2N3WDJJM0VZMGVONzM5NkZhY29IMmxDbmdtYzZkd0t3bFk3MEJ0cWYyMndobncyTm0wZFJCaDRXajRLbmpfLXJQX0UwcXpTWTZHME5mMmtB?oc=5",
+      "summary_raw": "Sungrow launches 3 MW solid-state transformer pv magazine Global",
+      "sources": []
     },
     {
-      "source": "pv-magazine-usa.com",
-      "title": "Enphase announces distributed solid-state transformer for AI data centers, targets 2028 for volume deliveries - pv-magazine-usa.com",
-      "summary": "Enphase's bidirectional GaN solid-state transformer enters production in the US, targeting 5MW power delivery for AI data centers finance.biggo.com",
+      "id": "260917-07",
+      "title": "Enphase announces distributed solid-state transformer for AI data centers, targets 2028 for volume deliveries - pv magazine USA",
+      "category": [
+        "ai_dc",
+        "gan",
+        "sst"
+      ],
+      "primary_source": "pv magazine USA",
       "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQeGlNQUUwcUJMMVBTLUhMUFM4ZThNbGI2YkRRVlU4SVhhcFNxUUpYUTZpQnlBN2lzR3c3S2FaT3YyQWpSc1E3OWRZMjZQMF9wSDVNS2M0blRqd1VRbmlQVzVIRmFpWDdybHpJc0V0dVJyM0hobUtPZ3drdVFQRWVvdTh6UDdyeUlVemVQUFc0dGFVcnJ3anRVejUxb3M4NFFWNXdib29xeE1XcS1CZ3Z5cnA2XzBSNk45T2RDSkpQaUw5V055c013VldVUGloaXpVSUszdmtOcnFTaENXbFFJQ0Rn?oc=5",
-      "related_sources": [
+      "summary_raw": "Enphase's bidirectional GaN solid-state transformer enters production in the US, targeting 5MW power delivery for AI data centers finance.biggo.com",
+      "sources": [
         {
           "source": "HPCwire",
           "title": "Enphase Energy to Showcase IQ Solid-State Transformer at AI Infra Summit 2026 - HPCwire",
@@ -71,17 +118,25 @@
       ]
     },
     {
-      "source": "pv magazine Global",
-      "title": "WattPower introduces 506 kW grid-forming inverter for utility-scale solar - pv magazine Global",
-      "summary": "WattPower introduces 506 kW grid-forming inverter for utility-scale solar pv magazine Global",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMTdKTEdjWWxQaHIySXZXaHRtQjV3alR5b1J2VXhkQ1hkXzFJYlR2aS1DUVUxaktfeHh0V3U0cWNxZi1WVUZPUlUyYnpzMnQ2OTNrTGdXc0s0UV9JOGNBTGk0cEdFTE52OEh3QXNUVnhOZ0hIWnMxU3U2WWVWX1dLdWZnV2VFeHZMM0lzTkxpTjRCbzN3aGlnM3BWREpkajJKWUN1R2VCQU45bFM0WW01VEJVOA?oc=5"
+      "id": "260917-08",
+      "title": "Data center power shifts favor BESS, solid-state transformers - pv magazine USA",
+      "category": [
+        "ai_dc",
+        "sst"
+      ],
+      "primary_source": "pv magazine USA",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOGNCb3Z0Vk5DLVMtN2YwQk0xSUtsRjhkNW9KTXR5RXZTTFVqdTJTVUlrd1N6QU5kZWdmN0lUQ0FJbXo3Vkh6bG9aZmFKVEJCTm5pT1V5VkcxVzlJNG1Pd1BSLUVuZkRkZERBcEFfQUozUFFGQ1pHSU5pUHpGMmh0bXpzbF90Rk9WcU0xRUszV1pSWVJmZUtiV0VtMG9JU0EzR2c?oc=5",
+      "summary_raw": "Data center power shifts favor BESS, solid-state transformers pv magazine USA",
+      "sources": []
     },
     {
-      "source": "Electronic Design",
+      "id": "260917-09",
       "title": "Is Power Electronics Outgrowing the Shunt Resistor? - Electronic Design",
-      "summary": "Is Power Electronics Outgrowing the Shunt Resistor? (Download) Electronic Design",
+      "category": [],
+      "primary_source": "Electronic Design",
       "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPNkd4LTlOR2hJaVhvM0xudnpDTk5BWE1sWEwxTDVSYzRKWlVPTUZhRFdDZkpjRWRWemRqUmVIM1hja3JnczdHMGY1WjYyMkJ4d08xdG5JN3dueGNTb1BJNXJ5NS1JajBRd1BGQUdGdXBWczc4OE51djZWdGtRMWVvdmpGbkNMcWpsUFhoVEoyeGNhUExsWlEwY0RUdmpzQ0RnMDNaM1JmQ0E4WFc2aVd4MDI0TUhxTzlRZXlnQ0ktU09UMUI1SXk4d2xEdkM5UWxKU0kxWURHeXNyRTBFTHBLUXJBZw?oc=5",
-      "related_sources": [
+      "summary_raw": "Is Power Electronics Outgrowing the Shunt Resistor? (Download) Electronic Design",
+      "sources": [
         {
           "source": "Electronic Design",
           "title": "Is Power Electronics Outgrowing the Shunt Resistor? (Download) - Electronic Design",
@@ -90,117 +145,76 @@
       ]
     },
     {
-      "source": "Electronic Design",
+      "id": "260917-10",
       "title": "Scalable GaN-Based IQ Solid-State Transformer Architecture Eyes AI Data Centers - Electronic Design",
-      "summary": "Scalable GaN-Based IQ Solid-State Transformer Architecture Eyes AI Data Centers Electronic Design",
-      "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQWFVzYjdwdjhaUmFZcTV3b3R6ckc1anBzTVM4d0U4MHdJTXRXc1RWWk95MGx6dzRKNUlNNEg2bTExY08tUVowUmVmX3d5TV9NYUR5d1JGTTc4ajdzWm9BNUp1T1hmRDVWVEN4bzEtUnRneWFuenZoaGZxd1hLR25LY3FRZHliUVowV3lqbTUxYnVLNVRmQXlIbEhGcDZXMVB1RnJOdk5BSEp3Rnk3UHlaVWl3SVU3SzFveHlsc2lsSkx3eURjczFzWUFOdUVUUzFSb3BscEVweG5xbm5peFFrMl9uNENScjJfdE0tSkdpM1NYUnFQaktud2xBRDdyREhiM1EweHFRNTduQ0Jj?oc=5"
+      "category": [
+        "ai_dc",
+        "gan",
+        "sst"
+      ],
+      "primary_source": "Electronic Design",
+      "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQWFVzYjdwdjhaUmFZcTV3b3R6ckc1anBzTVM4d0U4MHdJTXRXc1RWWk95MGx6dzRKNUlNNEg2bTExY08tUVowUmVmX3d5TV9NYUR5d1JGTTc4ajdzWm9BNUp1T1hmRDVWVEN4bzEtUnRneWFuenZoaGZxd1hLR25LY3FRZHliUVowV3lqbTUxYnVLNVRmQXlIbEhGcDZXMVB1RnJOdk5BSEp3Rnk3UHlaVWl3SVU3SzFveHlsc2lsSkx3eURjczFzWUFOdUVUUzFSb3BscEVweG5xbm5peFFrMl9uNENScjJfdE0tSkdpM1NYUnFQaktud2xBRDdyREhiM1EweHFRNTduQ0Jj?oc=5",
+      "summary_raw": "Scalable GaN-Based IQ Solid-State Transformer Architecture Eyes AI Data Centers Electronic Design",
+      "sources": []
     },
     {
-      "source": "Interesting Engineering",
+      "id": "260917-11",
+      "title": "Novel Solid-State Transformer Supports 800-V DC Power in AI Data Centers - Electronic Design",
+      "category": [
+        "ai_dc",
+        "sst"
+      ],
+      "primary_source": "Electronic Design",
+      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOWW1DSXpRel9wOUxfNDJ1WkU1dXpCa1o1elBxNjVBeks3b0RXV09TZThqSWJ1bE04aS1UM3dyanV4UEdrVEpWQ1hGR0hHQkx5alVERFdNb3hrbEc0bkdPeWRmRlIxS1IxQVJxQ1J6UkFGSW1DcEpPRjV3cHljYWl1TnNTWk1tSElHT1FOVTBlQ2xvb2hLRk1lWkJ2emE5dzlEUHZlNUpzem8wODVaVjdrMU5wMTExN0lMeU5TaTJTQ0UyZHVXaUlFWFNSdlI2d2JqQllOeGl2TnZHSGZEXzVseEt3dGdHNTN3ZXcxdnFpeHg?oc=5",
+      "summary_raw": "Novel Solid-State Transformer Supports 800-V DC Power in AI Data Centers Electronic Design",
+      "sources": []
+    },
+    {
+      "id": "260917-12",
       "title": "World’s first 22.9kV solid-state transformer developed to electrify US data centers - Interesting Engineering",
-      "summary": "World’s first 22.9kV solid-state transformer developed to electrify US data centers Interesting Engineering",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOU0xaQmoxelJpMmFYV1AtY0JLUm9wOUdGQUlHVkhBcGNmeUc2ajBMMEJjVkEwcndUUDhBM0pRWWlmV0tIbkZvajFVZk42cEFEOW50U2VLZEwyb1dXaloxSTBBWWRkZEozX245QzNZeGdmSGM0UFltR2hkN2llSmIzdHhOdTVIYnNBcEthTEpn?oc=5"
+      "category": [
+        "ai_dc",
+        "sst"
+      ],
+      "primary_source": "Interesting Engineering",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOU0xaQmoxelJpMmFYV1AtY0JLUm9wOUdGQUlHVkhBcGNmeUc2ajBMMEJjVkEwcndUUDhBM0pRWWlmV0tIbkZvajFVZk42cEFEOW50U2VLZEwyb1dXaloxSTBBWWRkZEozX245QzNZeGdmSGM0UFltR2hkN2llSmIzdHhOdTVIYnNBcEthTEpn?oc=5",
+      "summary_raw": "World’s first 22.9kV solid-state transformer developed to electrify US data centers Interesting Engineering",
+      "sources": []
     },
     {
-      "source": "Machine Maker",
-      "title": "RIR Power Electronics Installs SiC Epitaxial Wafer Manufacturing Reactors in Odisha - Machine Maker",
-      "summary": "RIR Power Electronics Completes Installation of State-of-the-Art SiC Epitaxial Wafer Manufacturing Reactors at Bhubaneswar, Odisha Facility EquityBulls",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQLXpydjZGcVBNdkJRc3M1eHhNX3N1MG5oaEpDRE9EeFZGTDdTbHRnZTJyb2g4bWlsT3VhVHhvamtVVjBQOVhpVWFLc09YNW04eWNobzZQMENIZGpYcFpPNWRjc3g4Ty11ZHY0NmQ3a09qVmhCQmk1SlpqM3FHN0dvdGtmZEFKSC03eXhNZkx1ZGlRVTl0dG96Mk5LdTA4NW8xamtxWU5aS3BfczR4YjMtR3Y5MGQyVjcx?oc=5",
-      "related_sources": [
-        {
-          "source": "Business Standard",
-          "title": "RIR Power Electronics soars on SiC semiconductor facility progress in Odisha - Business Standard",
-          "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNOFQwNWJHWnY5Vk1NekNaMTEtWVU1U1pIejJxbjZHSXFhSEpncjFzZlJqVkFvTjVJLTNKWUhabW5oYV9aclJ5Y3pxd0JLN0dUbjhNeGVlUjBNcHhndGotZDV0TW9vdGF6RFlXb1dyMjYyajkxREdCcGZuVnhHcGQxUUx0cFp0SEF6cFh4QjFfNExxNzBSXzNrbkQ4WDRDdjJrcV8wdi1pc3RCR3hTb2ptOHBBcDk5NnRiMU5uZmFtaVdldEU5NTJHTl9PbzZSUXNZMFZPdWsxbnd1Nm1GNFBtOFdSc0ctUFhvdGZpdnNkc9IB9AFBVV95cUxOQTdNTUYzdnc4NEp5cFZfa0JrN1Rod2RGeldSa2xXVVlNbFRXQWJ0VS02VXQ0R20wNC10djMxbzdqSmtfUFNzdWVBbUE2NzlTVEVoRFloZUpWOVJLLVJZMzZtMkJSV05ybWROY3lNT2stOWxieWR6dlNEVm1nMTE0MHBIMDdUMUxnM01Jc3FpQy1WLUlTdXpjMmZJaGkxVUo5OXlWMEhJbDJrLVRfelNPaGMyQUp0RU55OWdjUGFqejRlMm8zYU8tTjRLM0NQTnM0cEtsRWlzUnZ4aU1ob0VTd2VjR1hDSERneHRIWUc0V1ZwZUN5?oc=5"
-        },
-        {
-          "source": "BW Businessworld",
-          "title": "RIR Power Electronics Installs SiC Wafer Reactors In Odisha - BW Businessworld",
-          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOWGlkcndhZzRQLXRwTEJxM3NvbmRUQWpYRjZNUjhDTHhtbENXUUN2eUQ3Q1RDVjVFQlVHT3lpVUpkS2UySnB6dk53WUJkS204M2RLMHh4eV81MzVEOFl2R1AyUFByVHJhLU5VdGFEeXBqVVlpbEVJRFlhWmJwZDZLZ2NZZ2lnSUtJc2FKc2h1eFI1ZTZoVm1lY2VWcS01VFUxNHNuTGtn?oc=5"
-        },
-        {
-          "source": "EquityBulls",
-          "title": "RIR Power Electronics Completes Installation of State-of-the-Art SiC Epitaxial Wafer Manufacturing Reactors at Bhubaneswar, Odisha Facility - EquityBulls",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5ZWDNXb1BMT0VOUEE1NE1lMlFwY0NRNE5wZ0F3X2F0OW4wNEw2UTIyTzRweTFXOFlQY0tIRzZWTHVQR1FkQkN1NE5yM0JZRlJMSUNzZ0VtVVM3ZGsxU3pF?oc=5"
-        },
-        {
-          "source": "scanx.trade",
-          "title": "RIR Power Electronics completes SiC reactor installation in Odisha - scanx.trade",
-          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOYU9vb09FRlZuaW8wQTIxRWZRZThaZzFvblNWZmJGN1dvc18xREVYS080bWp0VWdlMjFGZkdhZEJSVzBiWUNQckpmeWU3REVRQkNqMGt5R2RpbUVyQWc4dlFQbE8yTklaT2dENGhoOHB3RVB1S1hrN2lEMjBzYWtaMnBKVEdET3BjZnpRUHhSTEUwWHdzYV9PeEFNbGczdTFtYTRyODhHcmREQUN3WU9FY3RNX2ZIdjRlSmhVTw?oc=5"
-        }
-      ]
-    },
-    {
-      "source": "railwaygazette.com",
-      "title": "From innovation to a global standard. 15 years of SiC technology in public transport - railwaygazette.com",
-      "summary": "From innovation to a global standard. 15 years of SiC technology in public transport railwaygazette.com",
-      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPT3U3dUY3OWxUemlzYUo0endlYUtBSUFVT1NDMVktZWNZZmZJSWRKcmY1dm9fYml3ZjBhVTJtNThaYVRTSDZuZmc0TVlJMVMzMUtQbVhBaUpkWVVFZ1NRbW5PUl9xTmlnWUhTbXctRktQYzAybExJQTkxMHBsRGNMRlVNeEJMWDVmTm1vNzljR3ZOZEc2NEhzVTY3WlBXdFdTSlBMVWs2RnlPaDRNM01GRl8xZ3NtdERJSW9jSlpaWUlublpIemg1MWVjeGx0UUtJRHlKdUxhVmgtS0RX?oc=5"
-    },
-    {
-      "source": "Data Center Knowledge",
+      "id": "260917-13",
       "title": "Solid-State Transformers Power Next-Gen AI Data Centers - Data Center Knowledge",
-      "summary": "Solid-State Transformers Power Next-Gen AI Data Centers Data Center Knowledge",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPX1Znemk2RjExNzB1WFg3RkdTN01YWW5qdG1QRDlhTTJQWFJMdzlIMmpaVjNnUHVzeXM0QmV0Tzdob29tNUwwU29mbjhTWkdPUXhSUmpTbkJWM21MaTJJbmVOMHRLMEgxS3ZCeXlLcHRZbEZWcHFiRm1ZRUh6cTMyOHhneUJRRTZRcENqa1EwdFBqOEhhb0hqa0RQWXpTVTV4RVU1THpmcWNGS3dCd1l6cg?oc=5"
+      "category": [
+        "ai_dc",
+        "sst"
+      ],
+      "primary_source": "Data Center Knowledge",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPX1Znemk2RjExNzB1WFg3RkdTN01YWW5qdG1QRDlhTTJQWFJMdzlIMmpaVjNnUHVzeXM0QmV0Tzdob29tNUwwU29mbjhTWkdPUXhSUmpTbkJWM21MaTJJbmVOMHRLMEgxS3ZCeXlLcHRZbEZWcHFiRm1ZRUh6cTMyOHhneUJRRTZRcENqa1EwdFBqOEhhb0hqa0RQWXpTVTV4RVU1THpmcWNGS3dCd1l6cg?oc=5",
+      "summary_raw": "Solid-State Transformers Power Next-Gen AI Data Centers Data Center Knowledge",
+      "sources": []
     },
     {
-      "source": "PR Newswire",
+      "id": "260917-14",
       "title": "TMEIC Opens New Power Electronics Flagship Manufacturing Facility in Waller County, Texas - PR Newswire",
-      "summary": "TMEIC Opens New Power Electronics Flagship Manufacturing Facility in Waller County, Texas PR Newswire",
-      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZXZPamx6Y243cjNFR2lWa2dmV2ZCYkJlLThxZFZjSE1zdFloZjhMUFZoZnk5TWtFSTR4RmU2dXFSeE5Ucm9RdGtsdmgxaWNTVEJGejRVbW00TFZIajFWXzY3YlFqT1hYaktVdWMyZ29rekJLRGNpYVJfWTBLcnFlRG9yd2dRcWE1ZklKbFhxU1VBMEhhY3luODQzRXNBX1lHOUk0cDNTcjM0V3BmUTNNeU1rWDItZTBDeS10bndpQ2VGanhOUEg4alp3WWNOdGM3T2puaE5oNFY3Zzhz?oc=5"
+      "category": [],
+      "primary_source": "PR Newswire",
+      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZXZPamx6Y243cjNFR2lWa2dmV2ZCYkJlLThxZFZjSE1zdFloZjhMUFZoZnk5TWtFSTR4RmU2dXFSeE5Ucm9RdGtsdmgxaWNTVEJGejRVbW00TFZIajFWXzY3YlFqT1hYaktVdWMyZ29rekJLRGNpYVJfWTBLcnFlRG9yd2dRcWE1ZklKbFhxU1VBMEhhY3luODQzRXNBX1lHOUk0cDNTcjM0V3BmUTNNeU1rWDItZTBDeS10bndpQ2VGanhOUEg4alp3WWNOdGM3T2puaE5oNFY3Zzhz?oc=5",
+      "summary_raw": "TMEIC Opens New Power Electronics Flagship Manufacturing Facility in Waller County, Texas PR Newswire",
+      "sources": []
     },
     {
-      "source": "PR Newswire",
+      "id": "260917-15",
       "title": "Solid-state Transformer Market worth $1.52 billion by 2035 - Exclusive Report by MarketsandMarkets™ - PR Newswire",
-      "summary": "Solid-state Transformer Market worth $1.52 billion by 2035 - Exclusive Report by MarketsandMarkets™ PR Newswire",
-      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPSkxhdHJjY19iTVdUSnk3MHhtWXFBbTU1UVh2R1BBbV9wRHdPOFp3THFia2hlbmpyRW1fc3BlWkxpa1UwWk5tRUIxT2FLVkl3b19zTlNTLWNiNlVkOVZHSURqbFR6OVJTMllnaXl6V2JwOXVDQ2Z1VE9ZZFNvS0tEV1QwUmpyY1VBZllFMlR3OVQ4RzkzbkI2U2l0X0xWckNtejVEd05IckFQOVkwT2lvQWhHT0otZWstTGU0R1hleC05RG5Mam9mMElrXzBWTVJvZllER1ZOSFc3RWhsdjdoY25lYjhHZW1I?oc=5"
-    },
-    {
-      "source": "PR Newswire",
-      "title": "DoGo Power Empowers New Power Systems with AI and Grid-Forming Energy Storage - PR Newswire",
-      "summary": "DoGo Power Empowers New Power Systems with AI and Grid-Forming Energy Storage PR Newswire",
-      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPUVF4ZkRGREliZ1QzNzl4MUhmU3RGYkVGSkpfZTZqTWZKUy03UWdrV2FRTTF6d1dmbjZ5eUpBZDhyU2xvLWdvWFpMUkxLSEN0bDVkOWlaUWk0d19jTTYwenZ1S1VwTEZ0Y0txdkdjYlZ2NmExU2Ria2F6dUxSN18yXzhHUVY2dXl1RVdaMFRNZWdCWmlrRXBKVVVUUG5Cc3lTeWl6N1lhNXgwNGVXd2Zjb2lwTHhadmNOS0hQTnN1MlhJUEZqWXNvZHRGMlBadw?oc=5"
-    },
-    {
-      "source": "PR Newswire",
-      "title": "Huawei Launches the latest Grid-Forming Strategy for Future Power Systems at The Smarter E 2026 - PR Newswire",
-      "summary": "Huawei Launches the latest Grid-Forming Strategy for Future Power Systems at The Smarter E 2026 PR Newswire",
-      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxORFlsZm9UbGI1SVA5Z3pJMU1jYzZPcy0weWhZU0xOOUF1Snl1MWRiMGFaQWh0aDJmMnRKWFEyUGkxUk1sOE4yWGZXR1JqMnNsOXo2dXVkbHNaNTVuT2ZwMWgxenc3eHZKVE10N2dUZERkaVRLTlZLN3RSbU9TczNKSWpaS1NmMjRCODdLZXhXaGM3c2UzNTZyT2o4X3JobXI4c29fUDRPWGt0Q0ZscVZUVnUyVnd4LTh1b2hzSVd0VmtZdTFtSVJ5TlhYT3JVeFZIckQ3LTMzb2tYNGlGZkhhZkk3dUg5QQ?oc=5"
-    },
-    {
-      "source": "PR Newswire",
-      "title": "DoGo Power Enters Mali with Grid-Forming ESS to Advance Local Energy Transition - PR Newswire",
-      "summary": "DoGo Power Enters Mali with Grid-Forming ESS to Advance Local Energy Transition PR Newswire",
-      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOLWUtbVlpU1owOFJPZ3MyUFR2TlhLN2JwcXZoWEliM0RtZDlSTWcyTDFKaDRBVTNZQkM2a3BSbklNUTNCX3FhSXBsNXNoVE84NG5ycERGSUdBQVI2dlZuNFppMzJsdTQ0MjhiZTdYMEdDS2Q3YVFzZ1VTRUF1ZDR4Ml9nMGVMQWhkdzFFb2ZrbU13U1JjenM3aERTMGg5SEhJVVNRTzB5dHBCUUNITUdLX2xBU1RUYUVaVkJWQl9zaW1FNU5jRHljVURGMks5LVFi?oc=5",
-      "related_sources": [
-        {
-          "source": "Solarbytes",
-          "title": "DoGo Power brings grid-forming energy storage to Mali - Solarbytes",
-          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdm82ZGt0MHNHb2Jfc2o4ejVxdThxZFRYNkNmaVJIUjVaS3FiX2s0NVUza0NlY2R4alJkR3F5LW5mc19uaDU3c1JfQTBDcEJEV25ZOVdCXy1lZEFBUTE2NHhkaEFvRkhkcnV4SE80VUFUVm10UHVaLVFUUU5ZYkZ0d3laZlJxd1lZNFJPMDdtTUl1dnM5WXZ1Z2hGbGcwaU9wSUZWLTRhRWFmc0JfOVln?oc=5"
-        },
-        {
-          "source": "SolarQuarter",
-          "title": "DoGo Power Enters Mali With Grid-Forming Energy Storage Solutions - SolarQuarter",
-          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPREc0WlN6VXMtTE81LVhjZjZhaDFhNWdDa2JyYmtjVjJQN2NmaHdWZUY3NlR6QWVWaDlVNlFvbk83VFpFSmJIWmRCY0lmb3p3cnZLOXJUSzEwVFZjeTU1NmZVaHBWRWYxeDhZaWlpN3ZpVFNON1VjVTQyb2NzNnM3RXhJU1hUREQ3TTdHSl9FSDVNTUZnQTQwMkxRTHVHMXFQT1Racg?oc=5"
-        }
-      ]
-    },
-    {
-      "source": "EIN Presswire",
-      "title": "DAHWS Introduces Its Power Electronics Portfolio for Industrial Applications - EIN Presswire",
-      "summary": "DAHWS Introduces Its Power Electronics Portfolio for Industrial Applications EIN Presswire",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSDN3VWZudV9TVThzWlBTaDhRcGliRVEwcUdHM3U0SC1TMDF0aG40OWNheVg3cTl3T3pfbzRGa0t2bm01Ym5Hd3hYM1huRFIxZHpCUHhGSHF5cHkxQ0tYOEo2blpNc3BnY0FHVTV4dllkTzJCR0FrVlpkY0NSb2IxRWdTT1hhSUdjR1gxQ0xyWDh6R1ZfMVd0NTNxU2R0VVlGaHhrV3VNWXU0aTN6WlpTY3Z2dmtNTXVrSTlhcDQ1WXQ?oc=5"
-    },
-    {
-      "source": "IndexBox",
-      "title": "Ceramic Lead Frame Components Market To 2035: Electrification and Power Electronics Demand Drive Growth - News and Statistics - IndexBox",
-      "summary": "Ceramic Lead Frame Components Market To 2035: Electrification and Power Electronics Demand Drive Growth - News and Statistics IndexBox",
-      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPNWp6Z29ONkxlbENPQ19vZUctSXNlSm10eHoyNG1udkhMX1Rlbk1PUDlHU1B6QVdkSnFrYUU1STdrNXJUX1ZJUFhZS1RUbFE0N1hYU1Q4RVNTOHlyWWEySmtMbF9SSzdnQWtwSVdQUzBDdHdfcm5aZFh3dW1icDM2LVNib085RHZaWXE5cXNBdGdGZVBDREMzM182aVU5ak85eElKUTBXZWNybkRmc2pwazQ2N2hZX0Nacy1EaGotV2hyLWU5RmJKNVhRbExFU1phQTRsLUZoazZTOU9jWWRZcHR0enRJNkY4UVhuNm9ZWW0?oc=5"
-    },
-    {
-      "source": "Morningstar",
-      "title": "Heron Power Selects First Factory Location to Build Next-Generation Power Electronics in the United States - Morningstar",
-      "summary": "Heron Power Selects First Factory Location to Build Next-Generation Power Electronics in the United States Morningstar",
-      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPNFloX2M1bHVUODRnTENIM3hyeFNXNjFqVGdUQXdQRlF3TEVCSmRhNFluYkdNTi1NN3dMZzNfSU9VMk5ScEZOS0dUYVZLWXhZYlVXT1h5cUlZTGpDNVd1Rk5ZMkx2Zjl5VHJ3dDZJYzV0YzFPVjFjZHp6M0JYVThPcWlZR2lCbzJ2bkpPU283WVlBYXdST1VOVC1Dd2IwTnVqSFk4elNxMURMc2VkV1NFRkZyQnZzTjNiaXFFYmlJeWJlcVcyd0xmZEVNSmRoazNmaUVyckc3cjFuZlFCWUFVMDlfMnM4MHdXSkc2cnMtTEZtd3R0b2pvbUxzRQ?oc=5"
+      "category": [
+        "sst"
+      ],
+      "primary_source": "PR Newswire",
+      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPSkxhdHJjY19iTVdUSnk3MHhtWXFBbTU1UVh2R1BBbV9wRHdPOFp3THFia2hlbmpyRW1fc3BlWkxpa1UwWk5tRUIxT2FLVkl3b19zTlNTLWNiNlVkOVZHSURqbFR6OVJTMllnaXl6V2JwOXVDQ2Z1VE9ZZFNvS0tEV1QwUmpyY1VBZllFMlR3OVQ4RzkzbkI2U2l0X0xWckNtejVEd05IckFQOVkwT2lvQWhHT0otZWstTGU0R1hleC05RG5Mam9mMElrXzBWTVJvZllER1ZOSFc3RWhsdjdoY25lYjhHZW1I?oc=5",
+      "summary_raw": "Solid-state Transformer Market worth $1.52 billion by 2035 - Exclusive Report by MarketsandMarkets™ PR Newswire",
+      "sources": []
     }
   ],
-  "summary": "# 电力电子技术雷达\n日期：2026-09-17\n\n> 说明：本批输入材料多为新闻标题/摘要级信息，正文细节普遍缺失。以下所有参数字段凡原文未明确披露者，一律标注“原文未提供”，不做常识性补全。涉及“全球首个/世界首台”等表述，仅作为来源声称记录。\n\n---\n\n## 一、今日最值得关注\n\n### 1. Enphase IQ 固态变压器（GaN 基、面向 AI 数据中心）\n- 事件：Enphase 宣布/推进其 IQ 固态变压器（SST），面向 AI 数据中心；相关报道称其双向 GaN 固态变压器已在美国进入 production，功率目标 5 MW；另有报道称功率模块正在得克萨斯州制造，并计划在 AI Infra Summit 2026 展示。多家来源同时提及“2028 年 volume deliveries”目标。\n- 证据：pv-magazine-usa.com（主来源）；HPCwire、Yahoo Finance（多篇）、24/7 Wall St.、finance.biggo.com、TradingView 等相关来源。标题层面明确出现“bidirectional GaN solid-state transformer”“5MW power delivery”“production in the US”“targets 2028 for volume deliveries”“power modules now being built in Texas”。\n- 核心技术：GaN 基固态变压器；双向；模块化（“power modules”）。\n- 技术参数：\n  - 电压等级：原文未提供\n  - 功率等级：来源称目标 5 MW 功率输送（“targeting 5MW power delivery”）\n  - 拓扑：原文未提供（仅称 solid-state transformer，未指明 DAB/CLLC/LLC 等）\n  - 功率器件：GaN（来源明确）\n  - 开关频率：原文未提供\n  - 效率：原文未提供\n  - 功率密度：原文未提供\n  - 隔离方式：原文未提供（SST 通常含隔离，但原文未明确）\n  - 控制/调制：原文未提供\n  - 应用场景：AI 数据中心\n- 产业化阶段：来源称“enters production in the US”“power modules now being built in Texas”，同时“targets 2028 for volume deliveries”。需严格区分：模块进入生产 ≠ 整机量产；2028 为交付目标，尚未实现。\n- 技术意义：[模型推断] 若 GaN 用于数据中心 SST，指向中压/低压侧高频化以提升功率密度、减小磁件体积的方向；双向能力对数据中心备电/储能耦合有意义。\n- 需要继续核实：电压等级、拓扑、开关频率、效率、隔离方式；\"production\" 的具体含义（样机/试产/量产）；5 MW 是单机还是系统级。\n- 主要来源：pv-magazine-usa.com；相关来源：HPCwire、Yahoo Finance、24/7 Wall St.、finance.biggo.com、TradingView。\n\n### 2. Sungrow 发布 3 MW 固态变压器\n- 事件：Sungrow 发布 3 MW 固态变压器。\n- 证据：pv magazine Global（主来源），标题“Sungrow launches 3 MW solid-state transformer”。\n- 核心技术：固态变压器（SST）。\n- 技术参数：\n  - 电压等级：原文未提供\n  - 功率等级：3 MW\n  - 拓扑：原文未提供\n  - 功率器件：原文未提供\n  - 开关频率：原文未提供\n  - 效率：原文未提供\n  - 功率密度：原文未提供\n  - 隔离方式：原文未提供\n  - 控制/调制：原文未提供\n  - 应用场景：原文未提供（标题未指明，Sungrow 主业为光伏/储能，但不得据此推断）\n- 产业化阶段：产品发布（launch）。\n- 技术意义：[模型推断] 3 MW 级 SST 属较大功率等级，若为产品化发布，说明 SST 正从示范走向产品序列，但需核实是发布还是量产。\n- 需要继续核实：电压等级、拓扑、器件、应用场景、是否量产。\n- 主要来源：pv magazine Global。\n\n### 3. 22.9 kV 固态变压器（面向美国数据中心）\n- 事件：来源称开发出“世界首台”22.9 kV 固态变压器，用于为美国数据中心供电。\n- 证据：Interesting Engineering（主来源），标题“World's first 22.9kV solid-state transformer developed to electrify US data centers”。\n- 核心技术：中压固态变压器（22.9 kV 级）。\n- 技术参数：\n  - 电压等级：22.9 kV（来源标题明确）\n  - 功率等级：原文未提供\n  - 拓扑：原文未提供\n  - 功率器件：原文未提供\n  - 开关频率：原文未提供\n  - 效率：原文未提供\n  - 功率密度：原文未提供\n  - 隔离方式：原文未提供\n  - 控制/调制：原文未提供\n  - 应用场景：美国数据中心\n- 产业化阶段：来源称“developed”（开发），非量产。\n- 技术意义：[模型推断] 22.9 kV 属配电级中压，若 SST 直接接入该电压等级，指向“中压直转”的数据中心供电架构，可减少工频变压器级数。\n- 需要继续核实：“世界首台”仅为来源声称，不可确认；开发主体、功率等级、拓扑、器件、是否并网运行。\n- 主要来源：Interesting Engineering。\n\n### 4. RIR Power Electronics 在印度 Odisha 安装 SiC 外延晶圆制造反应器\n- 事件：RIR Power Electronics 完成在印度 Bhubaneswar（Odisha）工厂的 SiC 外延晶圆制造反应器安装。\n- 证据：Machine Maker（主来源）；相关来源：Business Standard、BW Businessworld、EquityBulls、scanx.trade。标题明确“SiC Epitaxial Wafer Manufacturing Reactors”“completes installation”。\n- 核心技术：SiC 外延（epitaxial）晶圆制造设备安装。\n- 技术参数：\n  - 电压等级：不适用/原文未提供\n  - 功率等级：不适用/原文未提供\n  - 拓扑：不适用\n  - 功率器件：SiC（外延环节，非器件本身）\n  - 开关频率：不适用\n  - 效率：不适用\n  - 功率密度：不适用\n  - 隔离方式：不适用\n  - 控制/调制：不适用\n  - 应用场景：SiC 功率半导体上游材料/外延制造\n- 产业化阶段：设备安装完成（installation completed），属产能建设阶段，非量产。\n- 技术意义：[模型推断] SiC 外延是 SiC 器件产业链关键上游环节，本地化外延产能对区域供应链有意义；但“安装反应器”距“稳定量产外延片”仍有距离。\n- 需要继续核实：产能、外延片尺寸（如 6/8 英寸）、投产时间、良率。\n- 主要来源：Machine Maker；相关来源：Business Standard、BW Businessworld、EquityBulls、scanx.trade。\n\n### 5. WattPower 推出 506 kW 构网型（grid-forming）逆变器\n- 事件：WattPower 推出 506 kW 构网型逆变器，面向公用事业规模光伏。\n- 证据：pv magazine Global（主来源），标题“WattPower introduces 506 kW grid-forming inverter for utility-scale solar”。\n- 核心技术：构网型（grid-forming）逆变器。\n- 技术参数：\n  - 电压等级：原文未提供\n  - 功率等级：506 kW\n  - 拓扑：原文未提供\n  - 功率器件：原文未提供\n  - 开关频率：原文未提供\n  - 效率：原文未提供\n  - 功率密度：原文未提供\n  - 隔离方式：原文未提供\n  - 控制/调制：构网型（grid-forming）控制（来源明确）\n  - 应用场景：公用事业规模光伏\n- 产业化阶段：产品发布（introduces）。\n- 技术意义：[模型推断] 506 kW 级 GFM 逆变器面向大型光伏，反映构网型控制从储能向光伏逆变器延伸的趋势。\n- 需要继续核实：控制策略细节、是否具备黑启动、电压/频率支撑参数、认证状态。\n- 主要来源：pv magazine Global。\n\n---\n\n## 二、技术方向\n\n**SST（固态变压器）**\n本批信息中 SST 为最密集方向：Sungrow 3 MW SST 发布；Enphase GaN 基双向 SST（目标 5 MW，面向 AI 数据中心，模块在得州生产，2028 交付目标）；22.9 kV SST（来源称“世界首台”，面向美国数据中心）；Data Center Knowledge 综述“Solid-State Transformers Power Next-Gen AI Data Centers”；MarketsandMarkets 发布 SST 市场预测（2035 年 15.2 亿美元）。技术参数（拓扑、器件、频率、效率）普遍缺失。\n\n**SiC / GaN**\n- SiC：RIR Power Electronics 在 Odisha 完成 SiC 外延晶圆制造反应器安装（上游产能建设）；railwaygazette.com 回顾轨道交通 15 年 SiC 应用（“From innovation to a global standard”）。\n- GaN：Renesas 发布 GaN D-Mode 技术与设计优势材料；Enphase SST 采用 GaN（来源明确）。\n- 本批未见 SiC/GaN 器件具体电参数（耐压、导通电阻、频率）披露。\n\n**DAB / CLLC / LLC**\n本批信息未发现明确进展。所有 SST 报道均未指明具体拓扑，不得据“bidirectional/high frequency”推断为 DAB/CLLC。\n\n**GFM（构网型）**\n- WattPower 506 kW 构网型逆变器（公用事业光伏）。\n- DoGo Power：AI + 构网型储能（新电力系统）；DoGo Power 进入马里，构网型 ESS。\n- Huawei：在 The Smarter E 2026 发布面向未来电力系统的最新构网型策略。\n- 本批未见 GFM 控制算法、惯量支撑参数等细节。\n\n**PCS / 储能**\n- DoGo Power 构网型 ESS（含马里项目）。\n- Huawei 构网型策略。\n- 本批未见 PCS 具体功率等级、拓扑、效率参数。\n\n**800V DC / AI 数据中心**\n- Enphase SST 明确面向 AI 数据中心（5 MW 目标）。\n- 22.9 kV SST 面向美国数据中心。\n- Data Center Knowledge 综述 SST 用于下一代 AI 数据中心。\n- nature.com 综述“From Grid to Load: Advanced Power Electronics for Next-Generation Data Centers”。\n- 本批未见明确的 800V DC 母线电压披露，不得将数据中心 SST 直接等同于 800V DC 架构。\n\n**高功率密度 / 高频磁件**\n本批信息未发现明确进展（无磁件、频率、功率密度具体数据）。\n\n**其他**\n- nature.com：III-氮化物异质结中的本征极化超结（intrinsic polarization superjunctions），面向高效电力电子——属基础器件/材料研究。\n- Electronic Design：讨论功率电子是否正在超越分流电阻（shunt resistor）——属测量/传感方向。\n- TMEIC 在得州 Waller County 开设电力电子旗舰制造工厂。\n- Heron Power 选定美国首家工厂地点，建设下一代电力电子。\n- DAHWS 推出面向工业应用的电力电子产品组合。\n- 陶瓷引线框架元件市场预测（IndexBox）。\n\n---\n\n## 三、同一事件合并\n\n**事件 A：Enphase IQ 固态变压器（面向 AI 数据中心）**\n- 主来源：pv-magazine-usa.com\n- 相关来源：HPCwire、Yahoo Finance（多篇）、24/7 Wall St.、finance.biggo.com、TradingView\n- 说明：上述来源均指向同一事件（Enphase IQ SST 开发/生产/展示/2028 目标），合并为事件 5 与事件 8 的统一分析，不重复计数。事件 8（Electronic Design“Scalable GaN-Based IQ Solid-State Transformer Architecture Eyes AI Data Centers”）与事件 5 为同一事件的不同媒体角度。\n\n**事件 B：RIR Power Electronics SiC 外延反应器安装**\n- 主来源：Machine Maker\n- 相关来源：Business Standard、BW Businessworld、EquityBulls、scanx.trade\n- 说明：同一事件（Odisha SiC 外延反应器安装完成），合并分析。\n\n**事件 C：DoGo Power 构网型储能**\n- 主来源：PR Newswire（事件 15、17）\n- 相关来源：Solarbytes、SolarQuarter（事件 17）\n- 说明：事件 15（AI + 构网型储能）与事件 17（进入马里）为同一主体的相关但不同事件，若按“同一事件”聚类标准，二者主题相关但事件不同（一为战略/产品，一为区域落地），此处并列列出，不重复分析。\n\n**事件 D：分流电阻（shunt resistor）讨论**\n- 主来源与相关来源均为 Electronic Design（同一文章的两个链接），合并为一条。\n\n---\n\n## 四、对工程师有用的技术观察\n\n1. [趋势判断] SST 正成为本批信息的核心方向，且明显向 AI 数据中心场景集中（Enphase、22.9 kV SST、Data Center Knowledge 综述、nature.com 数据中心综述）。但所有来源均未披露拓扑、开关频率、效率，工程可复用信息有限。\n\n2. [模型推断] Enphase 明确使用 GaN 且强调“bidirectional”，结合 SST 场景，指向高频化 + 双向功率流需求；但原文未给出拓扑，不能推断为 DAB/CLLC。工程师若关注该路线，应优先核实其隔离级拓扑与器件耐压。\n\n3. [趋势判断] 构网型（GFM）从储能（DoGo Power、Huawei）向光伏逆变器（WattPower 506 kW）扩展，说明 GFM 正从“储能专属”走向“多类并网设备”。但本批无控制算法、惯量参数细节。\n\n4. [信息不足] 本批 SiC/GaN 方向以产业链/产能（RIR 外延反应器）和产品宣传（Renesas GaN D-Mode）为主，缺少器件级电参数（耐压、Rds(on)、Qg、频率），对选型参考价值有限。\n\n5. [模型推断] 22.9 kV SST 若属实，属配电级中压直转路线，可减少工频变压器级数；但“世界首台”仅为来源声称，且开发阶段≠并网运行，需谨慎对待。\n\n6. [趋势判断] 制造端动作密集（TMEIC 得州工厂、Heron Power 美国工厂、RIR Odisha 反应器、Enphase 得州模块），反映电力电子产能区域化趋势；但均为产能/工厂层面，非技术参数突破。\n\n---\n\n## 五、阅读建议\n\n**建议深入阅读**\n- Enphase IQ SST 相关（pv-magazine-usa.com 主来源 + Electronic Design 架构文）：本批唯一同时给出器件（GaN）、功率目标（5 MW）、应用（AI 数据中心）、产业化节点（production / 2028 目标）的 SST 事件，信息密度最高，但需自行核实参数。\n- 22.9 kV SST（Interesting Engineering）：中压等级明确，若关注数据中心中压直转架构值得追踪，但需核实开发主体与真实性。\n- nature.com 两篇（III-氮化物极化超结、数据中心电力电子综述）：属研究/综述性质，适合了解器件物理与系统架构背景。\n\n**快速浏览**\n- RIR SiC 外延反应器（产业链产能，非技术参数）。\n- WattPower 506 kW GFM 逆变器（产品发布，参数缺失）。\n- DoGo Power / Huawei GFM（宣传性质为主）。\n- TMEIC、Heron Power 工厂新闻（产能布局，非技术）。\n- 市场预测（SST 市场、陶瓷引线框架）、分流电阻讨论、DAHWS 产品组合、轨道交通 SiC 回顾：背景参考即可。\n\n---\n\n## 六、信息质量与缺口\n\n**证据性质分类**\n- 学术/研究：nature.com 两篇（III-氮化物极化超结、数据中心电力电子综述）——证据等级较高，但本批仅有标题/摘要，无法评估具体结论。\n- 企业新闻/产品发布：Sungrow 3 MW SST、WattPower 506 kW GFM、Renesas GaN、DAHWS、Enphase（部分）——宣传性质，参数常缺失，需以官方 datasheet 核实。\n- 媒体报道：Interesting Engineering（22.9 kV SST）、Data Center Knowledge、pv magazine 系列——二手报道，“世界首台”等需回溯原始来源。\n- 财经/市场信息：MarketsandMarkets SST 市场预测、IndexBox 陶瓷引线框架、24/7 Wall St. 股价——非技术进展，仅作背景。\n- 产能/工厂新闻：TMEIC、Heron Power、RIR——属制造布局，非技术参数。\n\n**缺失的关键参数**\n- 几乎所有 SST 事件缺失：电压等级（除 22.9 kV）、拓扑、开关频率、效率、功率密度、隔离方式、控制/调制。\n- Enphase：5 MW 为“目标”，需核实是单机还是系统；\"production\" 具体阶段不明。\n- SiC/GaN 器件：无耐压、Rds(on)、频率等电参数。\n- GFM：无控制策略、惯量/一次调频参数、认证状态。\n- 800V DC：本批无任何来源明确提及 800V 母线，不得推断。\n\n**总体提示**：本批信息以“标题级”为主，技术参数普遍缺失，工程决策前须回溯原始来源（企业官网、datasheet、论文全文）。"
+  "directions": {},
+  "observations": [],
+  "quality_notes": "AI结构化分析失败，本次保留原始事件数据。"
 }
