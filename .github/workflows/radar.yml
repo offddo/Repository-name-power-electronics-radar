@@ -38,16 +38,17 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
-          p = Path("scripts/radar_runner.py")
+          p = Path("scripts/radar.py")
           s = p.read_text(encoding="utf-8")
-          # radar.py contains a JSON schema inside an f-string; convert it to a plain
-          # template before compiling so literal JSON braces cannot break Python syntax.
-          s = s.replace('text = path.read_text(encoding="utf-8")', 'text = path.read_text(encoding="utf-8")\ntext = text.replace("    prompt = f\'\'\'", "    prompt = \'\'\'", 1)\ntext = text.replace("报告日期：{date}", "报告日期：DATE_PLACEHOLDER", 1)\ntext = text.replace("{json.dumps(events, ensure_ascii=False)}\'\'\'", "EVENTS_PLACEHOLDER\'\'\'", 1)\ntext = text.replace("EVENTS_PLACEHOLDER\'\'\'\\n\\n    r = requests.post", "EVENTS_PLACEHOLDER\'\'\'\\n    prompt = prompt.replace(\"DATE_PLACEHOLDER\", date).replace(\"EVENTS_PLACEHOLDER\", json.dumps(events, ensure_ascii=False))\\n\\n    r = requests.post", 1)', 1)
-          # Keep the broad source pool, but cap the expensive Google News resolution stage.
-          s = s.replace('marker[:-1] + extra + "\n]"', 'marker[:-1] + extra[:-1] + "\n]"', 1)
-          s = s.replace("MAX_CANDIDATES = 240", "MAX_CANDIDATES = 90", 1)
-          s = s.replace("MAX_EVENTS = 40", "MAX_EVENTS = 30", 1)
-          s = s.replace("for item in feed.entries[:40]:", "for item in feed.entries[:12]:", 1)
+          # Safely convert the JSON-bearing prompt f-string to a normal template.
+          s = s.replace("    prompt = f'''", "    prompt = '''", 1)
+          s = s.replace("报告日期：{date}", "报告日期：DATE_PLACEHOLDER", 1)
+          s = s.replace("{json.dumps(events, ensure_ascii=False)}'''", "EVENTS_PLACEHOLDER'''", 1)
+          s = s.replace(
+              "    r = requests.post(",
+              "    prompt = prompt.replace('DATE_PLACEHOLDER', date).replace('EVENTS_PLACEHOLDER', json.dumps(events, ensure_ascii=False))\n\n    r = requests.post(",
+              1,
+          )
           p.write_text(s, encoding="utf-8")
           PY
           python scripts/radar_runner.py
