@@ -4,7 +4,9 @@ import re
 import html
 import requests
 import feedparser
+from difflib import SequenceMatcher
 from datetime import datetime, timezone, timedelta
+from urllib.parse import urlparse
 
 
 RSS_SOURCES = [
@@ -30,49 +32,95 @@ RSS_SOURCES = [
     },
 ]
 
-
 KEYWORDS = [
-    "SST",
-    "solid-state transformer",
-    "SiC",
-    "GaN",
-    "DAB",
-    "CLLC",
-    "LLC",
-    "grid-forming",
-    "GFM",
-    "PCS",
-    "800V",
-    "AI data center",
-    "AI datacenter",
-    "high power density",
-    "wide-bandgap",
-    "power electronics",
+    "SST", "solid-state transformer", "solid state transformer", "SiC", "GaN",
+    "DAB", "CLLC", "LLC", "grid-forming", "GFM", "PCS", "800V",
+    "AI data center", "AI datacenter", "high power density", "wide-bandgap",
+    "power electronics", "power semiconductor", "silicon carbide", "gallium nitride"
 ]
 
-MAX_ARTICLES = 20
+# Topics that are useful for engineering radar clustering.
+TOPIC_GROUPS = {
+    "sst": ["sst", "solid-state transformer", "solid state transformer"],
+    "sic": ["sic", "silicon carbide"],
+    "gan": ["gan", "gallium nitride"],
+    "gfm": ["grid-forming", "grid forming", "gfm"],
+    "pcs": ["pcs", "power conversion system"],
+    "ai_dc": ["ai data center", "ai datacenter", "data center", "datacenter"],
+    "dab": ["dab", "dual active bridge"],
+    "cllc": ["cllc"],
+    "llc": ["llc"],
+    "800v": ["800v", "800 v", "800-volt"],
+    "magnetics": ["magnetic integration", "integrated magnetics", "high frequency magnetics", "high-frequency magnetics"],
+}
+
+# Companies/entities that frequently appear in the radar. This helps merge syndicated coverage
+# of the same product or facility even when headlines are worded differently.
+ENTITY_ALIASES = {
+    "enphase": ["enphase", "enphase energy"],
+    "rir": ["rir power electronics", "rir power"],
+    "sungrow": ["sungrow"],
+    "tmeic": ["tmeic"],
+    "renesas": ["renesas"],
+    "delta": ["delta electronics", "delta"],
+}
+
+# Prefer technical/primary sources over finance rewrites when choosing a representative source.
+SOURCE_PRIORITY = {
+    "nature.com": 100,
+    "ieee": 98,
+    "renesas": 95,
+    "sungrow": 95,
+    "enphase": 95,
+    "tmeic": 95,
+    "pv magazine global": 90,
+    "pv-magazine-usa.com": 90,
+    "electronic design": 82,
+    "hpcwire": 78,
+    "interesting engineering": 70,
+    "machine maker": 68,
+    "railwaygazette.com": 65,
+    "data center knowledge": 60,
+    "pr newswire": 58,
+    "business standard": 45,
+    "yahoo finance": 30,
+    "24/7 wall st.": 25,
+    "finance.biggo.com": 20,
+    "tradingview": 15,
+    "scanx.trade": 10,
+}
+
+MAX_CANDIDATES = 80
+MAX_EVENTS = 20
 
 
 def clean_html(text):
-    """Remove HTML tags/entities from RSS summaries."""
     if not text:
         return ""
-    text = html.unescape(text)
+    text = html.unescape(str(text))
+    text = re.sub(r"<script.*?</script>|<style.*?</style>", " ", text, flags=re.I | re.S)
     text = re.sub(r"<[^>]+>", " ", text)
     text = re.sub(r"\s+", " ", text)
     return text.strip()
 
 
 def normalize_title(title):
-    """Normalize a title for duplicate detection."""
-    title = html.unescape(title or "").lower()
-    title = re.sub(r"\s+", " ", title)
+    title = clean_html(title).lower()
+    title = re.sub(r"\([^)]*download[^)]*\)", "", title)
+    title = re.sub(r"\s*[-|–—:]\s*[^-]{1,50}$", "", title)
     title = re.sub(r"[^\w\u4e00-\u9fff ]", "", title)
-    return title.strip()
+    return re.sub(r"\s+", " ", title).strip()
+
+
+def source_score(source):
+    s = (source or "").lower().strip()
+    for key, score in SOURCE_PRIORITY.items():
+        if key in s:
+            return score
+    return 40
 
 
 def get_source_name(item, fallback):
-    """Prefer the publisher supplied by the RSS item when available."""
     source = item.get("source")
     if isinstance(source, dict):
         name = source.get("title") or source.get("name")
@@ -83,10 +131,90 @@ def get_source_name(item, fallback):
     return fallback
 
 
+def topic_set(text):
+    t = clean_html(text).lower()
+    found = set()
+    for group, terms in TOPIC_GROUPS.items():
+        if any(term in t for term in terms):
+            found.add(group)
+    return found
+
+
+def entity_set(text):
+    t = clean_html(text).lower()
+    found = set()
+    for entity, aliases in ENTITY_ALIASES.items():
+        if any(alias in t for alias in aliases):
+            found.add(entity)
+    return found
+
+
+def extract_meta_description(url):
+    """Try to turn a Google News redirect into a cleaner original URL and description."""
+    if not url or "news.google.com" not in url:
+        return url, ""
+    try:
+        r = requests.get(
+            url,
+            timeout=8,
+            allow_redirects=True,
+            headers={"User-Agent": "Mozilla/5.0 PowerElectronicsRadar/1.0"},
+        )
+        final_url = r.url or url
+        page = r.text[:500000]
+        candidates = re.findall(
+            r'<meta[^>]+(?:property|name)=["\'](?:og:description|description)["\'][^>]+content=["\']([^"\']*)["\']',
+            page,
+            flags=re.I,
+        )
+        if not candidates:
+            candidates = re.findall(
+                r'<meta[^>]+content=["\']([^"\']*)["\'][^>]+(?:property|name)=["\'](?:og:description|description)["\']',
+                page,
+                flags=re.I,
+            )
+        description = clean_html(candidates[0]) if candidates else ""
+        return final_url, description
+    except Exception:
+        return url, ""
+
+
+def similar_event(a, b):
+    """Conservative event-level deduplication.
+
+    Exact/near-identical titles are merged. Different headlines are merged when they share
+    an entity and at least one strong technical topic, or enough distinctive title tokens.
+    """
+    ta = normalize_title(a["title"])
+    tb = normalize_title(b["title"])
+    if ta == tb:
+        return True
+    ratio = SequenceMatcher(None, ta, tb).ratio()
+    if ratio >= 0.86:
+        return True
+
+    ea, eb = entity_set(a["title"]), entity_set(b["title"])
+    topics_a = topic_set(a["title"] + " " + a.get("summary", ""))
+    topics_b = topic_set(b["title"] + " " + b.get("summary", ""))
+
+    if ea & eb and topics_a & topics_b:
+        # Avoid merging unrelated articles from the same company merely because they mention power electronics.
+        strong_topics = {"sst", "sic", "gan", "gfm", "dab", "cllc", "llc", "800v", "magnetics"}
+        if (topics_a & topics_b) & strong_topics:
+            return True
+
+    # Generic syndicated titles with many words in common.
+    words_a = set(ta.split())
+    words_b = set(tb.split())
+    if len(words_a) >= 5 and len(words_b) >= 5:
+        overlap = len(words_a & words_b) / max(1, min(len(words_a), len(words_b)))
+        if overlap >= 0.72:
+            return True
+    return False
+
+
 def collect_articles():
-    """Collect, filter, clean and deduplicate RSS articles."""
-    articles = []
-    seen_titles = set()
+    candidates = []
     seen_links = set()
 
     for source in RSS_SOURCES:
@@ -96,39 +224,76 @@ def collect_articles():
             print(f"RSS error: {source['name']}: {exc}")
             continue
 
-        for item in feed.entries[:15]:
+        for item in feed.entries[:20]:
             title = clean_html(item.get("title", ""))
-            summary = clean_html(item.get("summary", ""))
-            link = item.get("link", "") or ""
-
             if not title:
                 continue
-
-            text = f"{title} {summary}".lower()
+            raw_summary = clean_html(item.get("summary", ""))
+            link = item.get("link", "") or ""
+            text = f"{title} {raw_summary}".lower()
             if not any(keyword.lower() in text for keyword in KEYWORDS):
                 continue
 
-            title_key = normalize_title(title)
             link_key = link.split("#", 1)[0].rstrip("/")
-
-            if title_key in seen_titles or (link_key and link_key in seen_links):
+            if link_key and link_key in seen_links:
                 continue
-
-            seen_titles.add(title_key)
             if link_key:
                 seen_links.add(link_key)
 
-            articles.append({
-                "source": get_source_name(item, source["name"]),
+            source_name = get_source_name(item, source["name"])
+            candidates.append({
+                "source": source_name,
                 "title": title,
-                "summary": summary,
+                "summary": raw_summary,
                 "link": link,
+                "source_score": source_score(source_name),
             })
+            if len(candidates) >= MAX_CANDIDATES:
+                break
+        if len(candidates) >= MAX_CANDIDATES:
+            break
 
-            if len(articles) >= MAX_ARTICLES:
-                return articles
+    # Resolve a limited number of links. This improves both readability and AI evidence quality.
+    for article in candidates[:MAX_CANDIDATES]:
+        resolved, description = extract_meta_description(article["link"])
+        if resolved and "news.google.com" not in resolved:
+            article["link"] = resolved
+        if description and len(description) > len(article["summary"]):
+            article["summary"] = description[:1200]
 
-    return articles
+    # Cluster into events. Keep the highest-quality source as the representative article.
+    events = []
+    for article in sorted(candidates, key=lambda x: x["source_score"], reverse=True):
+        matched = None
+        for event in events:
+            if similar_event(article, event["primary"]):
+                matched = event
+                break
+        if matched:
+            matched["sources"].append({
+                "source": article["source"],
+                "title": article["title"],
+                "link": article["link"],
+            })
+            if article["summary"] and len(article["summary"]) > len(matched["primary"].get("summary", "")):
+                matched["primary"]["summary"] = article["summary"]
+        else:
+            events.append({"primary": dict(article), "sources": []})
+
+    output = []
+    for event in events[:MAX_EVENTS]:
+        p = event["primary"]
+        sources = event["sources"]
+        record = {
+            "source": p["source"],
+            "title": p["title"],
+            "summary": p.get("summary", ""),
+            "link": p["link"],
+        }
+        if sources:
+            record["related_sources"] = sources[:8]
+        output.append(record)
+    return output
 
 
 def ask_deepseek(articles, report_date):
@@ -136,89 +301,95 @@ def ask_deepseek(articles, report_date):
 
     content = "\n\n".join(
         f"""
-编号：{i}
+事件编号：{i}
+主来源：{a['source']}
 标题：{a['title']}
-来源：{a['source']}
-摘要：{a['summary']}
-链接：{a['link']}
+摘要：{a['summary'] or '原文摘要未提供'}
+主链接：{a['link']}
+相关来源：{json.dumps(a.get('related_sources', []), ensure_ascii=False)}
 """
         for i, a in enumerate(articles, 1)
     )
 
     prompt = f"""
-你是一名严谨的电力电子技术情报分析员，为工程师和考研期间的技术学习提供信息雷达。
+你是一名严谨的电力电子技术情报分析员，为有工程经验的电力电子工程师和考研技术学习服务。
 
 报告日期：{report_date}
-注意：报告日期必须严格使用“{report_date}”，禁止根据新闻标题、摘要或模型知识自行推测日期。
+必须严格使用这个北京时间日期，禁止根据文章内容猜日期。
 
-下面是今天通过 RSS 收集的候选信息。请先判断哪些是真正有技术价值的内容，再进行归并分析。
+输入已经完成“同一事件”聚类。一个事件可能包含多个媒体来源。禁止把同一事件再次拆成多个事件。
 
-重点关注：
-1. SST / Solid-State Transformer
-2. SiC / GaN / 宽禁带器件
-3. DAB / CLLC / LLC 等隔离型 DC-DC
-4. Grid-Forming / GFM
-5. 储能 PCS
-6. 800V DC
-7. AI 数据中心供电
-8. 高功率密度
-9. 高频磁件与磁集成
-10. 拓扑、器件、调制、控制和热设计
+重点关注：SST、SiC、GaN、DAB/CLLC/LLC、GFM、储能 PCS、800V DC、AI 数据中心、高功率密度、高频磁件、拓扑、器件、调制、控制、热设计。
 
-【最重要的事实性要求】
-- 不要把新闻标题中的宣传性表述直接当成已经验证的事实。
-- “全球首个”“世界首台”“首次”“行业第一”等表述，只有当来源明确如此表述时才能写，并必须标注“[来源声称]”。不要自行升级为事实。
-- 不要编造额定功率、电压、电流、效率、频率、功率密度、器件型号、拓扑、控制方法、量产时间等参数。
-- 原文没有给出的参数必须写“原文未提供相关信息”。
-- 不要根据常识猜测具体拓扑。例如不能仅因为双向、高频或模块化就断言“采用 DAB/CLLC/ISOP/MMC”。如果确实需要提出可能性，必须标记为“[模型推断]”，并说明依据；没有必要时不要推断。
-- 严格区分：论文/理论研究、实验室样机、工程样机、产品发布、试点部署、试产、量产、商业部署。原文没有说明时写“产业化阶段未披露”。
-- 不要把股票价格、融资、市场宣传等财经信息当成技术进展，除非它直接包含有价值的技术事实。
-- 不要把预测写成事实。对于未来判断统一标记为“[趋势判断]”。
-- 对有明显重复的新闻必须合并，只保留一个事件，不要因为不同媒体转载而重复分析。
-- 对证据不足的信息，明确写“[信息不足]”。
+【事实边界】
+1. 只把输入材料明确支持的内容写成事实。
+2. “全球首个/世界首台/首次”等，只能写成“来源声称”，不能自行确认。
+3. “production/进入生产”不能自动改写成“量产”；“2028 target”不能写成已经实现。
+4. 原文没有参数就写“原文未提供”，严禁凭常识补充电压、功率、效率、频率、功率密度、器件型号、拓扑或控制方法。
+5. 不能因为“bidirectional/high frequency/modular”就推断 DAB、CLLC、MMC、ISOP 等具体拓扑。
+6. 财经新闻中的股价、融资、营收等不是技术进展，除非同时包含明确技术事实。
+7. 论文、实验室样机、工程样机、产品发布、试点、试产、量产、商业部署必须严格区分。
+8. 技术推断使用 [模型推断]；发展趋势使用 [趋势判断]；来源自己的宣传或声明使用 [来源声称]；材料不足使用 [信息不足]。
+9. 同一事件的多个来源只分析一次，并列出主要来源和相关来源。
 
-【证据标签】
-使用以下标签帮助读者快速判断可信度：
-[已证实]：来源直接给出了明确事实、参数或论文/产品信息。
-[来源声称]：这是新闻稿、媒体或企业自己的表述，尚未由当前材料独立验证。
-[模型推断]：根据材料进行的合理技术推断，不是原文事实。
-[趋势判断]：对技术发展方向的分析，不是已经发生的事实。
-[信息不足]：当前材料不足以支持更具体的结论。
+【技术参数表要求】
+每个重点事件尽量抽取以下字段：
+- 电压等级
+- 功率等级
+- 拓扑
+- 功率器件
+- 开关频率
+- 效率
+- 功率密度
+- 隔离方式
+- 控制/调制
+- 应用场景
+- 产业化阶段
+没有披露的字段统一写“原文未提供”。
 
-【输出格式】
+【输出】
 # 电力电子技术雷达
 日期：{report_date}
 
 ## 一、今日最值得关注
-选择 3～5 个真正有技术价值的独立事件。不要按新闻数量排序，也不要给事件打分。
-每项包括：
-- 事件
-- 证据标签
-- 核心技术
-- 关键参数（仅填写原文明确给出的）
-- 技术意义
-- 产业化阶段
-- 值得继续阅读的原因
+选择 3～5 个真正有技术价值的独立事件。
+每项：
+### 标题
+- 事件：
+- 证据：
+- 核心技术：
+- 技术参数：
+  - 电压等级：
+  - 功率等级：
+  - 拓扑：
+  - 功率器件：
+  - 开关频率：
+  - 效率：
+  - 功率密度：
+  - 隔离方式：
+  - 控制/调制：
+  - 应用场景：
+- 产业化阶段：
+- 技术意义：
+- 需要继续核实：
+- 主要来源：
 
 ## 二、技术方向
-分别总结 SST、SiC/GaN、DAB/CLLC/LLC、GFM、PCS、800V DC/AI 数据中心、高功率密度/磁件等方向。没有有效信息的方向直接写“本批信息未发现明确进展”。
+分别讨论 SST、SiC/GaN、DAB/CLLC/LLC、GFM、PCS、800V DC/AI 数据中心、高功率密度/磁件。没有明确进展就写“本批信息未发现明确进展”。
 
 ## 三、同一事件合并
-明确指出哪些新闻实际上属于同一个事件，并说明采用哪个来源作为主要依据。不要重复分析。
+列出存在多来源报道的事件，以及相关来源。不要重复分析。
 
 ## 四、对工程师有用的技术观察
-只基于本批材料，提炼 3～6 条技术观察。涉及推断必须标记 [模型推断] 或 [趋势判断]。
+3～6 条。所有推断/趋势必须带标签。
 
-## 五、阅读优先级建议
-分成“建议深入阅读”和“快速浏览”两组，只说明理由，不进行总体排名或评分。
+## 五、阅读建议
+分“建议深入阅读”和“快速浏览”，只解释理由，不打总体分数。
 
-## 六、信息质量说明
-指出本批信息中哪些内容属于企业新闻稿、媒体报道、论文、产品信息等，并说明当前材料有哪些明显缺口。
+## 六、信息质量与缺口
+说明论文、企业新闻、媒体报道、产品发布、财经信息等各自的证据性质，并指出缺失的关键参数。
 
-请保持技术严谨、简洁，不要为了让报告看起来丰富而补充未经来源支持的内容。
-
-今天收集的信息：
-
+今天的事件数据：
 {content}
 """
 
@@ -233,41 +404,35 @@ def ask_deepseek(articles, report_date):
             "messages": [
                 {
                     "role": "system",
-                    "content": "你是专业的电力电子技术研究人员，优先保证事实准确性，不编造技术细节。"
+                    "content": "你是专业电力电子研究人员。事实准确性优先于内容丰富度；不编造任何技术参数。"
                 },
-                {
-                    "role": "user",
-                    "content": prompt
-                }
+                {"role": "user", "content": prompt}
             ],
             "temperature": 0.1
         },
         timeout=120
     )
-
     response.raise_for_status()
     return response.json()["choices"][0]["message"]["content"]
 
 
 def main():
-    # Use Beijing time for the report date so the radar is aligned with the user's daily schedule.
     beijing_tz = timezone(timedelta(hours=8))
     now_beijing = datetime.now(timezone.utc).astimezone(beijing_tz)
     report_date = now_beijing.strftime("%Y-%m-%d")
 
     articles = collect_articles()
-
     if not articles:
         result = f"# 电力电子技术雷达\n日期：{report_date}\n\n今天没有筛选到符合条件的电力电子信息。"
     else:
         result = ask_deepseek(articles, report_date)
 
     data = {
-        "updated": datetime.now(timezone.utc).isoformat(),
+        "updated": now_beijing.isoformat(),
         "report_date": report_date,
         "article_count": len(articles),
         "articles": articles,
-        "summary": result
+        "summary": result,
     }
 
     with open("data.json", "w", encoding="utf-8") as f:
