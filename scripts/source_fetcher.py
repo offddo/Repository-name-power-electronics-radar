@@ -39,7 +39,6 @@ def fetch_source(url, max_chars=9000):
         text = clean_text(" ".join(parser.parts))
         if len(text) < 500:
             return ""
-        # Remove obvious site chrome without deleting technical sentences.
         text = re.sub(r"(?:cookie|privacy policy|subscribe|sign in|all rights reserved)\b[^.。]{0,220}", " ", text, flags=re.I)
         return clean_text(text)[:max_chars]
     except Exception as exc:
@@ -50,11 +49,41 @@ def _paper_matches(title, abstract, keywords):
     hay = (title + " " + abstract).lower()
     return any(k.lower() in hay for k in keywords)
 
-def crossref_papers(journal_names, keywords, since="2026-01-01", rows=20):
-    """Collect Chinese journal papers from Crossref metadata, then let the caller fetch the official DOI page.
+def _crossref_items(params):
+    r = requests.get("https://api.crossref.org/works", params=params, timeout=15, headers={"User-Agent": "PowerElectronicsRadar/1.0 (mailto:radar@example.com)"})
+    r.raise_for_status()
+    return r.json().get("message", {}).get("items", [])
 
-    We intentionally query the journal first instead of requiring Crossref's Chinese bibliographic search
-    to match a particular keyword. This avoids dropping relevant domestic papers because of metadata indexing.
+def _make_paper(x, journal, keywords):
+    title = clean_text(" ".join(x.get("title") or []))
+    containers = [clean_text(v) for v in (x.get("container-title") or [])]
+    if not title or not any(journal.lower() in c.lower() or c.lower() in journal.lower() for c in containers):
+        return None
+    abstract = clean_text(x.get("abstract", ""))
+    if not _paper_matches(title, abstract, keywords):
+        return None
+    parts = ((x.get("published") or x.get("published-print") or x.get("published-online") or {}).get("date-parts") or [[]])[0]
+    date = "-".join(str(v).zfill(2) if i else str(v) for i, v in enumerate(parts[:3])) if parts else ""
+    link = x.get("URL") or (("https://doi.org/" + x.get("DOI")) if x.get("DOI") else "")
+    if not link or not abstract:
+        return None
+    return {
+        "source": containers[0] if containers else journal,
+        "source_type": "国内论文",
+        "title": title,
+        "summary": abstract[:5000],
+        "link": link,
+        "published_at": date + "T00:00:00+00:00" if date else "",
+        "score": 96,
+        "paper": True
+    }
+
+def crossref_papers(journal_names, keywords, since="2026-01-01", rows=20):
+    """Discover domestic papers using two Crossref strategies.
+
+    Strategy 1 queries the journal container directly. Some Chinese journals have sparse
+    container metadata in Crossref, so Strategy 2 searches journal+keyword bibliographic
+    combinations and then applies the same strict journal/title/abstract checks.
     """
     items = []
     for journal in journal_names:
@@ -63,35 +92,31 @@ def crossref_papers(journal_names, keywords, since="2026-01-01", rows=20):
                 "query.container-title": journal,
                 "filter": f"from-pub-date:{since}",
                 "rows": rows,
-                "select": "DOI,title,container-title,published,URL,abstract"
+                "select": "DOI,title,container-title,published,published-print,published-online,URL,abstract"
             }
-            r = requests.get("https://api.crossref.org/works", params=params, timeout=15, headers={"User-Agent": "PowerElectronicsRadar/1.0"})
-            r.raise_for_status()
-            for x in r.json().get("message", {}).get("items", []):
-                title = clean_text(" ".join(x.get("title") or []))
-                containers = [clean_text(v) for v in (x.get("container-title") or [])]
-                if not title or not any(journal.lower() in c.lower() or c.lower() in journal.lower() for c in containers):
-                    continue
-                abstract = clean_text(x.get("abstract", ""))
-                if not _paper_matches(title, abstract, keywords):
-                    continue
-                parts = ((x.get("published") or {}).get("date-parts") or [[]])[0]
-                date = "-".join(str(v).zfill(2) if i else str(v) for i, v in enumerate(parts[:3])) if parts else ""
-                link = x.get("URL") or (("https://doi.org/" + x.get("DOI")) if x.get("DOI") else "")
-                if not link:
-                    continue
-                items.append({
-                    "source": containers[0] if containers else journal,
-                    "source_type": "国内论文",
-                    "title": title,
-                    "summary": abstract[:5000],
-                    "link": link,
-                    "published_at": date + "T00:00:00+00:00" if date else "",
-                    "score": 96,
-                    "paper": True
-                })
+            for x in _crossref_items(params):
+                paper = _make_paper(x, journal, keywords)
+                if paper:
+                    items.append(paper)
         except Exception as exc:
-            print("Crossref error:", journal, repr(exc))
+            print("Crossref container error:", journal, repr(exc))
+
+        # Fallback: Crossref's container-title index is often incomplete for Chinese journals.
+        # Search several high-value technical terms against the bibliographic index instead.
+        for keyword in keywords[:6]:
+            try:
+                params = {
+                    "query.bibliographic": f"{journal} {keyword}",
+                    "filter": f"from-pub-date:{since}",
+                    "rows": max(8, rows // 2),
+                    "select": "DOI,title,container-title,published,published-print,published-online,URL,abstract"
+                }
+                for x in _crossref_items(params):
+                    paper = _make_paper(x, journal, keywords)
+                    if paper:
+                        items.append(paper)
+            except Exception as exc:
+                print("Crossref fallback error:", journal, keyword, repr(exc))
 
     out, seen = [], set()
     for x in sorted(items, key=lambda v: v.get("published_at", ""), reverse=True):
