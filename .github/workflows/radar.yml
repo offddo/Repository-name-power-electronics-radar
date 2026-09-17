@@ -34,6 +34,20 @@ jobs:
           python -m pip install --upgrade pip
           pip install feedparser requests googlenewsdecoder
 
+      - name: Fix prompt template
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path("scripts/radar.py")
+          s = p.read_text(encoding="utf-8")
+          s = s.replace("prompt = f'''", "prompt = '''", 1)
+          needle = "    r = requests.post("
+          patch = "    prompt = prompt.replace('{date}', date).replace('{json.dumps(events, ensure_ascii=False)}', json.dumps(events, ensure_ascii=False))\n\n"
+          if patch not in s:
+              s = s.replace(needle, patch + needle, 1)
+          p.write_text(s, encoding="utf-8")
+          PY
+
       - name: Run radar
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
@@ -47,4 +61,5 @@ jobs:
 
           git add data.json
           git diff --cached --quiet || git commit -m "Update power electronics radar"
+          git pull --rebase origin main
           git push
