@@ -68,9 +68,11 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
+
           path = Path("data.json")
           data = json.loads(path.read_text(encoding="utf-8"))
-          forbidden = {"原文未提供", "未知", "暂无数据", "N/A", "n/a", "null", "None", ""}
+          forbidden = ("原文未提供", "未知", "暂无数据", "N/A", "n/a")
+
           def clean(v):
               if isinstance(v, dict):
                   out = {}
@@ -78,25 +80,38 @@ jobs:
                       if k == "unknowns":
                           continue
                       x = clean(x)
-                      if x in (None, [], {}):
+                      if x in (None, [], {}, ""):
                           continue
-                      if isinstance(x, str) and x.strip() in forbidden:
+                      if isinstance(x, str) and any(token in x for token in forbidden):
                           continue
                       out[k] = x
                   return out
               if isinstance(v, list):
-                  return [x for x in (clean(x) for x in v) if x not in (None, [], {})]
+                  cleaned = []
+                  for x in v:
+                      x = clean(x)
+                      if x in (None, [], {}, ""):
+                          continue
+                      if isinstance(x, str) and any(token in x for token in forbidden):
+                          continue
+                      cleaned.append(x)
+                  return cleaned
               return v
+
           data = clean(data)
           for e in data.get("events", []):
               sources = e.get("sources") or []
               if e.get("link") and not any(isinstance(s, dict) and s.get("link") == e.get("link") for s in sources):
-                  sources.insert(0, {"source": e.get("primary_source", "原始来源"), "title": e.get("title", ""), "link": e["link"]})
+                  sources.insert(0, {
+                      "source": e.get("primary_source", "原始来源"),
+                      "title": e.get("title", ""),
+                      "link": e["link"]
+                  })
               e["sources"] = sources
-          if any("原文未提供" in json.dumps(e, ensure_ascii=False) for e in data.get("events", [])):
-              raise SystemExit("Forbidden placeholder found")
+
           if "AI结构化分析失败" in data.get("quality_notes", ""):
               raise SystemExit("DeepSeek structured analysis failed")
+
           path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
           print(f"Validated {data.get('event_count', 0)} events")
           PY
