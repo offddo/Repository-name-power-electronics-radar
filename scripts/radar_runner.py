@@ -12,7 +12,7 @@ extra = '''    ("国内资讯 - 中国电力电子", "https://news.google.com/rs
     ("国内资讯 - SiC GaN", "https://news.google.com/rss/search?q=SiC+GaN+%E7%94%B5%E5%8A%9B%E7%94%B5%E5%AD%90+%E5%8A%9F%E7%8E%87%E5%8D%8A%E5%AF%BC%E4%BD%93&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"),
     ("国内资讯 - 800V 数据中心电源", "https://news.google.com/rss/search?q=800V+%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83+%E7%94%B5%E6%BA%90+%E7%94%B5%E5%8A%9B%E7%94%B5%E5%AD%90&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"),
     ("国内资讯 - 阳光电源", "https://news.google.com/rss/search?q=%E9%98%B3%E5%85%89%E7%94%B5%E6%BA%90+%E5%8F%98%E6%B5%81%E5%99%A8+SiC+PCS&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"),
-    ("国内资讯 - 华为数字能源", "https://news.google.com/rss/search?q=%E5%8D%8E%E4%B8%BA+%E6%95%B0%E5%AD%97%E8%83%BD%E6%BA%90+800V+%E7%94%B5%E6%BA%90&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"),
+    ("国内资讯 - 华为数字能源", "https://news.google.com/rss/search?q=%E5%8D%8E%E4%B8%BA+%E6%95%B0%E5%AD%97%E8%83%BD%E6%BA%90+800V+%E7%94%B5%E6%源&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"),
     ("国内资讯 - 中车时代电气", "https://news.google.com/rss/search?q=%E4%B8%AD%E8%BD%A6%E6%97%B6%E4%BB%A3%E7%94%B5%E6%B0%94+SiC+%E7%94%B5%E5%8A%9B%E7%94%B5%E5%AD%90&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"),
     ("国内资讯 - 上能电气", "https://news.google.com/rss/search?q=%E4%B8%8A%E8%83%BD%E7%94%B5%E6%B0%94+PCS+%E5%82%A8%E能+变流器&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"),
     ("国内资讯 - 科华数据", "https://news.google.com/rss/search?q=%E7%A7%91%E5%8D%8E%E6%95%B0%E6%8D%AE+UPS+%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83+%E7%94%B5%E6%BA%90&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"),
@@ -21,10 +21,11 @@ extra = '''    ("国内资讯 - 中国电力电子", "https://news.google.com/rs
     ("国内论文 - 电力系统自动化", "https://news.google.com/rss/search?q=site%3Aaeps-info.com+%E6%9E%84%E7%BD%91%E5%9E%8B+%E5%8F%98%E6%B5%81%E5%99%A8+%E7%94%B5%E5%8A%9B%E7%94%B5%E5%AD%90&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"),
     ("国内论文 - 电工技术学报", "https://news.google.com/rss/search?q=site%3Adgjsxb.ces-transaction.com+%E7%94%B5%E5%8A%9B%E7%94%B5%E5%AD%90+SiC+GaN+%E5%8F%98%E6%B5%81%E5%99%A8&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"),
     ("国内论文 - 中国电机工程学报", "https://news.google.com/rss/search?q=site%3Acjepe.com.cn+%E7%94%B5%E5%8A%9B%E7%94%B5%E5%AD%90+%E6%9E%84%E7%BD%91+SiC+GaN&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"),
-    ("国内论文 - CNKI 电力电子", "https://news.google.com/rss/search?q=site%3Acnki.net+%E7%94%B5%E5%8A%9B%E7%94%B5%E子+SiC+GaN+GFM+DAB+CLLC&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"),
+    ("国内论文 - CNKI 电力电子", "https://news.google.com/rss/search?q=site%3Acnki.net+%E7%94%B5%E5%8A%9B%E7%94%B5%E5%AD%90+SiC+GaN+GFM+DAB+CLLC&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"),
 ]'''
 if marker in text:
-    text = text.replace(marker, marker[:-1] + extra + "\n]", 1)
+    # extra already contains the closing bracket; do not append another one.
+    text = text.replace(marker, marker[:-1] + extra, 1)
 
 # Prefer domestic journals when ranking candidates.
 text = text.replace(
@@ -66,8 +67,6 @@ text = text.replace(
     '"technical":{}', 1)
 text = text.replace('"industrialization":{"stage":"未知","status":"","target":""}', '"industrialization":{}', 1)
 text = text.replace('"evidence":{"confirmed_facts":[],"source_claims":[],"inferences":[],"unknowns":[]}', '"evidence":{"confirmed_facts":[],"source_claims":[],"inferences":[]}', 1)
-
-# Give the model enough room for 30 useful technical cards.
 text = text.replace('"max_tokens": 12000', '"max_tokens": 24000', 1)
 
 # Ensure AI cannot invent a source/date/type that was not in the collected event.
@@ -76,5 +75,4 @@ text = text.replace(
     '    e["primary_source"] = base.get("primary_source", e.get("primary_source", ""))\n    e["published_at"] = base.get("published_at", e.get("published_at", ""))\n    e["source_type"] = base.get("source_type", e.get("source_type", "国际资讯"))',
     1)
 
-# Run the patched radar.
 exec(compile(text, str(path), "exec"), {"__name__": "__main__", "__file__": str(path)})
