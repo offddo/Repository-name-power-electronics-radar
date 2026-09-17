@@ -34,11 +34,53 @@ jobs:
           python -m pip install --upgrade pip
           pip install feedparser requests googlenewsdecoder
 
+      - name: Fix prompt template
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path("scripts/radar.py")
+          text = path.read_text(encoding="utf-8")
+
+          if "prompt = f'''" not in text:
+              raise SystemExit("Expected prompt template not found; refusing to continue")
+
+          text = text.replace("    prompt = f'''", "    prompt = '''", 1)
+          text = text.replace("报告日期：{date}", "报告日期：DATE_PLACEHOLDER", 1)
+          text = text.replace("{json.dumps(events, ensure_ascii=False)}'''", "EVENTS_PLACEHOLDER'''", 1)
+
+          marker = "EVENTS_PLACEHOLDER'''\n\n    r = requests.post"
+          replacement = (
+              "EVENTS_PLACEHOLDER'''\n"
+              "    prompt = prompt.replace(\"DATE_PLACEHOLDER\", date).replace(\n"
+              "        \"EVENTS_PLACEHOLDER\", json.dumps(events, ensure_ascii=False)\n"
+              "    )\n\n    r = requests.post"
+          )
+          if marker not in text:
+              raise SystemExit("Prompt template closing marker not found; refusing to continue")
+
+          text = text.replace(marker, replacement, 1)
+          path.write_text(text, encoding="utf-8")
+          PY
+
       - name: Run radar
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
           python scripts/radar.py
+
+      - name: Validate AI output
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          data = json.loads(Path("data.json").read_text(encoding="utf-8"))
+          note = data.get("quality_notes", "")
+          if "AI结构化分析失败" in note:
+              raise SystemExit("DeepSeek structured analysis failed; refusing to publish fallback data")
+          print(f"Validated {data.get('event_count', 0)} events")
+          PY
 
       - name: Commit results safely
         run: |
