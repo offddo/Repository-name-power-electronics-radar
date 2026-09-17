@@ -40,6 +40,10 @@ jobs:
           p = Path("scripts/radar_runner.py")
           s = p.read_text(encoding="utf-8")
           s = s.replace('marker[:-1] + extra + "\\n]"', 'marker[:-1] + extra[:-1] + "\\n]"', 1)
+          # Keep the broad source pool, but cap the expensive Google News resolution stage.
+          s = s.replace("MAX_CANDIDATES = 240", "MAX_CANDIDATES = 90", 1)
+          s = s.replace("MAX_EVENTS = 40", "MAX_EVENTS = 30", 1)
+          s = s.replace("for item in feed.entries[:40]:", "for item in feed.entries[:12]:", 1)
           p.write_text(s, encoding="utf-8")
           PY
           python scripts/radar_runner.py
@@ -86,8 +90,9 @@ jobs:
                   sources.insert(0, {"source": e.get("primary_source", "原始来源"), "title": e.get("title", ""), "link": e["link"]})
               e["sources"] = sources
               if e.get("source_type") not in {"国内资讯", "国内论文", "国际资讯", "国际论文"}:
-                  e["source_type"] = "国内资讯" if any(x in str(e.get("primary_source", "")) for x in ["中国", "电力电子技术", "电力自动化设备", "电力系统自动化", "电工技术学报"]) else "国际资讯"
+                  e["source_type"] = "国内资讯" if any(x in str(e.get("primary_source", "")) for x in ["中国", "电力电子技术", "电力自动化设备", "电力系统自动化", "电工技术学报", "中国电机工程学报"]) else "国际资讯"
 
+          data["event_count"] = len(data.get("events", []))
           if "AI结构化分析失败" in data.get("quality_notes", ""):
               raise SystemExit("DeepSeek structured analysis failed")
 
