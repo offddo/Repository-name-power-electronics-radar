@@ -7,6 +7,12 @@ on:
 
   workflow_dispatch:
 
+  # 修改雷达程序后自动生成一份新数据，避免必须手动点击 Actions。
+  push:
+    paths:
+      - "scripts/radar.py"
+      - ".github/workflows/radar.yml"
+
 permissions:
   contents: write
 
@@ -15,7 +21,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -26,6 +31,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          python -m pip install --upgrade pip
           pip install feedparser requests
 
       - name: Run radar
@@ -40,7 +46,5 @@ jobs:
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add data.json
-
           git diff --cached --quiet || git commit -m "Update power electronics radar"
-
           git push
