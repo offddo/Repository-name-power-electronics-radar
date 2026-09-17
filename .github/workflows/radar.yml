@@ -8,6 +8,7 @@ on:
     paths:
       - "scripts/radar.py"
       - "scripts/radar_runner.py"
+      - "scripts/radar_impl.py"
       - "scripts/postprocess.py"
       - ".github/workflows/radar.yml"
 
@@ -32,12 +33,60 @@ jobs:
           python -m pip install --upgrade pip
           pip install feedparser requests googlenewsdecoder
 
+      - name: Preserve previous history
+        run: |
+          if [ -f data.json ]; then
+            cp data.json /tmp/radar-previous.json
+          else
+            printf '%s\n' '{"events":[]}' > /tmp/radar-previous.json
+          fi
+
       - name: Run radar
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
           python scripts/radar_runner.py
           python scripts/postprocess.py
+
+      - name: Merge history
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          current_path = Path("data.json")
+          previous_path = Path("/tmp/radar-previous.json")
+          current = json.loads(current_path.read_text(encoding="utf-8"))
+          previous = json.loads(previous_path.read_text(encoding="utf-8"))
+
+          current_events = current.get("events") or []
+          previous_events = previous.get("events") or []
+          merged = []
+          seen = set()
+
+          def key(e):
+              return str(e.get("link") or "").split("#", 1)[0].rstrip("/") or str(e.get("title") or "").strip().lower()
+
+          # Current run wins; older events are appended only when genuinely new.
+          for e in current_events + previous_events:
+              k = key(e)
+              if not k or k in seen:
+                  continue
+              seen.add(k)
+              merged.append(e)
+
+          # Keep the archive bounded while retaining a long rolling history.
+          merged.sort(key=lambda e: (str(e.get("published_date") or e.get("published_at") or e.get("report_date") or ""), str(e.get("id") or "")), reverse=True)
+          current["events"] = merged[:2000]
+          current["event_count"] = len(current["events"])
+          current["history_count"] = len(previous_events)
+          current["history_merged"] = True
+          current_path.write_text(json.dumps(current, ensure_ascii=False, indent=2), encoding="utf-8")
+          print(f"Merged current {len(current_events)} + previous {len(previous_events)} -> {len(current['events'])} events")
+          PY
+
+      - name: Rebuild history indexes and daily brief
+        run: python scripts/postprocess.py
 
       - name: Clean and validate AI output
         run: |
@@ -47,55 +96,38 @@ jobs:
 
           path = Path("data.json")
           data = json.loads(path.read_text(encoding="utf-8"))
-          forbidden = ("原文未提供", "暂无数据", "N/A", "n/a")
+          forbidden = ("AI结构化分析失败",)
           allowed_types = {"国内资讯", "国内论文", "国际资讯", "国际论文"}
 
-          def clean(v):
-              if isinstance(v, dict):
-                  out = {}
-                  for k, x in v.items():
-                      if k == "unknowns":
-                          continue
-                      x = clean(x)
-                      if x in (None, [], {}, ""):
-                          continue
-                      if isinstance(x, str) and any(token in x for token in forbidden):
-                          continue
-                      out[k] = x
-                  return out
+          def reject(v):
+              if isinstance(v, str) and any(token in v for token in forbidden):
+                  return True
               if isinstance(v, list):
-                  cleaned = []
-                  for x in v:
-                      x = clean(x)
-                      if x in (None, [], {}, ""):
-                          continue
-                      if isinstance(x, str) and any(token in x for token in forbidden):
-                          continue
-                      cleaned.append(x)
-                  return cleaned
-              return v
+                  return any(reject(x) for x in v)
+              if isinstance(v, dict):
+                  return any(reject(x) for x in v.values())
+              return False
 
-          data = clean(data)
+          if reject(data.get("quality_notes", "")):
+              raise SystemExit("DeepSeek structured analysis failed")
+          if not data.get("daily_summary"):
+              raise SystemExit("daily_summary missing")
+
           for e in data.get("events", []):
-              sources = e.get("sources") or []
-              if e.get("link") and not any(isinstance(s, dict) and s.get("link") == e.get("link") for s in sources):
-                  sources.insert(0, {"source": e.get("primary_source", "原始来源"), "title": e.get("title", ""), "link": e["link"]})
-              e["sources"] = sources
               if e.get("source_type") not in allowed_types:
-                  e["source_type"] = "国内资讯" if any(x in str(e.get("primary_source", "")) for x in ["中国", "电力电子技术", "电力自动化设备", "电力系统自动化", "电工技术学报", "中国电机工程学报"]) else "国际资讯"
+                  raise SystemExit(f"Invalid source_type: {e.get('source_type')}")
+              if not e.get("link"):
+                  raise SystemExit(f"Missing original source link: {e.get('title', '')}")
+              if not e.get("published_date"):
+                  raise SystemExit(f"Missing published_date: {e.get('title', '')}")
               for key in ["heat_score", "relevance_score", "technical_depth_score", "radar_score"]:
                   value = e.get(key)
                   if not isinstance(value, (int, float)) or not 0 <= value <= 100:
                       raise SystemExit(f"Invalid {key} for {e.get('title', '')}: {value}")
 
           data["event_count"] = len(data.get("events", []))
-          if not data.get("daily_summary"):
-              raise SystemExit("daily_summary missing")
-          if "AI结构化分析失败" in data.get("quality_notes", ""):
-              raise SystemExit("DeepSeek structured analysis failed")
-
           path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-          print(f"Validated {data.get('event_count', 0)} events with scores and daily brief")
+          print(f"Validated {data.get('event_count', 0)} historical events with scores and daily brief")
           PY
 
       - name: Commit results safely
