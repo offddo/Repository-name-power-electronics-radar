@@ -99,7 +99,7 @@ def collect_events():
     events = []
     for i, cluster in enumerate(clusters[:MAX_EVENTS], 1):
         p = cluster["primary"]
-        events.append({"id": datetime.now(timezone.utc).strftime("%y%m%d") + "-" + f"{i:02d", "title": p["title"], "category": topic_list(p["title"] + " " + p["summary"] + " " + p["source_text"]), "source_type": p["source_type"], "primary_source": p["source"], "published_at": p["published_at"], "link": p["link"], "summary_raw": p["summary"], "source_text": p["source_text"], "sources": cluster["sources"][:10]})
+        events.append({"id": datetime.now(timezone.utc).strftime("%y%m%d") + "-" + f"{i:02d}", "title": p["title"], "category": topic_list(p["title"] + " " + p["summary"] + " " + p["source_text"]), "source_type": p["source_type"], "primary_source": p["source"], "published_at": p["published_at"], "link": p["link"], "summary_raw": p["summary"], "source_text": p["source_text"], "sources": cluster["sources"][:10]})
     return events
 
 def ask_deepseek(events, report_date):
