@@ -2,11 +2,8 @@ name: Power Electronics Radar
 
 on:
   schedule:
-    # 每天北京时间 08:00 运行
     - cron: "0 0 * * *"
-
   workflow_dispatch:
-
   push:
     paths:
       - "scripts/radar.py"
@@ -19,7 +16,6 @@ jobs:
   radar:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -34,149 +30,74 @@ jobs:
           python -m pip install --upgrade pip
           pip install feedparser requests googlenewsdecoder
 
-      - name: Improve AI prompt
+      - name: Fix and improve prompt template
         run: |
           python - <<'PY'
           from pathlib import Path
-
           path = Path("scripts/radar.py")
           text = path.read_text(encoding="utf-8")
           start = text.find("    prompt = f'''", text.find("def ask_deepseek"))
-          end = text.find("EVENTS_PLACEHOLDER'''", start)
-          if start < 0 or end < 0:
-              raise SystemExit("AI prompt template not found; refusing to continue")
-          end += len("EVENTS_PLACEHOLDER'''")
-
-          prompt = '''你是严谨的电力电子技术情报分析员。报告日期：DATE_PLACEHOLDER。
-
-输入事件已经按“同一事件”聚类。每个输入事件都必须保留为一个事件，不得拆分、合并或凭空增加事件。
-
-任务：把每个输入事件加工成技术情报卡。只输出合法 JSON object，禁止 Markdown、代码围栏和额外文字。
-
-【最重要的规则：绝不填“原文未提供”】
-1. 如果输入材料没有明确给出某个参数、事实或结论，直接省略该字段，不要输出“原文未提供”“未知”“暂无数据”等占位文字。
-2. 如果一个对象中的所有字段都没有可靠证据，则删除该对象；不要用占位文字填充。
-3. 不得根据常识、行业经验、标题关键词或模型知识补充输入中没有出现的电压、功率、拓扑、频率、效率、功率密度、器件型号、控制方式、产业化阶段等信息。
-4. 不得把“可能、预计、计划、目标、适用于”改写成“已经实现”。
-5. “全球首个/首次/世界第一”等只能写在 source_claims 中，并明确是来源声称。
-6. 不得因为 bidirectional/high-frequency/modular 推断 DAB、CLLC、LLC、MMC 等具体拓扑。
-7. 财经新闻只能作为同一技术事件的辅助来源，不创建独立财经事件。
-
-【通俗版与技术版必须分开】
-8. plain_summary：面向非本专业读者，用1～2句话解释“发生了什么、为什么值得关注”。尽量少用缩写；首次出现的专业缩写要解释。
-9. technical_summary：面向电力电子工程师，用1～3句话说明具体器件/拓扑/材料/控制/关键参数/实验结果；只写输入中有证据支持的内容。
-10. 两个 summary 不能互相复制；如果某一版本没有足够证据，省略该字段。
-
-【原文定位】
-11. 每个事件必须保留 primary_source 和 link。
-12. link 必须优先指向具体原始文章、论文、企业公告或产品页面；如果输入只有 Google News 聚合链接且无法解析到具体原文，不要声称已经定位到原文。
-13. sources 只保留输入中真实存在的来源；不要虚构网址、标题或来源。
-14. 不要生成无法从输入来源定位的“原文引用”。
-
-【证据】
-15. confirmed_facts 只放输入明确支持的事实。
-16. source_claims 只放明确归因于来源的说法。
-17. inferences 只允许非常明确、且有输入证据直接支持的推断；一般情况下为空并省略。
-18. unknowns 不输出；缺失信息通过省略字段表达。
-19. evidence_level 只能从：论文、企业官方、专业媒体、普通媒体、财经媒体、多源交叉、信息不足 中选择；若输入不足以判断则省略。
-20. industrialization 只在输入明确支持时输出，并只保留有证据的 stage/status/target 字段。
-
-严格输出结构：
-{
-  "events": [
-    {
-      "id":"原id",
-      "title":"",
-      "category":[],
-      "importance":"重点|一般",
-      "evidence_level":"",
-      "plain_summary":"",
-      "technical_summary":"",
-      "technical":{},
-      "industrialization":{},
-      "evidence":{"confirmed_facts":[],"source_claims":[],"inferences":[]},
-      "primary_source":"",
-      "link":"",
-      "sources":[]
-    }
-  ],
-  "directions":{},
-  "observations":[],
-  "quality_notes":""
-}
-
-输入事件：
-EVENTS_PLACEHOLDER'''
-          prompt = prompt.replace("DATE_PLACEHOLDER", "{date}").replace(
-              "EVENTS_PLACEHOLDER", "{json.dumps(events, ensure_ascii=False)}"
+          if start < 0:
+              raise SystemExit("AI prompt template not found")
+          text = text.replace("    prompt = f'''", "    prompt = '''", 1)
+          text = text.replace("报告日期：{date}", "报告日期：DATE_PLACEHOLDER", 1)
+          text = text.replace("{json.dumps(events, ensure_ascii=False)}'''", "EVENTS_PLACEHOLDER'''", 1)
+          marker = "EVENTS_PLACEHOLDER'''\n\n    r = requests.post"
+          replacement = "EVENTS_PLACEHOLDER'''\n    prompt = prompt.replace(\"DATE_PLACEHOLDER\", date).replace(\"EVENTS_PLACEHOLDER\", json.dumps(events, ensure_ascii=False))\n\n    r = requests.post"
+          if marker not in text:
+              raise SystemExit("Prompt closing marker not found")
+          text = text.replace(marker, replacement, 1)
+          text = text.replace(
+              "7. summary 必须短而具体，并在句首使用一个标签：[已证实]、[来源声称]、[模型推断]、[趋势判断]、[信息不足]。",
+              "7. 必须分别输出 plain_summary 和 technical_summary；plain_summary 面向普通读者，用1～2句话解释发生了什么及其意义；technical_summary 面向电力电子工程师，用1～3句话说明具体技术、器件、拓扑和关键参数；两者不得复制。"
           )
-          # 使用 repr 写入普通三引号字符串，避免原文件 f-string 中 JSON 花括号再次被解释。
-          replacement = "    prompt = " + repr(prompt) + "\n"
-          text = text[:start] + replacement + text[end:]
+          text = text.replace('"summary":"",', '"plain_summary":"","technical_summary":"",', 1)
+          text = text.replace('"technical":{"voltage":"原文未提供","power":"原文未提供","topology":"原文未提供","device":"原文未提供","switching_frequency":"原文未提供","efficiency":"原文未提供","power_density":"原文未提供","isolation":"原文未提供","control":"原文未提供","application":"原文未提供"}', '"technical":{}', 1)
+          text = text.replace('"industrialization":{"stage":"未知","status":"","target":""}', '"industrialization":{}', 1)
+          text = text.replace('"evidence":{"confirmed_facts":[],"source_claims":[],"inferences":[],"unknowns":[]}', '"evidence":{"confirmed_facts":[],"source_claims":[],"inferences":[]}', 1)
           path.write_text(text, encoding="utf-8")
           PY
 
       - name: Run radar
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-        run: |
-          python scripts/radar.py
+        run: python scripts/radar.py
 
       - name: Clean and validate AI output
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
-
           path = Path("data.json")
           data = json.loads(path.read_text(encoding="utf-8"))
-          bad_values = {"原文未提供", "未知", "暂无数据", "N/A", "n/a", "null", "None", ""}
-
-          def clean_obj(obj):
-              if isinstance(obj, dict):
+          forbidden = {"原文未提供", "未知", "暂无数据", "N/A", "n/a", "null", "None", ""}
+          def clean(v):
+              if isinstance(v, dict):
                   out = {}
-                  for k, v in obj.items():
+                  for k, x in v.items():
                       if k == "unknowns":
                           continue
-                      v = clean_obj(v)
-                      if v in (None, [], {}):
+                      x = clean(x)
+                      if x in (None, [], {}):
                           continue
-                      if isinstance(v, str) and v.strip() in bad_values:
+                      if isinstance(x, str) and x.strip() in forbidden:
                           continue
-                      out[k] = v
+                      out[k] = x
                   return out
-              if isinstance(obj, list):
-                  out = []
-                  for v in obj:
-                      v = clean_obj(v)
-                      if v not in (None, [], {}):
-                          out.append(v)
-                  return out
-              return obj
-
-          data = clean_obj(data)
+              if isinstance(v, list):
+                  return [x for x in (clean(x) for x in v) if x not in (None, [], {})]
+              return v
+          data = clean(data)
           for e in data.get("events", []):
-              if not e.get("plain_summary") and not e.get("technical_summary"):
-                  raw = e.get("summary_raw")
-                  if raw:
-                      e["plain_summary"] = raw
-              if e.get("link") and not e.get("primary_source"):
-                  e["primary_source"] = "原始来源"
-
-              # 主来源也进入 sources，确保网页端至少能定位一个来源。
               sources = e.get("sources") or []
-              link = e.get("link")
-              primary = e.get("primary_source")
-              if link and not any(s.get("link") == link for s in sources if isinstance(s, dict)):
-                  sources.insert(0, {"source": primary or "原始来源", "title": e.get("title", ""), "link": link})
+              if e.get("link") and not any(isinstance(s, dict) and s.get("link") == e.get("link") for s in sources):
+                  sources.insert(0, {"source": e.get("primary_source", "原始来源"), "title": e.get("title", ""), "link": e["link"]})
               e["sources"] = sources
-
-          path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-          note = data.get("quality_notes", "")
-          if "AI结构化分析失败" in note:
-              raise SystemExit("DeepSeek structured analysis failed; refusing to publish fallback data")
           if any("原文未提供" in json.dumps(e, ensure_ascii=False) for e in data.get("events", [])):
-              raise SystemExit("Found forbidden placeholder '原文未提供' in event data")
+              raise SystemExit("Forbidden placeholder found")
+          if "AI结构化分析失败" in data.get("quality_notes", ""):
+              raise SystemExit("DeepSeek structured analysis failed")
+          path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
           print(f"Validated {data.get('event_count', 0)} events")
           PY
 
@@ -185,12 +106,10 @@ EVENTS_PLACEHOLDER'''
           set -e
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
           cp data.json /tmp/radar-data.json
           git fetch origin main
           git reset --hard origin/main
           cp /tmp/radar-data.json data.json
-
           git add data.json
           if git diff --cached --quiet; then
             echo "No data changes."
