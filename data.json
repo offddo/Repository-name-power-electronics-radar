@@ -1,9 +1,79 @@
 {
   "schema_version": "3.0",
-  "updated": "2026-09-17T23:19:20.347492+08:00",
+  "updated": "2026-09-17T23:48:43.528311+08:00",
   "report_date": "2026-09-17",
   "event_count": 53,
   "events": [
+    {
+      "id": "260917-14",
+      "title": "IAA TRANSPORTATION: Inmotion Technologies expands power electronics range - Industrial Vehicle Technology International",
+      "source_type": "国际资讯",
+      "primary_source": "Industrial Vehicle Technology International",
+      "published_at": "2026-09-17T09:39:11+00:00",
+      "link": "https://www.ivtinternational.com/news/exhibitions/inmotion-expands-power-electronics-range-at-iaa-transportation.html",
+      "category": [],
+      "importance": "一般",
+      "plain_summary": "Zapi集团旗下Inmotion Technologies在汉诺威IAA Transportation展会上展示三款动力总成电力电子产品：第三代高压逆变器ACH3、面向辅助系统的DC/DC转换器DCC3，以及与Schabmüller合作开发的集成电机逆变器IMI 214预览。ACH3电流等级覆盖30A至600A以上，母线电压最高900V，公司称峰值效率99%。DCC3可将250V至900V输入转换为可调的12V或24V输出，功率最高10kW。IMI 214面向商用车的电动取力器应用。",
+      "technical_summary": "Inmotion Technologies展示ACH3第三代高压逆变器，电流等级30A至600A以上，最高900V母线电压，公司称峰值效率99%并具备最佳EMC性能，所有单元在瑞典组装，内置原生网络安全与功能安全。DCC3为紧凑型DC/DC转换器，输入250V至900V，输出可调12V或24V，功率最高10kW，面向电动或混合动力工业、商用与公用事业车辆的辅助系统。IMI 214为与Schabmüller合作开发的欧洲工程集成电机逆变器，将电力电子与电机技术集成于紧凑封装，面向商用车电动取力器应用。原文未披露开关频率、拓扑结构或具体效率曲线。",
+      "technical": {
+        "voltage": "ACH3最高900V母线电压；DCC3输入250V至900V",
+        "power": "DCC3输出最高10kW；ACH3电流30A至600A以上",
+        "topology": "",
+        "device": "",
+        "switching_frequency": "",
+        "efficiency": "ACH3公司称峰值效率99%",
+        "power_density": "",
+        "isolation": "",
+        "control": "",
+        "application": "商用车、工业车辆、电动取力器、辅助系统供电"
+      },
+      "industrialization": {
+        "stage": "产品发布",
+        "status": "在IAA Transportation 2026展会展示，ACH3与DCC3为产品，IMI 214为预览",
+        "target": ""
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "Inmotion Technologies在IAA Transportation 2026展示ACH3、DCC3与IMI 214",
+          "ACH3电流等级30A至600A以上，最高900V母线电压，公司称峰值效率99%",
+          "DCC3输入250V至900V，输出可调12V或24V，功率最高10kW",
+          "IMI 214为与Schabmüller合作开发的集成电机逆变器，面向电动取力器应用",
+          "所有ACH3单元在瑞典组装，具备内置原生网络安全与功能安全"
+        ],
+        "source_claims": [
+          "公司称ACH3具备最佳EMC性能",
+          "公司称IMI 214设计优化了性能、效率与集成便利性"
+        ],
+        "inferences": [
+          "IMI 214处于预览阶段，尚未确认量产状态"
+        ],
+        "unknowns": [
+          "开关频率",
+          "拓扑结构",
+          "效率曲线",
+          "量产时间"
+        ]
+      },
+      "sources": [],
+      "summary_raw": "IAA TRANSPORTATION: Inmotion Technologies expands power electronics range Industrial Vehicle Technology International",
+      "published_date": "2026-09-17",
+      "relevance_score": 50,
+      "relevance_factors": {
+        "focus_match": 35,
+        "technical_density": 59,
+        "engineering_usability": 80,
+        "matched_topics": []
+      },
+      "heat_score": 79,
+      "heat_factors": {
+        "freshness": 100,
+        "multi_source": 45,
+        "source_authority": 75
+      },
+      "technical_depth_score": 71,
+      "radar_score": 63,
+      "radar_rank": 1
+    },
     {
       "id": "260917-07",
       "title": "Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit - Pragativadi",
@@ -55,7 +125,7 @@
       },
       "technical_depth_score": 53,
       "radar_score": 62,
-      "radar_rank": 1,
+      "radar_rank": 2,
       "sources": [
         {
           "source": "Pragativadi",
@@ -65,20 +135,237 @@
       ]
     },
     {
-      "id": "260917-11",
-      "title": "DB HiTek qualifies its 1,200 V SiC MOSFET process on 8-inch wafers - chargedevs.com",
+      "id": "260917-18",
+      "title": "Bloom Energy Estimates $3.6 Billion in Equipment Cost Savings from 800V DC Conversion for AI Data Centers - finance.biggo.com",
       "source_type": "国际资讯",
-      "primary_source": "chargedevs.com",
+      "primary_source": "finance.biggo.com",
+      "published_at": "2026-09-17T03:06:00+00:00",
+      "link": "https://finance.biggo.com/news/f71004cd-4071-4e1a-9648-4f1409c98c39",
+      "category": [
+        "800v",
+        "ai_dc"
+      ],
+      "importance": "重点",
+      "plain_summary": "Bloom Energy发布针对1GW级AI数据中心的800V直流原生供电架构经济分析。公司估算相比传统交流供电，该方案可降低非计算资本支出36亿美元（27%），五年总拥有成本降低55亿美元（9%）。方案由固体氧化物燃料电池直接输出800V直流，减少中间AC/DC转换与变压器环节。公司还引用一项对156名数据中心决策者的调查，受访者预计到2030年直流配置将占数据中心部署的58%。",
+      "technical_summary": "Bloom Energy发布面向1GW级AI数据中心的800V直流原生供电架构经济分析，方案由固体氧化物燃料电池直接输出800V直流，减少中间AC/DC转换与变压器环节。公司估算非计算资本支出降低36亿美元（27%），五年总拥有成本降低55亿美元（9%）。公司引用2026年对156名数据中心决策者的调查，受访者预计到2030年直流配置（混合AC-DC与直流原生）将占数据中心部署的58%。原文强调相关节省为公司基于自身假设的模型估算，非大规模部署实测结果，且仅适用于非计算部分投资。原文未披露燃料电池效率、输出功率等级或保护方案。",
+      "technical": {
+        "voltage": "800V DC",
+        "power": "",
+        "topology": "",
+        "device": "固体氧化物燃料电池",
+        "switching_frequency": "",
+        "efficiency": "",
+        "power_density": "",
+        "isolation": "",
+        "control": "",
+        "application": "AI数据中心供电"
+      },
+      "industrialization": {
+        "stage": "产品发布",
+        "status": "发布800V直流原生供电架构经济分析",
+        "target": "面向1GW级AI数据中心"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "Bloom Energy发布面向1GW级AI数据中心的800V直流原生供电架构经济分析",
+          "公司估算非计算资本支出降低36亿美元（27%），五年总拥有成本降低55亿美元（9%）",
+          "方案由固体氧化物燃料电池直接输出800V直流",
+          "公司引用2026年对156名数据中心决策者的调查，受访者预计到2030年直流配置占数据中心部署的58%"
+        ],
+        "source_claims": [
+          "公司称该架构可降低资本投资与转换损耗"
+        ],
+        "inferences": [
+          "相关节省为公司基于自身假设的模型估算，非实测结果",
+          "58%为前瞻性调查预测，非全球市场确认份额"
+        ],
+        "unknowns": [
+          "燃料电池效率与输出参数",
+          "实际部署案例",
+          "保护方案"
+        ]
+      },
+      "sources": [],
+      "summary_raw": "Bloom Energy Estimates $3.6 Billion in Equipment Cost Savings from 800V DC Conversion for AI Data Centers finance.biggo.com",
+      "published_date": "2026-09-17",
+      "relevance_score": 55,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 51,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "800V/AI DC"
+        ]
+      },
+      "heat_score": 74,
+      "heat_factors": {
+        "freshness": 100,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 62,
+      "radar_score": 61,
+      "radar_rank": 3
+    },
+    {
+      "id": "260917-17",
+      "title": "Huawei to Unveil New AI Technology in Shanghai; 800V High-Voltage DC Makes First Appearance in China's Computing Power Policy - finance.biggo.com",
+      "source_type": "国际资讯",
+      "primary_source": "finance.biggo.com",
+      "published_at": "2026-09-17T03:07:00+00:00",
+      "link": "https://finance.biggo.com/news/e6dfee7b-96a6-4716-aadb-e477a0c50216",
+      "category": [
+        "800v"
+      ],
+      "importance": "重点",
+      "plain_summary": "华为在上海举办HUAWEI CONNECT 2026，发布AI基础设施战略，核心包括计划2026年第四季度推出的Ascend 950DT AI芯片和可连接最多8192个NPU的Atlas 950 SuperPoD。同时，中国政府首次将800V高压直流纳入算力政策，标志着官方对高功率AI基础设施的推动。文章称中国厂商预计在2026年占据中国AI服务器市场56%的份额。",
+      "technical_summary": "华为在HUAWEI CONNECT 2026发布AI基础设施战略，核心为Ascend 950DT AI芯片（计划2026年第四季度发布）与Atlas 950 SuperPoD（最多连接8192个NPU）。Ascend 950DT具备144GB内存、4TB/s内存带宽与2TB/s互连带宽；Atlas 950 SuperPoD目标FP8精度下8 EFLOPS算力。华为强调互连技术，采用自研UnifiedBus互连，每机架64个NPU，可扩展至8192个。中国政府首次将800V HVDC纳入算力政策。原文未披露800V HVDC的具体供电架构、变换器拓扑或电源参数。",
+      "technical": {
+        "voltage": "800V HVDC",
+        "power": "",
+        "topology": "",
+        "device": "Ascend 950DT AI芯片；Atlas 950 SuperPoD",
+        "switching_frequency": "",
+        "efficiency": "",
+        "power_density": "",
+        "isolation": "",
+        "control": "",
+        "application": "AI数据中心、算力基础设施"
+      },
+      "industrialization": {
+        "stage": "产品发布",
+        "status": "华为发布AI基础设施战略；800V HVDC首次纳入中国算力政策",
+        "target": "Ascend 950DT计划2026年第四季度发布；Atlas 950 SuperPoD连接最多8192个NPU"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "华为在上海举办HUAWEI CONNECT 2026（9月17日至19日）",
+          "Ascend 950DT计划2026年第四季度发布，具备144GB内存、4TB/s内存带宽、2TB/s互连带宽",
+          "Atlas 950 SuperPoD最多连接8192个NPU，目标FP8精度下8 EFLOPS算力",
+          "华为采用自研UnifiedBus互连，每机架64个NPU",
+          "中国政府首次将800V HVDC纳入算力政策"
+        ],
+        "source_claims": [
+          "文章称中国厂商预计2026年占据中国AI服务器市场56%份额",
+          "华为称其目标是成为Nvidia"
+        ],
+        "inferences": [
+          "800V HVDC政策纳入表明官方推动高功率AI基础设施"
+        ],
+        "unknowns": [
+          "800V HVDC具体供电架构",
+          "电源变换器拓扑与参数",
+          "政策文件具体内容"
+        ]
+      },
+      "sources": [],
+      "summary_raw": "Huawei to Unveil New AI Technology in Shanghai; 800V High-Voltage DC Makes First Appearance in China's Computing Power Policy finance.biggo.com",
+      "published_date": "2026-09-17",
+      "relevance_score": 55,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 51,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "800V/AI DC"
+        ]
+      },
+      "heat_score": 74,
+      "heat_factors": {
+        "freshness": 100,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 62,
+      "radar_score": 61,
+      "radar_rank": 4
+    },
+    {
+      "id": "260917-12",
+      "title": "Why Could Bloom Energy (BE) Change AI Data Center Power Economics? - Yahoo Finance Singapore",
+      "source_type": "国际资讯",
+      "primary_source": "Yahoo Finance Singapore",
+      "published_at": "2026-09-17T11:13:18+00:00",
+      "link": "https://sg.finance.yahoo.com/news/why-could-bloom-energy-change-111318400.html",
+      "category": [
+        "ai_dc"
+      ],
+      "importance": "一般",
+      "plain_summary": "Bloom Energy发布关于面向AI数据中心的800V直流原生燃料电池供电方案的报告。公司称该架构可省去传统变压器，目标是降低资本支出并减少功率转换损耗，同时缩短AI计算站点的部署周期。公司对1GW AI站点估算非计算资本支出可降低27%（约36亿美元），五年总拥有成本可降低9%（约55亿美元）。这些数字为公司基于自身假设的模型估算，并非大规模部署的实测结果。",
+      "technical_summary": "Bloom Energy提出面向AI数据中心的800V直流原生燃料电池供电架构，由固体氧化物燃料电池直接输出800V直流，减少中间AC/DC转换与变压器环节。公司称该架构可降低非计算资本支出与五年总拥有成本，并缩短部署周期。原文未披露燃料电池效率、输出功率等级、电压调节范围、保护方案或与机柜的接口细节。相关节省数据为公司模型估算，非实测运行结果。",
+      "technical": {
+        "voltage": "800V DC",
+        "power": "",
+        "topology": "",
+        "device": "固体氧化物燃料电池",
+        "switching_frequency": "",
+        "efficiency": "",
+        "power_density": "",
+        "isolation": "",
+        "control": "",
+        "application": "AI数据中心供电"
+      },
+      "industrialization": {
+        "stage": "产品发布",
+        "status": "发布面向AI数据中心的800V直流原生燃料电池供电方案报告",
+        "target": "面向1GW级AI数据中心"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "Bloom Energy发布面向AI数据中心的800V直流原生燃料电池供电方案报告",
+          "公司称该架构省去传统变压器并减少功率转换环节",
+          "公司估算1GW AI站点非计算资本支出降低27%（约36亿美元），五年总拥有成本降低9%（约55亿美元）"
+        ],
+        "source_claims": [
+          "公司称该架构可缩短AI计算站点部署周期",
+          "公司称该架构可降低功率转换损耗"
+        ],
+        "inferences": [
+          "相关节省数据为公司基于自身假设的模型估算，非实测结果"
+        ],
+        "unknowns": [
+          "燃料电池效率与输出参数",
+          "实际部署案例",
+          "与机柜的接口与保护方案"
+        ]
+      },
+      "sources": [],
+      "summary_raw": "Why Could Bloom Energy (BE) Change AI Data Center Power Economics? Yahoo Finance Singapore",
+      "published_date": "2026-09-17",
+      "relevance_score": 55,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 51,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "800V/AI DC"
+        ]
+      },
+      "heat_score": 74,
+      "heat_factors": {
+        "freshness": 100,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 62,
+      "radar_score": 61,
+      "radar_rank": 5
+    },
+    {
+      "id": "260917-08",
+      "title": "DB HiTek qualifies its 1,200 V SiC MOSFET process on 8-inch wafers - Charged EVs",
+      "source_type": "国际资讯",
+      "primary_source": "Charged EVs",
       "published_at": "2026-09-17T14:10:46+00:00",
       "link": "https://chargedevs.com/newswire/db-hitek-qualifies-its-1200-v-sic-mosfet-process-on-8-inch-wafers/",
       "category": [
         "sic"
       ],
       "importance": "重点",
-      "plain_summary": "DB HiTek 宣布其 1200 V SiC MOSFET 工艺在 8 英寸（200mm）晶圆上通过验证。8 英寸晶圆相比 6 英寸可提升单片产出、降低单位成本，是 SiC 器件制造向更大尺寸演进的重要进展。1200 V 等级适用于电动汽车、光伏逆变器与工业电源等场景。具体良率、产能与客户导入情况未在摘要中披露。",
-      "technical_summary": "该条目报道 DB HiTek 的 1200 V SiC MOSFET 工艺在 8 英寸晶圆上通过验证。8 英寸晶圆可提升单片芯片产出并降低单位成本，是 SiC 制造从 6 英寸向 8 英寸过渡的关键节点。1200 V 等级面向电动汽车、光伏与工业电源等应用。输入未提供导通电阻、开关特性、良率、产能或可靠性测试数据。无法判断其工艺成熟度与量产时间表。",
+      "plain_summary": "韩国晶圆代工厂DB HiTek宣布其8英寸（200毫米）晶圆上的1200V碳化硅MOSFET工艺已完成可靠性认证，并计划在2027年进入量产。公司称已建立完整的1200V 8英寸SiC代工工艺流程，可向客户提供从设计、制造到电学表征与可靠性认证的服务。第一代和第二代工艺的设计套件已可提供，第三代设计套件计划于2026年11月发布。公司预计这些套件可将客户产品开发时间缩短一年以上。",
+      "technical_summary": "DB HiTek完成1200V SiC MOSFET工艺在8英寸（200mm）晶圆上的可靠性认证，并准备2027年量产。第二代工艺在18V开通栅压下实现比导通电阻不高于2.5 mΩ·cm²、阈值电压不低于3V。第三代工艺正在按比导通电阻不高于2.3 mΩ·cm²（18V栅压）以及短路安全工作区短路耐受时间至少2.5μs进行认证。公司提供第一代与第二代1200V SiC MOSFET工艺的PDK，第三代PDK计划2026年11月发布。公司计划2026年第三季度完成工艺准备并向长期代工客户开放，2027年第二季度向所有客户开放服务。原文未披露栅极结构、可靠性测试项目细节或良率数据。",
       "technical": {
-        "voltage": "1200 V",
+        "voltage": "1200V",
         "power": "",
         "topology": "",
         "device": "SiC MOSFET",
@@ -87,32 +374,37 @@
         "power_density": "",
         "isolation": "",
         "control": "",
-        "application": ""
+        "application": "电动汽车、可再生能源系统、工业电力设备"
       },
       "industrialization": {
         "stage": "试产",
-        "status": "1200 V SiC MOSFET 工艺在 8 英寸晶圆上通过验证",
-        "target": ""
+        "status": "8英寸1200V SiC MOSFET工艺完成可靠性认证，PDK已向客户提供，准备量产",
+        "target": "2027年量产；2026年第三季度向长期代工客户开放，2027年第二季度向所有客户开放"
       },
       "evidence": {
         "confirmed_facts": [
-          "DB HiTek 的 1200 V SiC MOSFET 工艺在 8 英寸晶圆上通过验证"
+          "DB HiTek完成1200V SiC MOSFET工艺在8英寸（200mm）晶圆上的可靠性认证",
+          "第二代工艺比导通电阻不高于2.5 mΩ·cm²，阈值电压不低于3V（18V栅压）",
+          "第三代工艺目标比导通电阻不高于2.3 mΩ·cm²（18V栅压），短路耐受时间至少2.5μs",
+          "第一代与第二代PDK已可提供，第三代PDK计划2026年11月发布",
+          "公司计划2027年量产"
         ],
-        "source_claims": [],
+        "source_claims": [
+          "公司称已建立全球首个完整的1200V 8英寸SiC代工工艺流程",
+          "公司称PDK可将产品开发时间缩短一年以上",
+          "公司称将提供全球首个8英寸SiC代工服务"
+        ],
         "inferences": [
-          "8 英寸晶圆可提升单片产出并降低单位成本"
+          "该工艺面向代工客户而非自有品牌器件"
         ],
         "unknowns": [
-          "导通电阻",
-          "开关特性",
-          "良率",
-          "产能",
-          "可靠性测试数据",
-          "量产时间表"
+          "良率与成本数据",
+          "具体客户名单",
+          "可靠性测试项目与标准"
         ]
       },
       "sources": [],
-      "summary_raw": "DB HiTek qualifies its 1,200 V SiC MOSFET process on 8-inch wafers chargedevs.com",
+      "summary_raw": "DB HiTek qualifies its 1,200 V SiC MOSFET process on 8-inch wafers Charged EVs",
       "published_date": "2026-09-17",
       "relevance_score": 55,
       "relevance_factors": {
@@ -129,282 +421,12 @@
         "multi_source": 45,
         "source_authority": 58
       },
-      "technical_depth_score": 53,
-      "radar_score": 60,
-      "radar_rank": 2
-    },
-    {
-      "id": "260917-01",
-      "title": "Renesas GaN: D-Mode Technology & Design Benefits - Renesas",
-      "source_type": "国际资讯",
-      "primary_source": "Renesas",
-      "published_at": "2026-09-17T04:36:36+00:00",
-      "link": "https://www.renesas.com/en/video/renesas-gan-d-mode-technology-design-benefits",
-      "category": [
-        "gan"
-      ],
-      "importance": "一般",
-      "plain_summary": "瑞萨电子发布了一段关于其氮化镓（GaN）D-Mode（耗尽型）技术的介绍视频，重点讲解该技术的设计优势。D-Mode GaN 通常需要配合级联或负压驱动方案使用，与常见的 E-Mode（增强型）方案在驱动设计上有所不同。该内容属于厂商技术宣传材料，面向希望了解 GaN 功率器件选型与驱动设计的工程师。由于仅有标题和极简摘要，具体参数与产品型号无法确认。",
-      "technical_summary": "该条目为 Renesas 官方视频页面，主题为 GaN D-Mode 技术及其设计收益。D-Mode（耗尽型）GaN HEMT 通常为常开器件，工程上需通过级联结构或负压关断驱动实现常闭行为，其驱动与保护设计与 E-Mode 方案存在差异。视频可能涉及驱动电压、开关行为与系统设计注意事项，但输入未提供任何电压、频率、效率或封装参数。无法据此判断具体产品系列、目标应用或量产状态。",
-      "technical": {
-        "voltage": "",
-        "power": "",
-        "topology": "",
-        "device": "GaN D-Mode HEMT",
-        "switching_frequency": "",
-        "efficiency": "",
-        "power_density": "",
-        "isolation": "",
-        "control": "",
-        "application": ""
-      },
-      "industrialization": {
-        "stage": "未知",
-        "status": "厂商技术宣传视频，无产品发布或量产信息",
-        "target": ""
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "Renesas 发布了标题为“Renesas GaN: D-Mode Technology & Design Benefits”的视频页面"
-        ],
-        "source_claims": [],
-        "inferences": [
-          "D-Mode GaN 通常为常开器件，需级联或负压驱动方案"
-        ],
-        "unknowns": [
-          "具体器件型号",
-          "电压/电流等级",
-          "开关频率",
-          "效率数据",
-          "目标应用",
-          "量产状态"
-        ]
-      },
-      "sources": [],
-      "summary_raw": "Renesas GaN: D-Mode Technology & Design Benefits Renesas",
-      "published_date": "2026-09-17",
-      "relevance_score": 53,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 43,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "SiC/GaN"
-        ]
-      },
-      "heat_score": 79,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 45,
-        "source_authority": 75
-      },
-      "technical_depth_score": 44,
-      "radar_score": 60,
-      "radar_rank": 3
-    },
-    {
-      "id": "260917-21",
-      "title": "Bloom Energy Estimates $3.6 Billion in Equipment Cost Savings from 800V DC Conversion for AI Data Centers - finance.biggo.com",
-      "source_type": "国际资讯",
-      "primary_source": "finance.biggo.com",
-      "published_at": "2026-09-17T03:06:00+00:00",
-      "link": "https://finance.biggo.com/news/f71004cd-4071-4e1a-9648-4f1409c98c39",
-      "category": [
-        "800v",
-        "ai_dc"
-      ],
-      "importance": "重点",
-      "plain_summary": "Bloom Energy 估计，采用 800V 直流供电可为 AI 数据中心节省约 36 亿美元的电力设备成本。该估算基于其 800V 直流原生燃料电池供电方案，旨在减少传统交流供电链路中的多级变换与变压器。该数字为公司自身估算，属于来源声称，尚未经独立验证。具体测算方法与假设未在摘要中披露。",
-      "technical_summary": "该条目报道 Bloom Energy 估计 800V 直流转换可为 AI 数据中心节省约 36 亿美元设备成本。800V 直流原生供电可减少 AC/DC 与 DC/DC 变换级数，可能降低设备数量与损耗。该估算为公司自身测算，输入未提供测算方法、假设条件或独立验证数据。无法据此判断实际成本节省幅度。",
-      "technical": {
-        "voltage": "800 V",
-        "power": "",
-        "topology": "",
-        "device": "",
-        "switching_frequency": "",
-        "efficiency": "",
-        "power_density": "",
-        "isolation": "",
-        "control": "",
-        "application": "AI 数据中心供电"
-      },
-      "industrialization": {
-        "stage": "未知",
-        "status": "公司估算 800V 直流转换可节省约 36 亿美元设备成本",
-        "target": ""
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "Bloom Energy 估计 800V 直流转换可为 AI 数据中心节省约 36 亿美元设备成本"
-        ],
-        "source_claims": [
-          "Bloom Energy 估计 800V 直流转换可节省约 36 亿美元设备成本"
-        ],
-        "inferences": [
-          "800V 直流原生供电可减少变换级数"
-        ],
-        "unknowns": [
-          "测算方法",
-          "假设条件",
-          "独立验证数据"
-        ]
-      },
-      "sources": [],
-      "summary_raw": "Bloom Energy Estimates $3.6 Billion in Equipment Cost Savings from 800V DC Conversion for AI Data Centers finance.biggo.com",
-      "published_date": "2026-09-17",
-      "relevance_score": 53,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 43,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "800V/AI DC"
-        ]
-      },
-      "heat_score": 74,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 53,
-      "radar_score": 59,
-      "radar_rank": 4
-    },
-    {
-      "id": "260917-20",
-      "title": "Huawei to Unveil New AI Technology in Shanghai; 800V High-Voltage DC Makes First Appearance in China's Computing Power Policy - finance.biggo.com",
-      "source_type": "国际资讯",
-      "primary_source": "finance.biggo.com",
-      "published_at": "2026-09-17T03:07:00+00:00",
-      "link": "https://finance.biggo.com/news/e6dfee7b-96a6-4716-aadb-e477a0c50216",
-      "category": [
-        "800v"
-      ],
-      "importance": "重点",
-      "plain_summary": "据 finance.biggo.com 报道，华为将在上海发布新的 AI 技术，同时 800V 高压直流首次出现在中国算力政策中。这表明 800V 直流供电架构正在从企业技术方案上升为政策关注方向，对 AI 数据中心供电体系演进具有信号意义。具体政策内容与华为技术细节未在摘要中披露。",
-      "technical_summary": "该条目报道华为将在上海发布新 AI 技术，以及 800V 高压直流首次出现在中国算力政策中。800V 直流供电架构可减少数据中心内的变换级数，提升供电效率与功率密度。输入未提供具体技术参数、政策条款或产品细节。无法判断华为方案的技术路线与实施时间表。",
-      "technical": {
-        "voltage": "800 V",
-        "power": "",
-        "topology": "",
-        "device": "",
-        "switching_frequency": "",
-        "efficiency": "",
-        "power_density": "",
-        "isolation": "",
-        "control": "",
-        "application": "AI 数据中心供电"
-      },
-      "industrialization": {
-        "stage": "未知",
-        "status": "800V 高压直流首次出现在中国算力政策中",
-        "target": ""
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "华为将在上海发布新的 AI 技术",
-          "800V 高压直流首次出现在中国算力政策中"
-        ],
-        "source_claims": [],
-        "inferences": [
-          "800V 直流供电架构正从企业方案上升为政策关注方向"
-        ],
-        "unknowns": [
-          "政策具体条款",
-          "华为技术细节",
-          "实施时间表"
-        ]
-      },
-      "sources": [],
-      "summary_raw": "Huawei to Unveil New AI Technology in Shanghai; 800V High-Voltage DC Makes First Appearance in China's Computing Power Policy finance.biggo.com",
-      "published_date": "2026-09-17",
-      "relevance_score": 53,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 43,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "800V/AI DC"
-        ]
-      },
-      "heat_score": 74,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 53,
-      "radar_score": 59,
-      "radar_rank": 5
-    },
-    {
-      "id": "260917-15",
-      "title": "Why Could Bloom Energy (BE) Change AI Data Center Power Economics? - Yahoo Finance Singapore",
-      "source_type": "国际资讯",
-      "primary_source": "Yahoo Finance Singapore",
-      "published_at": "2026-09-17T11:13:18+00:00",
-      "link": "https://sg.finance.yahoo.com/news/why-could-bloom-energy-change-111318400.html",
-      "category": [
-        "ai_dc"
-      ],
-      "importance": "一般",
-      "plain_summary": "Yahoo Finance 发表分析文章，讨论 Bloom Energy 的燃料电池方案如何可能改变 AI 数据中心的电力经济性。Bloom Energy 近期发布了面向 AI 数据中心的 800V 直流原生供电方案。该文章属于投资分析类内容，不涉及具体产品发布。具体经济性数据未在摘要中披露。",
-      "technical_summary": "该条目为投资分析文章，讨论 Bloom Energy 燃料电池方案对 AI 数据中心电力经济性的潜在影响。Bloom Energy 近期发布 800V 直流原生供电方案，可能减少变换环节。输入未提供具体技术参数或经济性测算细节。无法据此判断其技术可行性与成本优势。",
-      "technical": {
-        "voltage": "800 V",
-        "power": "",
-        "topology": "",
-        "device": "",
-        "switching_frequency": "",
-        "efficiency": "",
-        "power_density": "",
-        "isolation": "",
-        "control": "",
-        "application": "AI 数据中心供电"
-      },
-      "industrialization": {
-        "stage": "未知",
-        "status": "投资分析文章",
-        "target": ""
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "Yahoo Finance 发表关于 Bloom Energy 对 AI 数据中心电力经济性影响的分析文章"
-        ],
-        "source_claims": [],
-        "inferences": [
-          "Bloom Energy 近期发布 800V 直流原生供电方案"
-        ],
-        "unknowns": [
-          "具体技术参数",
-          "经济性测算细节"
-        ]
-      },
-      "sources": [],
-      "summary_raw": "Why Could Bloom Energy (BE) Change AI Data Center Power Economics? Yahoo Finance Singapore",
-      "published_date": "2026-09-17",
-      "relevance_score": 53,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 43,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "800V/AI DC"
-        ]
-      },
-      "heat_score": 74,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 53,
-      "radar_score": 59,
+      "technical_depth_score": 62,
+      "radar_score": 61,
       "radar_rank": 6
     },
     {
-      "id": "260917-18",
+      "id": "260917-15",
       "title": "RIR Power Electronics zooms on installing SiC epitaxial wafer manufacturing reactors in Odisha facility - Investment Guru India",
       "source_type": "国际资讯",
       "primary_source": "Investment Guru India",
@@ -413,40 +435,46 @@
       "category": [
         "sic"
       ],
-      "importance": "一般",
-      "plain_summary": "RIR Power Electronics 因在奥里萨邦工厂安装 SiC 外延晶圆制造反应器而受到市场关注。该进展是公司在 SiC 半导体制造领域的重要一步，反映出印度本土宽禁带半导体供应链建设正在推进。具体产能与投产时间未在摘要中披露。",
-      "technical_summary": "该条目与 260917-16、260917-19、260917-23、260917-25 为同一事件的不同来源报道。RIR Power Electronics 在奥里萨邦工厂安装 SiC 外延晶圆制造反应器。输入未提供外延工艺参数、晶圆尺寸、器件类型或产能等细节。无法判断其工艺水平与量产时间表。",
+      "importance": "重点",
+      "plain_summary": "RIR Power Electronics在奥迪沙邦布巴内斯瓦尔的SiC半导体设施完成外延晶圆制造反应炉的安装，电力、公用设施与配套基础设施已调试到位。公司称商业化生产将在剩余法定与监管手续完成后开始，产品面向国内与全球市场。该设施是公司618亿卢比投资计划的一部分，目标是建立印度首个垂直整合SiC半导体生产基地。消息公布后公司股价上涨9.74%至197.65卢比。",
+      "technical_summary": "RIR Power Electronics完成SiC外延晶圆制造反应炉安装，电力、公用设施与配套基础设施已调试。设施为618亿卢比投资计划的一部分，规划制造SiC基功率半导体器件，包括高压MOSFET、二极管与模块，面向电动出行、可再生能源、储能、轨道交通、航空航天、国防、数据中心与工业电力电子。公司称该设施将交付印度首批SiC外延晶圆。原文未披露外延工艺参数、器件电压等级或产能数字。",
       "technical": {
         "voltage": "",
         "power": "",
         "topology": "",
-        "device": "SiC",
+        "device": "SiC外延晶圆；规划中的高压MOSFET、二极管、模块",
         "switching_frequency": "",
         "efficiency": "",
         "power_density": "",
         "isolation": "",
         "control": "",
-        "application": ""
+        "application": "电动出行、可再生能源、储能、轨道交通、航空航天、国防、数据中心、工业电力电子"
       },
       "industrialization": {
         "stage": "试产",
-        "status": "安装 SiC 外延晶圆制造反应器",
-        "target": ""
+        "status": "SiC外延晶圆制造反应炉安装完成，电力与公用设施已调试，等待剩余法定与监管手续后开始商业化生产",
+        "target": "面向国内与全球市场供应SiC外延晶圆"
       },
       "evidence": {
         "confirmed_facts": [
-          "RIR Power Electronics 在奥里萨邦工厂安装 SiC 外延晶圆制造反应器"
+          "RIR Power Electronics完成SiC外延晶圆制造反应炉安装",
+          "电力连接、公用设施与配套基础设施已调试",
+          "项目投资约618亿卢比",
+          "商业化生产将在剩余法定与监管手续完成后开始",
+          "消息公布后公司股价上涨9.74%至197.65卢比"
         ],
-        "source_claims": [],
+        "source_claims": [
+          "公司称该设施为印度首个垂直整合SiC半导体生产设施",
+          "公司称该设施将交付印度首批SiC外延晶圆"
+        ],
         "inferences": [
-          "印度本土宽禁带半导体供应链建设正在推进"
+          "该设施当前处于外延环节，器件制造尚未实现"
         ],
         "unknowns": [
           "外延工艺参数",
-          "晶圆尺寸",
-          "器件类型",
-          "产能",
-          "量产时间表"
+          "器件电压等级",
+          "产能数字",
+          "客户情况"
         ]
       },
       "sources": [
@@ -482,28 +510,28 @@
         "multi_source": 63,
         "source_authority": 58
       },
-      "technical_depth_score": 44,
-      "radar_score": 58,
+      "technical_depth_score": 53,
+      "radar_score": 60,
       "radar_rank": 7
     },
     {
-      "id": "260917-19",
-      "title": "RIR Power Electronics soars on SiC semiconductor facility progress in Odisha - Business Standard",
+      "id": "260917-01",
+      "title": "Renesas GaN: D-Mode Technology & Design Benefits - Renesas",
       "source_type": "国际资讯",
-      "primary_source": "Business Standard",
-      "published_at": "2026-09-17T07:01:20+00:00",
-      "link": "https://www.business-standard.com/markets/capital-market-news/rir-power-electronics-soars-on-sic-semiconductor-facility-progress-in-odisha-126091700434_1.html",
+      "primary_source": "Renesas",
+      "published_at": "2026-09-17T04:36:36+00:00",
+      "link": "https://www.renesas.com/en/video/renesas-gan-d-mode-technology-design-benefits",
       "category": [
-        "sic"
+        "gan"
       ],
       "importance": "一般",
-      "plain_summary": "Business Standard 报道 RIR Power Electronics 因奥里萨邦 SiC 半导体工厂进展而股价上涨。该进展涉及 SiC 外延晶圆制造反应器的安装。市场反应反映出投资者对印度本土 SiC 供应链建设的关注。具体产能与投产时间未在摘要中披露。",
-      "technical_summary": "该条目与 260917-16、260917-18、260917-23、260917-25 为同一事件的不同来源报道。RIR Power Electronics 在奥里萨邦推进 SiC 半导体工厂建设。输入未提供外延工艺参数、晶圆尺寸、器件类型或产能等细节。无法判断其工艺水平与量产时间表。",
+      "plain_summary": "该条仅有标题信息，正文未提供。标题显示Renesas发布关于GaN D-Mode技术与设计优势的视频内容。由于缺少正文，无法确认器件参数、拓扑或应用细节。",
+      "technical_summary": "仅有标题，无正文内容，无法提取器件、拓扑、参数或测试结果。",
       "technical": {
         "voltage": "",
         "power": "",
         "topology": "",
-        "device": "SiC",
+        "device": "GaN D-Mode器件",
         "switching_frequency": "",
         "efficiency": "",
         "power_density": "",
@@ -512,24 +540,95 @@
         "application": ""
       },
       "industrialization": {
-        "stage": "试产",
-        "status": "SiC 半导体工厂进展，安装外延晶圆制造反应器",
+        "stage": "未知",
+        "status": "",
         "target": ""
       },
       "evidence": {
         "confirmed_facts": [
-          "RIR Power Electronics 因奥里萨邦 SiC 半导体工厂进展而股价上涨"
+          "标题显示Renesas发布关于GaN D-Mode技术与设计优势的内容"
         ],
         "source_claims": [],
+        "inferences": [],
+        "unknowns": [
+          "器件参数",
+          "拓扑",
+          "应用场景"
+        ]
+      },
+      "sources": [],
+      "summary_raw": "Renesas GaN: D-Mode Technology & Design Benefits Renesas",
+      "published_date": "2026-09-17",
+      "relevance_score": 53,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "SiC/GaN"
+        ]
+      },
+      "heat_score": 79,
+      "heat_factors": {
+        "freshness": 100,
+        "multi_source": 45,
+        "source_authority": 75
+      },
+      "technical_depth_score": 44,
+      "radar_score": 60,
+      "radar_rank": 8
+    },
+    {
+      "id": "260917-16",
+      "title": "RIR Power Electronics soars on SiC semiconductor facility progress in Odisha - Business Standard",
+      "source_type": "国际资讯",
+      "primary_source": "Business Standard",
+      "published_at": "2026-09-17T07:01:20+00:00",
+      "link": "https://www.business-standard.com/markets/capital-market-news/rir-power-electronics-soars-on-sic-semiconductor-facility-progress-in-odisha-126091700434_1.html",
+      "category": [
+        "sic"
+      ],
+      "importance": "重点",
+      "plain_summary": "RIR Power Electronics宣布在奥迪沙邦布巴内斯瓦尔的半导体设施完成SiC外延晶圆制造反应炉安装，电力、公用设施与配套基础设施已调试。公司称商业化生产将在剩余法定与监管手续完成后开始，产品面向国内与国际市场。该设施规划为垂直整合SiC半导体制造基地，投资约618亿卢比，未来计划制造高压MOSFET、二极管与模块。消息公布后公司股价上涨10.55%至199.10卢比。",
+      "technical_summary": "RIR Power Electronics完成SiC外延晶圆制造反应炉安装，电力、公用设施与配套基础设施已调试。设施规划为垂直整合SiC半导体制造基地，投资约618亿卢比，未来计划制造SiC基功率半导体器件，包括高压MOSFET、二极管与模块，面向电动出行、可再生能源、储能、轨道交通、航空航天、国防、数据中心与工业电力电子。公司称外延工艺是其“碳化硅到系统”制造路径的第一步，覆盖外延晶圆、功率半导体器件并最终延伸至系统级方案。原文未披露外延工艺参数、器件电压等级或产能数字。公司2026年6月季度独立净利润同比增长80.46%至3140万卢比，净销售额同比增长29.27%至2.716亿卢比。",
+      "technical": {
+        "voltage": "",
+        "power": "",
+        "topology": "",
+        "device": "SiC外延晶圆；规划中的高压MOSFET、二极管、模块",
+        "switching_frequency": "",
+        "efficiency": "",
+        "power_density": "",
+        "isolation": "",
+        "control": "",
+        "application": "电动出行、可再生能源、储能、轨道交通、航空航天、国防、数据中心、工业电力电子"
+      },
+      "industrialization": {
+        "stage": "试产",
+        "status": "SiC外延晶圆制造反应炉安装完成，电力与公用设施已调试，等待剩余法定与监管手续后开始商业化生产",
+        "target": "面向国内与国际市场供应SiC外延晶圆，后续制造功率器件"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "RIR Power Electronics完成SiC外延晶圆制造反应炉安装",
+          "电力连接、公用设施与配套基础设施已调试",
+          "项目投资约618亿卢比",
+          "商业化生产将在剩余法定与监管手续完成后开始",
+          "公司2026年6月季度独立净利润同比增长80.46%至3140万卢比，净销售额同比增长29.27%至2.716亿卢比",
+          "消息公布后公司股价上涨10.55%至199.10卢比"
+        ],
+        "source_claims": [
+          "公司称该设施为垂直整合SiC半导体制造设施",
+          "公司称外延工艺是“碳化硅到系统”制造路径的第一步"
+        ],
         "inferences": [
-          "市场关注印度本土 SiC 供应链建设"
+          "该设施当前处于外延环节，器件制造尚未实现"
         ],
         "unknowns": [
           "外延工艺参数",
-          "晶圆尺寸",
-          "器件类型",
-          "产能",
-          "量产时间表"
+          "器件电压等级",
+          "产能数字",
+          "客户情况"
         ]
       },
       "sources": [],
@@ -550,12 +649,12 @@
         "multi_source": 45,
         "source_authority": 58
       },
-      "technical_depth_score": 44,
-      "radar_score": 57,
-      "radar_rank": 8
+      "technical_depth_score": 53,
+      "radar_score": 59,
+      "radar_rank": 9
     },
     {
-      "id": "260917-16",
+      "id": "260917-13",
       "title": "RIR Power Electronics Advances SiC Semiconductor Manufacturing In Odisha - electronicsforyou.biz",
       "source_type": "国际资讯",
       "primary_source": "electronicsforyou.biz",
@@ -564,41 +663,47 @@
       "category": [
         "sic"
       ],
-      "importance": "一般",
-      "plain_summary": "RIR Power Electronics 在印度奥里萨邦推进碳化硅半导体制造，已完成 SiC 外延晶圆制造反应器的安装。外延是 SiC 器件制造的关键环节，该进展表明公司在建设本土 SiC 供应链方面取得阶段性成果。具体产能、产品类型与投产时间未在摘要中披露。",
-      "technical_summary": "该条目报道 RIR Power Electronics 在奥里萨邦推进 SiC 半导体制造，完成外延晶圆制造反应器安装。外延环节决定 SiC 器件的漂移层质量，是器件制造的关键步骤。输入未提供外延厚度、掺杂浓度、晶圆尺寸、器件类型或产能等参数。无法判断其工艺水平与量产时间表。",
+      "importance": "重点",
+      "plain_summary": "RIR Power Electronics在奥迪沙邦布巴内斯瓦尔的半导体设施完成了碳化硅外延晶圆制造反应炉的安装，并调试了电力、公用设施与配套基础设施。公司称商业化生产将在剩余法定与监管手续完成后开始，产品面向国内与国际市场。该设施规划为垂直整合的SiC半导体制造基地，投资约618亿卢比，未来计划制造高压MOSFET、二极管与模块。消息公布后公司股价上涨10.55%至199.10卢比。",
+      "technical_summary": "RIR Power Electronics完成SiC外延晶圆制造反应炉安装，并调试电力、公用设施与配套基础设施。设施规划为垂直整合SiC半导体制造基地，投资约618亿卢比，未来计划制造SiC基功率半导体器件，包括高压MOSFET、二极管与模块。公司称外延工艺是其“碳化硅到系统”制造路径的第一步，覆盖外延晶圆、功率半导体器件并最终延伸至系统级方案。原文未披露外延工艺参数、器件电压等级或产能数字。公司2026年6月季度独立净利润同比增长80.46%至3140万卢比，净销售额同比增长29.27%至2.716亿卢比。",
       "technical": {
         "voltage": "",
         "power": "",
         "topology": "",
-        "device": "SiC",
+        "device": "SiC外延晶圆；规划中的高压MOSFET、二极管、模块",
         "switching_frequency": "",
         "efficiency": "",
         "power_density": "",
         "isolation": "",
         "control": "",
-        "application": ""
+        "application": "电动出行、可再生能源、储能、轨道交通、航空航天、国防、数据中心、工业电力电子"
       },
       "industrialization": {
         "stage": "试产",
-        "status": "完成 SiC 外延晶圆制造反应器安装",
-        "target": ""
+        "status": "SiC外延晶圆制造反应炉安装完成，电力与公用设施已调试，等待剩余法定与监管手续后开始商业化生产",
+        "target": "面向国内与国际市场供应SiC外延晶圆，后续制造功率器件"
       },
       "evidence": {
         "confirmed_facts": [
-          "RIR Power Electronics 在奥里萨邦完成 SiC 外延晶圆制造反应器安装"
+          "RIR Power Electronics完成SiC外延晶圆制造反应炉安装",
+          "电力连接、公用设施与配套基础设施已调试",
+          "项目投资约618亿卢比",
+          "商业化生产将在剩余法定与监管手续完成后开始",
+          "公司2026年6月季度独立净利润同比增长80.46%至3140万卢比，净销售额同比增长29.27%至2.716亿卢比",
+          "消息公布后公司股价上涨10.55%至199.10卢比"
         ],
-        "source_claims": [],
+        "source_claims": [
+          "公司称该设施为垂直整合SiC半导体制造设施",
+          "公司称外延工艺是“碳化硅到系统”制造路径的第一步"
+        ],
         "inferences": [
-          "外延是 SiC 器件制造的关键环节"
+          "该设施当前处于外延环节，器件制造尚未实现"
         ],
         "unknowns": [
-          "外延厚度",
-          "掺杂浓度",
-          "晶圆尺寸",
-          "器件类型",
-          "产能",
-          "量产时间表"
+          "外延工艺参数",
+          "器件电压等级",
+          "产能数字",
+          "客户情况"
         ]
       },
       "sources": [],
@@ -619,12 +724,87 @@
         "multi_source": 45,
         "source_authority": 58
       },
-      "technical_depth_score": 44,
-      "radar_score": 57,
-      "radar_rank": 9
+      "technical_depth_score": 53,
+      "radar_score": 59,
+      "radar_rank": 10
     },
     {
       "id": "260917-09",
+      "title": "CorePower Magnetics Raises $10.6 Million To Scale U.S. Manufacturing Of Advanced Magnetics For AI, Data Centers And Grid Infrastructure - pulse2.com",
+      "source_type": "国际资讯",
+      "primary_source": "pulse2.com",
+      "published_at": "2026-09-17T12:44:25+00:00",
+      "link": "https://pulse2.com/corepower-magnetics-raises-10-6-million-to-scale-u-s-manufacturing-of-advanced-magnetics-for-ai-data-centers-and-grid-infrastructure/",
+      "category": [
+        "ai_dc",
+        "magnetics"
+      ],
+      "importance": "一般",
+      "plain_summary": "总部位于匹兹堡的CorePower Magnetics完成1060万美元股权融资，用于扩大美国本土制造能力、招聘人员并推进技术商业化。公司开发用于电力电子的先进磁性材料与元件，包括变压器和电感，面向AI基础设施、数据中心、电网现代化与工业电气化。公司称其技术基于卡内基梅隆大学与美国能源部国家能源技术实验室合作推进的纳米晶合金，并已从实验室规模推进到商业规模生产。公司还获得约2700万美元来自ARPA-E、美国能源部和国防部的非稀释性资金。",
+      "technical_summary": "CorePower Magnetics开发基于纳米晶合金的磁性材料与元件，包括变压器与电感，面向AI基础设施、数据中心、电网现代化与工业电气化。公司称对材料进行重新配方以在更高温度下工作，并满足商业化制造的机械要求。公司覆盖材料开发、制造工艺、元件设计与生产全链条，称其电感与变压器更小、更轻、更高效，可直接集成到电力系统中。公司称已将专有合金、退火与元件制造工艺从实验室规模推进到商业规模生产，多条产品线正走向批量制造。原文未披露工作频率、磁通密度、损耗数据或电压等级等具体参数。",
+      "technical": {
+        "voltage": "",
+        "power": "",
+        "topology": "",
+        "device": "纳米晶合金磁性元件（变压器、电感）",
+        "switching_frequency": "",
+        "efficiency": "",
+        "power_density": "",
+        "isolation": "",
+        "control": "",
+        "application": "AI基础设施、数据中心、电网现代化、工业电气化"
+      },
+      "industrialization": {
+        "stage": "试产",
+        "status": "专有合金、退火与元件制造工艺已从实验室规模推进到商业规模生产，多条产品线正走向批量制造",
+        "target": "扩大匹兹堡地区产能与设备，增加工程、运营与制造人员"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "CorePower Magnetics完成1060万美元股权融资，由Engine Ventures与Material Impact共同领投",
+          "公司累计股权融资达1360万美元",
+          "公司另获约2700万美元来自ARPA-E、美国能源部和国防部的非稀释性资金",
+          "公司技术基于卡内基梅隆大学与美国能源部国家能源技术实验室合作推进的纳米晶合金",
+          "公司称已将专有合金、退火与元件制造工艺推进到商业规模生产",
+          "公司称与多家财富500强企业在AI基础设施、数据中心、工业电力系统与电网现代化领域有付费合作"
+        ],
+        "source_claims": [
+          "公司称其电感与变压器更小、更轻、更高效",
+          "公司称材料经重新配方可在更高温度下工作"
+        ],
+        "inferences": [
+          "公司处于从技术开发向更高产量制造过渡的阶段"
+        ],
+        "unknowns": [
+          "具体产品参数与频率范围",
+          "客户名称与订单规模",
+          "产能数字"
+        ]
+      },
+      "sources": [],
+      "summary_raw": "CorePower Magnetics Raises $10.6 Million To Scale U.S. Manufacturing Of Advanced Magnetics For AI, Data Centers And Grid Infrastructure pulse2.com",
+      "published_date": "2026-09-17",
+      "relevance_score": 53,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "Magnetics"
+        ]
+      },
+      "heat_score": 74,
+      "heat_factors": {
+        "freshness": 100,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 53,
+      "radar_score": 59,
+      "radar_rank": 11
+    },
+    {
+      "id": "260917-06",
       "title": "India's first vertically integrated SiC semiconductor unit nears production - Business Standard",
       "source_type": "国际资讯",
       "primary_source": "Business Standard",
@@ -634,42 +814,46 @@
         "sic"
       ],
       "importance": "重点",
-      "plain_summary": "据 Business Standard 报道，印度首个垂直整合的碳化硅（SiC）半导体工厂接近投产。垂直整合意味着该工厂可能覆盖从衬底、外延到器件制造的部分或全部环节。该进展对印度本土宽禁带半导体供应链建设具有重要意义，但“接近投产”不等于已量产。具体产能、产品类型与时间表未在摘要中披露。",
-      "technical_summary": "该条目报道印度首个垂直整合 SiC 半导体工厂接近投产。垂直整合通常涉及衬底、外延与器件制造环节的整合。输入未提供晶圆尺寸、电压等级、器件类型、产能或良率等参数。需注意“nears production”为接近投产状态，不代表已实现量产。",
+      "plain_summary": "印度企业RIR Power Electronics在布巴内斯瓦尔附近的半导体园区完成了碳化硅外延晶圆制造反应炉等关键设备的安装，并已接通电力与公用设施。公司称项目投资约618亿卢比，预计在完成剩余法定与监管手续后三个月内开始商业化生产。该厂计划先建立外延与封装能力，后续再逐步建设器件制造能力，目标是形成从碳化硅晶圆到系统方案的垂直整合体系。碳化硅器件常用于电动汽车、充电设施、可再生能源、储能、轨道交通、航空航天与数据中心供电等场景，因此印度本土供应能力的建立受到关注。",
+      "technical_summary": "该设施当前阶段聚焦SiC外延晶圆制造，已完成外延反应炉的安装与电力、公用设施调试，商业化生产取决于剩余监管审批。公司规划分阶段推进：一期建立外延与封装能力，后续阶段逐步建设晶圆制造能力，最终覆盖外延片、功率半导体器件与系统级方案。产品目标包括高压MOSFET、二极管与模块，面向电动出行、可再生能源、储能、轨道交通、航空航天、国防、数据中心与工业电力电子。公司称初期目标为2026年12月底产出约750片SiC外延晶圆，2027年底提升至2万片。原文未披露外延厚度、掺杂浓度、缺陷密度、器件电压等级或良率等具体工艺参数。",
       "technical": {
         "voltage": "",
         "power": "",
         "topology": "",
-        "device": "SiC",
+        "device": "SiC外延晶圆；规划中的高压MOSFET、二极管、模块",
         "switching_frequency": "",
         "efficiency": "",
         "power_density": "",
         "isolation": "",
         "control": "",
-        "application": ""
+        "application": "电动出行、可再生能源、储能、轨道交通、航空航天、国防、数据中心、工业电力电子"
       },
       "industrialization": {
         "stage": "试产",
-        "status": "印度首个垂直整合 SiC 半导体工厂接近投产",
-        "target": ""
+        "status": "关键设备安装完成，电力与公用设施已调试，等待剩余法定与监管手续后开始商业化生产",
+        "target": "2026年12月底约750片SiC外延晶圆；2027年底约2万片"
       },
       "evidence": {
         "confirmed_facts": [
-          "印度首个垂直整合 SiC 半导体工厂接近投产"
+          "RIR Power Electronics在布巴内斯瓦尔Info Valley-II电子制造集群的SiC外延晶圆制造反应炉已完成安装",
+          "电力连接、公用设施及配套基础设施已调试完成",
+          "项目投资规模为618亿卢比",
+          "公司称商业化生产将在剩余法定与监管手续完成后启动",
+          "公司规划分阶段建设，一期为外延与封装，后续阶段建设晶圆制造能力"
         ],
         "source_claims": [
-          "印度首个垂直整合 SiC 半导体工厂"
+          "来源称该设施为印度首个垂直整合SiC半导体制造设施",
+          "公司称初期目标为2026年12月底产出约750片SiC外延晶圆，2027年底提升至2万片",
+          "公司称长期目标是建立具有全球竞争力的电力电子与功率半导体产品与技术基地"
         ],
         "inferences": [
-          "垂直整合可能覆盖衬底、外延与器件制造环节"
+          "该设施当前处于外延环节，尚未进入器件制造与量产阶段"
         ],
         "unknowns": [
-          "晶圆尺寸",
-          "电压等级",
-          "器件类型",
-          "产能",
-          "良率",
-          "投产时间表"
+          "外延片具体规格与质量指标",
+          "器件电压等级与电流等级",
+          "客户与订单情况",
+          "监管审批完成时间"
         ]
       },
       "sources": [],
@@ -690,9 +874,9 @@
         "multi_source": 45,
         "source_authority": 58
       },
-      "technical_depth_score": 44,
-      "radar_score": 57,
-      "radar_rank": 10
+      "technical_depth_score": 53,
+      "radar_score": 59,
+      "radar_rank": 12
     },
     {
       "id": "260917-09",
@@ -741,7 +925,7 @@
       },
       "technical_depth_score": 44,
       "radar_score": 57,
-      "radar_rank": 11,
+      "radar_rank": 13,
       "sources": [
         {
           "source": "tathya.in",
@@ -751,69 +935,7 @@
       ]
     },
     {
-      "id": "260917-17",
-      "title": "IAA TRANSPORTATION: Inmotion Technologies expands power electronics range - Industrial Vehicle Technology International",
-      "source_type": "国际资讯",
-      "primary_source": "Industrial Vehicle Technology International",
-      "published_at": "2026-09-17T09:39:11+00:00",
-      "link": "https://www.ivtinternational.com/news/exhibitions/inmotion-expands-power-electronics-range-at-iaa-transportation.html",
-      "category": [],
-      "importance": "一般",
-      "plain_summary": "Inmotion Technologies 在 IAA TRANSPORTATION 展会上扩展其电力电子产品系列。该公司面向商用车与工业车辆提供电力电子解决方案，此次扩展可能涉及新的逆变器或功率变换产品。具体产品参数与应用场景未在摘要中披露。",
-      "technical_summary": "该条目报道 Inmotion Technologies 在 IAA TRANSPORTATION 展会扩展电力电子产品系列。输入未提供产品类型、电压等级、功率范围、拓扑或器件技术等参数。无法判断其技术路线与产品定位。",
-      "technical": {
-        "voltage": "",
-        "power": "",
-        "topology": "",
-        "device": "",
-        "switching_frequency": "",
-        "efficiency": "",
-        "power_density": "",
-        "isolation": "",
-        "control": "",
-        "application": "商用车、工业车辆"
-      },
-      "industrialization": {
-        "stage": "产品发布",
-        "status": "在 IAA TRANSPORTATION 展会扩展电力电子产品系列",
-        "target": ""
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "Inmotion Technologies 在 IAA TRANSPORTATION 展会扩展电力电子产品系列"
-        ],
-        "source_claims": [],
-        "inferences": [],
-        "unknowns": [
-          "产品类型",
-          "电压等级",
-          "功率范围",
-          "拓扑",
-          "器件技术"
-        ]
-      },
-      "sources": [],
-      "summary_raw": "IAA TRANSPORTATION: Inmotion Technologies expands power electronics range Industrial Vehicle Technology International",
-      "published_date": "2026-09-17",
-      "relevance_score": 44,
-      "relevance_factors": {
-        "focus_match": 35,
-        "technical_density": 35,
-        "engineering_usability": 80,
-        "matched_topics": []
-      },
-      "heat_score": 79,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 45,
-        "source_authority": 75
-      },
-      "technical_depth_score": 44,
-      "radar_score": 56,
-      "radar_rank": 12
-    },
-    {
-      "id": "260917-13",
+      "id": "260917-10",
       "title": "CorePower Magnetics Secures $10.6M to Address a Critical Bottleneck in AI, Grid, and Electrification Infrastructure - Business Wire",
       "source_type": "国际资讯",
       "primary_source": "Business Wire",
@@ -823,8 +945,8 @@
         "magnetics"
       ],
       "importance": "一般",
-      "plain_summary": "CorePower Magnetics 通过 Business Wire 发布新闻稿，宣布完成 1060 万美元融资，用于解决 AI、电网与电气化基础设施中的关键瓶颈。该公司将磁性元件视为上述领域供应链的瓶颈环节。具体技术方案与产能规划未在摘要中披露。",
-      "technical_summary": "该条目为 CorePower Magnetics 融资事件的官方新闻稿来源。公司定位为面向 AI、电网与电气化基础设施的先进磁性元件供应商。输入未提供产品技术参数、材料体系或制造工艺细节。无法判断其技术路线与产品竞争力。",
+      "plain_summary": "该条仅有标题信息，正文未提供。标题显示CorePower Magnetics获得1060万美元融资，用于应对AI、电网与电气化基础设施中的瓶颈。由于缺少正文，无法确认更多细节。",
+      "technical_summary": "仅有标题，无正文内容，无法提取器件、拓扑、参数或测试结果。",
       "technical": {
         "voltage": "",
         "power": "",
@@ -835,26 +957,23 @@
         "power_density": "",
         "isolation": "",
         "control": "",
-        "application": "AI、电网、电气化基础设施"
+        "application": ""
       },
       "industrialization": {
         "stage": "未知",
-        "status": "完成 1060 万美元融资",
+        "status": "",
         "target": ""
       },
       "evidence": {
         "confirmed_facts": [
-          "CorePower Magnetics 完成 1060 万美元融资"
+          "标题显示CorePower Magnetics获得1060万美元融资"
         ],
-        "source_claims": [
-          "磁性元件是 AI、电网与电气化基础设施的关键瓶颈"
-        ],
+        "source_claims": [],
         "inferences": [],
         "unknowns": [
-          "产品技术参数",
-          "材料体系",
-          "制造工艺",
-          "产能规划"
+          "投资方",
+          "资金用途",
+          "技术细节"
         ]
       },
       "sources": [],
@@ -875,81 +994,12 @@
         "multi_source": 45,
         "source_authority": 58
       },
-      "technical_depth_score": 44,
-      "radar_score": 56,
-      "radar_rank": 13
-    },
-    {
-      "id": "260917-12",
-      "title": "CorePower Magnetics Raises $10.6 Million To Scale U.S. Manufacturing Of Advanced Magnetics For AI, Data Centers And Grid Infrastructure - Pulse 2.0",
-      "source_type": "国际资讯",
-      "primary_source": "Pulse 2.0",
-      "published_at": "2026-09-17T12:44:25+00:00",
-      "link": "https://pulse2.com/corepower-magnetics-raises-10-6-million-to-scale-u-s-manufacturing-of-advanced-magnetics-for-ai-data-centers-and-grid-infrastructure/",
-      "category": [
-        "ai_dc",
-        "magnetics"
-      ],
-      "importance": "一般",
-      "plain_summary": "CorePower Magnetics 完成 1060 万美元融资，用于扩大面向 AI、数据中心与电网基础设施的先进磁性元件美国本土制造规模。该融资反映出 AI 数据中心与电网升级对高性能磁性元件的需求增长。具体产品参数与产能目标未在摘要中披露。",
-      "technical_summary": "该条目与 260917-10、260917-13 为同一融资事件的不同来源报道。CorePower Magnetics 面向 AI 数据中心与电网基础设施提供先进磁性元件。输入未提供材料体系、频率范围、功率等级或产品技术参数。无法判断其技术路线与产品竞争力。",
-      "technical": {
-        "voltage": "",
-        "power": "",
-        "topology": "",
-        "device": "",
-        "switching_frequency": "",
-        "efficiency": "",
-        "power_density": "",
-        "isolation": "",
-        "control": "",
-        "application": "AI 数据中心、电网基础设施"
-      },
-      "industrialization": {
-        "stage": "未知",
-        "status": "完成 1060 万美元融资，用于扩大美国本土制造",
-        "target": ""
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "CorePower Magnetics 完成 1060 万美元融资，用于扩大美国本土制造"
-        ],
-        "source_claims": [],
-        "inferences": [
-          "AI 数据中心与电网升级推动高性能磁性元件需求"
-        ],
-        "unknowns": [
-          "材料体系",
-          "频率范围",
-          "功率等级",
-          "产品技术参数",
-          "产能目标"
-        ]
-      },
-      "sources": [],
-      "summary_raw": "CorePower Magnetics Raises $10.6 Million To Scale U.S. Manufacturing Of Advanced Magnetics For AI, Data Centers And Grid Infrastructure Pulse 2.0",
-      "published_date": "2026-09-17",
-      "relevance_score": 51,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 35,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "Magnetics"
-        ]
-      },
-      "heat_score": 74,
-      "heat_factors": {
-        "freshness": 100,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 44,
-      "radar_score": 56,
+      "technical_depth_score": 35,
+      "radar_score": 55,
       "radar_rank": 14
     },
     {
-      "id": "260917-10",
+      "id": "260917-07",
       "title": "CorePower Magnetics Raises $10.6M in Funding - FinSMEs",
       "source_type": "国际资讯",
       "primary_source": "FinSMEs",
@@ -959,8 +1009,8 @@
         "magnetics"
       ],
       "importance": "一般",
-      "plain_summary": "CorePower Magnetics 完成 1060 万美元融资，用于扩展其先进磁性元件制造能力。该公司面向 AI 数据中心、电网基础设施等应用提供磁性元件，属于电力电子供应链中的关键环节。融资将用于扩大美国本土制造规模。具体投资方、估值与产能目标未在摘要中披露。",
-      "technical_summary": "该条目报道 CorePower Magnetics 完成 1060 万美元融资。磁性元件是电力电子变换器中的关键无源器件，其性能影响效率与功率密度。输入未提供产品技术参数、材料体系、频率范围或应用细节。无法判断其技术路线与产品竞争力。",
+      "plain_summary": "该条仅有标题信息，正文未提供。标题显示CorePower Magnetics完成1060万美元融资。由于缺少正文，无法确认投资方、资金用途或公司技术细节。",
+      "technical_summary": "仅有标题，无正文内容，无法提取器件、拓扑、参数或测试结果。",
       "technical": {
         "voltage": "",
         "power": "",
@@ -971,27 +1021,23 @@
         "power_density": "",
         "isolation": "",
         "control": "",
-        "application": "AI 数据中心、电网基础设施"
+        "application": ""
       },
       "industrialization": {
         "stage": "未知",
-        "status": "完成 1060 万美元融资，用于扩展制造",
+        "status": "",
         "target": ""
       },
       "evidence": {
         "confirmed_facts": [
-          "CorePower Magnetics 完成 1060 万美元融资"
+          "标题显示CorePower Magnetics获得1060万美元融资"
         ],
         "source_claims": [],
-        "inferences": [
-          "融资用于扩大美国本土磁性元件制造规模"
-        ],
+        "inferences": [],
         "unknowns": [
           "投资方",
-          "估值",
-          "产能目标",
-          "产品技术参数",
-          "材料体系"
+          "资金用途",
+          "公司技术与产品细节"
         ]
       },
       "sources": [],
@@ -1012,12 +1058,12 @@
         "multi_source": 45,
         "source_authority": 58
       },
-      "technical_depth_score": 44,
-      "radar_score": 56,
+      "technical_depth_score": 35,
+      "radar_score": 55,
       "radar_rank": 15
     },
     {
-      "id": "260917-14",
+      "id": "260917-11",
       "title": "Ferroelectric material that's stable at near-atomic thickness reveals new route to low-power electronics - Tech Xplore",
       "source_type": "国际资讯",
       "primary_source": "Tech Xplore",
@@ -1025,8 +1071,8 @@
       "link": "https://techxplore.com/news/2026-09-ferroelectric-material-stable-atomic-thickness.html",
       "category": [],
       "importance": "一般",
-      "plain_summary": "Tech Xplore 报道了一种在近原子厚度下仍保持稳定的铁电材料，为低功耗电子器件提供了新路径。铁电材料可用于负电容晶体管、非易失存储等低功耗器件研究。该成果属于基础材料研究阶段，距离电力电子应用尚远。具体材料体系与器件性能未在摘要中披露。",
-      "technical_summary": "该条目报道一种在近原子厚度下稳定的铁电材料，可能用于低功耗电子器件。铁电材料在负电容 FET、非易失存储等领域有研究价值。输入未提供材料成分、制备方法、电学性能或器件验证数据。该成果属于基础研究，与功率电力电子应用关联尚不明确。",
+      "plain_summary": "该条仅有标题信息，正文未提供。标题显示研究人员发现一种在接近原子级厚度下仍保持稳定的铁电材料，可能为低功耗电子器件提供新路径。由于缺少正文，无法确认材料体系、稳定性数据或器件验证情况。",
+      "technical_summary": "仅有标题，无正文内容，无法提取材料体系、厚度、铁电性能或器件参数。",
       "technical": {
         "voltage": "",
         "power": "",
@@ -1037,26 +1083,24 @@
         "power_density": "",
         "isolation": "",
         "control": "",
-        "application": "低功耗电子器件"
+        "application": ""
       },
       "industrialization": {
-        "stage": "研究论文",
-        "status": "基础材料研究",
+        "stage": "未知",
+        "status": "",
         "target": ""
       },
       "evidence": {
         "confirmed_facts": [
-          "报道一种在近原子厚度下稳定的铁电材料"
+          "标题显示存在一种在接近原子级厚度下稳定的铁电材料"
         ],
         "source_claims": [],
-        "inferences": [
-          "铁电材料可用于负电容晶体管或非易失存储研究"
-        ],
+        "inferences": [],
         "unknowns": [
-          "材料成分",
-          "制备方法",
-          "电学性能",
-          "器件验证数据"
+          "材料体系",
+          "厚度数值",
+          "铁电性能参数",
+          "器件验证状态"
         ]
       },
       "sources": [],
@@ -1075,12 +1119,163 @@
         "multi_source": 45,
         "source_authority": 58
       },
-      "technical_depth_score": 44,
-      "radar_score": 53,
+      "technical_depth_score": 35,
+      "radar_score": 52,
       "radar_rank": 16
     },
     {
-      "id": "260917-27",
+      "id": "260917-26",
+      "title": "Tektronix unveils regenerative test system for 800V AI data center power - eeNews Europe",
+      "source_type": "国际资讯",
+      "primary_source": "eeNews Europe",
+      "published_at": "2026-09-16T11:14:34+00:00",
+      "link": "https://www.eenewseurope.com/en/tektronix-unveils-regenerative-test-system-for-800v-ai-data-center-power/",
+      "category": [
+        "800v",
+        "ai_dc"
+      ],
+      "importance": "重点",
+      "plain_summary": "Tektronix推出EA-ELR 21000动态测试系统，这是一款回馈式电子负载平台，用于验证AI数据中心正在开发的高压直流供电架构。系统支持±400V和800V直流设计测试，可将吸收的测试能量以最高95%的回馈效率送回电网。系统基于EA-ELR 21000-80 4U HS回馈式电子负载模块，模块额定1000V、80A、30kW，可组合扩展至1.92MW测试容量。系统提供最高12A/µs的电流变化率，用于复现AI工作负载的快速负载变化。",
+      "technical_summary": "Tektronix推出EA-ELR 21000动态测试系统，基于EA-ELR 21000-80 4U HS回馈式电子负载模块，模块额定1000V、80A、30kW。模块可按30kW增量组合，构建最多1.92MW测试容量，跨8个机架与64个负载；单机架可提供最高240kW，占地约0.6平方米。系统提供最高12A/µs的电流变化率（240kW时），用于复现AI工作负载的快速负载变化，帮助识别电源模块与机架中的电压跌落、恢复与稳定性问题。系统支持±400V与800V直流设计测试，回馈效率最高95%。集成波形生成支持可重复负载曲线，同步控制允许多个电子负载协同工作。Tektronix计划2026年秋季推出EA-ELR 20080-1000 4U HS，80V、1000A回馈式负载，用于测试48V至54V电源轨。",
+      "technical": {
+        "voltage": "±400V、800V DC；模块额定1000V",
+        "power": "模块30kW；系统最高1.92MW；单机架最高240kW",
+        "topology": "",
+        "device": "回馈式电子负载",
+        "switching_frequency": "",
+        "efficiency": "回馈效率最高95%",
+        "power_density": "单机架最高240kW，占地约0.6平方米",
+        "isolation": "",
+        "control": "集成波形生成；同步控制",
+        "application": "800V电源模块、电源机架、固态变压器验证；48V至54V电源轨测试"
+      },
+      "industrialization": {
+        "stage": "产品发布",
+        "status": "EA-ELR 21000系统与30kW模块已上市；EA-ELR 20080-1000计划2026年秋季推出",
+        "target": ""
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "Tektronix推出EA-ELR 21000动态测试系统",
+          "系统基于EA-ELR 21000-80 4U HS模块，额定1000V、80A、30kW",
+          "模块可按30kW增量组合至1.92MW，跨8机架与64负载",
+          "单机架最高240kW，占地约0.6平方米",
+          "电流变化率最高12A/µs（240kW时）",
+          "回馈效率最高95%",
+          "系统支持±400V与800V直流设计测试",
+          "EA-ELR 21000系统与30kW模块已上市",
+          "EA-ELR 20080-1000计划2026年秋季推出"
+        ],
+        "source_claims": [
+          "Tektronix称系统可帮助识别电压跌落、恢复与稳定性问题"
+        ],
+        "inferences": [
+          "该产品面向AI数据中心高压直流供电架构的测试验证需求"
+        ],
+        "unknowns": [
+          "具体测试案例",
+          "与竞品的对比数据"
+        ]
+      },
+      "sources": [],
+      "summary_raw": "Tektronix unveils regenerative test system for 800V AI data center power eeNews Europe",
+      "published_date": "2026-09-16",
+      "relevance_score": 63,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 83,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "800V/AI DC"
+        ]
+      },
+      "heat_score": 67,
+      "heat_factors": {
+        "freshness": 85,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 98,
+      "radar_score": 69,
+      "radar_rank": 17
+    },
+    {
+      "id": "260917-28",
+      "title": "NVIDIA Leading AI Data Center Major Transformation: Chinese Manufacturers Aim to Avoid Sidelining - 36 Kr",
+      "source_type": "国际资讯",
+      "primary_source": "36 Kr",
+      "published_at": "2026-09-16T07:00:36+00:00",
+      "link": "https://eu.36kr.com/en/p/3985697915042560",
+      "category": [
+        "ai_dc"
+      ],
+      "importance": "重点",
+      "plain_summary": "文章讨论NVIDIA推动的AI数据中心供电架构转型，从传统480V交流进柜、柜内降压整流至54V/48V直流，转向800V高压直流直接进柜。文章称NVIDIA技术文档显示，从415V交流切换到800V直流后，同等尺寸导体可传输多85%的功率，铜缆需求减少45%，并消除多级AC-DC转换环节。文章还讨论中国厂商在NVIDIA供应链中的参与情况，包括英诺赛科和麦格米特，并引用业内人士称部分国内技术与欧美企业存在3至5年差距。文章提到国内智算中心建设带动了兆瓦级SST方案的需求。",
+      "technical_summary": "文章讨论NVIDIA推动的AI数据中心供电架构从480V交流进柜、柜内降压整流至54V/48V直流，转向800V高压直流直接进柜。文章引用NVIDIA技术文档称，从415V交流切换到800V直流后，同等尺寸导体可传输多85%的功率，铜缆需求减少45%，并消除多级AC-DC转换环节，支持单柜功率从100kW向兆瓦级提升。文章提到NVIDIA合作伙伴包括Eaton、Infineon以及英诺赛科、麦格米特等。文章引用业内人士称部分国内技术与欧美企业存在3至5年差距。文章提到国内智算中心建设带动兆瓦级SST方案需求，某企业已接触两三百家潜在客户。原文未披露具体变换器拓扑、器件参数或效率数据。",
+      "technical": {
+        "voltage": "800V DC；传统480V AC进柜、54V/48V DC",
+        "power": "单柜功率从100kW向兆瓦级",
+        "topology": "",
+        "device": "",
+        "switching_frequency": "",
+        "efficiency": "",
+        "power_density": "",
+        "isolation": "",
+        "control": "",
+        "application": "AI数据中心供电"
+      },
+      "industrialization": {
+        "stage": "商业部署",
+        "status": "NVIDIA推动800V直流架构转型，中国厂商参与供应链",
+        "target": "支持单柜功率从100kW向兆瓦级提升"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "文章称NVIDIA推动AI数据中心从480V交流进柜转向800V直流直接进柜",
+          "文章引用NVIDIA技术文档称从415V交流切换到800V直流后同等尺寸导体可传输多85%功率，铜缆需求减少45%",
+          "文章称NVIDIA合作伙伴包括Eaton、Infineon、英诺赛科、麦格米特",
+          "文章引用业内人士称部分国内技术与欧美企业存在3至5年差距",
+          "文章称国内智算中心建设带动兆瓦级SST方案需求"
+        ],
+        "source_claims": [
+          "文章称800V直流可消除多级AC-DC转换环节并提升系统整体能效",
+          "文章称某企业已接触两三百家潜在客户"
+        ],
+        "inferences": [
+          "800V直流架构转型正在带动国内SST等电力电子方案需求"
+        ],
+        "unknowns": [
+          "具体变换器拓扑",
+          "器件参数",
+          "效率数据",
+          "客户订单规模"
+        ]
+      },
+      "sources": [],
+      "summary_raw": "NVIDIA Leading AI Data Center Major Transformation: Chinese Manufacturers Aim to Avoid Sidelining 36 Kr",
+      "published_date": "2026-09-16",
+      "relevance_score": 62,
+      "relevance_factors": {
+        "focus_match": 61,
+        "technical_density": 51,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "800V/AI DC",
+          "SST"
+        ]
+      },
+      "heat_score": 67,
+      "heat_factors": {
+        "freshness": 85,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 62,
+      "radar_score": 63,
+      "radar_rank": 18
+    },
+    {
+      "id": "260917-24",
       "title": "Bloom Energy claims cost savings with 800V DC fuel cells for AI - Investing.com",
       "source_type": "国际资讯",
       "primary_source": "Investing.com",
@@ -1090,46 +1285,43 @@
         "800v"
       ],
       "importance": "一般",
-      "plain_summary": "Investing.com 报道 Bloom Energy 声称其 800V 直流燃料电池方案可为 AI 数据中心节省成本。该方案基于燃料电池直接输出 800V 直流，减少传统交流供电链路中的变换环节。该成本节省为公司自身声称，尚未经独立验证。具体数据未在摘要中披露。",
-      "technical_summary": "该条目与 260917-21、260917-24、260917-28 为同一事件的不同来源报道。Bloom Energy 声称 800V 直流燃料电池方案可为 AI 数据中心节省成本。输入未提供具体技术参数、成本测算方法或独立验证数据。无法据此判断实际成本节省幅度。",
+      "plain_summary": "该条仅有标题信息，正文未提供。标题显示Bloom Energy声称其800V直流燃料电池方案可为AI应用节省成本。由于缺少正文，无法确认具体数据或技术细节。",
+      "technical_summary": "仅有标题，无正文内容，无法提取器件、拓扑、参数或测试结果。",
       "technical": {
-        "voltage": "800 V",
+        "voltage": "800V DC",
         "power": "",
         "topology": "",
-        "device": "",
+        "device": "燃料电池",
         "switching_frequency": "",
         "efficiency": "",
         "power_density": "",
         "isolation": "",
         "control": "",
-        "application": "AI 数据中心供电"
+        "application": "AI数据中心"
       },
       "industrialization": {
-        "stage": "产品发布",
-        "status": "声称 800V 直流燃料电池方案可节省成本",
+        "stage": "未知",
+        "status": "",
         "target": ""
       },
       "evidence": {
         "confirmed_facts": [
-          "Bloom Energy 声称 800V 直流燃料电池方案可为 AI 数据中心节省成本"
+          "标题显示Bloom Energy声称800V直流燃料电池方案可为AI应用节省成本"
         ],
-        "source_claims": [
-          "Bloom Energy 声称 800V 直流燃料电池方案可节省成本"
-        ],
+        "source_claims": [],
         "inferences": [],
         "unknowns": [
-          "具体技术参数",
-          "成本测算方法",
-          "独立验证数据"
+          "具体节省数据",
+          "技术细节"
         ]
       },
       "sources": [],
       "summary_raw": "Bloom Energy claims cost savings with 800V DC fuel cells for AI Investing.com",
       "published_date": "2026-09-16",
-      "relevance_score": 53,
+      "relevance_score": 55,
       "relevance_factors": {
         "focus_match": 48,
-        "technical_density": 43,
+        "technical_density": 51,
         "engineering_usability": 80,
         "matched_topics": [
           "800V/AI DC"
@@ -1141,12 +1333,12 @@
         "multi_source": 45,
         "source_authority": 75
       },
-      "technical_depth_score": 53,
-      "radar_score": 60,
-      "radar_rank": 17
+      "technical_depth_score": 62,
+      "radar_score": 62,
+      "radar_rank": 19
     },
     {
-      "id": "260917-26",
+      "id": "260917-23",
       "title": "From innovation to a global standard. 15 years of SiC technology in public transport - Railway Gazette International",
       "source_type": "国际资讯",
       "primary_source": "Railway Gazette International",
@@ -1156,39 +1348,35 @@
         "sic"
       ],
       "importance": "一般",
-      "plain_summary": "Railway Gazette International 发表赞助内容，回顾 SiC 技术在公共交通领域 15 年的发展历程，从创新走向全球标准。该内容表明 SiC 器件在轨道交通牵引变流器等场景已实现长期商业化应用。具体技术参数与应用案例未在摘要中披露。",
-      "technical_summary": "该条目为赞助内容，回顾 SiC 技术在公共交通领域 15 年的应用历程。SiC 器件在轨道交通牵引变流器中可提升效率、降低损耗与冷却需求。输入未提供具体器件参数、拓扑或应用案例细节。无法据此判断当前技术状态与未来趋势。",
+      "plain_summary": "该条仅有标题信息，正文未提供。标题显示一篇关于SiC技术在公共交通领域15年发展的赞助内容。由于缺少正文，无法确认具体企业、产品或技术细节。",
+      "technical_summary": "仅有标题，无正文内容，无法提取器件、拓扑、参数或测试结果。",
       "technical": {
         "voltage": "",
         "power": "",
         "topology": "",
-        "device": "SiC",
+        "device": "SiC器件",
         "switching_frequency": "",
         "efficiency": "",
         "power_density": "",
         "isolation": "",
         "control": "",
-        "application": "轨道交通牵引"
+        "application": "公共交通"
       },
       "industrialization": {
-        "stage": "商业部署",
-        "status": "SiC 技术在公共交通领域应用 15 年",
+        "stage": "未知",
+        "status": "",
         "target": ""
       },
       "evidence": {
         "confirmed_facts": [
-          "SiC 技术在公共交通领域已有 15 年应用历程"
+          "标题显示存在关于SiC技术在公共交通领域15年发展的内容"
         ],
-        "source_claims": [
-          "SiC 技术在公共交通领域从创新走向全球标准"
-        ],
-        "inferences": [
-          "SiC 器件在轨道交通牵引变流器中可提升效率、降低损耗"
-        ],
+        "source_claims": [],
+        "inferences": [],
         "unknowns": [
-          "具体器件参数",
-          "拓扑",
-          "应用案例细节"
+          "具体企业",
+          "产品",
+          "技术细节"
         ]
       },
       "sources": [],
@@ -1211,10 +1399,155 @@
       },
       "technical_depth_score": 53,
       "radar_score": 60,
-      "radar_rank": 18
+      "radar_rank": 20
     },
     {
-      "id": "260917-32",
+      "id": "260917-25",
+      "title": "Bloom Energy’s 800V DC-Native Power Can Cut Billions from AI Data Center Costs, Reduce Power Use, and Eliminate Need for Transformers - Bloom Energy",
+      "source_type": "国际资讯",
+      "primary_source": "Bloom Energy",
+      "published_at": "2026-09-16T13:03:59+00:00",
+      "link": "https://investor.bloomenergy.com/press-releases/press-release-details/2026/Bloom-Energys-800V-DC-Native-Power-Can-Cut-Billions-from-AI-Data-Center-Costs-Reduce-Power-Use-and-Eliminate-Need-for-Transformers/default.aspx",
+      "category": [
+        "800v",
+        "ai_dc"
+      ],
+      "importance": "重点",
+      "plain_summary": "Bloom Energy发布特别报告《The New Rules of AI Power》，称其800V直流原生燃料电池方案可为1GW AI数据中心降低非计算资本支出36亿美元（27%），五年总拥有成本降低55亿美元（9%）。方案由固体氧化物燃料电池直接输出800V直流，省去传统变压器与多级AC/DC转换。公司称NVIDIA已为2027年起的Rubin Ultra与Kyber机架架构指定800V直流。公司CEO称AI正成为现场发电与直流供电的首个规模化采用者。",
+      "technical_summary": "Bloom Energy发布特别报告，称其800V直流原生燃料电池方案由固体氧化物燃料电池直接输出800V直流，省去传统变压器与多级AC/DC转换。公司估算1GW AI数据中心非计算资本支出降低36亿美元（27%），五年总拥有成本降低55亿美元（9%）。公司称NVIDIA已为2027年起的Rubin Ultra与Kyber机架架构指定800V直流。公司称该方案可降低资本成本、能量损耗以及对变压器和开关设备的依赖。原文未披露燃料电池效率、输出功率等级、电压调节范围或保护方案。",
+      "technical": {
+        "voltage": "800V DC",
+        "power": "",
+        "topology": "",
+        "device": "固体氧化物燃料电池",
+        "switching_frequency": "",
+        "efficiency": "",
+        "power_density": "",
+        "isolation": "",
+        "control": "",
+        "application": "AI数据中心供电"
+      },
+      "industrialization": {
+        "stage": "产品发布",
+        "status": "发布特别报告，提出800V直流原生燃料电池方案",
+        "target": "面向1GW级AI数据中心"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "Bloom Energy发布特别报告《The New Rules of AI Power》",
+          "公司估算1GW AI数据中心非计算资本支出降低36亿美元（27%），五年总拥有成本降低55亿美元（9%）",
+          "方案由固体氧化物燃料电池直接输出800V直流",
+          "公司称NVIDIA已为2027年起的Rubin Ultra与Kyber机架架构指定800V直流"
+        ],
+        "source_claims": [
+          "公司称该方案可降低资本成本、能量损耗以及对变压器和开关设备的依赖",
+          "公司称AI正成为现场发电与直流供电的首个规模化采用者"
+        ],
+        "inferences": [
+          "相关节省为公司基于自身假设的模型估算，非实测结果"
+        ],
+        "unknowns": [
+          "燃料电池效率与输出参数",
+          "实际部署案例",
+          "保护方案"
+        ]
+      },
+      "sources": [],
+      "summary_raw": "Bloom Energy’s 800V DC-Native Power Can Cut Billions from AI Data Center Costs, Reduce Power Use, and Eliminate Need for Transformers Bloom Energy",
+      "published_date": "2026-09-16",
+      "relevance_score": 55,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 51,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "800V/AI DC"
+        ]
+      },
+      "heat_score": 67,
+      "heat_factors": {
+        "freshness": 85,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 62,
+      "radar_score": 59,
+      "radar_rank": 21
+    },
+    {
+      "id": "260917-21",
+      "title": "Bloom Energy (BE) Unveils 800V DC Native Power System For AI Data Centers - simplywall.st",
+      "source_type": "国际资讯",
+      "primary_source": "simplywall.st",
+      "published_at": "2026-09-16T17:53:29+00:00",
+      "link": "https://simplywall.st/stocks/us/capital-goods/nyse-be/bloom-energy/news/bloom-energy-be-unveils-800v-dc-native-power-system-for-ai-d/amp",
+      "category": [
+        "800v",
+        "ai_dc"
+      ],
+      "importance": "一般",
+      "plain_summary": "Bloom Energy推出面向AI数据中心的800V直流原生燃料电池供电方案，公司称该系统将高压直流直接送至AI服务器机架，减少对变压器和中间功率转换设备的依赖。公司称该架构旨在降低功率损耗并缩短大型AI设施的部署周期。文章同时提及公司面临的风险因素，并指出该方案未解决对天然气的依赖问题。",
+      "technical_summary": "Bloom Energy推出面向AI数据中心的800V直流原生燃料电池供电方案，由固体氧化物燃料电池直接输出高压直流至AI服务器机架，减少变压器与中间功率转换环节。公司称该架构可降低功率损耗并缩短部署周期。原文未披露燃料电池效率、输出功率等级、电压调节范围或保护方案。文章指出该方案未解决对天然气的依赖，且公司股价波动较大。",
+      "technical": {
+        "voltage": "800V DC",
+        "power": "",
+        "topology": "",
+        "device": "固体氧化物燃料电池",
+        "switching_frequency": "",
+        "efficiency": "",
+        "power_density": "",
+        "isolation": "",
+        "control": "",
+        "application": "AI数据中心供电"
+      },
+      "industrialization": {
+        "stage": "产品发布",
+        "status": "推出800V直流原生燃料电池供电方案",
+        "target": "面向AI数据中心"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "Bloom Energy推出面向AI数据中心的800V直流原生燃料电池供电方案",
+          "公司称系统将高压直流直接送至AI服务器机架，减少对变压器和中间功率转换设备的依赖",
+          "公司称该架构旨在降低功率损耗并缩短部署周期"
+        ],
+        "source_claims": [
+          "公司称该架构可降低功率损耗",
+          "公司称该架构可缩短部署周期"
+        ],
+        "inferences": [
+          "该方案未解决对天然气的依赖问题"
+        ],
+        "unknowns": [
+          "燃料电池效率与输出参数",
+          "实际部署案例",
+          "保护方案"
+        ]
+      },
+      "sources": [],
+      "summary_raw": "Bloom Energy (BE) Unveils 800V DC Native Power System For AI Data Centers simplywall.st",
+      "published_date": "2026-09-16",
+      "relevance_score": 55,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 51,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "800V/AI DC"
+        ]
+      },
+      "heat_score": 67,
+      "heat_factors": {
+        "freshness": 85,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 62,
+      "radar_score": 59,
+      "radar_rank": 22
+    },
+    {
+      "id": "260917-29",
       "title": "SolarEdge’s (SEDG) 800 Volt Data Center Push Just Got Real - Yahoo Finance",
       "source_type": "国际资讯",
       "primary_source": "Yahoo Finance",
@@ -1225,10 +1558,10 @@
         "ai_dc"
       ],
       "importance": "一般",
-      "plain_summary": "Yahoo Finance 报道 SolarEdge 在 800V 数据中心领域的推进取得实质进展。SolarEdge 近期与英飞凌扩展了 800V 直流 AI 数据中心合作。该报道属于投资分析类内容，具体技术细节与产品参数未在摘要中披露。",
-      "technical_summary": "该条目为投资分析报道，讨论 SolarEdge 在 800V 数据中心领域的进展。SolarEdge 近期与英飞凌扩展 800V 直流 AI 数据中心合作，可能涉及功率变换与保护器件。输入未提供具体产品参数、拓扑或技术路线。无法据此判断其技术优势与市场前景。",
+      "plain_summary": "该条正文主要为Yahoo Finance页面导航与免责声明，未提供关于SolarEdge 800V数据中心推进的实质内容。标题暗示SolarEdge在800V数据中心领域有进展，但正文未展开。无法据此确认技术细节或合作情况。",
+      "technical_summary": "正文无实质技术内容，无法提取器件、拓扑、参数或测试结果。",
       "technical": {
-        "voltage": "800 V",
+        "voltage": "800V",
         "power": "",
         "topology": "",
         "device": "",
@@ -1237,25 +1570,22 @@
         "power_density": "",
         "isolation": "",
         "control": "",
-        "application": "AI 数据中心供电"
+        "application": "数据中心"
       },
       "industrialization": {
         "stage": "未知",
-        "status": "投资分析报道",
+        "status": "",
         "target": ""
       },
       "evidence": {
         "confirmed_facts": [
-          "Yahoo Finance 报道 SolarEdge 在 800V 数据中心领域的推进"
+          "标题提及SolarEdge 800V数据中心推进"
         ],
         "source_claims": [],
-        "inferences": [
-          "SolarEdge 与英飞凌扩展 800V 直流 AI 数据中心合作"
-        ],
+        "inferences": [],
         "unknowns": [
-          "具体产品参数",
-          "拓扑",
-          "技术路线"
+          "具体产品与技术细节",
+          "合作情况"
         ]
       },
       "sources": [],
@@ -1278,10 +1608,10 @@
       },
       "technical_depth_score": 53,
       "radar_score": 57,
-      "radar_rank": 19
+      "radar_rank": 23
     },
     {
-      "id": "260917-30",
+      "id": "260917-27",
       "title": "From grid code to grid connection: what makes a grid-forming BESS work in the real world? - Energy-Storage.News",
       "source_type": "国际资讯",
       "primary_source": "Energy-Storage.News",
@@ -1291,8 +1621,8 @@
         "gfm"
       ],
       "importance": "一般",
-      "plain_summary": "Energy-Storage.News 发表文章，讨论构网型 BESS 从电网导则到实际并网需要满足哪些条件。文章聚焦构网型储能在真实电网环境中的工程化挑战，包括控制策略、保护配合与并网认证等。该内容属于行业分析，不涉及具体产品发布。具体技术细节未在摘要中披露。",
-      "technical_summary": "该条目为行业分析文章，讨论构网型 BESS 从电网导则到实际并网的关键因素。构网型控制需满足电压/频率支撑、惯量响应、故障穿越等要求，并需与保护系统协调。输入未提供具体控制算法、测试结果或并网案例细节。无法据此判断技术成熟度。",
+      "plain_summary": "Sinexcel技术总监Luke Lu撰文讨论构网型电池储能系统（BESS）项目从电网规范到实际并网的关键问题。文章指出，虽然构网功能越来越多地出现在电网规范与并网要求中，但仅指定构网功能只是开始，真正的挑战在于如何将构网能力转化为合规、稳定且可成功调试的BESS。文章强调应从电网规范而非PCS数据手册出发，并列出有功与无功能力、电压频率响应、LVRT/HVRT、无功电流注入、爬坡率、故障行为、保护设置与建模验证等需关注的技术行为。",
+      "technical_summary": "文章讨论构网型BESS项目工程化挑战，指出PCS数据手册支持构网控制并不等于项目可成功并网。文章建议在确定PCS配置前，先将当地并网要求转化为明确的技术行为，包括有功与无功能力、电压与频率响应、LVRT与HVRT、无功电流注入、爬坡率、故障行为、保护设置以及建模与验证要求。文章强调并网要求不仅因国家而异，也因网络运营商、电压等级乃至具体并网点而异，电网规范合规不应仅视为认证工作。原文未披露具体PCS参数、控制算法或项目测试数据。",
       "technical": {
         "voltage": "",
         "power": "",
@@ -1302,26 +1632,31 @@
         "efficiency": "",
         "power_density": "",
         "isolation": "",
-        "control": "构网型（grid-forming）",
-        "application": "储能系统并网"
+        "control": "构网控制",
+        "application": "公用事业规模电池储能系统"
       },
       "industrialization": {
-        "stage": "未知",
-        "status": "行业分析文章",
+        "stage": "商业部署",
+        "status": "文章基于近二十年电力电子开发与5000多个储能项目经验讨论构网型BESS工程化",
         "target": ""
       },
       "evidence": {
         "confirmed_facts": [
-          "Energy-Storage.News 发表关于构网型 BESS 实际并网条件的分析文章"
+          "文章作者为Sinexcel技术总监Luke Lu",
+          "文章称Sinexcel有近二十年电力电子开发与5000多个储能项目经验",
+          "文章列出并网要求需转化的技术行为，包括有功无功能力、电压频率响应、LVRT/HVRT、无功电流注入、爬坡率、故障行为、保护设置与建模验证"
         ],
-        "source_claims": [],
+        "source_claims": [
+          "文章称构网功能越来越多地出现在电网规范与并网要求中",
+          "文章称仅指定构网功能只是开始"
+        ],
         "inferences": [
-          "构网型控制需满足电压/频率支撑、惯量响应、故障穿越等要求"
+          "文章为工程经验分享，非具体产品发布"
         ],
         "unknowns": [
-          "具体控制算法",
-          "测试结果",
-          "并网案例细节"
+          "具体PCS参数",
+          "控制算法",
+          "项目测试数据"
         ]
       },
       "sources": [],
@@ -1344,219 +1679,10 @@
       },
       "technical_depth_score": 53,
       "radar_score": 57,
-      "radar_rank": 20
+      "radar_rank": 24
     },
     {
-      "id": "260917-29",
-      "title": "Tektronix unveils regenerative test system for 800V AI data center power - eeNews Europe",
-      "source_type": "国际资讯",
-      "primary_source": "eeNews Europe",
-      "published_at": "2026-09-16T11:14:34+00:00",
-      "link": "https://www.eenewseurope.com/en/tektronix-unveils-regenerative-test-system-for-800v-ai-data-center-power/",
-      "category": [
-        "800v",
-        "ai_dc"
-      ],
-      "importance": "一般",
-      "plain_summary": "泰克发布面向 800V AI 数据中心供电的再生式测试系统。再生式测试系统可将被测设备消耗的能量回馈电网，降低大功率测试的能耗与成本。该产品面向 800V 直流供电架构的研发与验证需求。具体测试参数与功率等级未在摘要中披露。",
-      "technical_summary": "该条目报道泰克发布面向 800V AI 数据中心供电的再生式测试系统。再生式电子负载可将能量回馈电网，适用于大功率电源与变换器的效率测试。输入未提供电压/电流范围、功率等级、精度或动态响应等参数。无法判断其测试能力与适用场景。",
-      "technical": {
-        "voltage": "800 V",
-        "power": "",
-        "topology": "",
-        "device": "",
-        "switching_frequency": "",
-        "efficiency": "",
-        "power_density": "",
-        "isolation": "",
-        "control": "",
-        "application": "800V AI 数据中心供电测试"
-      },
-      "industrialization": {
-        "stage": "产品发布",
-        "status": "发布再生式测试系统",
-        "target": ""
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "泰克发布面向 800V AI 数据中心供电的再生式测试系统"
-        ],
-        "source_claims": [],
-        "inferences": [
-          "再生式测试系统可将能量回馈电网，降低大功率测试能耗"
-        ],
-        "unknowns": [
-          "电压/电流范围",
-          "功率等级",
-          "精度",
-          "动态响应"
-        ]
-      },
-      "sources": [],
-      "summary_raw": "Tektronix unveils regenerative test system for 800V AI data center power eeNews Europe",
-      "published_date": "2026-09-16",
-      "relevance_score": 53,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 43,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "800V/AI DC"
-        ]
-      },
-      "heat_score": 67,
-      "heat_factors": {
-        "freshness": 85,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 53,
-      "radar_score": 57,
-      "radar_rank": 21
-    },
-    {
-      "id": "260917-28",
-      "title": "Bloom Energy’s 800V DC-Native Power Can Cut Billions from AI Data Center Costs, Reduce Power Use, and Eliminate Need for Transformers - Bloom Energy",
-      "source_type": "国际资讯",
-      "primary_source": "Bloom Energy",
-      "published_at": "2026-09-16T13:03:59+00:00",
-      "link": "https://investor.bloomenergy.com/press-releases/press-release-details/2026/Bloom-Energys-800V-DC-Native-Power-Can-Cut-Billions-from-AI-Data-Center-Costs-Reduce-Power-Use-and-Eliminate-Need-for-Transformers/default.aspx",
-      "category": [
-        "800v",
-        "ai_dc"
-      ],
-      "importance": "重点",
-      "plain_summary": "Bloom Energy 通过官方新闻稿声称，其 800V 直流原生供电方案可为 AI 数据中心节省数十亿美元成本、降低用电量并省去变压器。该方案基于燃料电池直接输出 800V 直流，减少传统交流供电链路中的多级变换。上述效益为公司自身声称，尚未经独立验证。具体技术参数与测算方法未在摘要中披露。",
-      "technical_summary": "该条目为 Bloom Energy 官方新闻稿，声称 800V 直流原生供电方案可节省数十亿美元成本、降低用电量并省去变压器。该方案基于燃料电池直接输出 800V 直流，可能减少 AC/DC 与 DC/DC 变换级数。输入未提供功率容量、效率、可靠性或成本测算方法等参数。上述效益为公司自身声称，需独立验证。",
-      "technical": {
-        "voltage": "800 V",
-        "power": "",
-        "topology": "",
-        "device": "",
-        "switching_frequency": "",
-        "efficiency": "",
-        "power_density": "",
-        "isolation": "",
-        "control": "",
-        "application": "AI 数据中心供电"
-      },
-      "industrialization": {
-        "stage": "产品发布",
-        "status": "官方新闻稿声称 800V 直流原生供电方案可节省成本、降低用电并省去变压器",
-        "target": ""
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "Bloom Energy 发布官方新闻稿，声称 800V 直流原生供电方案可节省数十亿美元成本、降低用电量并省去变压器"
-        ],
-        "source_claims": [
-          "800V 直流原生供电方案可节省数十亿美元成本",
-          "可降低用电量",
-          "可省去变压器"
-        ],
-        "inferences": [
-          "800V 直流原生供电可减少变换级数"
-        ],
-        "unknowns": [
-          "功率容量",
-          "效率",
-          "可靠性",
-          "成本测算方法",
-          "独立验证数据"
-        ]
-      },
-      "sources": [],
-      "summary_raw": "Bloom Energy’s 800V DC-Native Power Can Cut Billions from AI Data Center Costs, Reduce Power Use, and Eliminate Need for Transformers Bloom Energy",
-      "published_date": "2026-09-16",
-      "relevance_score": 53,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 43,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "800V/AI DC"
-        ]
-      },
-      "heat_score": 67,
-      "heat_factors": {
-        "freshness": 85,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 53,
-      "radar_score": 57,
-      "radar_rank": 22
-    },
-    {
-      "id": "260917-24",
-      "title": "Bloom Energy (BE) Unveils 800V DC Native Power System For AI Data Centers - simplywall.st",
-      "source_type": "国际资讯",
-      "primary_source": "simplywall.st",
-      "published_at": "2026-09-16T17:53:29+00:00",
-      "link": "https://simplywall.st/stocks/us/capital-goods/nyse-be/bloom-energy/news/bloom-energy-be-unveils-800v-dc-native-power-system-for-ai-d/amp",
-      "category": [
-        "800v",
-        "ai_dc"
-      ],
-      "importance": "重点",
-      "plain_summary": "Bloom Energy 发布面向 AI 数据中心的 800V 直流原生供电系统。该系统基于燃料电池，直接输出 800V 直流，旨在减少传统交流供电链路中的多级变换与变压器。该方案属于公司产品发布，具体技术参数与商业化时间表未在摘要中披露。",
-      "technical_summary": "该条目报道 Bloom Energy 发布 800V 直流原生供电系统，面向 AI 数据中心。该系统基于燃料电池直接输出 800V 直流，可能减少 AC/DC 与 DC/DC 变换级数，并省去部分变压器。输入未提供功率容量、效率、可靠性或部署时间表等参数。无法判断其技术成熟度与商业可行性。",
-      "technical": {
-        "voltage": "800 V",
-        "power": "",
-        "topology": "",
-        "device": "",
-        "switching_frequency": "",
-        "efficiency": "",
-        "power_density": "",
-        "isolation": "",
-        "control": "",
-        "application": "AI 数据中心供电"
-      },
-      "industrialization": {
-        "stage": "产品发布",
-        "status": "发布 800V 直流原生供电系统",
-        "target": ""
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "Bloom Energy 发布面向 AI 数据中心的 800V 直流原生供电系统"
-        ],
-        "source_claims": [],
-        "inferences": [
-          "800V 直流原生供电可减少变换级数并省去部分变压器"
-        ],
-        "unknowns": [
-          "功率容量",
-          "效率",
-          "可靠性",
-          "部署时间表"
-        ]
-      },
-      "sources": [],
-      "summary_raw": "Bloom Energy (BE) Unveils 800V DC Native Power System For AI Data Centers simplywall.st",
-      "published_date": "2026-09-16",
-      "relevance_score": 53,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 43,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "800V/AI DC"
-        ]
-      },
-      "heat_score": 67,
-      "heat_factors": {
-        "freshness": 85,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 53,
-      "radar_score": 57,
-      "radar_rank": 23
-    },
-    {
-      "id": "260917-22",
+      "id": "260917-19",
       "title": "Is Infineon’s 800 VDC AI Data Center Breaker Role Altering The Investment Case For Infineon Technologies (XTRA:IFX)? - Yahoo Finance",
       "source_type": "国际资讯",
       "primary_source": "Yahoo Finance",
@@ -1567,10 +1693,10 @@
         "ai_dc"
       ],
       "importance": "一般",
-      "plain_summary": "Yahoo Finance 发表分析文章，讨论英飞凌在 800V 直流 AI 数据中心断路器领域的角色是否改变其投资逻辑。英飞凌近期与 SolarEdge 扩展了 800V 直流 AI 数据中心合作。该文章属于投资分析类内容，不涉及具体产品发布。具体技术细节未在摘要中披露。",
-      "technical_summary": "该条目为投资分析文章，讨论英飞凌在 800V 直流 AI 数据中心断路器领域的角色。800V 直流供电架构需要适配的直流保护器件，可能涉及固态断路器或混合式方案。输入未提供具体产品参数、技术路线或合作细节。无法据此判断其技术优势与市场前景。",
+      "plain_summary": "该条正文主要为Yahoo Finance页面导航与免责声明，未提供关于Infineon 800 VDC AI数据中心断路器角色的实质内容。标题暗示Infineon在800 VDC AI数据中心断路器领域扮演角色，但正文未展开。无法据此确认技术细节或投资逻辑。",
+      "technical_summary": "正文无实质技术内容，无法提取器件、拓扑、参数或测试结果。",
       "technical": {
-        "voltage": "800 V",
+        "voltage": "800V DC",
         "power": "",
         "topology": "",
         "device": "",
@@ -1579,25 +1705,22 @@
         "power_density": "",
         "isolation": "",
         "control": "",
-        "application": "AI 数据中心供电、直流保护"
+        "application": "AI数据中心"
       },
       "industrialization": {
         "stage": "未知",
-        "status": "投资分析文章",
+        "status": "",
         "target": ""
       },
       "evidence": {
         "confirmed_facts": [
-          "Yahoo Finance 发表关于英飞凌在 800V 直流 AI 数据中心断路器角色的分析文章"
+          "标题提及Infineon在800 VDC AI数据中心断路器中的角色"
         ],
         "source_claims": [],
-        "inferences": [
-          "800V 直流供电架构需要适配的直流保护器件"
-        ],
+        "inferences": [],
         "unknowns": [
-          "具体产品参数",
-          "技术路线",
-          "合作细节"
+          "具体产品与技术细节",
+          "投资逻辑"
         ]
       },
       "sources": [],
@@ -1620,10 +1743,10 @@
       },
       "technical_depth_score": 53,
       "radar_score": 57,
-      "radar_rank": 24
+      "radar_rank": 25
     },
     {
-      "id": "260917-25",
+      "id": "260917-22",
       "title": "RIR Power Electronics completes SiC reactor installation in Odisha - scanx.trade",
       "source_type": "国际资讯",
       "primary_source": "scanx.trade",
@@ -1633,13 +1756,13 @@
         "sic"
       ],
       "importance": "一般",
-      "plain_summary": "RIR Power Electronics 完成在奥里萨邦的 SiC 反应器安装。该进展是公司在 SiC 半导体制造领域的重要一步，反映出印度本土宽禁带半导体供应链建设正在推进。具体产能与投产时间未在摘要中披露。",
-      "technical_summary": "该条目与 260917-16、260917-18、260917-19、260917-23 为同一事件的不同来源报道。RIR Power Electronics 完成 SiC 外延晶圆制造反应器安装。输入未提供外延工艺参数、晶圆尺寸、器件类型或产能等细节。无法判断其工艺水平与量产时间表。",
+      "plain_summary": "该条仅有标题信息，正文未提供。标题显示RIR Power Electronics在奥迪沙邦完成SiC反应炉安装。由于缺少正文，无法确认更多细节。",
+      "technical_summary": "仅有标题，无正文内容，无法提取器件、拓扑、参数或测试结果。",
       "technical": {
         "voltage": "",
         "power": "",
         "topology": "",
-        "device": "SiC",
+        "device": "SiC反应炉",
         "switching_frequency": "",
         "efficiency": "",
         "power_density": "",
@@ -1649,23 +1772,19 @@
       },
       "industrialization": {
         "stage": "试产",
-        "status": "完成 SiC 反应器安装",
+        "status": "完成SiC反应炉安装",
         "target": ""
       },
       "evidence": {
         "confirmed_facts": [
-          "RIR Power Electronics 完成在奥里萨邦的 SiC 反应器安装"
+          "标题显示RIR Power Electronics在奥迪沙邦完成SiC反应炉安装"
         ],
         "source_claims": [],
-        "inferences": [
-          "印度本土宽禁带半导体供应链建设正在推进"
-        ],
+        "inferences": [],
         "unknowns": [
-          "外延工艺参数",
-          "晶圆尺寸",
-          "器件类型",
+          "工艺参数",
           "产能",
-          "量产时间表"
+          "时间表"
         ]
       },
       "sources": [],
@@ -1688,10 +1807,10 @@
       },
       "technical_depth_score": 44,
       "radar_score": 56,
-      "radar_rank": 25
+      "radar_rank": 26
     },
     {
-      "id": "260917-23",
+      "id": "260917-20",
       "title": "RIR Power Electronics Completes Installation of State-of-the-Art SiC Epitaxial Wafer Manufacturing Reactors at Bhubaneswar, Odisha Facility - EquityBulls",
       "source_type": "国际资讯",
       "primary_source": "EquityBulls",
@@ -1701,13 +1820,13 @@
         "sic"
       ],
       "importance": "一般",
-      "plain_summary": "RIR Power Electronics 宣布在印度奥里萨邦布巴内斯瓦尔工厂完成 SiC 外延晶圆制造反应器的安装。该进展是公司在 SiC 半导体制造领域的重要里程碑，反映出印度本土宽禁带半导体供应链建设正在推进。具体产能与投产时间未在摘要中披露。",
-      "technical_summary": "该条目与 260917-16、260917-18、260917-19、260917-25 为同一事件的不同来源报道。RIR Power Electronics 完成 SiC 外延晶圆制造反应器安装。输入未提供外延工艺参数、晶圆尺寸、器件类型或产能等细节。无法判断其工艺水平与量产时间表。",
+      "plain_summary": "该条仅有标题信息，正文未提供。标题显示RIR Power Electronics在奥迪沙邦布巴内斯瓦尔设施完成SiC外延晶圆制造反应炉安装。由于缺少正文，无法确认更多细节。",
+      "technical_summary": "仅有标题，无正文内容，无法提取器件、拓扑、参数或测试结果。",
       "technical": {
         "voltage": "",
         "power": "",
         "topology": "",
-        "device": "SiC",
+        "device": "SiC外延晶圆制造反应炉",
         "switching_frequency": "",
         "efficiency": "",
         "power_density": "",
@@ -1717,23 +1836,19 @@
       },
       "industrialization": {
         "stage": "试产",
-        "status": "完成 SiC 外延晶圆制造反应器安装",
+        "status": "完成SiC外延晶圆制造反应炉安装",
         "target": ""
       },
       "evidence": {
         "confirmed_facts": [
-          "RIR Power Electronics 在布巴内斯瓦尔工厂完成 SiC 外延晶圆制造反应器安装"
+          "标题显示RIR Power Electronics完成SiC外延晶圆制造反应炉安装"
         ],
         "source_claims": [],
-        "inferences": [
-          "印度本土宽禁带半导体供应链建设正在推进"
-        ],
+        "inferences": [],
         "unknowns": [
-          "外延工艺参数",
-          "晶圆尺寸",
-          "器件类型",
+          "工艺参数",
           "产能",
-          "量产时间表"
+          "时间表"
         ]
       },
       "sources": [],
@@ -1756,62 +1871,73 @@
       },
       "technical_depth_score": 44,
       "radar_score": 56,
-      "radar_rank": 26
+      "radar_rank": 27
     },
     {
-      "id": "260917-31",
-      "title": "NVIDIA Leading AI Data Center Major Transformation: Chinese Manufacturers Aim to Avoid Sidelining - 36 Kr",
+      "id": "260917-03",
+      "title": "Is Power Electronics Outgrowing the Shunt Resistor? - Electronic Design",
       "source_type": "国际资讯",
-      "primary_source": "36 Kr",
-      "published_at": "2026-09-16T07:00:36+00:00",
-      "link": "https://eu.36kr.com/en/p/3985697915042560",
-      "category": [
-        "ai_dc"
-      ],
+      "primary_source": "Electronic Design",
+      "published_at": "2026-09-16T17:08:39+00:00",
+      "link": "https://www.electronicdesign.com/technologies/power/article/55405512/allegro-microsystems-is-power-electronics-outgrowing-shunt-based-current-sensors",
+      "category": [],
       "importance": "一般",
-      "plain_summary": "36 Kr 报道英伟达正在引领 AI 数据中心的重大变革，中国制造商正努力避免被边缘化。该报道反映出 AI 数据中心供电与散热架构的快速演进正在重塑供应链格局。具体技术路线与厂商策略未在摘要中披露。",
-      "technical_summary": "该条目为行业分析报道，讨论英伟达引领的 AI 数据中心变革及中国制造商的应对。AI 数据中心供电架构正从传统交流向高压直流演进，可能涉及 800V 直流等方案。输入未提供具体技术参数或厂商策略细节。无法据此判断技术路线与市场格局。",
+      "plain_summary": "文章讨论随着电力电子系统向更高功率密度和更高开关频率发展，传统分流电阻电流检测方案面临散热、尺寸和共模电压等挑战。文章指出在48V系统、AI服务器散热风扇、机器人、电池工具和电动自行车等应用中，分流电阻的功耗随电流平方增长，且需要精密放大器、输入滤波和开尔文连接布局。文章介绍磁传感技术选项，包括集成导体霍尔效应电流传感器、无磁芯传感和隧道磁阻（TMR）技术。",
+      "technical_summary": "文章讨论分流电阻电流检测在高功率密度与高开关频率场景下的局限：功耗按P=I²R随电流平方增长，30A RMS通过1mΩ分流电阻可耗散近1W热量；为降低电阻需增大体积，占用PCB面积；需配套精密放大器、抑制寄生电感电压尖峰的输入滤波以及开尔文连接布局。在48V系统中，分流电阻需要耐48V的放大器，直接相电流检测中共模电压随换相周期在地与电源电压间摆动。文章介绍磁传感替代方案，包括集成导体霍尔效应电流传感器、无磁芯传感与隧道磁阻（TMR）技术。原文未给出具体传感器型号或对比测试数据。",
       "technical": {
-        "voltage": "",
+        "voltage": "48V",
         "power": "",
         "topology": "",
-        "device": "",
+        "device": "分流电阻、霍尔效应电流传感器、TMR电流传感器",
         "switching_frequency": "",
         "efficiency": "",
         "power_density": "",
         "isolation": "",
         "control": "",
-        "application": "AI 数据中心"
+        "application": "48V数据中心散热风扇、机器人、电池工具、电动自行车、电机驱动"
       },
       "industrialization": {
         "stage": "未知",
-        "status": "行业分析报道",
+        "status": "",
         "target": ""
       },
       "evidence": {
         "confirmed_facts": [
-          "36 Kr 报道英伟达引领 AI 数据中心变革，中国制造商努力避免被边缘化"
+          "分流电阻功耗按P=I²R随电流平方增长",
+          "30A RMS通过1mΩ分流电阻可耗散近1W热量",
+          "分流电阻需配套精密放大器、输入滤波与开尔文连接布局",
+          "48V系统中分流电阻需要耐48V的放大器",
+          "文章介绍霍尔效应、无磁芯传感与TMR等磁传感技术"
         ],
-        "source_claims": [],
+        "source_claims": [
+          "文章称GaN与SiC使开关频率进入兆赫兹范围，分流电阻方案面临更大挑战"
+        ],
         "inferences": [
-          "AI 数据中心供电架构正从传统交流向高压直流演进"
+          "文章为技术趋势讨论，非具体产品发布"
         ],
         "unknowns": [
-          "具体技术路线",
-          "厂商策略细节"
+          "具体传感器型号",
+          "对比测试数据",
+          "成本数据"
         ]
       },
-      "sources": [],
-      "summary_raw": "NVIDIA Leading AI Data Center Major Transformation: Chinese Manufacturers Aim to Avoid Sidelining 36 Kr",
+      "sources": [
+        {
+          "source": "Electronic Design",
+          "source_type": "国际资讯",
+          "title": "Is Power Electronics Outgrowing the Shunt Resistor? (Download) - Electronic Design",
+          "link": "https://www.electronicdesign.com/technologies/power/document/55405521/is-power-electronics-outgrowing-the-shunt-resistor-download",
+          "published_at": "2026-09-16T15:57:30+00:00"
+        }
+      ],
+      "summary_raw": "Is Power Electronics Outgrowing the Shunt Resistor? (Download) Electronic Design",
       "published_date": "2026-09-16",
-      "relevance_score": 51,
+      "relevance_score": 48,
       "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 35,
+        "focus_match": 35,
+        "technical_density": 51,
         "engineering_usability": 80,
-        "matched_topics": [
-          "800V/AI DC"
-        ]
+        "matched_topics": []
       },
       "heat_score": 67,
       "heat_factors": {
@@ -1819,9 +1945,9 @@
         "multi_source": 45,
         "source_authority": 58
       },
-      "technical_depth_score": 44,
-      "radar_score": 55,
-      "radar_rank": 27
+      "technical_depth_score": 62,
+      "radar_score": 56,
+      "radar_rank": 28
     },
     {
       "id": "260917-15",
@@ -1861,7 +1987,7 @@
       },
       "technical_depth_score": 35,
       "radar_score": 53,
-      "radar_rank": 28,
+      "radar_rank": 29,
       "sources": [
         {
           "source": "scanx.trade",
@@ -1871,78 +1997,7 @@
       ]
     },
     {
-      "id": "260917-06",
-      "title": "Is Power Electronics Outgrowing the Shunt Resistor? - Electronic Design",
-      "source_type": "国际资讯",
-      "primary_source": "Electronic Design",
-      "published_at": "2026-09-16T17:08:39+00:00",
-      "link": "https://www.electronicdesign.com/technologies/power/article/55405512/allegro-microsystems-is-power-electronics-outgrowing-shunt-based-current-sensors",
-      "category": [],
-      "importance": "一般",
-      "plain_summary": "Electronic Design 发表了一篇由 Allegro MicroSystems 参与的文章，探讨电力电子发展是否正在超越分流电阻（shunt resistor）电流检测方案。随着功率密度与开关频率提升，传统分流电阻在损耗、精度与热管理方面面临挑战，可能推动磁隔离电流传感器等替代方案的应用。该文属于技术趋势讨论，不涉及具体产品发布。",
-      "technical_summary": "该条目为技术文章，讨论电力电子中分流电阻电流检测的局限性及替代方案。高功率密度与高频开关场景下，分流电阻的插入损耗、寄生电感与温漂问题可能影响测量精度与系统效率，磁隔离或霍尔/磁通门传感器可能成为替代选择。输入未提供具体器件参数、对比测试数据或应用案例。无法据此判断具体技术路线优劣。",
-      "technical": {
-        "voltage": "",
-        "power": "",
-        "topology": "",
-        "device": "",
-        "switching_frequency": "",
-        "efficiency": "",
-        "power_density": "",
-        "isolation": "",
-        "control": "",
-        "application": "电流检测"
-      },
-      "industrialization": {
-        "stage": "未知",
-        "status": "技术趋势讨论文章",
-        "target": ""
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "Electronic Design 发表关于分流电阻电流检测的讨论文章，Allegro MicroSystems 参与"
-        ],
-        "source_claims": [],
-        "inferences": [
-          "高功率密度与高频场景下分流电阻面临损耗与精度挑战"
-        ],
-        "unknowns": [
-          "具体器件参数",
-          "对比测试数据",
-          "应用案例",
-          "替代方案细节"
-        ]
-      },
-      "sources": [
-        {
-          "source": "Electronic Design",
-          "source_type": "国际资讯",
-          "title": "Is Power Electronics Outgrowing the Shunt Resistor? (Download) - Electronic Design",
-          "link": "https://www.electronicdesign.com/technologies/power/document/55405521/is-power-electronics-outgrowing-the-shunt-resistor-download",
-          "published_at": "2026-09-16T15:57:30+00:00"
-        }
-      ],
-      "summary_raw": "Is Power Electronics Outgrowing the Shunt Resistor? (Download) Electronic Design",
-      "published_date": "2026-09-16",
-      "relevance_score": 44,
-      "relevance_factors": {
-        "focus_match": 35,
-        "technical_density": 35,
-        "engineering_usability": 80,
-        "matched_topics": []
-      },
-      "heat_score": 67,
-      "heat_factors": {
-        "freshness": 85,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 44,
-      "radar_score": 51,
-      "radar_rank": 29
-    },
-    {
-      "id": "260917-36",
+      "id": "260917-33",
       "title": "800V直流供电成AI算力新底座，阳光电源如何落子 - 碳索储能网",
       "source_type": "国内资讯",
       "primary_source": "碳索储能网",
@@ -1951,51 +2006,65 @@
       "category": [
         "800v"
       ],
-      "importance": "一般",
-      "plain_summary": "碳索储能网发表文章，讨论 800V 直流供电成为 AI 算力新底座背景下阳光电源的布局。该文章反映出国内厂商正在积极布局 800V 直流供电架构，以应对 AI 数据中心供电需求。具体技术方案与产品细节未在摘要中披露。",
-      "technical_summary": "该条目为国内行业分析文章，讨论阳光电源在 800V 直流供电领域的布局。800V 直流供电架构可减少数据中心内的变换级数，提升效率与功率密度。输入未提供具体产品参数、拓扑或技术路线。无法判断其技术方案与商业化进展。",
+      "importance": "重点",
+      "plain_summary": "阳光电源面向AI数据中心提出800V直流供电架构，核心产品为EnerNeo固态变压器（SST），可将10~13.8kV中压交流单级直接转换为800V直流，省去传统工频变压器与多级逆变。公司称该架构可减少铜材使用、降低传输损耗，1GW算力项目年节电超4亿度。公司已成立AIDC事业部并规划300人以上研发团队，签约合作方包括东阳光、中联数据集团与阿里云智能计算集团。",
+      "technical_summary": "阳光电源提出面向AIDC的800V直流供电架构，核心为EnerNeo固态变压器（SST），输入10~13.8kV宽幅中压交流，输出800V直流，采用单级直转替代传统工频变压器与多级逆变。公司称系统效率98.5%、可用性99.999%、功率密度312kW/㎡，采用SiC拓扑与优化H桥串联架构，具备6+3中压弹性冗余容错（最多3个模块失效仍可75%降额运行），支持15分钟快速插拔在线运维。绝缘方面称实现机柜级零局放（21kV内），满足42kV工频耐压与95kV雷电冲击指标。公司称整机寿命较UPS/HVDC提高约20%，1GW规模算力项目年节电超4亿度。原文未披露开关频率、具体SiC器件型号或控制算法细节。",
       "technical": {
-        "voltage": "800 V",
-        "power": "",
-        "topology": "",
-        "device": "",
+        "voltage": "输入10~13.8kVac；输出800Vdc；绝缘满足42kV工频耐压、95kV雷电冲击",
+        "power": "功率颗粒度1.5/3/4.5MW",
+        "topology": "SST单级直转；优化H桥串联架构；6+3中压弹性冗余容错",
+        "device": "SiC器件",
         "switching_frequency": "",
-        "efficiency": "",
-        "power_density": "",
-        "isolation": "",
-        "control": "",
-        "application": "AI 数据中心供电"
+        "efficiency": "系统效率98.5%",
+        "power_density": "312kW/㎡",
+        "isolation": "一体真空绝缘；机柜级零局放（21kV内）",
+        "control": "数字孪生全链路管控；毫秒级动态调压",
+        "application": "AI数据中心（AIDC）供电，匹配NVIDIA GB300等下一代算力集群"
       },
       "industrialization": {
-        "stage": "未知",
-        "status": "行业分析文章",
-        "target": ""
+        "stage": "产品发布",
+        "status": "EnerNeo SST于2026年7月9日发布；AIDC配储在手订单约2GWh，跟进项目十余GWh",
+        "target": "面向2027-2028年大规模部署的400kW-1MW大型IT机柜"
       },
       "evidence": {
         "confirmed_facts": [
-          "碳索储能网发表关于阳光电源在 800V 直流供电领域布局的文章"
+          "阳光电源提出面向AIDC的800V直流供电架构，核心为EnerNeo固态变压器（SST）",
+          "SST输入10~13.8kVac，输出800Vdc，采用单级直转",
+          "公司称系统效率98.5%、可用性99.999%、功率密度312kW/㎡",
+          "公司称采用SiC拓扑与优化H桥串联架构，具备6+3中压弹性冗余容错",
+          "公司称机柜级零局放（21kV内），满足42kV工频耐压与95kV雷电冲击",
+          "公司称1GW规模算力项目年节电超4亿度",
+          "公司称整机寿命较UPS/HVDC提高约20%",
+          "签约合作方包括东阳光（约30MW）、中联数据集团（规划约100MW）与阿里云智能计算集团",
+          "2026年8月28日披露AIDC配储在手订单约2GWh，跟进项目十余GWh"
         ],
-        "source_claims": [],
+        "source_claims": [
+          "公司称EnerNeo SST被NVIDIA 800VDC白皮书列为推荐技术路线",
+          "公司称方案可匹配NVIDIA GB300等下一代算力集群高压供电架构",
+          "公司称数字孪生全链路管控可实现毫秒级动态调压"
+        ],
         "inferences": [
-          "国内厂商正在积极布局 800V 直流供电架构"
+          "该方案处于产品发布与早期商业合作阶段，大规模部署尚未确认"
         ],
         "unknowns": [
-          "具体产品参数",
-          "拓扑",
-          "技术路线",
-          "商业化进展"
+          "开关频率",
+          "具体SiC器件型号",
+          "控制算法细节",
+          "实际部署案例与运行数据"
         ]
       },
       "sources": [],
       "summary_raw": "800V直流供电成AI算力新底座，阳光电源如何落子 碳索储能网",
       "published_date": "2026-09-15",
-      "relevance_score": 53,
+      "relevance_score": 79,
       "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 43,
+        "focus_match": 74,
+        "technical_density": 91,
         "engineering_usability": 80,
         "matched_topics": [
-          "800V/AI DC"
+          "800V/AI DC",
+          "SST",
+          "SiC/GaN"
         ]
       },
       "heat_score": 60,
@@ -2004,15 +2073,15 @@
         "multi_source": 45,
         "source_authority": 58
       },
-      "technical_depth_score": 53,
-      "radar_score": 55,
+      "technical_depth_score": 100,
+      "radar_score": 75,
       "radar_rank": 30
     },
     {
-      "id": "260917-35",
-      "title": "Infineon, SolarEdge Extend 800 VDC AI Data Center Collaboration - I-Connect007",
+      "id": "260917-32",
+      "title": "Infineon, SolarEdge Extend 800 VDC AI Data Center Collaboration - iconnect007.com",
       "source_type": "国际资讯",
-      "primary_source": "I-Connect007",
+      "primary_source": "iconnect007.com",
       "published_at": "2026-09-15T13:58:00+00:00",
       "link": "https://iconnect007.com/article/151601/infineon-solaredge-extend-800-vdc-ai-data-center-collaboration/151598/pcb",
       "category": [
@@ -2020,47 +2089,50 @@
         "ai_dc"
       ],
       "importance": "重点",
-      "plain_summary": "英飞凌与 SolarEdge 宣布扩展在 800V 直流 AI 数据中心领域的合作。双方将结合英飞凌的功率半导体与 SolarEdge 的电力电子系统能力，推进 800V 直流供电架构在 AI 数据中心的应用。该合作表明 800V 直流生态正在形成产业链协同。具体合作内容与技术细节未在摘要中披露。",
-      "technical_summary": "该条目报道英飞凌与 SolarEdge 扩展 800V 直流 AI 数据中心合作。合作可能涉及功率半导体器件、功率变换模块与直流保护方案。800V 直流供电架构可减少数据中心内的变换级数，提升效率与功率密度。输入未提供具体产品参数、拓扑或合作分工细节。无法判断其技术路线与商业化时间表。",
+      "plain_summary": "Infineon与SolarEdge宣布扩展合作，推进面向AI与超大规模数据中心的固态断路器（SSCB）技术，用于高压直流配电。合作针对800V直流架构采用中的关键挑战：在功率密度不断提高的基础设施中，需要极快的故障隔离以实现选择性，同时保持高效率。此次合作扩展至固态保护领域，旨在填补配电层的关键缺口。",
+      "technical_summary": "Infineon与SolarEdge扩展合作，推进面向AI与超大规模数据中心的固态断路器（SSCB）技术，用于高压直流配电。合作针对800V直流架构采用中的关键挑战：在功率密度不断提高的基础设施中，需要极快的故障隔离以实现选择性，同时保持高效率。此次合作扩展至固态保护领域，旨在填补配电层的关键缺口。原文未披露SSCB的电压电流等级、开关器件类型、响应时间或效率数据。",
       "technical": {
-        "voltage": "800 V",
+        "voltage": "800V DC",
         "power": "",
         "topology": "",
-        "device": "",
+        "device": "固态断路器（SSCB）",
         "switching_frequency": "",
         "efficiency": "",
         "power_density": "",
         "isolation": "",
         "control": "",
-        "application": "AI 数据中心供电"
+        "application": "AI与超大规模数据中心高压直流配电"
       },
       "industrialization": {
-        "stage": "产品发布",
-        "status": "英飞凌与 SolarEdge 扩展 800V 直流 AI 数据中心合作",
+        "stage": "工程样机",
+        "status": "Infineon与SolarEdge扩展合作推进固态断路器技术",
         "target": ""
       },
       "evidence": {
         "confirmed_facts": [
-          "英飞凌与 SolarEdge 扩展 800V 直流 AI 数据中心合作"
+          "Infineon与SolarEdge宣布扩展合作，推进面向AI与超大规模数据中心的固态断路器技术",
+          "合作针对800V直流架构采用中的故障隔离与选择性挑战"
         ],
-        "source_claims": [],
+        "source_claims": [
+          "合作旨在填补配电层的关键缺口"
+        ],
         "inferences": [
-          "合作可能涉及功率半导体器件、功率变换模块与直流保护方案"
+          "该合作处于技术推进阶段，尚未确认量产"
         ],
         "unknowns": [
-          "具体产品参数",
-          "拓扑",
-          "合作分工细节",
-          "商业化时间表"
+          "SSCB电压电流等级",
+          "开关器件类型",
+          "响应时间",
+          "效率数据"
         ]
       },
       "sources": [],
-      "summary_raw": "Infineon, SolarEdge Extend 800 VDC AI Data Center Collaboration I-Connect007",
+      "summary_raw": "Infineon, SolarEdge Extend 800 VDC AI Data Center Collaboration iconnect007.com",
       "published_date": "2026-09-15",
-      "relevance_score": 53,
+      "relevance_score": 55,
       "relevance_factors": {
         "focus_match": 48,
-        "technical_density": 43,
+        "technical_density": 51,
         "engineering_usability": 80,
         "matched_topics": [
           "800V/AI DC"
@@ -2072,12 +2144,12 @@
         "multi_source": 45,
         "source_authority": 58
       },
-      "technical_depth_score": 53,
-      "radar_score": 55,
+      "technical_depth_score": 62,
+      "radar_score": 58,
       "radar_rank": 31
     },
     {
-      "id": "260917-33",
+      "id": "260917-30",
       "title": "Tektronix Launches Dynamic Test System for 800-V AI Data Centers - embedded.com",
       "source_type": "国际资讯",
       "primary_source": "embedded.com",
@@ -2087,45 +2159,43 @@
         "ai_dc"
       ],
       "importance": "一般",
-      "plain_summary": "embedded.com 报道泰克推出面向 800V AI 数据中心的动态测试系统。该测试系统用于验证 800V 直流供电架构下的电源与变换器性能。具体测试参数与功率等级未在摘要中披露。",
-      "technical_summary": "该条目与 260917-29 为同一事件的不同来源报道。泰克推出面向 800V AI 数据中心的动态测试系统。输入未提供电压/电流范围、功率等级、精度或动态响应等参数。无法判断其测试能力与适用场景。",
+      "plain_summary": "该条仅有标题信息，正文未提供。标题显示Tektronix推出面向800V AI数据中心的动态测试系统。由于缺少正文，无法确认更多细节。",
+      "technical_summary": "仅有标题，无正文内容，无法提取器件、拓扑、参数或测试结果。",
       "technical": {
-        "voltage": "800 V",
+        "voltage": "800V",
         "power": "",
         "topology": "",
-        "device": "",
+        "device": "动态测试系统",
         "switching_frequency": "",
         "efficiency": "",
         "power_density": "",
         "isolation": "",
         "control": "",
-        "application": "800V AI 数据中心供电测试"
+        "application": "AI数据中心"
       },
       "industrialization": {
         "stage": "产品发布",
-        "status": "推出动态测试系统",
+        "status": "推出面向800V AI数据中心的动态测试系统",
         "target": ""
       },
       "evidence": {
         "confirmed_facts": [
-          "泰克推出面向 800V AI 数据中心的动态测试系统"
+          "标题显示Tektronix推出面向800V AI数据中心的动态测试系统"
         ],
         "source_claims": [],
         "inferences": [],
         "unknowns": [
-          "电压/电流范围",
-          "功率等级",
-          "精度",
-          "动态响应"
+          "具体参数",
+          "功能细节"
         ]
       },
       "sources": [],
       "summary_raw": "Tektronix Launches Dynamic Test System for 800-V AI Data Centers embedded.com",
       "published_date": "2026-09-15",
-      "relevance_score": 53,
+      "relevance_score": 55,
       "relevance_factors": {
         "focus_match": 48,
-        "technical_density": 43,
+        "technical_density": 51,
         "engineering_usability": 80,
         "matched_topics": [
           "800V/AI DC"
@@ -2137,8 +2207,8 @@
         "multi_source": 45,
         "source_authority": 58
       },
-      "technical_depth_score": 53,
-      "radar_score": 55,
+      "technical_depth_score": 62,
+      "radar_score": 58,
       "radar_rank": 32
     },
     {
@@ -2199,7 +2269,7 @@
       ]
     },
     {
-      "id": "260917-34",
+      "id": "260917-31",
       "title": "TMEIC Opens New Power Electronics Flagship Manufacturing Facility in Waller County, Texas - Morningstar",
       "source_type": "国际资讯",
       "primary_source": "Morningstar",
@@ -2207,8 +2277,8 @@
       "link": "https://www.morningstar.com/news/pr-newswire/20260915ph45329/tmeic-opens-new-power-electronics-flagship-manufacturing-facility-in-waller-county-texas",
       "category": [],
       "importance": "一般",
-      "plain_summary": "TMEIC 在美国德克萨斯州 Waller County 开设新的电力电子旗舰制造工厂。该工厂将用于生产电力电子产品，反映出北美电力电子制造产能的扩张。具体产品类型与产能未在摘要中披露。",
-      "technical_summary": "该条目报道 TMEIC 在德克萨斯州开设电力电子旗舰制造工厂。输入未提供产品类型、产能、技术路线或目标市场等细节。无法判断其产品定位与制造能力。",
+      "plain_summary": "该条仅有标题信息，正文未提供。标题显示TMEIC在德克萨斯州沃勒县开设新的电力电子旗舰制造设施。由于缺少正文，无法确认投资规模、产能或产品细节。",
+      "technical_summary": "仅有标题，无正文内容，无法提取器件、拓扑、参数或测试结果。",
       "technical": {
         "voltage": "",
         "power": "",
@@ -2223,22 +2293,19 @@
       },
       "industrialization": {
         "stage": "商业部署",
-        "status": "开设电力电子旗舰制造工厂",
+        "status": "在德克萨斯州沃勒县开设新的电力电子旗舰制造设施",
         "target": ""
       },
       "evidence": {
         "confirmed_facts": [
-          "TMEIC 在德克萨斯州 Waller County 开设新的电力电子旗舰制造工厂"
+          "标题显示TMEIC在德克萨斯州沃勒县开设新的电力电子旗舰制造设施"
         ],
         "source_claims": [],
-        "inferences": [
-          "北美电力电子制造产能正在扩张"
-        ],
+        "inferences": [],
         "unknowns": [
-          "产品类型",
+          "投资规模",
           "产能",
-          "技术路线",
-          "目标市场"
+          "产品细节"
         ]
       },
       "sources": [],
@@ -3490,25 +3557,69 @@
     }
   ],
   "directions": {
-    "SST": "阳光电源发布 3 MW 固态变压器；Enphase 宣布面向 AI 数据中心的分布式固态变压器与 GaN 基 IQ 固态变压器架构，目标 2028 年批量交付，并在 AI Infra Summit 2026 展示。SST 正从研究走向产品化，AI 数据中心成为重要驱动场景。",
-    "SiC_GaN": "SiC 方面：印度首个垂直整合 SiC 半导体工厂接近投产；RIR Power Electronics 在奥里萨邦完成 SiC 外延晶圆制造反应器安装；DB HiTek 的 1200 V SiC MOSFET 工艺在 8 英寸晶圆上通过验证；SiC 技术在公共交通领域已有 15 年应用。GaN 方面：瑞萨发布 D-Mode GaN 技术视频；EPC 发布面向 AI 数据中心与电机驱动的 GaN 白皮书；极化超结结构研究推动 GaN 功率晶体管接近理论极限。",
-    "GFM_PCS": "特变电工发布面向大规模储能与新能源的构网型变流器；阳光电源将构网型 PowerTitan 3.0 储能系统引入欧洲；行业文章讨论构网型 BESS 从电网导则到实际并网的关键条件。构网型技术正从示范走向产品化与国际化。",
-    "800V_AI_DC": "800V 直流成为 AI 数据中心供电热点：华为将在上海发布新 AI 技术，800V 高压直流首次出现在中国算力政策中；Bloom Energy 发布 800V 直流原生燃料电池供电系统，声称可节省数十亿美元成本、降低用电并省去变压器；英飞凌与 SolarEdge 扩展 800V 直流合作；泰克推出面向 800V AI 数据中心的再生式/动态测试系统；阳光电源布局 800V 直流供电。",
-    "topology_magnetics": "CorePower Magnetics 完成 1060 万美元融资，用于扩大面向 AI、数据中心与电网基础设施的先进磁性元件美国本土制造；氮化铝热基板市场预计到 2035 年因 SiC 与 GaN 需求增长 8-12% CAGR；电力电子发展对分流电阻电流检测方案提出挑战。"
+    "SST": "阳光电源EnerNeo SST输入10~13.8kVac、输出800Vdc，采用单级直转与SiC拓扑，公司称系统效率98.5%、功率密度312kW/㎡，并称被NVIDIA 800VDC白皮书列为推荐技术路线；Tektronix EA-ELR 21000测试系统明确将固态变压器列为验证对象；36 Kr文章提到国内智算中心建设带动兆瓦级SST方案需求，某企业已接触两三百家潜在客户。",
+    "SiC_GaN": "DB HiTek完成1200V SiC MOSFET 8英寸晶圆工艺可靠性认证，第二代比导通电阻不高于2.5 mΩ·cm²，第三代目标不高于2.3 mΩ·cm²、短路耐受至少2.5μs，计划2027年量产；RIR Power Electronics在印度奥迪沙邦完成SiC外延晶圆反应炉安装，规划制造高压MOSFET、二极管与模块；Renesas发布GaN D-Mode技术内容（仅标题）；Electronic Design文章讨论GaN/SiC使开关频率进入兆赫兹范围后分流电阻电流检测的局限。",
+    "GFM_PCS": "Sinexcel技术总监撰文讨论构网型BESS从电网规范到实际并网的工程化挑战，强调并网要求需转化为有功无功能力、电压频率响应、LVRT/HVRT、无功电流注入、爬坡率、故障行为、保护设置与建模验证等技术行为，并指出PCS数据手册支持构网控制不等于项目可成功并网。",
+    "800V_AI_DC": "Bloom Energy发布800V直流原生固体氧化物燃料电池方案，估算1GW AI数据中心非计算资本支出降低36亿美元（27%）、五年TCO降低55亿美元（9%），并称NVIDIA已为2027年起Rubin Ultra与Kyber机架指定800V直流；Infineon与SolarEdge扩展合作推进800V直流固态断路器；Tektronix推出支持±400V/800V的回馈式测试系统；中国政府首次将800V HVDC纳入算力政策；阳光电源提出800V直流SST架构；36 Kr文章称从415V交流切换到800V直流后同等导体可传输多85%功率、铜缆需求减少45%。",
+    "topology_magnetics": "CorePower Magnetics完成1060万美元融资，基于纳米晶合金开发变压器与电感，称已从实验室规模推进到商业规模生产，多条产品线走向批量制造；Electronic Design文章讨论分流电阻在高功率密度与高开关频率下的散热、尺寸与共模电压挑战，并介绍霍尔效应、无磁芯传感与TMR等磁传感替代方案。"
   },
   "observations": [
-    "800V 直流供电架构在 AI 数据中心领域形成明显热点，涉及华为、Bloom Energy、英飞凌、SolarEdge、阳光电源、泰克等多家厂商，且首次出现在中国算力政策中。",
-    "固态变压器（SST）出现多个产品化信号：阳光电源 3 MW SST 发布、Enphase 分布式 SST 与 GaN 基 IQ SST 架构，AI 数据中心成为 SST 重要驱动场景。",
-    "SiC 制造端进展密集：印度 RIR Power Electronics 完成外延反应器安装、印度首个垂直整合 SiC 工厂接近投产、DB HiTek 1200 V SiC MOSFET 工艺在 8 英寸晶圆通过验证，反映全球 SiC 产能扩张与向大尺寸晶圆演进。",
-    "构网型（grid-forming）技术持续产品化与国际化：特变电工发布构网型变流器、阳光电源 PowerTitan 3.0 进入欧洲，行业关注实际并网工程化挑战。",
-    "磁性元件与散热基板等供应链环节受到资本与市场关注，CorePower Magnetics 融资与 AlN 基板市场预测反映 AI 数据中心与电网升级对上游元件的拉动。",
-    "Bloom Energy 的 800V 直流成本节省数据（36 亿美元）为公司自身声称，需独立验证；Enphase 2028 年批量交付为目标而非已实现。"
+    "800V直流供电架构在2026年9月成为AI数据中心供电的集中议题，涉及燃料电池、SST、固态断路器、测试设备与政策多个层面。",
+    "Bloom Energy的36亿美元/55亿美元节省数据为公司基于自身假设的模型估算，非大规模部署实测结果，且仅适用于非计算部分投资。",
+    "DB HiTek的1200V 8英寸SiC MOSFET工艺已完成可靠性认证并给出比导通电阻与短路耐受指标，是本期SiC领域参数最具体的进展。",
+    "RIR Power Electronics的印度SiC项目当前处于外延环节，器件制造与量产尚未实现，公司称其为印度首个垂直整合SiC设施。",
+    "构网型BESS的讨论从产品功能转向项目工程化，强调电网规范解读、建模验证与现场调试。",
+    "磁性元件领域出现融资与材料进展，纳米晶合金与磁传感替代方案受到关注。"
   ],
-  "quality_notes": "本次输入事件多为标题与极简摘要，缺少具体技术参数（电压、功率、拓扑、器件、开关频率、效率、功率密度等），因此多数技术字段留空。部分事件为同一主题的多来源报道（如 CorePower Magnetics 融资、RIR Power Electronics SiC 反应器安装、Bloom Energy 800V 直流方案、泰克 800V 测试系统），已在相应事件中标注关联。全球首个/首次等表述已按来源声称处理。Bloom Energy 的成本节省数据、Enphase 2028 年批量交付目标均为来源声称或计划，不代表已实现。部分事件（如 260917-01、260917-06、260917-14、260917-37、260917-38、260917-39、260917-40）与电力电子功率变换核心技术关联较弱或属于市场/政策/健康议题，已按输入内容如实分析。",
-  "daily_summary": "2026-09-17 收录 16 条当天发布/更新的电力电子技术事件。今日值得先读：Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit - Pragativadi；DB HiTek qualifies its 1,200 V SiC MOSFET process on 8-inch wafers - chargedevs.com；Renesas GaN: D-Mode Technology & Design Benefits - Renesas。今日主题分布以 SiC/GaN、800V/AI DC、Magnetics 为主。历史数据按发布时间保留，可按今天、昨天、近7天和全部切换；热度只表示站内新鲜度、多源出现和来源权威度等信号。",
+  "quality_notes": "多条事件仅有标题或RSS摘要，正文缺失，包括260917-07、260917-10、260917-11、260917-20、260917-22、260917-23、260917-24、260917-30、260917-31；260917-19与260917-29正文主要为页面导航与免责声明，无实质内容。260917-06、260917-13、260917-15、260917-16、260917-20、260917-22为同一RIR Power Electronics事件的不同来源报道，已分别保留。260917-07、260917-09、260917-10为同一CorePower Magnetics融资事件的不同来源。260917-12、260917-18、260917-21、260917-24、260917-25为同一Bloom Energy 800V方案的不同来源报道。260917-26与260917-30为同一Tektronix产品发布的不同来源。所有“全球首个/首次/世界第一”表述均标注为来源声称。Bloom Energy的节省数据、58%调查预测、阳光电源的效率与节电数据均为来源声称，未独立验证。",
+  "daily_summary": "2026-09-17 收录 16 条当天发布/更新的电力电子技术事件。今日值得先读：IAA TRANSPORTATION: Inmotion Technologies expands power electronics range - Industrial Vehicle Technology International；Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit - Pragativadi；Bloom Energy Estimates $3.6 Billion in Equipment Cost Savings from 800V DC Conversion for AI Data Centers - finance.biggo.com。今日主题分布以 SiC/GaN、800V/AI DC、Magnetics 为主。历史数据按发布时间保留，可按今天、昨天、近7天和全部切换；热度只表示站内新鲜度、多源出现和来源权威度等信号。",
   "daily_highlights": [
     {
+      "rank": 30,
+      "title": "800V直流供电成AI算力新底座，阳光电源如何落子 - 碳索储能网",
+      "source_type": "国内资讯",
+      "source": "碳索储能网",
+      "published_date": "2026-09-15",
+      "radar_score": 75,
+      "relevance_score": 79,
+      "heat_score": 60,
+      "link": "https://mcn.solarbe.com/news/20260915/50029137.html"
+    },
+    {
+      "rank": 17,
+      "title": "Tektronix unveils regenerative test system for 800V AI data center power - eeNews Europe",
+      "source_type": "国际资讯",
+      "source": "eeNews Europe",
+      "published_date": "2026-09-16",
+      "radar_score": 69,
+      "relevance_score": 63,
+      "heat_score": 67,
+      "link": "https://www.eenewseurope.com/en/tektronix-unveils-regenerative-test-system-for-800v-ai-data-center-power/"
+    },
+    {
       "rank": 1,
+      "title": "IAA TRANSPORTATION: Inmotion Technologies expands power electronics range - Industrial Vehicle Technology International",
+      "source_type": "国际资讯",
+      "source": "Industrial Vehicle Technology International",
+      "published_date": "2026-09-17",
+      "radar_score": 63,
+      "relevance_score": 50,
+      "heat_score": 79,
+      "link": "https://www.ivtinternational.com/news/exhibitions/inmotion-expands-power-electronics-range-at-iaa-transportation.html"
+    },
+    {
+      "rank": 18,
+      "title": "NVIDIA Leading AI Data Center Major Transformation: Chinese Manufacturers Aim to Avoid Sidelining - 36 Kr",
+      "source_type": "国际资讯",
+      "source": "36 Kr",
+      "published_date": "2026-09-16",
+      "radar_score": 63,
+      "relevance_score": 62,
+      "heat_score": 67,
+      "link": "https://eu.36kr.com/en/p/3985697915042560"
+    },
+    {
+      "rank": 2,
       "title": "Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit - Pragativadi",
       "source_type": "国际资讯",
       "source": "Pragativadi",
@@ -3519,87 +3630,43 @@
       "link": "https://pragativadi.com/odisha-powers-up-indias-chip-ambitions-with-rs-3406-cr-sic-semiconductor-unit/"
     },
     {
-      "rank": 2,
-      "title": "DB HiTek qualifies its 1,200 V SiC MOSFET process on 8-inch wafers - chargedevs.com",
-      "source_type": "国际资讯",
-      "source": "chargedevs.com",
-      "published_date": "2026-09-17",
-      "radar_score": 60,
-      "relevance_score": 55,
-      "heat_score": 74,
-      "link": "https://chargedevs.com/newswire/db-hitek-qualifies-its-1200-v-sic-mosfet-process-on-8-inch-wafers/"
-    },
-    {
-      "rank": 3,
-      "title": "Renesas GaN: D-Mode Technology & Design Benefits - Renesas",
-      "source_type": "国际资讯",
-      "source": "Renesas",
-      "published_date": "2026-09-17",
-      "radar_score": 60,
-      "relevance_score": 53,
-      "heat_score": 79,
-      "link": "https://www.renesas.com/en/video/renesas-gan-d-mode-technology-design-benefits"
-    },
-    {
-      "rank": 17,
+      "rank": 19,
       "title": "Bloom Energy claims cost savings with 800V DC fuel cells for AI - Investing.com",
       "source_type": "国际资讯",
       "source": "Investing.com",
       "published_date": "2026-09-16",
-      "radar_score": 60,
-      "relevance_score": 53,
+      "radar_score": 62,
+      "relevance_score": 55,
       "heat_score": 72,
       "link": "https://www.investing.com/news/company-news/bloom-energy-claims-cost-savings-with-800v-dc-fuel-cells-for-ai-93CH-4903807"
     },
     {
-      "rank": 18,
-      "title": "From innovation to a global standard. 15 years of SiC technology in public transport - Railway Gazette International",
-      "source_type": "国际资讯",
-      "source": "Railway Gazette International",
-      "published_date": "2026-09-16",
-      "radar_score": 60,
-      "relevance_score": 53,
-      "heat_score": 72,
-      "link": "https://www.railwaygazette.com/sponsored-content/2026/09/16/from-innovation-to-a-global-standard-15-years-of-sic-technology-in-public-transport/"
-    },
-    {
-      "rank": 4,
+      "rank": 3,
       "title": "Bloom Energy Estimates $3.6 Billion in Equipment Cost Savings from 800V DC Conversion for AI Data Centers - finance.biggo.com",
       "source_type": "国际资讯",
       "source": "finance.biggo.com",
       "published_date": "2026-09-17",
-      "radar_score": 59,
-      "relevance_score": 53,
+      "radar_score": 61,
+      "relevance_score": 55,
       "heat_score": 74,
       "link": "https://finance.biggo.com/news/f71004cd-4071-4e1a-9648-4f1409c98c39"
     },
     {
-      "rank": 5,
+      "rank": 4,
       "title": "Huawei to Unveil New AI Technology in Shanghai; 800V High-Voltage DC Makes First Appearance in China's Computing Power Policy - finance.biggo.com",
       "source_type": "国际资讯",
       "source": "finance.biggo.com",
       "published_date": "2026-09-17",
-      "radar_score": 59,
-      "relevance_score": 53,
+      "radar_score": 61,
+      "relevance_score": 55,
       "heat_score": 74,
       "link": "https://finance.biggo.com/news/e6dfee7b-96a6-4716-aadb-e477a0c50216"
-    },
-    {
-      "rank": 6,
-      "title": "Why Could Bloom Energy (BE) Change AI Data Center Power Economics? - Yahoo Finance Singapore",
-      "source_type": "国际资讯",
-      "source": "Yahoo Finance Singapore",
-      "published_date": "2026-09-17",
-      "radar_score": 59,
-      "relevance_score": 53,
-      "heat_score": 74,
-      "link": "https://sg.finance.yahoo.com/news/why-could-bloom-energy-change-111318400.html"
     }
   ],
   "daily_focus": [
     {
       "topic": "SiC/GaN",
-      "count": 21
+      "count": 22
     },
     {
       "topic": "800V/AI DC",
@@ -3607,7 +3674,7 @@
     },
     {
       "topic": "SST",
-      "count": 4
+      "count": 6
     },
     {
       "topic": "Magnetics",
@@ -3642,6 +3709,6 @@
     "scored_events": 53
   },
   "scoring_note": "热度为可解释的站内信号分数（发布时间新鲜度、多源出现、来源权威度）；相关度为与预设电力电子技术重点方向及技术信息密度的匹配分数，不代表外部平台热搜排名。",
-  "history_count": 40,
+  "history_count": 53,
   "history_merged": true
 }
