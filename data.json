@@ -1,11 +1,145 @@
 {
   "schema_version": "2.1",
-  "updated": "2026-09-17T15:51:54.674202+08:00",
+  "updated": "2026-09-17T16:01:06.605768+08:00",
   "report_date": "2026-09-17",
   "event_count": 15,
   "events": [
     {
       "id": "260917-01",
+      "title": "Intrinsic polarization superjunctions in III-nitride heterostructures for efficient power electronics - nature.com",
+      "category": [
+        "sic"
+      ],
+      "primary_source": "nature.com",
+      "link": "https://www.nature.com/articles/s41928-026-01691-4",
+      "summary_raw": "III-nitride semiconductors combine a wide bandgap with low sheet resistance and, thus, can be used for efficient power electronics. Their lateral architecture also enables monolithic integration on cost-effective silicon. However, electric-field crowding, as well as surface and buffer trapping, limit the breakdown voltage, degrade dynamic performance and reduce reliability. Here we report intrinsic polarization superjunctions in III-nitride heterostructures for efficient power electronics. We use the spontaneous and piezoelectric polarization fields to induce matched mobile electrons in a two-dimensional electron gas and mobile holes in a two-dimensional hole gas, forming an intrinsically charge-balanced superjunction without intentional doping. With an ohmic contact to the two-dimensional hole gas, both carrier types can be dynamically depleted during switching, which preserves drift-region charge neutrality, producing a nearly uniform electric field and increasing the breakdown voltage under operating conditions. We use the approach to create gallium-nitride-on-silicon polarization superjunction Schottky barrier diodes with a breakdown voltage exceeding 3.9 kV and a specific ON resistance as low as 4.7 mΩ cm2, as well as polarization superjunction transistors with a breakdown voltage exceeding 3.4 kV. The devices exhibit a near-ideal dynamic ON-resistance degradation of less than 15% up to 3 kV, as well as repeatable, temperature-stable and avalanche-like breakdown. Polarization fields in III-nitride heterostructures can be used to form intrinsically charge-balanced superjunctions without intentional doping, allowing Schottky barrier diodes and transistors on gallium-nitride-on-silicon substrates to be created that exhibit high breakdown voltages.",
+      "sources": [],
+      "technical": {
+        "voltage": "原文未提供",
+        "power": "原文未提供",
+        "topology": "原文未提供",
+        "device": "原文未提供",
+        "switching_frequency": "原文未提供",
+        "efficiency": "原文未提供",
+        "power_density": "原文未提供",
+        "isolation": "原文未提供",
+        "control": "原文未提供",
+        "application": "原文未提供"
+      },
+      "industrialization": {
+        "stage": "未知",
+        "status": "原文未提供",
+        "target": "原文未提供"
+      },
+      "evidence": {
+        "confirmed_facts": [],
+        "source_claims": [],
+        "inferences": [],
+        "unknowns": []
+      }
+    },
+    {
+      "id": "260917-02",
+      "title": "From Grid to Load: Advanced Power Electronics for Next-Generation Data Centers - nature.com",
+      "category": [
+        "ai_dc"
+      ],
+      "primary_source": "nature.com",
+      "link": "https://www.nature.com/collections/dadbijgbbj",
+      "summary_raw": "From Grid to Load: Advanced Power Electronics for Next-Generation Data Centers nature.com",
+      "sources": [],
+      "technical": {
+        "voltage": "原文未提供",
+        "power": "原文未提供",
+        "topology": "原文未提供",
+        "device": "原文未提供",
+        "switching_frequency": "原文未提供",
+        "efficiency": "原文未提供",
+        "power_density": "原文未提供",
+        "isolation": "原文未提供",
+        "control": "原文未提供",
+        "application": "原文未提供"
+      },
+      "industrialization": {
+        "stage": "未知",
+        "status": "原文未提供",
+        "target": "原文未提供"
+      },
+      "evidence": {
+        "confirmed_facts": [],
+        "source_claims": [],
+        "inferences": [],
+        "unknowns": []
+      }
+    },
+    {
+      "id": "260917-03",
+      "title": "A megawatt ultra-wide bandgap semiconductor module for pulsed power electronics - nature.com",
+      "category": [],
+      "primary_source": "nature.com",
+      "link": "https://www.nature.com/articles/s41467-026-71274-6",
+      "summary_raw": "Ultra-wide bandgap semiconductors exhibit advantageous electronic properties that make them promising for high-voltage, high-power electronics applications. Building on over a decade of progress in material growth and device fabrication, discrete ultra-wide bandgap devices with power-switching capacities up to the kilowatt level have been recently demonstrated. However, a packaged, multi-die ultra-wide bandgap power module – essential for further power scaling toward industrial, biomedical, grid, and aerospace applications – has yet to be realized. Here, we present a flip-chip packaged gallium oxide power module capable of 1000 A, 1000 V pulsed power switching with fast speed and minimal reverse recovery, advancing the power capacity of ultra-wide bandgap electronics by over two orders of magnitude. To address challenges posed by high electric fields and transient power surges, we employ a high-permittivity interface design enabling device-package electrothermal co-optimization. This optimization maximizes the module’s transient thermal performance and enables full exploitation of the high volumetric heat capacity of gallium oxide—a largely untapped advantage in prior device development—alongside its high-temperature stability. The optimized ultra-wide bandgap module achieves over 1.8 MW/cm2 pulsed power capacity density, outperforming silicon and wide-bandgap semiconductor counterparts and suggesting the promise of ultra-wide bandgap electronics in next-generation high-power systems. Achieving high power scaling in ultrawide bandgap electronics remains challenging. Here, the authors present a Ga₂O₃ module using a high permittivity interface that enables fast megawatt pulsed switching with improved thermal performance.",
+      "sources": [],
+      "technical": {
+        "voltage": "原文未提供",
+        "power": "原文未提供",
+        "topology": "原文未提供",
+        "device": "原文未提供",
+        "switching_frequency": "原文未提供",
+        "efficiency": "原文未提供",
+        "power_density": "原文未提供",
+        "isolation": "原文未提供",
+        "control": "原文未提供",
+        "application": "原文未提供"
+      },
+      "industrialization": {
+        "stage": "未知",
+        "status": "原文未提供",
+        "target": "原文未提供"
+      },
+      "evidence": {
+        "confirmed_facts": [],
+        "source_claims": [],
+        "inferences": [],
+        "unknowns": []
+      }
+    },
+    {
+      "id": "260917-04",
+      "title": "Atomically confined insertion for 2D strain and polarization engineered GaN electronics - nature.com",
+      "category": [
+        "gan"
+      ],
+      "primary_source": "nature.com",
+      "link": "https://www.nature.com/articles/s41467-026-74233-3",
+      "summary_raw": "Gallium nitride semiconductors are essential for advanced electronics, but realizing their potential requires robust normally-off devices. The P-GaN gate high-electron-mobility transistor is the dominant architecture, yet its threshold voltage is restricted to less than 2 volts by the low activation efficiency of magnesium acceptors. Here, we demonstrate atomically confined insertion to overcome this bottleneck. This technique creates self-terminating, two-dimensional magnesium layers within a complex heterostructure, inducing localized strain and polarity inversion. The resulting atomic-scale polarization fields increase the average effective hole concentration several-fold. When integrated into a P-GaN gate high-electron-mobility transistor, atomically confined insertion boosts the threshold voltage from 1.5 to 4.3 volts while mitigating the degradation in transconductance and output current typical of conventional methods. Furthermore, this approach substantially suppresses the current collapse effect via an efficient vertical hole injection mechanism. This work establishes atomic-scale field engineering as a viable axis for performance control and optimization in semiconductor devices. P-type doping limits GaN power device performance. Using atomically confined insertion, the authors create 2D Mg layers that increase hole concentration, enabling high-threshold transistors and reducing the transconductance and saturation current losses seen in conventional approaches.",
+      "sources": [],
+      "technical": {
+        "voltage": "原文未提供",
+        "power": "原文未提供",
+        "topology": "原文未提供",
+        "device": "原文未提供",
+        "switching_frequency": "原文未提供",
+        "efficiency": "原文未提供",
+        "power_density": "原文未提供",
+        "isolation": "原文未提供",
+        "control": "原文未提供",
+        "application": "原文未提供"
+      },
+      "industrialization": {
+        "stage": "未知",
+        "status": "原文未提供",
+        "target": "原文未提供"
+      },
+      "evidence": {
+        "confirmed_facts": [],
+        "source_claims": [],
+        "inferences": [],
+        "unknowns": []
+      }
+    },
+    {
+      "id": "260917-05",
       "title": "Renesas GaN: D-Mode Technology & Design Benefits - Renesas",
       "category": [
         "gan"
@@ -39,7 +173,7 @@
       }
     },
     {
-      "id": "260917-02",
+      "id": "260917-06",
       "title": "Sungrow launches 3 MW solid-state transformer - pv magazine Global",
       "category": [
         "800v",
@@ -74,7 +208,7 @@
       }
     },
     {
-      "id": "260917-03",
+      "id": "260917-07",
       "title": "Enphase announces distributed solid-state transformer for AI data centers, targets 2028 for volume deliveries - pv magazine USA",
       "category": [
         "ai_dc",
@@ -90,18 +224,18 @@
           "link": "https://www.hpcwire.com/aiwire/2026/09/14/enphase-energy-to-showcase-iq-solid-state-transformer-at-ai-infra-summit-2026/"
         },
         {
-          "source": "finance.yahoo.com",
-          "title": "Enphase Energy to Showcase IQ Solid-State Transformer at AI Infra Summit 2026 - finance.yahoo.com",
+          "source": "Yahoo Finance",
+          "title": "Enphase Energy to Showcase IQ Solid-State Transformer at AI Infra Summit 2026 - Yahoo Finance",
           "link": "https://finance.yahoo.com/energy/articles/enphase-energy-showcase-iq-solid-120000961.html"
         },
         {
-          "source": "finance.yahoo.com",
-          "title": "Enphase Advances IQ Solid-State Transformer Development for AI Data Centers with Power Modules Now Being Built in Texas - finance.yahoo.com",
+          "source": "Yahoo Finance",
+          "title": "Enphase Advances IQ Solid-State Transformer Development for AI Data Centers with Power Modules Now Being Built in Texas - Yahoo Finance",
           "link": "https://finance.yahoo.com/energy/articles/enphase-advances-iq-solid-state-120000285.html"
         },
         {
-          "source": "finance.yahoo.com",
-          "title": "Enphase Energy Announces Development of IQ Solid-State Transformer for AI Data Centers - finance.yahoo.com",
+          "source": "Yahoo Finance",
+          "title": "Enphase Energy Announces Development of IQ Solid-State Transformer for AI Data Centers - Yahoo Finance",
           "link": "https://finance.yahoo.com/sectors/energy/articles/enphase-energy-announces-development-iq-200200840.html"
         },
         {
@@ -145,7 +279,7 @@
       }
     },
     {
-      "id": "260917-04",
+      "id": "260917-08",
       "title": "Data center power shifts favor BESS, solid-state transformers - pv magazine USA",
       "category": [
         "ai_dc",
@@ -180,7 +314,7 @@
       }
     },
     {
-      "id": "260917-05",
+      "id": "260917-09",
       "title": "Is Power Electronics Outgrowing the Shunt Resistor? - Electronic Design",
       "category": [
         "gan",
@@ -221,7 +355,7 @@
       }
     },
     {
-      "id": "260917-06",
+      "id": "260917-10",
       "title": "Scalable GaN-Based IQ Solid-State Transformer Architecture Eyes AI Data Centers - Electronic Design",
       "category": [
         "ai_dc",
@@ -257,7 +391,7 @@
       }
     },
     {
-      "id": "260917-07",
+      "id": "260917-11",
       "title": "Novel Solid-State Transformer Supports 800-V DC Power in AI Data Centers - Electronic Design",
       "category": [
         "ai_dc",
@@ -293,7 +427,7 @@
       }
     },
     {
-      "id": "260917-08",
+      "id": "260917-12",
       "title": "World’s first 22.9kV solid-state transformer developed to electrify US data centers - Interesting Engineering",
       "category": [
         "ai_dc",
@@ -328,7 +462,7 @@
       }
     },
     {
-      "id": "260917-09",
+      "id": "260917-13",
       "title": "Solid-State Transformers Power Next-Gen AI Data Centers - Data Center Knowledge",
       "category": [
         "800v",
@@ -364,7 +498,7 @@
       }
     },
     {
-      "id": "260917-10",
+      "id": "260917-14",
       "title": "TMEIC Opens New Power Electronics Flagship Manufacturing Facility in Waller County, Texas - PR Newswire",
       "category": [],
       "primary_source": "PR Newswire",
@@ -396,7 +530,7 @@
       }
     },
     {
-      "id": "260917-11",
+      "id": "260917-15",
       "title": "Solid-state Transformer Market worth $1.52 billion by 2035 - Exclusive Report by MarketsandMarkets™ - PR Newswire",
       "category": [
         "sst"
@@ -404,167 +538,6 @@
       "primary_source": "PR Newswire",
       "link": "https://www.prnewswire.com/news-releases/solid-state-transformer-market-worth-1-52-billion-by-2035---exclusive-report-by-marketsandmarkets-302728453.html",
       "summary_raw": "/PRNewswire/ -- According to MarketsandMarkets™, the solid-state transformer market is projected to reach USD 1.52 billion by 2035 from USD 0.28 billion in...",
-      "sources": [],
-      "technical": {
-        "voltage": "原文未提供",
-        "power": "原文未提供",
-        "topology": "原文未提供",
-        "device": "原文未提供",
-        "switching_frequency": "原文未提供",
-        "efficiency": "原文未提供",
-        "power_density": "原文未提供",
-        "isolation": "原文未提供",
-        "control": "原文未提供",
-        "application": "原文未提供"
-      },
-      "industrialization": {
-        "stage": "未知",
-        "status": "原文未提供",
-        "target": "原文未提供"
-      },
-      "evidence": {
-        "confirmed_facts": [],
-        "source_claims": [],
-        "inferences": [],
-        "unknowns": []
-      }
-    },
-    {
-      "id": "260917-12",
-      "title": "RIR Power Electronics Installs SiC Epitaxial Wafer Manufacturing Reactors in Odisha - Machine Maker",
-      "category": [
-        "sic"
-      ],
-      "primary_source": "Machine Maker",
-      "link": "https://themachinemaker.com/news/rir-power-electronics-installs-sic-epitaxial-wafer-manufacturing-reactors-in-odisha/",
-      "summary_raw": "RIR Power Electronics surged 10.55% to Rs 199.10 after the company announced the completion of installation of silicon carbide (SiC) epitaxial wafer manufacturing reactors at its semiconductor facility in Bhubaneswar, Odisha.",
-      "sources": [
-        {
-          "source": "Business Standard",
-          "title": "RIR Power Electronics soars on SiC semiconductor facility progress in Odisha - Business Standard",
-          "link": "https://www.business-standard.com/markets/capital-market-news/rir-power-electronics-soars-on-sic-semiconductor-facility-progress-in-odisha-126091700434_1.html"
-        },
-        {
-          "source": "Investment Guru India",
-          "title": "RIR Power Electronics zooms on installing SiC epitaxial wafer manufacturing reactors in Odisha facility - Investment Guru India",
-          "link": "https://investmentguruindia.com/newsdetail/rir-power-electronics-zooms-on-installing-sic-epitaxial-wafer-manufacturing-reactors-in-odisha-facility588266"
-        },
-        {
-          "source": "businessworld.in",
-          "title": "RIR Power Electronics Installs SiC Wafer Reactors In Odisha - businessworld.in",
-          "link": "https://www.businessworld.in/article/rir-power-electronics-installs-sic-wafer-reactors-in-odisha-624104"
-        },
-        {
-          "source": "scanx.trade",
-          "title": "RIR Power Electronics completes SiC reactor installation in Odisha - scanx.trade",
-          "link": "https://scanx.trade/stock-market-news/companies/rir-power-electronics-completes-sic-reactor-installation-odisha/51115329"
-        },
-        {
-          "source": "EquityBulls",
-          "title": "RIR Power Electronics Completes Installation of State-of-the-Art SiC Epitaxial Wafer Manufacturing Reactors at Bhubaneswar, Odisha Facility - EquityBulls",
-          "link": "https://www.equitybulls.com/category.php?id=375275"
-        }
-      ],
-      "technical": {
-        "voltage": "原文未提供",
-        "power": "原文未提供",
-        "topology": "原文未提供",
-        "device": "原文未提供",
-        "switching_frequency": "原文未提供",
-        "efficiency": "原文未提供",
-        "power_density": "原文未提供",
-        "isolation": "原文未提供",
-        "control": "原文未提供",
-        "application": "原文未提供"
-      },
-      "industrialization": {
-        "stage": "未知",
-        "status": "原文未提供",
-        "target": "原文未提供"
-      },
-      "evidence": {
-        "confirmed_facts": [],
-        "source_claims": [],
-        "inferences": [],
-        "unknowns": []
-      }
-    },
-    {
-      "id": "260917-13",
-      "title": "Intrinsic polarization superjunctions in III-nitride heterostructures for efficient power electronics - Nature",
-      "category": [
-        "sic"
-      ],
-      "primary_source": "Nature",
-      "link": "https://www.nature.com/articles/s41928-026-01691-4",
-      "summary_raw": "III-nitride semiconductors combine a wide bandgap with low sheet resistance and, thus, can be used for efficient power electronics. Their lateral architecture also enables monolithic integration on cost-effective silicon. However, electric-field crowding, as well as surface and buffer trapping, limit the breakdown voltage, degrade dynamic performance and reduce reliability. Here we report intrinsic polarization superjunctions in III-nitride heterostructures for efficient power electronics. We use the spontaneous and piezoelectric polarization fields to induce matched mobile electrons in a two-dimensional electron gas and mobile holes in a two-dimensional hole gas, forming an intrinsically charge-balanced superjunction without intentional doping. With an ohmic contact to the two-dimensional hole gas, both carrier types can be dynamically depleted during switching, which preserves drift-region charge neutrality, producing a nearly uniform electric field and increasing the breakdown voltage under operating conditions. We use the approach to create gallium-nitride-on-silicon polarization superjunction Schottky barrier diodes with a breakdown voltage exceeding 3.9 kV and a specific ON resistance as low as 4.7 mΩ cm2, as well as polarization superjunction transistors with a breakdown voltage exceeding 3.4 kV. The devices exhibit a near-ideal dynamic ON-resistance degradation of less than 15% up to 3 kV, as well as repeatable, temperature-stable and avalanche-like breakdown. Polarization fields in III-nitride heterostructures can be used to form intrinsically charge-balanced superjunctions without intentional doping, allowing Schottky barrier diodes and transistors on gallium-nitride-on-silicon substrates to be created that exhibit high breakdown voltages.",
-      "sources": [],
-      "technical": {
-        "voltage": "原文未提供",
-        "power": "原文未提供",
-        "topology": "原文未提供",
-        "device": "原文未提供",
-        "switching_frequency": "原文未提供",
-        "efficiency": "原文未提供",
-        "power_density": "原文未提供",
-        "isolation": "原文未提供",
-        "control": "原文未提供",
-        "application": "原文未提供"
-      },
-      "industrialization": {
-        "stage": "未知",
-        "status": "原文未提供",
-        "target": "原文未提供"
-      },
-      "evidence": {
-        "confirmed_facts": [],
-        "source_claims": [],
-        "inferences": [],
-        "unknowns": []
-      }
-    },
-    {
-      "id": "260917-14",
-      "title": "DAHWS Introduces Its Power Electronics Portfolio for Industrial Applications - EIN Presswire",
-      "category": [
-        "gan",
-        "sic"
-      ],
-      "primary_source": "EIN Presswire",
-      "link": "https://www.einpresswire.com/article/931313919/dahws-introduces-its-power-electronics-portfolio-for-industrial-applications",
-      "summary_raw": "DAHWS introduces its portfolio of SiC/GaN power modules, film capacitors, and Ceramic-in-Board technologies for industrial power electronics applications.",
-      "sources": [],
-      "technical": {
-        "voltage": "原文未提供",
-        "power": "原文未提供",
-        "topology": "原文未提供",
-        "device": "原文未提供",
-        "switching_frequency": "原文未提供",
-        "efficiency": "原文未提供",
-        "power_density": "原文未提供",
-        "isolation": "原文未提供",
-        "control": "原文未提供",
-        "application": "原文未提供"
-      },
-      "industrialization": {
-        "stage": "未知",
-        "status": "原文未提供",
-        "target": "原文未提供"
-      },
-      "evidence": {
-        "confirmed_facts": [],
-        "source_claims": [],
-        "inferences": [],
-        "unknowns": []
-      }
-    },
-    {
-      "id": "260917-15",
-      "title": "Ceramic Lead Frame Components Market To 2035: Electrification and Power Electronics Demand Drive Growth - News and Statistics - IndexBox",
-      "category": [],
-      "primary_source": "IndexBox",
-      "link": "https://www.indexbox.io/blog/ceramic-lead-frame-components-market-forecast-to-2035-electrification-and-power-electronics-demand-drive-high-single-digit-growth/",
-      "summary_raw": "The Ceramic Lead Frame Components market is set to expand at a 7–10% CAGR through 2035, driven by power semiconductor modules for electric vehicles and renewable energy inverters.",
       "sources": [],
       "technical": {
         "voltage": "原文未提供",
