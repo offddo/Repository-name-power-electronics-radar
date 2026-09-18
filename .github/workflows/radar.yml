@@ -65,14 +65,46 @@ jobs:
           merged = []
           seen = set()
 
-          def key(e):
-              return str(e.get("link") or "").split("#", 1)[0].rstrip("/") or str(e.get("title") or "").strip().lower()
+          def normalize_url(url):
+              import re
+              from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
+              u = str(url or "").strip()
+              if not u:
+                  return ""
+              try:
+                  p = urlsplit(u)
+                  # Remove tracking/query noise so the same original article is one event.
+                  ignored = {"utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "gclid", "fbclid", "ocid"}
+                  q = [(k, v) for k, v in parse_qsl(p.query, keep_blank_values=True) if k.lower() not in ignored]
+                  host = p.netloc.lower().removeprefix("www.")
+                  path = re.sub(r"/+$", "", p.path)
+                  return urlunsplit((p.scheme.lower(), host, path, urlencode(q), ""))
+              except Exception:
+                  return u.split("#", 1)[0].rstrip("/")
+
+          def normalize_title(title):
+              import re, html
+              t = html.unescape(str(title or "")).lower()
+              # RSS feeds frequently append the publisher name to an otherwise identical title.
+              t = re.sub(r"\s*[|–—-]\s*(?:reuters|pv magazine|electronic design|simplywall\.st|power electronics news|ee times|semiconductor engineering)\s*$", "", t, flags=re.I)
+              t = re.sub(r"[^a-z0-9\\u4e00-\\u9fff]+", " ", t)
+              return re.sub(r"\\s+", " ", t).strip()
+
+          def keys(e):
+              url = normalize_url(e.get("link"))
+              title = normalize_title(e.get("title"))
+              out = []
+              if url:
+                  out.append("url:" + url)
+              if title:
+                  out.append("title:" + title)
+              return out
 
           for e in current_events + previous_events:
-              k = key(e)
-              if not k or k in seen:
+              event_keys = keys(e)
+              if not event_keys or any(k in seen for k in event_keys):
                   continue
-              seen.add(k)
+              seen.update(event_keys)
               merged.append(e)
 
           merged.sort(key=lambda e: (str(e.get("published_date") or e.get("published_at") or e.get("report_date") or ""), str(e.get("id") or "")), reverse=True)
