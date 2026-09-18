@@ -78,13 +78,28 @@ def title_key(title):
     return re.sub(r"\s+", " ", t).strip()
 
 def same_event(a, b):
+    # Papers: DOI/URL or exact normalized title only. Do not merge distinct papers
+    # merely because they share technical keywords.
+    if a.get("paper") or b.get("paper"):
+        ua, ub = canonical_url(a.get("link")), canonical_url(b.get("link"))
+        if ua and ub and ua == ub:
+            return True
+        ta, tb = title_key(a.get("title","")), title_key(b.get("title",""))
+        return bool(ta and tb and ta == tb)
+
     ua, ub = canonical_url(a.get("link")), canonical_url(b.get("link"))
     if ua and ub and ua == ub: return True
     ta, tb = title_key(a.get("title","")), title_key(b.get("title",""))
     if not ta or not tb: return False
-    if ta == tb or SequenceMatcher(None, ta, tb).ratio() >= 0.84: return True
+    if ta == tb or SequenceMatcher(None, ta, tb).ratio() >= 0.88: return True
+
+    # Same-story detection for news: require strong title overlap and a close
+    # publication date, reducing accidental merges of separate technical reports.
     sa, sb = set(ta.split()), set(tb.split())
-    return len(sa) >= 4 and len(sb) >= 4 and len(sa & sb) / max(1, min(len(sa), len(sb))) >= 0.68
+    overlap = len(sa & sb) / max(1, min(len(sa), len(sb)))
+    da, db = (a.get("published_at") or "")[:10], (b.get("published_at") or "")[:10]
+    close_date = bool(da and db and da == db)
+    return len(sa) >= 5 and len(sb) >= 5 and overlap >= 0.78 and close_date
 
 def add_candidate(candidates, seen, item, source_name, source_type):
     title = clean(item.get("title", "")); summary = clean(item.get("summary", ""))
