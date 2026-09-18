@@ -1,6 +1,6 @@
 import json
 import re
-from datetime import date, datetime
+from datetime import date, datetime, timezone, timedelta
 from pathlib import Path
 
 PATH = Path("data.json")
@@ -43,10 +43,17 @@ def relevance(e):
     return score, {"focus_match": round(core, 1), "technical_density": round(density, 1), "engineering_usability": engineering, "matched_topics": sorted(matched)}
 
 def event_date(e, report_date):
-    raw = str(e.get("published_at") or e.get("report_date") or report_date)[:10]
+    raw = str(e.get("published_at") or e.get("report_date") or report_date)
     try:
-        datetime.strptime(raw, "%Y-%m-%d")
-        return raw
+        # All UI daily buckets use Beijing time (UTC+8), regardless of the
+        # source timestamp's original timezone.
+        if "T" in raw:
+            dt = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            return dt.astimezone(timezone(timedelta(hours=8))).date().isoformat()
+        datetime.strptime(raw[:10], "%Y-%m-%d")
+        return raw[:10]
     except Exception:
         return report_date
 
@@ -107,6 +114,10 @@ for e in sorted(events, key=lambda x: (x.get("radar_score", 0), x.get("published
 # A more useful daily brief: explain what changed today, not just count records.
 today_events = [e for e in events if e.get("published_date") == report_date]
 today_events.sort(key=lambda x: x.get("radar_score", 0), reverse=True)
+today_counts = {}
+for e in today_events:
+    t = e.get("source_type", "其他")
+    today_counts[t] = today_counts.get(t, 0) + 1
 summary_parts = [f"{report_date} 收录 {len(today_events)} 条当天发布/更新的电力电子技术事件。"]
 if today_events:
     top = today_events[:3]
@@ -125,7 +136,7 @@ data["event_count"] = len(events)
 data["daily_summary"] = "".join(summary_parts)
 data["daily_highlights"] = highlights
 data["daily_focus"] = [{"topic": k, "count": v} for k, v in sorted(focus_counts.items(), key=lambda x: x[1], reverse=True)]
-data["daily_stats"] = {"event_count": len(events), "today_count": len(today_events), "source_types": counts, "dates": dates, "scored_events": len(events)}
+data["daily_stats"] = {"event_count": len(events), "today_count": len(today_events), "today_source_types": today_counts, "source_types": counts, "dates": dates, "scored_events": len(events)}
 data["scoring_note"] = "热度为可解释的站内信号分数（发布时间新鲜度、多源出现、来源权威度）；相关度为与预设电力电子技术重点方向及技术信息密度的匹配分数，不代表外部平台热搜排名。"
 PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 print(f"Postprocessed {len(events)} events; date index, daily brief and scores ready.")
