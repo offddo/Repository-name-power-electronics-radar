@@ -32,7 +32,10 @@ def fetch_source(url, max_chars=9000):
     try:
         r = requests.get(url, timeout=10, allow_redirects=True, headers={"User-Agent": UA, "Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"})
         r.raise_for_status()
-        if "text/html" not in r.headers.get("content-type", ""):
+        content_type = r.headers.get("content-type", "").lower()
+        # Never treat PDFs/binary documents as article text. PDF bytes can look like
+        # mojibake when decoded as UTF-8 and must not enter AI grounding/history.
+        if "text/html" not in content_type or "application/pdf" in content_type or r.content[:5] == b"%PDF-":
             return ""
         parser = TextParser()
         parser.feed(r.text[:3000000])
