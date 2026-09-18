@@ -45,11 +45,18 @@ function render(){
   const label={today:'今天',yesterday:'昨天','7d':'近7天',all:'全部'}[timeMode];
   document.getElementById('meta').innerHTML=\`${esc(DATA.report_date||'')}<br>${ev.length} / ${esc(DATA.event_count||0)} EVENTS\`;
   document.getElementById('briefDate').textContent=label+' · '+(timeMode==='today'?DATA.report_date:(timeMode==='yesterday'?(()=>{let d=new Date(DATA.report_date+'T00:00:00+08:00');d.setDate(d.getDate()-1);return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')})():''));
-  const briefTop=[...rangeEvents].sort((a,b)=>(b.radar_score||0)-(a.radar_score||0)).slice(0,5);
-  document.getElementById('daily').textContent=(timeMode==='today'||timeMode==='yesterday')?(label+'共 '+rangeEvents.length+' 条。重点包括：'+(briefTop.length?briefTop.slice(0,3).map(e=>e.title).join('；')+'。':'当前没有符合日期的已验证事件。')):(label+'共 '+rangeEvents.length+' 条已验证事件。');
-  document.getElementById('stats').innerHTML='<span class="stat"><b>'+ev.length+'</b>搜索结果</span><span class="stat"><b>'+rangeEvents.length+'</b>'+label+'事件</span><span class="stat"><b>'+(counts['国内论文']||0)+'</b>国内论文</span><span class="stat"><b>'+(counts['国内资讯']||0)+'</b>国内资讯</span><span class="stat"><b>'+(counts['国际论文']||0)+'</b>国际论文</span><span class="stat"><b>'+(counts['国际资讯']||0)+'</b>国际资讯</span>';
+  const briefTop=[...rangeEvents].sort((a,b)=>(b.radar_score||0)-(a.radar_score||0)).slice(0,3);
+  const topics={}; rangeEvents.forEach(e=>(e.relevance_factors?.matched_topics||[]).forEach(t=>topics[t]=(topics[t]||0)+1));
+  const sourceParts=['国内论文','国内资讯','国际论文','国际资讯'].filter(t=>counts[t]).map(t=>t+' '+counts[t]+'条');
+  let brief=label+'技术简报：共 '+rangeEvents.length+' 条已验证事件。';
+  if(sourceParts.length) brief+=' 来源构成：'+sourceParts.join('、')+'。';
+  const topicParts=Object.entries(topics).sort((a,b)=>b[1]-a[1]).slice(0,5).map(x=>x[0]+'（'+x[1]+'）');
+  if(topicParts.length) brief+=' 技术方向：'+topicParts.join('、')+'。';
+  if(briefTop.length) brief+=' 重点：'+briefTop.map(e=>e.title).join('；')+'。';
+  document.getElementById('daily').textContent=brief;
+  document.getElementById('stats').innerHTML='<span class="stat"><b>'+ev.length+'</b>搜索结果</span><span class="stat"><b>'+rangeEvents.length+'</b>'+label+'事件</span><span class="stat"><b>'+(counts['国内论文']||0)+'</b>国内论文</span><span class="stat"><b>'+(counts['国内资讯']||0)+'</span><span class="stat"><b>'+(counts['国际论文']||0)+'</b>国际论文</span><span class="stat"><b>'+(counts['国际资讯']||0)+'</b>国际资讯</span>';
   document.getElementById('resultHint').textContent=query?'搜索“'+query+'” · '+ev.length+' 条':'当前时间范围内按 Radar Score';
-  fill('highlights',sorted.slice(0,8));fill('papers',ev.filter(e=>typeOf(e)==='国内论文'));fill('domestic',ev.filter(e=>typeOf(e)==='国内资讯'));fill('international',ev.filter(e=>typeOf(e)==='国际资讯'||typeOf(e)==='国际论文'));fill('all',sorted);document.getElementById('allCount').textContent=ev.length+' 条';
+  fill('highlights',rangeEvents.sort((a,b)=>(b.radar_score||0)-(a.radar_score||0)).slice(0,8));fill('papers',ev.filter(e=>typeOf(e)==='国内论文'));fill('domestic',ev.filter(e=>typeOf(e)==='国内资讯'));fill('international',ev.filter(e=>typeOf(e)==='国际资讯'||typeOf(e)==='国际论文'));fill('all',sorted);document.getElementById('allCount').textContent=ev.length+' 条';
 }
 fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{DATA=d;const q=document.getElementById('q');q.oninput=e=>{query=e.target.value.trim();render()};document.getElementById('clearSearch').onclick=()=>{q.value='';query='';q.focus();render()};renderNav();renderTime();render()}).catch(()=>{document.getElementById('daily').textContent='数据加载失败，请刷新页面。'})
 </script>
