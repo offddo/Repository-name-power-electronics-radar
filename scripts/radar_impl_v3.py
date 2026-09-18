@@ -69,21 +69,37 @@ def collect():
 
  papers=crossref_papers(["电力电子技术","电力自动化设备","电力系统自动化","电工技术学报","中国电机工程学报"],["构网型","SiC","GaN","电力电子","变流器","储能变流器","DAB","CLLC","LLC","固态变压器"],since="2026-01-01",rows=8)
  for p in papers[:24]:
-  k=(p.get("link") or p["title"]).lower()
-  if k not in seen:seen.add(k);cand.append(p)
- # Fetch original pages concurrently. If the original page cannot be fetched, the item is discarded.
- grounded=[]
+  # Use the Crossref abstract directly for domestic papers. Do not fetch DOI landing
+  # pages as article text: Chinese journal pages often introduce mojibake/navigation noise.
+  title_key=re.sub(r"[^a-z0-9\\u4e00-\\u9fff]+"," ",p.get("title","").lower()).strip()
+  doi_key=(p.get("link") or "").lower().rstrip("/")
+  k=doi_key or title_key
+  if k not in seen:
+   seen.add(k)
+   p["source_text"]=p.get("summary","")
+   cand.append(p)
+
+ # Fetch original pages for news only.
+ grounded=[c for c in cand if c.get("paper") and len(c.get("source_text",""))>=80]
+ news=[c for c in cand if not c.get("paper")]
  with ThreadPoolExecutor(max_workers=10) as ex:
-  jobs={ex.submit(fetch_source,c["link"],9000):c for c in cand[:90]}
+  jobs={ex.submit(fetch_source,c["link"],9000):c for c in news[:90]}
   for fut in as_completed(jobs):
    c=jobs[fut]
    try:t=fut.result()
    except Exception:t=""
-   if len(t)>=500:c["source_text"]=t; grounded.append(c)
+   if len(t)>=500:
+    c["source_text"]=t
+    grounded.append(c)
    else: print("Skipped without original source content:",c["title"])
  clusters=[]
  for a in sorted(grounded,key=lambda x:(x["score"],x["published_at"]),reverse=True):
-  cl=next((x for x in clusters if similar(a,x["primary"])),None)
+  cl=next((x for x in clusters if (
+   (a.get("paper") and x["primary"].get("paper") and
+    re.sub(r"[^a-z0-9\\u4e00-\\u9fff]+"," ",a["title"].lower()).strip() ==
+    re.sub(r"[^a-z0-9\\u4e00-\\u9fff]+"," ",x["primary"]["title"].lower()).strip())
+   or (not a.get("paper") and not x["primary"].get("paper") and similar(a,x["primary"]))
+ )),None)
   if cl:
    cl["sources"].append({k:a[k] for k in ["source","source_type","title","link","published_at"]})
    if len(a["source_text"])>len(cl["primary"]["source_text"]):cl["primary"]=a
@@ -121,6 +137,6 @@ def main():
  except Exception as exc:
   print("AI structured output failed:",repr(exc));result={"events":[],"directions":{},"observations":[],"quality_notes":"AI分析失败；未补充原文之外的事实。"};events=[normalize({},e) for e in raw]
  for e in events:e.pop("source_text",None)
- with open("data.json","w",encoding="utf-8") as f:json.dump({"schema_version":"3.2","updated":now.isoformat(),"report_date":date,"event_count":len(events),"events":events,"directions":result.get("directions",{}),"observations":result.get("observations",[]),"quality_notes":result.get("quality_notes","")},f,ensure_ascii=False,indent=2)
+ with open("data.json","w",encoding="utf-8") as f:json.dump({"schema_version":"3.3","updated":now.isoformat(),"report_date":date,"event_count":len(events),"events":events,"directions":result.get("directions",{}),"observations":result.get("observations",[]),"quality_notes":result.get("quality_notes","")},f,ensure_ascii=False,indent=2)
  print("Validated",len(events),"strictly grounded events")
 if __name__=="__main__":main()
