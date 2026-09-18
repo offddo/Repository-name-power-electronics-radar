@@ -109,9 +109,21 @@ def collect_events():
         if key not in seen: seen.add(key); candidates.append(p)
     grounded = []
     for c in candidates:
-        source_text = c.get("summary", "") if c.get("paper") else fetch_source(c.get("link", ""), max_chars=6000)
-        if len(source_text) < 300: continue
-        c["source_text"] = source_text; grounded.append(c)
+        if c.get("paper"):
+            # Domestic papers: Crossref abstract is the only grounding source.
+            # Never fetch DOI landing pages as article text; Chinese journal pages often
+            # contain navigation/encoding noise that gets mistaken for paper content.
+            source_text = clean(c.get("summary", ""))
+            if len(source_text) < 80:
+                continue
+        else:
+            source_text = fetch_source(c.get("link", ""), max_chars=6000)
+            if len(source_text) < 300:
+                continue
+        if any(mark in source_text for mark in ["�", "\x00", "PK\\x03\\x04"]) or source_text.count("Ã") >= 3:
+            continue
+        c["source_text"] = source_text
+        grounded.append(c)
     clusters = []
     for article in sorted(grounded, key=lambda x: (x["score"], x["published_at"]), reverse=True):
         cluster = next((c for c in clusters if same_event(article, c["primary"])), None)
@@ -177,7 +189,7 @@ def main():
             if not events: raise ValueError("AI returned no matching events")
         except Exception as exc:
             print("AI structured output failed:", repr(exc)); ai = {"events": [], "directions": {}, "observations": [], "quality_notes": "本次AI分析未完成，以下仅保留已核验原文内容。"}; events = [fallback_event(x) for x in raw_events]
-    data = {"schema_version": "3.1", "updated": now.isoformat(), "report_date": report_date, "event_count": len(events), "events": events, "directions": ai.get("directions", {}), "observations": ai.get("observations", []), "quality_notes": ai.get("quality_notes", "")}
+    data = {"schema_version": "3.4", "updated": now.isoformat(), "report_date": report_date, "event_count": len(events), "events": events, "directions": ai.get("directions", {}), "observations": ai.get("observations", []), "quality_notes": ai.get("quality_notes", "")}
     with open("data.json", "w", encoding="utf-8") as handle: json.dump(data, handle, ensure_ascii=False, indent=2)
     print("Validated", len(events), "grounded events")
 if __name__ == "__main__": main()
