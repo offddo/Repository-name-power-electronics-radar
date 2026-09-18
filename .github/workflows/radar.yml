@@ -87,8 +87,8 @@ jobs:
               t = html.unescape(str(title or "")).lower()
               # RSS feeds frequently append the publisher name to an otherwise identical title.
               t = re.sub(r"\s*[|–—-]\s*(?:reuters|pv magazine|electronic design|simplywall\.st|power electronics news|ee times|semiconductor engineering)\s*$", "", t, flags=re.I)
-              t = re.sub(r"[^a-z0-9\\u4e00-\\u9fff]+", " ", t)
-              return re.sub(r"\\s+", " ", t).strip()
+              t = re.sub(r"[^a-z0-9\u4e00-\u9fff]+", " ", t)
+              return re.sub(r"\s+", " ", t).strip()
 
           from difflib import SequenceMatcher
 
