@@ -24,7 +24,7 @@
 <div class="footer">数据链路：RSS / 期刊与论文检索 → 原始来源解析 → 事件聚类 → DeepSeek 结构化分析 → 可解释评分 → GitHub Pages。日期以来源发布时间为准；无法解析发布时间的事件回退到报告日期。</div>
 </main></div>
 <script>
-let DATA=null,current='全部',query='',timeMode='7d';
+let DATA=null,current='全部',query='',timeMode='all';
 const navs=['全部','国内论文','国内资讯','国际论文','国际资讯'];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function typeOf(e){return e.source_type||'国际资讯'}
@@ -58,6 +58,6 @@ function render(){
   document.getElementById('resultHint').textContent=query?'搜索“'+query+'” · '+ev.length+' 条':'当前时间范围内按 Radar Score';
   fill('highlights',rangeEvents.sort((a,b)=>(b.radar_score||0)-(a.radar_score||0)).slice(0,8));fill('papers',ev.filter(e=>typeOf(e)==='国内论文'));fill('domestic',ev.filter(e=>typeOf(e)==='国内资讯'));fill('international',ev.filter(e=>typeOf(e)==='国际资讯'||typeOf(e)==='国际论文'));fill('all',sorted);document.getElementById('allCount').textContent=ev.length+' 条';
 }
-fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{DATA=d;const q=document.getElementById('q');q.oninput=e=>{query=e.target.value.trim();render()};document.getElementById('clearSearch').onclick=()=>{q.value='';query='';q.focus();render()};renderNav();renderTime();render()}).catch(()=>{document.getElementById('daily').textContent='数据加载失败，请刷新页面。'})
+fetch('./data.json?ts='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('data.json HTTP '+r.status);return r.json()}).then(d=>{DATA=d;const q=document.getElementById('q');q.oninput=e=>{query=e.target.value.trim();render()};document.getElementById('clearSearch').onclick=()=>{q.value='';query='';q.focus();render()};renderNav();renderTime();render()}).catch(err=>{console.error(err);document.getElementById('daily').textContent='数据加载失败：'+(err?.message||'无法读取 data.json')+'。请刷新页面。';document.getElementById('highlights').innerHTML='<div class="empty">数据文件未成功加载。</div>'})
 </script>
 </body></html>
