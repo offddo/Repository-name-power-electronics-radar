@@ -90,6 +90,8 @@ jobs:
               t = re.sub(r"[^a-z0-9\\u4e00-\\u9fff]+", " ", t)
               return re.sub(r"\\s+", " ", t).strip()
 
+          from difflib import SequenceMatcher
+
           def keys(e):
               url = normalize_url(e.get("link"))
               title = normalize_title(e.get("title"))
@@ -100,9 +102,21 @@ jobs:
                   out.append("title:" + title)
               return out
 
+          def duplicate_of(e):
+              ek = keys(e)
+              if any(k in seen for k in ek):
+                  return True
+              et = normalize_title(e.get("title"))
+              if et:
+                  for existing in merged:
+                      xt = normalize_title(existing.get("title"))
+                      if xt and SequenceMatcher(None, et, xt).ratio() >= 0.86:
+                          return True
+              return False
+
           for e in current_events + previous_events:
               event_keys = keys(e)
-              if not event_keys or any(k in seen for k in event_keys):
+              if not event_keys or duplicate_of(e):
                   continue
               seen.update(event_keys)
               merged.append(e)
