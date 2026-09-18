@@ -24,7 +24,12 @@ class TextParser(HTMLParser):
             self.parts.append(s)
 
 def clean_text(text):
-    return re.sub(r"\s+", " ", html.unescape(str(text or ""))).strip()
+    text = html.unescape(str(text or ""))
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = re.sub(r"\s+", " ", text)
+    # Crossref abstracts may contain JATS/XML entities or formatting tags.
+    # Normalize them before they enter the paper record/AI grounding.
+    return text.strip()
 
 def fetch_source(url, max_chars=9000):
     if not url or url.startswith("mailto:") or "news.google.com" in url:
@@ -63,6 +68,9 @@ def _make_paper(x, journal, keywords):
     if not title or not any(journal.lower() in c.lower() or c.lower() in journal.lower() for c in containers):
         return None
     abstract = clean_text(x.get("abstract", ""))
+    # Reject obvious mojibake/binary contamination instead of publishing it.
+    if any(mark in abstract for mark in ["�", "\x00", "PK\x03\x04"]) or abstract.count("Ã") > 3:
+        return None
     if not _paper_matches(title, abstract, keywords):
         return None
     parts = ((x.get("published") or x.get("published-print") or x.get("published-online") or {}).get("date-parts") or [[]])[0]
