@@ -75,6 +75,14 @@ data = json.loads(PATH.read_text(encoding="utf-8"))
 report_date = str(data.get("report_date") or date.today())[:10]
 events = data.get("events") or []
 
+# Remove legacy records whose "summary_raw" is actually PDF/binary bytes.
+# They are invalid evidence and must never be rendered as article content.
+def is_binary_pdf_event(e):
+    raw = str(e.get("summary_raw", "") or "")
+    return raw.startswith("%PDF-") or "endstream endobj" in raw[:2000]
+
+events = [e for e in events if not is_binary_pdf_event(e)]
+
 for e in events:
     e["source_type"] = source_type(e)
     e["published_date"] = event_date(e, report_date)
