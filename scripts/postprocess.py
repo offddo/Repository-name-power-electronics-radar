@@ -107,36 +107,67 @@ dates = {}
 for e in events:
     dates[e["published_date"]] = dates.get(e["published_date"], 0) + 1
 
-highlights = []
-for e in sorted(events, key=lambda x: (x.get("radar_score", 0), x.get("published_date", "")), reverse=True)[:8]:
-    highlights.append({"rank": e["radar_rank"], "title": e.get("title", ""), "source_type": e.get("source_type", ""), "source": e.get("primary_source", ""), "published_date": e.get("published_date", ""), "radar_score": e.get("radar_score", 0), "relevance_score": e.get("relevance_score", 0), "heat_score": e.get("heat_score", 0), "link": e.get("link", "")})
+def make_highlights(items, limit=8):
+    return [{"rank": e["radar_rank"], "title": e.get("title", ""), "source_type": e.get("source_type", ""), "source": e.get("primary_source", ""), "published_date": e.get("published_date", ""), "radar_score": e.get("radar_score", 0), "relevance_score": e.get("relevance_score", 0), "heat_score": e.get("heat_score", 0), "link": e.get("link", "")} for e in sorted(items, key=lambda x: (x.get("radar_score", 0), x.get("published_date", "")), reverse=True)[:limit]]
 
-# A more useful daily brief: explain what changed today, not just count records.
-today_events = [e for e in events if e.get("published_date") == report_date]
-today_events.sort(key=lambda x: x.get("radar_score", 0), reverse=True)
+# Daily buckets are based on the normalized Beijing publication date.
+today_events = sorted([e for e in events if e.get("published_date") == report_date], key=lambda x: x.get("radar_score", 0), reverse=True)
 today_counts = {}
 for e in today_events:
     t = e.get("source_type", "其他")
     today_counts[t] = today_counts.get(t, 0) + 1
-summary_parts = [f"{report_date} 收录 {len(today_events)} 条当天发布/更新的电力电子技术事件。"]
-if today_events:
-    top = today_events[:3]
-    summary_parts.append("今日值得先读：" + "；".join(e.get("title", "") for e in top) + "。")
-    topic_today = {}
-    for e in today_events:
-        for k in (e.get("relevance_factors") or {}).get("matched_topics", []): topic_today[k] = topic_today.get(k, 0) + 1
-    if topic_today:
-        summary_parts.append("今日主题分布以 " + "、".join(k for k, _ in sorted(topic_today.items(), key=lambda x:x[1], reverse=True)[:5]) + " 为主。")
-else:
-    summary_parts.append("当前 RSS/论文源没有足够的当天条目，因此保留最近条目供回溯，并在页面提供日期筛选。")
-summary_parts.append("历史数据按发布时间保留，可按今天、昨天、近7天和全部切换；热度只表示站内新鲜度、多源出现和来源权威度等信号。")
+
+def build_brief(items, label, start_date=None, end_date=None):
+    counts = {}
+    topics = {}
+    for e in items:
+        counts[e.get("source_type", "其他")] = counts.get(e.get("source_type", "其他"), 0) + 1
+        for k in (e.get("relevance_factors") or {}).get("matched_topics", []):
+            topics[k] = topics.get(k, 0) + 1
+    top = sorted(items, key=lambda x: x.get("radar_score", 0), reverse=True)[:3]
+    lines = [f"{label}共 {len(items)} 条已验证事件。"]
+    if counts:
+        order = ["国内论文", "国内资讯", "国际论文", "国际资讯"]
+        parts = [f"{x}{counts[x]}条" for x in order if x in counts]
+        lines.append("来源构成：" + "、".join(parts) + "。")
+    if topics:
+        lines.append("技术方向：" + "、".join(f"{k}（{v}）" for k, v in sorted(topics.items(), key=lambda x:x[1], reverse=True)[:5]) + "。")
+    if top:
+        lines.append("重点条目：" + "；".join(e.get("title", "") for e in top) + "。")
+        details = []
+        for e in top:
+            fact = (e.get("evidence") or {}).get("confirmed_facts") or []
+            detail = fact[0] if fact else (e.get("plain_summary") or "")
+            if detail:
+                details.append(f"{e.get('primary_source','来源')}：{detail}")
+        if details:
+            lines.append("技术观察：" + " ".join(details))
+    else:
+        lines.append("该时间范围暂无已验证事件。")
+    return "".join(lines)
+
+daily_highlights = make_highlights(today_events)
+daily_summary = build_brief(today_events, f"{report_date} 今日技术简报：")
+yesterday_date = (datetime.strptime(report_date, "%Y-%m-%d").date() - timedelta(days=1)).isoformat()
+yesterday_events = sorted([e for e in events if e.get("published_date") == yesterday_date], key=lambda x: x.get("radar_score", 0), reverse=True)
+seven_start = (datetime.strptime(report_date, "%Y-%m-%d").date() - timedelta(days=6)).isoformat()
+seven_events = [e for e in events if seven_start <= e.get("published_date", "") <= report_date]
 
 data["events"] = events
 data["event_count"] = len(events)
-data["daily_summary"] = "".join(summary_parts)
-data["daily_highlights"] = highlights
+data["daily_summary"] = daily_summary
+data["daily_highlights"] = daily_highlights
 data["daily_focus"] = [{"topic": k, "count": v} for k, v in sorted(focus_counts.items(), key=lambda x: x[1], reverse=True)]
-data["daily_stats"] = {"event_count": len(events), "today_count": len(today_events), "today_source_types": today_counts, "source_types": counts, "dates": dates, "scored_events": len(events)}
+data["daily_stats"] = {
+    "event_count": len(events),
+    "today_count": len(today_events),
+    "today_source_types": today_counts,
+    "yesterday_count": len(yesterday_events),
+    "seven_day_count": len(seven_events),
+    "source_types": counts,
+    "dates": dates,
+    "scored_events": len(events)
+}
 data["scoring_note"] = "热度为可解释的站内信号分数（发布时间新鲜度、多源出现、来源权威度）；相关度为与预设电力电子技术重点方向及技术信息密度的匹配分数，不代表外部平台热搜排名。"
 PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 print(f"Postprocessed {len(events)} events; date index, daily brief and scores ready.")
