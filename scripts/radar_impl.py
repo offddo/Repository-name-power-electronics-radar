@@ -28,8 +28,8 @@ RSS_SOURCES = [
 KEYWORDS = ["sst", "solid-state transformer", "solid state transformer", "sic", "silicon carbide", "gan", "gallium nitride", "grid-forming", "grid forming", "gfm", "pcs", "800v", "800 v", "ai data center", "ai datacenter", "power electronics", "power semiconductor", "wide-bandgap", "dual active bridge", "dab", "cllc", "llc", "magnetics", "构网型", "变流器", "电力电子", "碳化硅", "氮化镓"]
 TOPICS = {"sst": ["sst", "solid-state transformer", "solid state transformer"], "sic": ["sic", "silicon carbide", "碳化硅"], "gan": ["gan", "gallium nitride", "氮化镓"], "gfm": ["grid-forming", "grid forming", "gfm", "构网型"], "pcs": ["pcs", "power conversion system", "变流器", "储能变流器"], "ai_dc": ["ai data center", "ai datacenter", "data center", "datacenter", "数据中心"], "dab": ["dab", "dual active bridge"], "cllc": ["cllc"], "llc": ["llc"], "800v": ["800v", "800 v", "800-volt", "800伏"], "magnetics": ["magnetics", "magnetic integration", "high-frequency magnetics", "磁性元件"]}
 SOURCE_PRIORITY = {"ieee": 98, "nature.com": 98, "infineon": 96, "texas instruments": 96, "ti.com": 96, "renesas": 95, "sungrow": 95, "enphase": 95, "tmeic": 95, "pv magazine": 90, "electronic design": 82, "hpcwire": 78}
-MAX_CANDIDATES = 90
-MAX_EVENTS = 40
+MAX_CANDIDATES = 140
+MAX_EVENTS = 60
 
 def clean(text):
     text = html.unescape(str(text or "")); text = re.sub(r"<script.*?</script>|<style.*?</style>", " ", text, flags=re.I | re.S); text = re.sub(r"<[^>]+>", " ", text); return re.sub(r"\s+", " ", text).strip()
@@ -58,10 +58,34 @@ def resolve_google(url):
         if r.url and "news.google.com" not in r.url: resolved = r.url
     except Exception: pass
     return resolved
+def canonical_url(url):
+    if not url: return ""
+    try:
+        from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
+        p = urlsplit(str(url).strip())
+        ignored = {"utm_source","utm_medium","utm_campaign","utm_term","utm_content","gclid","fbclid","ocid"}
+        q = [(k,v) for k,v in parse_qsl(p.query, keep_blank_values=True) if k.lower() not in ignored]
+        host = p.netloc.lower().removeprefix("www.")
+        path = re.sub(r"/+$", "", p.path)
+        return urlunsplit((p.scheme.lower(), host, path, urlencode(q), ""))
+    except Exception:
+        return str(url).split("#",1)[0].rstrip("/")
+
+def title_key(title):
+    t = clean(title).lower()
+    t = re.sub(r"\s*[|–—-]\s*(?:reuters|pv magazine|electronic design|simplywall\.st|power electronics news|ee times|semiconductor engineering|finance\.biggo\.com)\s*$", "", t, flags=re.I)
+    t = re.sub(r"[^\w\u4e00-\u9fff ]", "", t)
+    return re.sub(r"\s+", " ", t).strip()
+
 def same_event(a, b):
-    ta = re.sub(r"[^\w\u4e00-\u9fff ]", "", a["title"].lower()); tb = re.sub(r"[^\w\u4e00-\u9fff ]", "", b["title"].lower())
-    if ta == tb or SequenceMatcher(None, ta, tb).ratio() >= 0.86: return True
-    sa, sb = set(ta.split()), set(tb.split()); return len(sa) >= 5 and len(sb) >= 5 and len(sa & sb) / max(1, min(len(sa), len(sb))) >= 0.72
+    ua, ub = canonical_url(a.get("link")), canonical_url(b.get("link"))
+    if ua and ub and ua == ub: return True
+    ta, tb = title_key(a.get("title","")), title_key(b.get("title",""))
+    if not ta or not tb: return False
+    if ta == tb or SequenceMatcher(None, ta, tb).ratio() >= 0.84: return True
+    sa, sb = set(ta.split()), set(tb.split())
+    return len(sa) >= 4 and len(sb) >= 4 and len(sa & sb) / max(1, min(len(sa), len(sb))) >= 0.68
+
 def add_candidate(candidates, seen, item, source_name, source_type):
     title = clean(item.get("title", "")); summary = clean(item.get("summary", ""))
     if not title or not any(k.lower() in (title + " " + summary).lower() for k in KEYWORDS): return
@@ -112,7 +136,7 @@ technical_summary只能讨论SOURCE_TEXT明确出现的器件、拓扑、控制�
 """
     schema = {"events": [{"id": "", "title": "", "source_type": "", "primary_source": "", "published_at": "", "link": "", "category": [], "importance": "重点|一般", "plain_summary": "", "technical_summary": "", "technical": {"voltage": "", "power": "", "topology": "", "device": "", "switching_frequency": "", "efficiency": "", "power_density": "", "isolation": "", "control": "", "application": ""}, "industrialization": {"stage": "研究论文|实验室样机|工程样机|产品发布|试点/示范|试产|量产|商业部署|未知", "status": "", "target": ""}, "evidence": {"confirmed_facts": [], "source_claims": [], "inferences": [], "unknowns": []}, "sources": []}], "directions": {}, "observations": [], "quality_notes": ""}
     prompt = rules + "\n报告日期：" + report_date + "\n输出结构：\n" + json.dumps(schema, ensure_ascii=False) + "\n输入事件（只允许引用每条的SOURCE_TEXT）：\n" + json.dumps(events, ensure_ascii=False)
-    response = requests.post("https://api.deepseek.com/chat/completions", headers={"Authorization": "Bearer " + key, "Content-Type": "application/json"}, json={"model": "deepseek-chat", "messages": [{"role": "system", "content": "只输出合法JSON；严格执行SOURCE_TEXT事实边界。"}, {"role": "user", "content": prompt}], "temperature": 0.05, "max_tokens": 24000, "response_format": {"type": "json_object"}}, timeout=180)
+    response = requests.post("https://api.deepseek.com/chat/completions", headers={"Authorization": "Bearer " + key, "Content-Type": "application/json"}, json={"model": "deepseek-chat", "messages": [{"role": "system", "content": "只输出合法JSON；严格执行SOURCE_TEXT事实边界。"}, {"role": "user", "content": prompt}], "temperature": 0.05, "max_tokens": 12000, "response_format": {"type": "json_object"}}, timeout=180)
     response.raise_for_status(); text = response.json()["choices"][0]["message"]["content"].strip(); return json.loads(re.sub(r"^```(?:json)?\s*|\s*```$", "", text, flags=re.I).strip())
 def normalize_ai_event(ai_event, base):
     e = dict(ai_event or {})
@@ -132,7 +156,15 @@ def main():
         ai = {"events": [], "directions": {}, "observations": [], "quality_notes": "本次没有获得具有可核验原文内容的强相关事件。"}; events = []
     else:
         try:
-            ai = ask_deepseek(raw_events, report_date)
+            # Process in batches so longer, richer summaries do not get truncated.
+            ai = {"events": [], "directions": {}, "observations": [], "quality_notes": ""}
+            for start in range(0, len(raw_events), 15):
+                batch = raw_events[start:start+15]
+                part = ask_deepseek(batch, report_date)
+                ai["events"].extend(part.get("events", []))
+                ai["directions"].update(part.get("directions", {}) or {})
+                ai["observations"].extend(part.get("observations", []) or [])
+                if part.get("quality_notes"): ai["quality_notes"] = part["quality_notes"]
             by_id = {x["id"]: x for x in raw_events}
             by_title = {clean(x.get("title", "")).lower(): x for x in raw_events}
             by_link = {str(x.get("link", "")).rstrip("/"): x for x in raw_events}
