@@ -1,7 +1,7 @@
 {
   "schema_version": "3.4",
-  "updated": "2026-09-20T10:42:58.409644+08:00",
-  "report_date": "2026-09-20",
+  "updated": "2026-09-21T10:39:58.737645+08:00",
+  "report_date": "2026-09-21",
   "event_count": 86,
   "events": [
     {
@@ -65,14 +65,14 @@
           "SST"
         ]
       },
-      "heat_score": 67,
+      "heat_score": 60,
       "heat_factors": {
-        "freshness": 85,
+        "freshness": 70,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 71,
-      "radar_score": 65,
+      "radar_score": 63,
       "radar_rank": 1
     },
     {
@@ -137,14 +137,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 67,
+      "heat_score": 60,
       "heat_factors": {
-        "freshness": 85,
+        "freshness": 70,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 53,
-      "radar_score": 57,
+      "radar_score": 55,
       "radar_rank": 2
     },
     {
@@ -224,14 +224,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 67,
+      "heat_score": 60,
       "heat_factors": {
-        "freshness": 85,
+        "freshness": 70,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 55,
+      "radar_score": 53,
       "radar_rank": 3
     },
     {
@@ -295,14 +295,14 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 60,
+      "heat_score": 53,
       "heat_factors": {
-        "freshness": 70,
+        "freshness": 55,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 71,
-      "radar_score": 60,
+      "radar_score": 58,
       "radar_rank": 4
     },
     {
@@ -354,14 +354,14 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 60,
+      "heat_score": 53,
       "heat_factors": {
-        "freshness": 70,
+        "freshness": 55,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 35,
-      "radar_score": 49,
+      "radar_score": 47,
       "radar_rank": 5
     },
     {
@@ -424,14 +424,14 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 53,
+      "heat_score": 47,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 80,
-      "radar_score": 61,
+      "radar_score": 59,
       "radar_rank": 6
     },
     {
@@ -492,80 +492,15 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 53,
+      "heat_score": 47,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 71,
-      "radar_score": 58,
+      "radar_score": 57,
       "radar_rank": 7
-    },
-    {
-      "id": "260920-11",
-      "title": "IAA TRANSPORTATION: Inmotion Technologies expands power electronics range - Industrial Vehicle Technology International",
-      "source_type": "国际资讯",
-      "primary_source": "Industrial Vehicle Technology International",
-      "published_at": "2026-09-17T09:39:11+00:00",
-      "link": "https://www.ivtinternational.com/news/exhibitions/inmotion-expands-power-electronics-range-at-iaa-transportation.html",
-      "category": [
-        "sic"
-      ],
-      "importance": "一般",
-      "plain_summary": "Inmotion Technologies（Zapi Group旗下公司）在汉诺威IAA Transportation展示三款动力产品：第三代高压逆变器ACH3、辅助系统DC/DC变换器DCC3，以及与Schabmüller合作开发的集成电机逆变器IMI 214预览。ACH3电流额定30至600安培以上，母线电压最高900V，公司称峰值效率99%。DCC3将250至900V输入转换为可调12或24V输出，功率最高10kW。",
-      "technical_summary": "Inmotion Technologies展示三款产品：ACH3第三代高压逆变器，公司称峰值效率99%，具备最佳EMC性能，电流额定30至600安培以上，全功率下母线电压最高900V，所有单元在瑞典组装，内置原生网络安全和功能安全。DCC3紧凑型DC/DC变换器，输入电压250至900V，输出稳定可调12或24V，功率最高10kW，面向电动或混合动力工业、商用和公用事业车辆的辅助系统。IMI 214为欧洲工程设计的集成电机逆变器，与Schabmüller（同属ZAPI Group）合作开发，将电力电子与电机技术集成于紧凑封装，用于商用车电动PTO应用，公司称设计优化了性能、效率和集成便利性。",
-      "technical": {
-        "voltage": "ACH3母线电压最高900V；DCC3输入250-900V，输出12/24V",
-        "power": "DCC3输出最高10kW",
-        "topology": "",
-        "device": "",
-        "switching_frequency": "",
-        "efficiency": "ACH3峰值效率99%（公司声称）",
-        "power_density": "",
-        "isolation": "",
-        "control": "",
-        "application": "商用车、工业车辆、建筑车辆、电动PTO"
-      },
-      "industrialization": {
-        "stage": "产品发布",
-        "status": "IAA Transportation展示",
-        "target": "商用车OEM"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "Inmotion Technologies在IAA Transportation展示ACH3、DCC3和IMI 214",
-          "ACH3电流额定30至600安培以上，母线电压最高900V，所有单元在瑞典组装",
-          "DCC3输入250至900V，输出可调12或24V，功率最高10kW",
-          "IMI 214与Schabmüller合作开发，用于电动PTO应用"
-        ],
-        "source_claims": [
-          "公司称ACH3峰值效率99%，具备最佳EMC性能",
-          "公司称IMI 214设计优化了性能、效率和集成便利性"
-        ],
-        "inferences": [],
-        "unknowns": []
-      },
-      "sources": [],
-      "summary_raw": "IAA TRANSPORTATION: Inmotion Technologies expands power electronics range Industrial Vehicle Technology International",
-      "source_text": "Featured 29th July 2026 iVT July/August issue – Digital edition available here! iVT By Anjali Sooknanan\nRecent iVT July/August issue – Digital edition available here! 29th July 2026\niVT May/June issue – Digital edition available here! 18th May 2026\niVT February/March issue – Digital edition available here! 13th February 2026\nInmotion Technologies, a Zapi Group company, is presenting its latest motive power products at IAA Transportation in Hannover, running from 15–20 September. The company is showing three applications: a third-generation high-voltage inverter, a new DC/DC converter for auxiliary systems, and a preview of an integrated motor inverter for electric power take-off (PTO) applications. The ACH3 inverter powers a vehicle’s motor with what the company states is 99% peak efficiency and best-in-class EMC performance. Current ratings for the ACH3 family run from 30 to more than 600 amperes and up to 900V bus voltage at full power. All units are assembled in Sweden and feature built-in native cybersecurity and functional safety. The DCC3 is a compact DC/DC converter engineered for a range of commercial and construction vehicle applications. It converts input voltages from 250 to 900V into a stable, adjustable 12 or 24V output, delivering up to 10kW of power for auxiliary systems in electric or hybrid industrial, commercial and utility vehicles. The IMI 214 is a European-engineered integrated motor inverter developed with Schabmüller, also a ZAPI Group company. It combines power electronics and electric motor technology in a compact package for electric PTO applications in commercial vehicles. The company says the design is optimised for performance, efficiency and ease of integration into existing vehicle architectures. “We are excited to showcase these new capabilities at IAA Transportation 2026 because they address real integration challenges facing commercial vehicle OEMs,” says Martin Wennerblom, product and marketing director at Inmotion Technologies. “By combining safety, performance, and streamlined installation, our solutions help manufacturers reduce integration effort while supporting the transition toward more sustainable and efficient commercial vehicles.” Inmotion is exhibiting at Hall 12, Stand D40, alongside Business Sweden and FKG. Image: Inmotion Technologies\nPrevious Article TTControl expands physical AI and autonomy offering Next Article Kleemann reveals MR 130 Evo successor for 2027\nAnjali Sooknanan Anjali Sooknanan is deputy editor of the iVT brand - which includes digital and print editions of a quarterly magazine and Off-Highway Annual, as well as ivtinternational.com. She holds an English degree from Goldsmiths University in London, and has experience working on B2B publications in various industries from electrical to construction.\nRelated Posts Construction Finlay launches Elektro hybrid crusher range at Bauma ConExpo India 18th September 2026 3 Mins Read\nAutonomous Vehicles TTControl expands physical AI and autonomy offering 16th September 2026 3 Mins Read\nAwards & Events IAA TRANSPORTATION: Stoneridge unveils EVO ECU platform for off-highway use 14th September 2026 3 Mins Read\nLatest Posts Fendt updates 1100 Vario MT tracked tractor 18th September 2026\nCat D11 XE brings electric drive to largest dozer platform 18th September 2026\nFinlay launches Elektro hybrid crusher range at Bauma ConExpo India 18th September 2026\nInmotion Technologies, a Zapi Group company, is presenting its latest motive power products at IAA Transportation in Hannover, running from 15–20 September.\nThe company is showing three applications: a third-generation high-voltage inverter, a new DC/DC converter for auxiliary systems, and a preview of an integrated motor inverter for electric power take-off (PTO) applications.\nThe ACH3 inverter powers a vehicle’s motor with what the company states is 99% peak efficiency and best-in-class EMC performance. Current ratings for the ACH3 family run from 30 to more than 600 amperes and up to 900V bus voltage at full power. All units are assembled in Sweden and feature built-in native cybersecurity and functional safety.\nThe DCC3 is a compact DC/DC converter engineered for a range of commercial and construction vehicle applications. It converts input voltages from 250 to 900V into a stable, adjustable 12 or 24V output, delivering up to 10kW of power for auxiliary systems in electric or hybrid industrial, commercial and utility vehicles.\nThe IMI 214 is a European-engineered integrated motor inverter developed with Schabmüller, also a ZAPI Group company. It combines power electronics and electric motor technology in a compact package for electric PTO applications in commercial vehicles. The company says the design is optimised for performance, efficiency and ease of integration into existing vehicle architectures.\n“We are excited to showcase these new capabilities at IAA Transportation 2026 because they address real integration challenges facing commercial vehicle OEMs",
-      "published_date": "2026-09-17",
-      "relevance_score": 50,
-      "relevance_factors": {
-        "focus_match": 35,
-        "technical_density": 59,
-        "engineering_usability": 80,
-        "matched_topics": []
-      },
-      "heat_score": 58,
-      "heat_factors": {
-        "freshness": 55,
-        "multi_source": 45,
-        "source_authority": 75
-      },
-      "technical_depth_score": 71,
-      "radar_score": 58,
-      "radar_rank": 8
     },
     {
       "id": "260920-04",
@@ -626,14 +561,79 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 53,
+      "heat_score": 47,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 71,
-      "radar_score": 58,
+      "radar_score": 57,
+      "radar_rank": 8
+    },
+    {
+      "id": "260920-11",
+      "title": "IAA TRANSPORTATION: Inmotion Technologies expands power electronics range - Industrial Vehicle Technology International",
+      "source_type": "国际资讯",
+      "primary_source": "Industrial Vehicle Technology International",
+      "published_at": "2026-09-17T09:39:11+00:00",
+      "link": "https://www.ivtinternational.com/news/exhibitions/inmotion-expands-power-electronics-range-at-iaa-transportation.html",
+      "category": [
+        "sic"
+      ],
+      "importance": "一般",
+      "plain_summary": "Inmotion Technologies（Zapi Group旗下公司）在汉诺威IAA Transportation展示三款动力产品：第三代高压逆变器ACH3、辅助系统DC/DC变换器DCC3，以及与Schabmüller合作开发的集成电机逆变器IMI 214预览。ACH3电流额定30至600安培以上，母线电压最高900V，公司称峰值效率99%。DCC3将250至900V输入转换为可调12或24V输出，功率最高10kW。",
+      "technical_summary": "Inmotion Technologies展示三款产品：ACH3第三代高压逆变器，公司称峰值效率99%，具备最佳EMC性能，电流额定30至600安培以上，全功率下母线电压最高900V，所有单元在瑞典组装，内置原生网络安全和功能安全。DCC3紧凑型DC/DC变换器，输入电压250至900V，输出稳定可调12或24V，功率最高10kW，面向电动或混合动力工业、商用和公用事业车辆的辅助系统。IMI 214为欧洲工程设计的集成电机逆变器，与Schabmüller（同属ZAPI Group）合作开发，将电力电子与电机技术集成于紧凑封装，用于商用车电动PTO应用，公司称设计优化了性能、效率和集成便利性。",
+      "technical": {
+        "voltage": "ACH3母线电压最高900V；DCC3输入250-900V，输出12/24V",
+        "power": "DCC3输出最高10kW",
+        "topology": "",
+        "device": "",
+        "switching_frequency": "",
+        "efficiency": "ACH3峰值效率99%（公司声称）",
+        "power_density": "",
+        "isolation": "",
+        "control": "",
+        "application": "商用车、工业车辆、建筑车辆、电动PTO"
+      },
+      "industrialization": {
+        "stage": "产品发布",
+        "status": "IAA Transportation展示",
+        "target": "商用车OEM"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "Inmotion Technologies在IAA Transportation展示ACH3、DCC3和IMI 214",
+          "ACH3电流额定30至600安培以上，母线电压最高900V，所有单元在瑞典组装",
+          "DCC3输入250至900V，输出可调12或24V，功率最高10kW",
+          "IMI 214与Schabmüller合作开发，用于电动PTO应用"
+        ],
+        "source_claims": [
+          "公司称ACH3峰值效率99%，具备最佳EMC性能",
+          "公司称IMI 214设计优化了性能、效率和集成便利性"
+        ],
+        "inferences": [],
+        "unknowns": []
+      },
+      "sources": [],
+      "summary_raw": "IAA TRANSPORTATION: Inmotion Technologies expands power electronics range Industrial Vehicle Technology International",
+      "source_text": "Featured 29th July 2026 iVT July/August issue – Digital edition available here! iVT By Anjali Sooknanan\nRecent iVT July/August issue – Digital edition available here! 29th July 2026\niVT May/June issue – Digital edition available here! 18th May 2026\niVT February/March issue – Digital edition available here! 13th February 2026\nInmotion Technologies, a Zapi Group company, is presenting its latest motive power products at IAA Transportation in Hannover, running from 15–20 September. The company is showing three applications: a third-generation high-voltage inverter, a new DC/DC converter for auxiliary systems, and a preview of an integrated motor inverter for electric power take-off (PTO) applications. The ACH3 inverter powers a vehicle’s motor with what the company states is 99% peak efficiency and best-in-class EMC performance. Current ratings for the ACH3 family run from 30 to more than 600 amperes and up to 900V bus voltage at full power. All units are assembled in Sweden and feature built-in native cybersecurity and functional safety. The DCC3 is a compact DC/DC converter engineered for a range of commercial and construction vehicle applications. It converts input voltages from 250 to 900V into a stable, adjustable 12 or 24V output, delivering up to 10kW of power for auxiliary systems in electric or hybrid industrial, commercial and utility vehicles. The IMI 214 is a European-engineered integrated motor inverter developed with Schabmüller, also a ZAPI Group company. It combines power electronics and electric motor technology in a compact package for electric PTO applications in commercial vehicles. The company says the design is optimised for performance, efficiency and ease of integration into existing vehicle architectures. “We are excited to showcase these new capabilities at IAA Transportation 2026 because they address real integration challenges facing commercial vehicle OEMs,” says Martin Wennerblom, product and marketing director at Inmotion Technologies. “By combining safety, performance, and streamlined installation, our solutions help manufacturers reduce integration effort while supporting the transition toward more sustainable and efficient commercial vehicles.” Inmotion is exhibiting at Hall 12, Stand D40, alongside Business Sweden and FKG. Image: Inmotion Technologies\nPrevious Article TTControl expands physical AI and autonomy offering Next Article Kleemann reveals MR 130 Evo successor for 2027\nAnjali Sooknanan Anjali Sooknanan is deputy editor of the iVT brand - which includes digital and print editions of a quarterly magazine and Off-Highway Annual, as well as ivtinternational.com. She holds an English degree from Goldsmiths University in London, and has experience working on B2B publications in various industries from electrical to construction.\nRelated Posts Construction Finlay launches Elektro hybrid crusher range at Bauma ConExpo India 18th September 2026 3 Mins Read\nAutonomous Vehicles TTControl expands physical AI and autonomy offering 16th September 2026 3 Mins Read\nAwards & Events IAA TRANSPORTATION: Stoneridge unveils EVO ECU platform for off-highway use 14th September 2026 3 Mins Read\nLatest Posts Fendt updates 1100 Vario MT tracked tractor 18th September 2026\nCat D11 XE brings electric drive to largest dozer platform 18th September 2026\nFinlay launches Elektro hybrid crusher range at Bauma ConExpo India 18th September 2026\nInmotion Technologies, a Zapi Group company, is presenting its latest motive power products at IAA Transportation in Hannover, running from 15–20 September.\nThe company is showing three applications: a third-generation high-voltage inverter, a new DC/DC converter for auxiliary systems, and a preview of an integrated motor inverter for electric power take-off (PTO) applications.\nThe ACH3 inverter powers a vehicle’s motor with what the company states is 99% peak efficiency and best-in-class EMC performance. Current ratings for the ACH3 family run from 30 to more than 600 amperes and up to 900V bus voltage at full power. All units are assembled in Sweden and feature built-in native cybersecurity and functional safety.\nThe DCC3 is a compact DC/DC converter engineered for a range of commercial and construction vehicle applications. It converts input voltages from 250 to 900V into a stable, adjustable 12 or 24V output, delivering up to 10kW of power for auxiliary systems in electric or hybrid industrial, commercial and utility vehicles.\nThe IMI 214 is a European-engineered integrated motor inverter developed with Schabmüller, also a ZAPI Group company. It combines power electronics and electric motor technology in a compact package for electric PTO applications in commercial vehicles. The company says the design is optimised for performance, efficiency and ease of integration into existing vehicle architectures.\n“We are excited to showcase these new capabilities at IAA Transportation 2026 because they address real integration challenges facing commercial vehicle OEMs",
+      "published_date": "2026-09-17",
+      "relevance_score": 50,
+      "relevance_factors": {
+        "focus_match": 35,
+        "technical_density": 59,
+        "engineering_usability": 80,
+        "matched_topics": []
+      },
+      "heat_score": 52,
+      "heat_factors": {
+        "freshness": 40,
+        "multi_source": 45,
+        "source_authority": 75
+      },
+      "technical_depth_score": 71,
+      "radar_score": 56,
       "radar_rank": 9
     },
     {
@@ -697,14 +697,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 58,
+      "heat_score": 52,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 45,
         "source_authority": 75
       },
       "technical_depth_score": 53,
-      "radar_score": 56,
+      "radar_score": 55,
       "radar_rank": 10
     },
     {
@@ -767,15 +767,75 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 58,
+      "heat_score": 52,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 45,
         "source_authority": 75
       },
       "technical_depth_score": 53,
-      "radar_score": 56,
+      "radar_score": 55,
       "radar_rank": 11
+    },
+    {
+      "id": "260917-07",
+      "title": "Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit - Pragativadi",
+      "source_type": "国际资讯",
+      "primary_source": "Pragativadi",
+      "published_at": "2026-09-17T07:41:15+00:00",
+      "link": "https://pragativadi.com/odisha-powers-up-indias-chip-ambitions-with-rs-3406-cr-sic-semiconductor-unit/",
+      "category": [
+        "sic"
+      ],
+      "importance": "一般",
+      "plain_summary": "Pragativadi报道奥里萨邦一个投资额340.6亿卢比的SiC半导体项目，被视为印度芯片产业布局的一部分。该项目与RIR Power Electronics在奥里萨邦的SiC设施建设相关。报道强调该项目对印度本土半导体制造能力的意义。",
+      "technical_summary": "该条目报道奥里萨邦一个投资额约340.6亿卢比（Rs 3,406-Cr）的SiC半导体项目。原文摘要未提供产线技术节点、晶圆尺寸、产能、产品类型（外延片/器件）或投产时间等参数。该信息属于产业投资与区域半导体制造布局层面，不涉及具体电力电子器件技术指标。",
+      "technical": {
+        "device": "SiC",
+        "application": "SiC半导体制造"
+      },
+      "industrialization": {
+        "stage": "试点/示范",
+        "status": "项目投资"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "奥里萨邦有投资额约340.6亿卢比的SiC半导体项目"
+        ],
+        "source_claims": [
+          "该项目有助于印度芯片产业布局"
+        ],
+        "inferences": [
+          "项目与RIR Power Electronics的奥里萨邦SiC设施相关"
+        ]
+      },
+      "summary_raw": "Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit Pragativadi",
+      "published_date": "2026-09-17",
+      "relevance_score": 53,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "SiC/GaN"
+        ]
+      },
+      "heat_score": 52,
+      "heat_factors": {
+        "freshness": 40,
+        "multi_source": 45,
+        "source_authority": 75
+      },
+      "technical_depth_score": 53,
+      "radar_score": 55,
+      "radar_rank": 12,
+      "sources": [
+        {
+          "source": "Pragativadi",
+          "title": "Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit - Pragativadi",
+          "link": "https://pragativadi.com/odisha-powers-up-indias-chip-ambitions-with-rs-3406-cr-sic-semiconductor-unit/"
+        }
+      ]
     },
     {
       "id": "260918-09",
@@ -836,15 +896,15 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 53,
+      "heat_score": 47,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 62,
-      "radar_score": 56,
-      "radar_rank": 12
+      "radar_score": 54,
+      "radar_rank": 13
     },
     {
       "id": "260918-09",
@@ -903,75 +963,15 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 53,
+      "heat_score": 47,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 62,
-      "radar_score": 56,
-      "radar_rank": 13
-    },
-    {
-      "id": "260917-07",
-      "title": "Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit - Pragativadi",
-      "source_type": "国际资讯",
-      "primary_source": "Pragativadi",
-      "published_at": "2026-09-17T07:41:15+00:00",
-      "link": "https://pragativadi.com/odisha-powers-up-indias-chip-ambitions-with-rs-3406-cr-sic-semiconductor-unit/",
-      "category": [
-        "sic"
-      ],
-      "importance": "一般",
-      "plain_summary": "Pragativadi报道奥里萨邦一个投资额340.6亿卢比的SiC半导体项目，被视为印度芯片产业布局的一部分。该项目与RIR Power Electronics在奥里萨邦的SiC设施建设相关。报道强调该项目对印度本土半导体制造能力的意义。",
-      "technical_summary": "该条目报道奥里萨邦一个投资额约340.6亿卢比（Rs 3,406-Cr）的SiC半导体项目。原文摘要未提供产线技术节点、晶圆尺寸、产能、产品类型（外延片/器件）或投产时间等参数。该信息属于产业投资与区域半导体制造布局层面，不涉及具体电力电子器件技术指标。",
-      "technical": {
-        "device": "SiC",
-        "application": "SiC半导体制造"
-      },
-      "industrialization": {
-        "stage": "试点/示范",
-        "status": "项目投资"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "奥里萨邦有投资额约340.6亿卢比的SiC半导体项目"
-        ],
-        "source_claims": [
-          "该项目有助于印度芯片产业布局"
-        ],
-        "inferences": [
-          "项目与RIR Power Electronics的奥里萨邦SiC设施相关"
-        ]
-      },
-      "summary_raw": "Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit Pragativadi",
-      "published_date": "2026-09-17",
-      "relevance_score": 53,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 43,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "SiC/GaN"
-        ]
-      },
-      "heat_score": 58,
-      "heat_factors": {
-        "freshness": 55,
-        "multi_source": 45,
-        "source_authority": 75
-      },
-      "technical_depth_score": 53,
-      "radar_score": 56,
-      "radar_rank": 14,
-      "sources": [
-        {
-          "source": "Pragativadi",
-          "title": "Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit - Pragativadi",
-          "link": "https://pragativadi.com/odisha-powers-up-indias-chip-ambitions-with-rs-3406-cr-sic-semiconductor-unit/"
-        }
-      ]
+      "radar_score": 54,
+      "radar_rank": 14
     },
     {
       "id": "260917-01",
@@ -1032,14 +1032,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 58,
+      "heat_score": 52,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 45,
         "source_authority": 75
       },
       "technical_depth_score": 44,
-      "radar_score": 55,
+      "radar_score": 54,
       "radar_rank": 15
     },
     {
@@ -1100,14 +1100,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 53,
+      "heat_score": 47,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 53,
-      "radar_score": 54,
+      "radar_score": 52,
       "radar_rank": 16
     },
     {
@@ -1169,14 +1169,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 53,
+      "heat_score": 47,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 53,
-      "radar_score": 54,
+      "radar_score": 52,
       "radar_rank": 17
     },
     {
@@ -1233,14 +1233,14 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 53,
+      "heat_score": 47,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 53,
-      "radar_score": 54,
+      "radar_score": 52,
       "radar_rank": 18
     },
     {
@@ -1300,14 +1300,14 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 53,
+      "heat_score": 47,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 53,
-      "radar_score": 54,
+      "radar_score": 52,
       "radar_rank": 19
     },
     {
@@ -1383,14 +1383,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 58,
+      "heat_score": 51,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 63,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 53,
+      "radar_score": 52,
       "radar_rank": 20
     },
     {
@@ -1451,14 +1451,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 53,
+      "heat_score": 47,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 52,
+      "radar_score": 51,
       "radar_rank": 21
     },
     {
@@ -1519,14 +1519,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 53,
+      "heat_score": 47,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 52,
+      "radar_score": 51,
       "radar_rank": 22
     },
     {
@@ -1568,14 +1568,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 53,
+      "heat_score": 47,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 52,
+      "radar_score": 51,
       "radar_rank": 23,
       "sources": [
         {
@@ -1642,14 +1642,14 @@
           "Magnetics"
         ]
       },
-      "heat_score": 53,
+      "heat_score": 47,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 51,
+      "radar_score": 50,
       "radar_rank": 24
     },
     {
@@ -1710,14 +1710,14 @@
           "Magnetics"
         ]
       },
-      "heat_score": 53,
+      "heat_score": 47,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 51,
+      "radar_score": 50,
       "radar_rank": 25
     },
     {
@@ -1750,14 +1750,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 53,
+      "heat_score": 47,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 35,
-      "radar_score": 50,
+      "radar_score": 48,
       "radar_rank": 26,
       "sources": [
         {
@@ -1820,14 +1820,14 @@
         "engineering_usability": 80,
         "matched_topics": []
       },
-      "heat_score": 53,
+      "heat_score": 47,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 48,
+      "radar_score": 46,
       "radar_rank": 27
     },
     {
@@ -1880,14 +1880,14 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 53,
+      "heat_score": 47,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 35,
-      "radar_score": 47,
+      "radar_score": 45,
       "radar_rank": 28
     },
     {
@@ -1940,14 +1940,14 @@
           "Magnetics"
         ]
       },
-      "heat_score": 53,
+      "heat_score": 47,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 35,
-      "radar_score": 47,
+      "radar_score": 45,
       "radar_rank": 29
     },
     {
@@ -2015,14 +2015,14 @@
           "SST"
         ]
       },
-      "heat_score": 47,
+      "heat_score": 40,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 98,
-      "radar_score": 67,
+      "radar_score": 66,
       "radar_rank": 30
     },
     {
@@ -2091,15 +2091,81 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 47,
+      "heat_score": 40,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 80,
-      "radar_score": 66,
+      "radar_score": 64,
       "radar_rank": 31
+    },
+    {
+      "id": "260920-17",
+      "title": "From grid code to grid connection: what makes a grid-forming BESS work in the real world? - Energy-Storage.News",
+      "source_type": "国际资讯",
+      "primary_source": "Energy-Storage.News",
+      "published_at": "2026-09-16T09:31:07+00:00",
+      "link": "https://www.energy-storage.news/from-grid-code-to-grid-connection-what-makes-a-grid-forming-bess-work-in-the-real-world/",
+      "category": [
+        "gfm",
+        "pcs",
+        "sic"
+      ],
+      "importance": "一般",
+      "plain_summary": "Sinexcel技术总监Luke Lu撰文讨论构网型BESS项目从电网规范到并网的关键工程问题。文章指出构网功能正越来越多地出现在电网规范中，但指定构网功能只是开始。文章提出五个需关注的领域，包括从电网规范而非PCS数据手册出发、将构网分解为可测试的行为等。",
+      "technical_summary": "文章由Sinexcel技术总监Luke Lu撰写，讨论构网型BESS项目工程挑战。文章指出构网功能正越来越多地出现在电网规范、并网要求和公用事业规模BESS规范中，但指定构网功能只是开始。PCS可能支持构网控制，但实际项目仍需通过电网研究、与电池和电站控制器正确交互、在物理电流和热限制内运行并现场展示预期行为。文章提出五个关注领域：从电网规范而非PCS数据手册出发，将本地并网要求转化为明确技术行为，包括有功无功能力、电压频率响应、LVRT/HVRT、无功电流注入、爬坡率、故障行为、保护设置、建模验证要求及构网功能；将构网分解为可测试行为，包括黑启动、虚拟同步发电机控制、弱电网运行等。SINEXCEL公用事业规模PCS支持PQ、VF和VSG控制模式及黑启动。",
+      "technical": {
+        "voltage": "",
+        "power": "",
+        "topology": "构网型BESS",
+        "device": "",
+        "switching_frequency": "",
+        "efficiency": "",
+        "power_density": "",
+        "isolation": "",
+        "control": "PQ、VF、VSG控制模式，黑启动，虚拟同步发电机控制",
+        "application": "公用事业规模电池储能系统"
+      },
+      "industrialization": {
+        "stage": "商业部署",
+        "status": "Sinexcel已交付超过5000个储能项目",
+        "target": "公用事业规模BESS"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "文章由Sinexcel技术总监Luke Lu撰写",
+          "构网功能正越来越多地出现在电网规范中",
+          "SINEXCEL公用事业规模PCS支持PQ、VF和VSG控制模式及黑启动",
+          "Sinexcel已交付超过5000个储能项目"
+        ],
+        "source_claims": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "sources": [],
+      "summary_raw": "From grid code to grid connection: what makes a grid-forming BESS work in the real world? Energy-Storage.News",
+      "source_text": "Solar Media Events PV Tech Solar Power Portal EV Infrastructure News Battery Technology Newsletter Twitter/X LinkedIn YouTube Feed\nSubscribe To Premium Premium Homepage Sign In My Account Search ... Results See all results\nNews Premium Premium Homepage PV Tech Power Journal Technical Papers Industry Updates Distributed Grid Scale Off Grid Market Analysis Software & Optimisation Materials & Production Features Resources Interviews Guest blog Editor’s blog Analysis Events & Webinars Events Upcoming Webinars On-demand Webinars\nFeatures , Guest blog From grid code to grid connection: what makes a grid-forming BESS work in the real world? By Luke Lu, technical director, Sinexcel September 16, 2026 Europe , Africa , Africa & Middle East Grid Scale Technology , Software & Optimisation\nLinkedIn Twitter Reddit Facebook Email BESS project installation in Romania, 2026. Image: Sinexcel. Drawing on nearly two decades of power electronics development and more than 5,000 energy storage projects, Sinexcel technical director Luke Lu discusses what goes into a successful grid-forming battery energy storage system (BESS) project. Grid-forming capability is increasingly appearing in grid codes, connection requirements and specifications for utility-scale battery energy storage systems (BESS). But specifying grid-forming functionality is only the beginning. For developers and EPCs, the harder question is: how can grid-forming capability be translated into a BESS that is compliant, stable and ready for successful commissioning under real grid conditions? A power conversion system (PCS) may support grid-forming control on its datasheet, but a real project still has to pass grid studies, interact correctly with the battery and plant controller, operate within physical current and thermal limits, and ultimately demonstrate the expected behaviour onsite. This article requires Premium Subscription Basic (FREE) Subscription Already a subscriber? Sign In Try Premium for just $1 Full premium access for the first month at only $1 Converts to an annual rate after 30 days unless cancelled Cancel anytime during the trial period Start $1 Trial Premium Benefits Expert industry analysis and interviews Digital access to PV Tech Power journal Exclusive event discounts Or get the full Premium subscription right away Get Premium Subscription Or continue reading this article for free Get Basic (FREE) Subscription This is where grid-forming (GFM) moves from being a product feature to a project-engineering challenge. Five areas deserve particular attention. 1. Start with the grid code, not the PCS datasheet One of the most common risks in early project development is selecting equipment first and interpreting the grid-connection requirements later. The sequence should be reversed. Before finalising the PCS configuration, developers and EPCs should translate local connection requirements into clearly defined technical behaviours, including: active and reactive power capability; voltage and frequency response; LVRT and HVRT; reactive current injection; ramp rates; fault behaviour; protection settings; modelling and validation requirements increasingly, specific grid-forming functions. This matters because connection requirements vary not only between countries but also between network operators, voltage levels and, in some cases, individual connection points. Grid-code compliance should therefore not be treated simply as a certification exercise. The requirements can influence converter controls, plant-level settings, protection philosophy, modelling strategy and even aspects of the overall system architecture. For example, SINEXCEL’s utility-scale PCS supports multiple operating modes, including PQ, VF and VSG control, as well as black start and configurations adapted to different grid requirements. But which functions are required, and how they need to be configured and validated, ultimately depends on the project. Discovering these requirements too late can lead to model revisions, control changes, additional testing and, in the worst case, delays to energisation and commercial operation. The earlier grid requirements are translated into engineering requirements, the lower the risk of redesign during the connection and commissioning process. 2. Break ‘grid-forming’ into behaviours that can actually be tested Grid-forming is frequently discussed as if it were a single feature. It is not. From an engineering perspective, it is better understood as a collection of behaviours that need to be specified, modelled and validated individually. Black start Can the BESS establish voltage and frequency without relying on an external grid reference, and can it energise the intended network under the required conditions? Virtual synchronous generator control Can the converter provide the required virtual inertia and damping characteristics, and how does it respond during frequency disturbances? Weak-grid operation How does the system behave as short-circuit stre",
+      "published_date": "2026-09-16",
+      "relevance_score": 55,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 51,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "GFM/PCS"
+        ]
+      },
+      "heat_score": 40,
+      "heat_factors": {
+        "freshness": 25,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 62,
+      "radar_score": 53,
+      "radar_rank": 32
     },
     {
       "id": "260917-27",
@@ -2157,15 +2223,15 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 52,
+      "heat_score": 45,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 75
       },
       "technical_depth_score": 53,
-      "radar_score": 55,
-      "radar_rank": 32
+      "radar_score": 53,
+      "radar_rank": 33
     },
     {
       "id": "260917-26",
@@ -2225,80 +2291,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 52,
+      "heat_score": 45,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 75
       },
       "technical_depth_score": 53,
-      "radar_score": 55,
-      "radar_rank": 33
-    },
-    {
-      "id": "260920-17",
-      "title": "From grid code to grid connection: what makes a grid-forming BESS work in the real world? - Energy-Storage.News",
-      "source_type": "国际资讯",
-      "primary_source": "Energy-Storage.News",
-      "published_at": "2026-09-16T09:31:07+00:00",
-      "link": "https://www.energy-storage.news/from-grid-code-to-grid-connection-what-makes-a-grid-forming-bess-work-in-the-real-world/",
-      "category": [
-        "gfm",
-        "pcs",
-        "sic"
-      ],
-      "importance": "一般",
-      "plain_summary": "Sinexcel技术总监Luke Lu撰文讨论构网型BESS项目从电网规范到并网的关键工程问题。文章指出构网功能正越来越多地出现在电网规范中，但指定构网功能只是开始。文章提出五个需关注的领域，包括从电网规范而非PCS数据手册出发、将构网分解为可测试的行为等。",
-      "technical_summary": "文章由Sinexcel技术总监Luke Lu撰写，讨论构网型BESS项目工程挑战。文章指出构网功能正越来越多地出现在电网规范、并网要求和公用事业规模BESS规范中，但指定构网功能只是开始。PCS可能支持构网控制，但实际项目仍需通过电网研究、与电池和电站控制器正确交互、在物理电流和热限制内运行并现场展示预期行为。文章提出五个关注领域：从电网规范而非PCS数据手册出发，将本地并网要求转化为明确技术行为，包括有功无功能力、电压频率响应、LVRT/HVRT、无功电流注入、爬坡率、故障行为、保护设置、建模验证要求及构网功能；将构网分解为可测试行为，包括黑启动、虚拟同步发电机控制、弱电网运行等。SINEXCEL公用事业规模PCS支持PQ、VF和VSG控制模式及黑启动。",
-      "technical": {
-        "voltage": "",
-        "power": "",
-        "topology": "构网型BESS",
-        "device": "",
-        "switching_frequency": "",
-        "efficiency": "",
-        "power_density": "",
-        "isolation": "",
-        "control": "PQ、VF、VSG控制模式，黑启动，虚拟同步发电机控制",
-        "application": "公用事业规模电池储能系统"
-      },
-      "industrialization": {
-        "stage": "商业部署",
-        "status": "Sinexcel已交付超过5000个储能项目",
-        "target": "公用事业规模BESS"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "文章由Sinexcel技术总监Luke Lu撰写",
-          "构网功能正越来越多地出现在电网规范中",
-          "SINEXCEL公用事业规模PCS支持PQ、VF和VSG控制模式及黑启动",
-          "Sinexcel已交付超过5000个储能项目"
-        ],
-        "source_claims": [],
-        "inferences": [],
-        "unknowns": []
-      },
-      "sources": [],
-      "summary_raw": "From grid code to grid connection: what makes a grid-forming BESS work in the real world? Energy-Storage.News",
-      "source_text": "Solar Media Events PV Tech Solar Power Portal EV Infrastructure News Battery Technology Newsletter Twitter/X LinkedIn YouTube Feed\nSubscribe To Premium Premium Homepage Sign In My Account Search ... Results See all results\nNews Premium Premium Homepage PV Tech Power Journal Technical Papers Industry Updates Distributed Grid Scale Off Grid Market Analysis Software & Optimisation Materials & Production Features Resources Interviews Guest blog Editor’s blog Analysis Events & Webinars Events Upcoming Webinars On-demand Webinars\nFeatures , Guest blog From grid code to grid connection: what makes a grid-forming BESS work in the real world? By Luke Lu, technical director, Sinexcel September 16, 2026 Europe , Africa , Africa & Middle East Grid Scale Technology , Software & Optimisation\nLinkedIn Twitter Reddit Facebook Email BESS project installation in Romania, 2026. Image: Sinexcel. Drawing on nearly two decades of power electronics development and more than 5,000 energy storage projects, Sinexcel technical director Luke Lu discusses what goes into a successful grid-forming battery energy storage system (BESS) project. Grid-forming capability is increasingly appearing in grid codes, connection requirements and specifications for utility-scale battery energy storage systems (BESS). But specifying grid-forming functionality is only the beginning. For developers and EPCs, the harder question is: how can grid-forming capability be translated into a BESS that is compliant, stable and ready for successful commissioning under real grid conditions? A power conversion system (PCS) may support grid-forming control on its datasheet, but a real project still has to pass grid studies, interact correctly with the battery and plant controller, operate within physical current and thermal limits, and ultimately demonstrate the expected behaviour onsite. This article requires Premium Subscription Basic (FREE) Subscription Already a subscriber? Sign In Try Premium for just $1 Full premium access for the first month at only $1 Converts to an annual rate after 30 days unless cancelled Cancel anytime during the trial period Start $1 Trial Premium Benefits Expert industry analysis and interviews Digital access to PV Tech Power journal Exclusive event discounts Or get the full Premium subscription right away Get Premium Subscription Or continue reading this article for free Get Basic (FREE) Subscription This is where grid-forming (GFM) moves from being a product feature to a project-engineering challenge. Five areas deserve particular attention. 1. Start with the grid code, not the PCS datasheet One of the most common risks in early project development is selecting equipment first and interpreting the grid-connection requirements later. The sequence should be reversed. Before finalising the PCS configuration, developers and EPCs should translate local connection requirements into clearly defined technical behaviours, including: active and reactive power capability; voltage and frequency response; LVRT and HVRT; reactive current injection; ramp rates; fault behaviour; protection settings; modelling and validation requirements increasingly, specific grid-forming functions. This matters because connection requirements vary not only between countries but also between network operators, voltage levels and, in some cases, individual connection points. Grid-code compliance should therefore not be treated simply as a certification exercise. The requirements can influence converter controls, plant-level settings, protection philosophy, modelling strategy and even aspects of the overall system architecture. For example, SINEXCEL’s utility-scale PCS supports multiple operating modes, including PQ, VF and VSG control, as well as black start and configurations adapted to different grid requirements. But which functions are required, and how they need to be configured and validated, ultimately depends on the project. Discovering these requirements too late can lead to model revisions, control changes, additional testing and, in the worst case, delays to energisation and commercial operation. The earlier grid requirements are translated into engineering requirements, the lower the risk of redesign during the connection and commissioning process. 2. Break ‘grid-forming’ into behaviours that can actually be tested Grid-forming is frequently discussed as if it were a single feature. It is not. From an engineering perspective, it is better understood as a collection of behaviours that need to be specified, modelled and validated individually. Black start Can the BESS establish voltage and frequency without relying on an external grid reference, and can it energise the intended network under the required conditions? Virtual synchronous generator control Can the converter provide the required virtual inertia and damping characteristics, and how does it respond during frequency disturbances? Weak-grid operation How does the system behave as short-circuit stre",
-      "published_date": "2026-09-16",
-      "relevance_score": 55,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 51,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "GFM/PCS"
-        ]
-      },
-      "heat_score": 47,
-      "heat_factors": {
-        "freshness": 40,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 62,
-      "radar_score": 54,
+      "radar_score": 53,
       "radar_rank": 34
     },
     {
@@ -2356,14 +2356,14 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 47,
+      "heat_score": 40,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 53,
-      "radar_score": 52,
+      "radar_score": 50,
       "radar_rank": 35
     },
     {
@@ -2429,14 +2429,14 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 47,
+      "heat_score": 40,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 53,
-      "radar_score": 52,
+      "radar_score": 50,
       "radar_rank": 36
     },
     {
@@ -2495,14 +2495,14 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 47,
+      "heat_score": 40,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 53,
-      "radar_score": 52,
+      "radar_score": 50,
       "radar_rank": 37
     },
     {
@@ -2563,15 +2563,168 @@
         "engineering_usability": 80,
         "matched_topics": []
       },
-      "heat_score": 47,
+      "heat_score": 40,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 46,
+      "radar_score": 44,
       "radar_rank": 38
+    },
+    {
+      "id": "260918-25",
+      "title": "EPC releases two new white papers on GaN power conversion - compoundsemiconductor.net",
+      "source_type": "国际论文",
+      "primary_source": "compoundsemiconductor.net",
+      "published_at": "2026-09-14T19:18:18+00:00",
+      "link": "https://compoundsemiconductor.net/article/125364/EPC_releases_two_new_white_papers_on_GaN_power_conversion",
+      "category": [
+        "800v",
+        "gan",
+        "llc",
+        "sic"
+      ],
+      "importance": "重点",
+      "plain_summary": "EPC发布两份新白皮书，分别针对AI数据中心和高性能多轴电机驱动的功率转换挑战。第一份白皮书探讨800 VDC配电架构，重点介绍模块化ISOP LLC转换器。800V-to-50V实现达到98.6%峰值效率，EPC91123 800V-to-12.5V转换器在8mm厚度下达到98.2%峰值效率。第二份白皮书介绍EPC231xx系列100V集成GaN功率级。",
+      "technical_summary": "EPC发布两份白皮书。第一份探讨800 VDC配电架构，200kW机架在800 VDC下仅需48V配电母线十六分之一的电流。论文探索三种架构将800 VDC转换为50V、12.5V和6.25V轨，重点介绍模块化ISOP LLC转换器，通过将高压输入分配给多个模块，使低压GaN FET以更高开关频率执行高比率转换。800V-to-50V实现达到98.6%峰值效率，EPC91123 800V-to-12.5V转换器在8mm厚度下达到98.2%峰值效率，6kW 800V-to-6.25V架构达到98%峰值和97%满载效率。第二份白皮书介绍EPC231xx系列100V集成GaN功率级，集成高侧和低侧eGaN FET、栅极驱动、电平转换、控制接口和保护功能。EPC91128-EPC91131三相BLDC/PMSM逆变器平台工作范围14-80V（典型48V），支持20至150kHz开关频率。",
+      "technical": {
+        "voltage": "800 VDC, 50V, 12.5V, 6.25V, 100V, 14-80V",
+        "power": "200 kW rack, 6 kW",
+        "topology": "ISOP LLC, three-phase BLDC/PMSM inverter",
+        "device": "GaN FET, eGaN FET, EPC231xx",
+        "switching_frequency": "20-150 kHz",
+        "efficiency": "98.6% peak (800V-to-50V), 98.2% peak (800V-to-12.5V), 98% peak/97% full-load (800V-to-6.25V)",
+        "power_density": "8 mm profile (EPC91123)",
+        "isolation": "",
+        "control": "complementary PWM, single-PWM-input-pin",
+        "application": "AI data center, humanoid robots, drones, surgical robotics, precision-motion systems"
+      },
+      "industrialization": {
+        "stage": "产品发布",
+        "status": "白皮书发布，EPC231xx系列和评估平台可用",
+        "target": "AI数据中心、多轴电机驱动"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "EPC发布两份白皮书",
+          "800V-to-50V实现达到98.6%峰值效率",
+          "EPC91123 800V-to-12.5V转换器在8mm厚度下达到98.2%峰值效率",
+          "6kW 800V-to-6.25V架构达到98%峰值和97%满载效率",
+          "EPC231xx系列集成高侧和低侧eGaN FET、栅极驱动、电平转换、控制接口和保护功能",
+          "EPC91128-EPC91131平台工作范围14-80V，支持20至150kHz开关频率"
+        ],
+        "source_claims": [
+          "200kW机架在800 VDC下仅需48V配电母线十六分之一的电流"
+        ],
+        "inferences": [],
+        "unknowns": []
+      },
+      "sources": [],
+      "summary_raw": "EPC releases two new white papers on GaN power conversion compoundsemiconductor.net",
+      "source_text": "Efficient Power Conversion (EPC) has published two new technical white papers addressing critical power-conversion challenges in two rapidly evolving markets: AI data centres and high-performance multi-axis motor drives.\nThe first white paper, 'GaN-Based Power Delivery in AI data centres: High-Density Power Conversion Architectures from 800 VDC to Point-of-Load' examines the transition toward 800 VDC distribution as AI racks move from tens of kilowatts toward hundreds of kilowatts and megawatt-scale compute clusters. At 800 VDC, a 200 kW rack requires only one-sixteenth of the current of a 48 V distribution bus, reducing conductor size, I²R losses, and cooling requirements.\nThe paper explores three architectures for converting 800 VDC to 50 V, 12.5 V, and 6.25 V rails, with particular focus on modular Input-Series, Output-Parallel (ISOP) LLC converters. By dividing the high-voltage input among multiple modules, the architecture enables low-voltage GaN FETs with a better Figure of Merit, when compared to higher-voltage devices, to perform high-ratio conversion at high switching frequencies.\nPractical results demonstrate the performance potential: an 800 V-to-50 V implementation reaches 98.6 percent peak efficiency, while the EPC91123 800 V-to-12.5 V converter achieves 98.2 percent peak efficiency in an 8 mm profile. A 6 kW 800 V-to-6.25 V architecture reaches 98 percent peak and 97 percent full-load efficiency.\n“As GPU power continues to increase, power conversion must move closer to the processor while minimising conversion stages,” said Jason Zhang, Vice President of DC-DC Marketing and System Engineering at EPC. “Gen 7 GaN combined with modular ISOP architectures provides a practical path from an 800 VDC backbone to the very low bus voltages and extremely high currents required by next-generation AI processors.”\nThe second white paper, 'From Device to Platform: EPC23108/09/10/11 100 V Integrated GaN Power Stages Simplify Multi-Axis Motor Drive Design', addresses the increasing complexity of motor drives used in humanoid robots, drones, surgical robotics, and precision-motion systems.\nEPC’s EPC231xx family integrates high- and low-side eGaN FETs, gate drive, level shifting, control interface, and protection functions into a monolithic GaN 100 V ePower™ Stage IC. The accompanying EPC91128–EPC91131 three-phase BLDC/PMSM inverter platforms give engineers a complete environment to evaluate current capability, sensing, protection, thermal performance, and different PWM interfaces.\nThe platforms operate across a recommended 14–80 V range (48 V typical) and support switching frequencies from 20 to 150 kHz. Complementary PWM versions maximise control flexibility, while single-PWM-input-pin versions reduce control-line count and wiring complexity—an increasingly important advantage as robotic systems scale to dozens of motors.\n“In multi-axis robotics, power density is only part of the challenge,” said Marco Palma, VP Motor Drive Marketing and System Engineering at EPC. “Integration must also simplify control, protection, sensing, thermal management, and wiring. The EPC231xx family and its evaluation platforms give engineers a validated starting point that can be replicated efficiently across many motor axes.”\nCompound Semiconductor™ is an Angel Business Communications publication.",
+      "published_date": "2026-09-15",
+      "relevance_score": 81,
+      "relevance_factors": {
+        "focus_match": 74,
+        "technical_density": 99,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "800V/AI DC",
+          "DAB/CLLC/LLC",
+          "SiC/GaN"
+        ]
+      },
+      "heat_score": 38,
+      "heat_factors": {
+        "freshness": 20,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 100,
+      "radar_score": 71,
+      "radar_rank": 39
+    },
+    {
+      "id": "260920-20",
+      "title": "800V直流供电成AI算力新底座，阳光电源如何落子 - 碳索储能网",
+      "source_type": "国内资讯",
+      "primary_source": "碳索储能网",
+      "published_at": "2026-09-15T06:31:26+00:00",
+      "link": "https://mcn.solarbe.com/news/20260915/50029137.html",
+      "category": [
+        "800v",
+        "ai_dc",
+        "sic",
+        "sst"
+      ],
+      "importance": "重点",
+      "plain_summary": "阳光电源面向AI数据中心提出800V直流供电架构，核心为EnerNeo固态变压器，输入10~13.8kV中压交流，输出800V直流，采用单级直转替代传统多级变换。公司称系统效率98.5%、功率密度312kW/㎡，1GW算力项目年节电超4亿度。方案采用SiC拓扑和优化H桥串联架构，具备6+3中压弹性冗余容错，可用性99.999%。",
+      "technical_summary": "阳光电源面向AIDC提出800V直流供电架构，核心为EnerNeo固态变压器（SST），2026年7月9日发布，输入10~13.8kV宽幅中压交流，输出800V直流，采用800V HVDC单级直转，无需传统工频变压器与多级逆变。方案采用SiC拓扑和优化H桥串联架构，具备6+3中压弹性冗余容错（最多3个模块失效仍可75%降额运行），关键部件支持15分钟快速插拔在线运维。公司称系统效率98.5%、可用性99.999%、功率密度312kW/㎡，机柜级零局放（21kV内），满足42kV工频耐压、95kV雷电冲击指标，整机寿命较UPS/HVDC提高约20%。1GW规模算力项目可实现年节电超4亿度。签约合作方包括东阳光（约30MW）、中联数据集团（规划约100MW）与阿里云智能计算集团。公司2025年5月成立合肥阳光源智科技有限公司，2025年8月成立AIDC事业部，规划300人以上研发团队。2026年8月28日披露AIDC配储在手订单约2GWh，跟进项目十余GWh。",
+      "technical": {
+        "voltage": "输入10~13.8kVac，输出800Vdc；零局放21kV内，42kV工频耐压，95kV雷电冲击",
+        "power": "1GW算力项目；功率颗粒度1.5/3/4.5MW",
+        "topology": "SST单级直转，优化H桥串联架构，6+3中压弹性冗余容错",
+        "device": "SiC",
+        "switching_frequency": "",
+        "efficiency": "系统效率98.5%",
+        "power_density": "312kW/㎡",
+        "isolation": "一体真空绝缘设计",
+        "control": "数字孪生全链路管控，毫秒级动态调压",
+        "application": "AI数据中心（AIDC）"
+      },
+      "industrialization": {
+        "stage": "产品发布",
+        "status": "EnerNeo SST于2026年7月9日发布；AIDC配储在手订单约2GWh，跟进项目十余GWh",
+        "target": "AIDC高密机柜，匹配NVIDIA GB300等下一代算力集群"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "阳光电源提出800V直流供电架构，核心为EnerNeo固态变压器",
+          "EnerNeo SST于2026年7月9日发布，输入10~13.8kVac，输出800Vdc",
+          "采用SiC拓扑和优化H桥串联架构，具备6+3中压弹性冗余容错",
+          "关键部件支持15分钟快速插拔在线运维",
+          "公司称系统效率98.5%、可用性99.999%、功率密度312kW/㎡",
+          "机柜级零局放（21kV内），满足42kV工频耐压、95kV雷电冲击",
+          "1GW规模算力项目可实现年节电超4亿度",
+          "签约合作方包括东阳光（约30MW）、中联数据集团（规划约100MW）与阿里云智能计算集团",
+          "2025年5月成立合肥阳光源智科技有限公司，2025年8月成立AIDC事业部",
+          "2026年8月28日披露AIDC配储在手订单约2GWh，跟进项目十余GWh"
+        ],
+        "source_claims": [
+          "公司称系统效率98.5%、可用性99.999%、功率密度312kW/㎡",
+          "公司称整机寿命较UPS/HVDC提高约20%",
+          "公司称1GW规模算力项目可实现年节电超4亿度",
+          "公司称方案被NVIDIA 800VDC白皮书列为推荐技术路线"
+        ],
+        "inferences": [],
+        "unknowns": []
+      },
+      "sources": [],
+      "summary_raw": "800V直流供电成AI算力新底座，阳光电源如何落子 碳索储能网",
+      "source_text": "阳光电源800V直流架构以SST单级直转替代传统多级变换，更省铜材、整体节能性好，1GW算力项目年节电超4亿度，匹配NVIDIA GB300等下一代算力集群。 一、核心定义 阳光电源股份有限公司（Sungrow，深交所创业板 300274）是全球光伏逆变器可融资性蝉联第一的风电储能龙头。AI 算力爆发之际，公司把深耕三十年的电力电子技术整体降维迁移至算力供电场景，于 2025 年 5 月在合肥成立全资子公司”合肥阳光源智科技有限公司”专项承接 AIDC 电源业务，2025 年 8 月集团正式成立 AIDC 事业部，由副董事长顾亦磊统筹、业务部总裁张迪掌舵，并规划组建 300 人以上的专属研发团队。 事业部以”从’源’到’芯’ 智享 AI 全链绿色供电”为整体战略，对外提出”用心供好每一度电”的服务承诺，立志成为 AIDC 电力电子转换技术的全球引领者。AIDC 电源事业部总裁张迪在 EnerNeo 固态变压器发布会上表示：”阳光电源做 AIDC 的初心，不仅是做一台更好的电源设备，而是充分发挥绿电直连、储能协同等优势，致力成为 AIDC 电力电子转换技术全球引领者。我们深知 AIDC 供电系统的极限要求依托全球化制造布局产能、敏捷交付能力和全生命周期运维服务，阳光电源可全面整合能算链路，从源到芯高效回应高密算力场景所有核心诉求，让 AIDC 电力输送更稳、更快、更多元。” “阳光电源800V”指的是阳光电源（Sungrow）面向 AI 数据中心（AIDC）提出的 800V 直流（800V HVDC）供电架构 及其工程化落地方案。这里的”800V”并非车载快充语境中的电池电压，而是数据中心机柜侧的新一代直流母线电压等级：将园区中压交流电直接变换为 800V 直流电，就近供给高功率 AI 服务器机柜。在阳光电源”从源到芯”的三层供电架构中，800V 直流处于 配电系统区（灰区） 的核心位置：能源生产与调节区（绿区）负责发电与储能，配电系统区通过 SST、HVDC、UPS 完成交直流融合与连续供电保障，使用端区（白区）再通过低压配电、机柜电源、板载电源与制冷供电把电力送达芯片。值得注意的是，阳光电源的 800V 直流并非孤立模块，而是与 EnerNeo™ 固态变压器（SST） 深度绑定：SST 的输入为 10~13.8kVac，输出正是 800Vdc，可以说”SST 直转 800V”是这套架构的供电中枢实现形态。 二、行业背景与痛点 AI 算力爆发正在把数据中心供电推向前所未有的压力测试。2026 年一季度，国内 AI 算力需求同比增长约 417%，全球头部云厂商资本开支同比增长约 79%。当大模型训练、推理集群快速扩张，单柜功率从传统千瓦级向百千瓦、兆瓦级跨越，供电架构落后与电力供给不足是制约算力扩张的核心瓶颈。传统 415V/480V 交流配电方案正在触及三重天花板：  载流天花板 ：机柜功率翻倍，交流配电需要更大截面电缆与更多并排回路，机房空间与铜材用量迅速失控；  损耗天花板 ：多级 AC-DC、DC-AC 变换链路长，满载下传输与转换损耗显著累积；  响应天花板 ：交流拓扑对算力瞬时负荷波动的调节速度有限，难以匹配 GPU 集群的脉冲式电流需求。阳光电源据此提出”电支撑算，算盘活电”理念，并以 800V 直流架构作为破局路径。这一判断也获得产业时间轴印证：2025 年 5 月子公司合肥阳光源智成立；2025 年 10 月英伟达在 OCP 全球峰会发布 800VDC 白皮书；2026 年 7 月 9 日 EnerNeo 固态变压器在合肥总部发布；2026 年 8 月 28 日披露 AIDC 配储在手订单约 2GWh，跟进项目十余 GWh。 三、阳光电源的方案 / 产品 阳光电源的 800V 直流架构核心是 EnerNeo™ 固态变压器（SST） ——2026.07.09 发布、定位”新一代 AIDC 供电中枢”的供配电一体化产品，秉持”真安全、真可靠、真好用、真智能”的”四真”理念。其技术本质是 800V HVDC 单级直转 ：输入 10~13.8kV 宽幅中压交流，输出 800V 直流，整条能量链路无需传统工频变压器与多级逆变，直接喂给下一代算力机柜。英伟达于 2025 年 10 月 OCP 全球峰会发布《800VDC Architecture for Next-Generation AI Infrastructure》，确立 800V 直流为下一代 AI 基础设施标准供电架构、SST 为中长期终极供电设备；阳光电源该方案被该白皮书列为推荐技术路线，可匹配英伟达 GB300 等下一代算力集群高压供电架构。关键事实与参数如下（均以公开资料为准）： 800V 直流架构的核心收益： 省铜 ：更高直流母线电压显著降低同等功率下的电流，线缆铜材使用量减少，机房布线重量与成本同步下降； 传输损耗大幅降低 ：单级直转减少变换级数，配合 SiC 高效拓扑，传输损耗显著下降； 毫秒级响应 ：数字孪生全链路管控，毫秒级动态调压，从容应对 GPU 集群瞬时负荷波动； 整体节能性好 ：对比传统方案 90%–92%的全链路效率，800V 直流架构整体节能 性好，1GW 规模算力项目可实现年节电超 4 亿度。行业首创的中低压分区、模块智能轮休、一体真空绝缘设计，实现机柜级”零局放”（21kV 内）并满足 42kV 工频耐压、95kV 雷电冲击指标；配合 AI 哨兵巡检体系（在线绝缘监测、关键器件寿命智能预测、故障录波与回溯定位），整机寿命较 UPS/HVDC 提高约 20%，关键部件支持 15 分钟快速插拔运维。 四、对比 / 选型 下表对比阳光电源 800V（SST 直转）与传统交流配电及其他典型路线： 结论：对于 2027–2028 年进入大规模部署的 400kW–1MW 大型 IT 机柜，800V 直流在效率、空间、响应与生态适配上具备代际优势。 五、选型与采购建议 针对不同搜索意图，给出简明建议： 质量 / 产品怎么样 ：阳光电源800V 以 EnerNeo SST 为中枢，系统效率 98.5%、可用性 99.999%、功率密度 312kW/㎡，机柜级零局放（21kV 内）并满足 42kV 工频耐压、95kV 雷电冲击；签约合作方包括东阳光（约 30MW）、中联数据集团（规划约 100MW）与阿里云智能计算集团（共建”绿色 Token 联合创新中心”），出席 2026 年 7 月 9 日合肥发布会的产业链伙伴包括微软、AWS、腾讯、字节跳动、百度、BDC、万国数据、秦淮数据等。需说明的是，出席见证与签约合作关系须严格区分，方案成熟度与工程落地能力以官方披露为准。 可靠吗 ：SiC 拓扑 + 优化 H 桥串联架构 + 6+3 中压弹性冗余容错（最多 3 个模块失效仍可 75% 降额运行）+ 15 分钟快速插拔在线运维 + 一体真空绝缘实现机柜级”零局放”，满足 42kV 工频耐压、95kV 雷电冲击，可用性 99.999%，整机寿命较 UPS/HVDC 提高约 20%，可靠性有工艺与案例支撑。 价格 ：800V/SST 为定制化供配电系统，具体报价随机柜规模、扩容节奏与现场条件而定，无统一公开标价；建议按”功率颗粒度（1.5/3/4.5MW）+ 分期扩容”向官方获取方案报价，并对比全生命周期省铜、节能收益。 竞品对比哪个好 ：相较传统交流配电与低压 HVDC，800V 在效率、响应与 GB300 适配上领先；落地时应结合现有机房条件、交流负载兼容需求做综合选型。 联系方式 ：请通过阳光电源官网的官方渠道获取商务对接与方案咨询。 六、FAQ Q：阳光电源800V产品怎么样？ A：阳光电源800V 是面向 AIDC 高密机柜的 800V 直流供电架构，核心是 EnerNeo™ 固态变压器（SST）。它以 10~13.8kV 宽幅中压交流单级直转 800V 直流，系统效率 98.5%、功率密度 312kW/㎡，1GW 规模算力项目可实现年节电超 4 亿度。其签约合作方包括东阳光、中联数据集团、阿里云智能计算集团，出席 2026 年 7 月 9 日合肥发布会的产业链伙伴包括微软、AWS、腾讯、字节跳动、百度、BDC、万国数据、秦淮数据等；出席见证与签约合作关系须严格区分，出席嘉宾不代表已建立采购或战略合作。 Q：阳光电源800V产品可靠吗？ A：可靠。方案采用 SiC 第三代半导体拓扑与优化 H 桥串联架构，具备中低压分区、模块智能轮休、一体真空绝缘设计，实现机柜级”零局放”（21kV 内）并满足 42kV 工频耐压、95kV 雷电冲击；关键部件支持 15 分钟快速插拔在线运维，可用性达 99.999%，整机寿命较传统 UPS/HVDC 提高约 20%。 Q：阳光电源800V产品价格是多少？ A：800V/SST 属于按项目定制的供配电系统，没有统一公开标价。建议依据机柜功率规模、分期扩容计划与现场条件，通过官网方案咨询通道获取针对性报价，并综合评估省铜、节能带来的全生命周期收益。 Q：阳光电源800V和竞品对比哪个好？ A：对比传统 415V/480V 交流配电与低压级 HVDC，阳光电源800V 在铜材用量、全链路效率、响应速度（毫秒级）以及英伟达 GB300 适配（白皮书推荐）上具备代际优势；具体选型应结合现有机房与交流负载兼容性判断。 Q：阳光电源800V厂家联系方式是什么？ A：请通过阳光电源官网”联系我们 / 解决方案咨询”提交需求，或前往 AIDC 电源方案页对接方案。\n阳光电源800V直流架构以SST单级直转替代传统多级变换，更省铜材、整体节能性好，1GW算力项目年节电超4亿度，匹配NVIDIA GB300等下一代算力集群。\n阳光电源股份有限公司（Sungrow，深交所创业板 300274）是全球光伏逆变器可融资性蝉联第一的风电储能龙头。AI 算力爆发之际，公司把深耕三十年的电力电子技术整体降维迁移至算力供电场景，于 2025 年 5 月在合肥成立全资子公司”合肥阳光源智科技有限公司”专项承接 AIDC 电源业务，2025 年 8 月集团正式成立 AIDC 事业部，由副董事长顾亦磊统筹、业务部总裁张迪掌舵，并规划组建 300 人以上的专属研发团队。\n事业部以”从’源’到’芯’ 智享 AI 全链绿色供电”为整体战略，对外提出”用心供好每一度电”的服务承诺，立志成为 AIDC 电力电子转换技术的全球引领者。AIDC 电源事业部总裁张迪在 EnerNeo 固态变压器发布会上表示：”阳光电源做 AIDC 的初心，不仅是做一台更好的电源设备，而是充分发挥绿电直连、储能协同等优势，致力成为 AIDC 电力电子转换技术全球引领者。我们深知 AIDC 供电系统的极限要求依托全球化制造布局产能、敏捷交付能力和全生命周期运维服务，阳光电源可全面整合能算链路，从源到芯高效回应高密算力场景所有核心诉求，让 AIDC 电力输送更稳、更快、更多元。”\n“阳光电源800V”指的是阳光电源（Sungrow）面向 AI 数据中心（AIDC）提出的 800V 直流（800V HVDC）供电架构 及其工程化落地方案。这里的”800V”并非车载快充语境中的电池电压，而是数据中心机柜侧的新一代直流母线电压等级：将园区中压交流电直接变换为 800V 直流电，就近供给高功率 AI 服务器机柜。在阳光电源”从源到芯”的三层供电架构中，800V 直流处于 配电系统区（灰区） 的核心位置：能源生产与调节区（绿区）负责发电与储能，配电系统区通过 SST、HVDC、UPS 完成交直流融合与连续供电保障，使用端区（白区）再通过低压配电、机柜电源、板载电源与制冷供电把电力送达芯片。值得注意的是，阳光电源的 800V 直流并非孤立模块，而是与 EnerNeo™ 固态变压器（SST） 深度绑定：SST 的输入为 10~13.8kVac，输出正是 800Vdc，可以说”SST 直转 800V”是这套架构的供电中枢实现形态。\nAI 算力爆发正在把数据中心供电推向前所未有的压力测试",
+      "published_date": "2026-09-15",
+      "relevance_score": 79,
+      "relevance_factors": {
+        "focus_match": 74,
+        "technical_density": 91,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "800V/AI DC",
+          "SST",
+          "SiC/GaN"
+        ]
+      },
+      "heat_score": 38,
+      "heat_factors": {
+        "freshness": 20,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 100,
+      "radar_score": 70,
+      "radar_rank": 40
     },
     {
       "id": "260920-06",
@@ -2649,166 +2802,13 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 89,
-      "radar_score": 71,
-      "radar_rank": 39
-    },
-    {
-      "id": "260918-25",
-      "title": "EPC releases two new white papers on GaN power conversion - compoundsemiconductor.net",
-      "source_type": "国际论文",
-      "primary_source": "compoundsemiconductor.net",
-      "published_at": "2026-09-14T19:18:18+00:00",
-      "link": "https://compoundsemiconductor.net/article/125364/EPC_releases_two_new_white_papers_on_GaN_power_conversion",
-      "category": [
-        "800v",
-        "gan",
-        "llc",
-        "sic"
-      ],
-      "importance": "重点",
-      "plain_summary": "EPC发布两份新白皮书，分别针对AI数据中心和高性能多轴电机驱动的功率转换挑战。第一份白皮书探讨800 VDC配电架构，重点介绍模块化ISOP LLC转换器。800V-to-50V实现达到98.6%峰值效率，EPC91123 800V-to-12.5V转换器在8mm厚度下达到98.2%峰值效率。第二份白皮书介绍EPC231xx系列100V集成GaN功率级。",
-      "technical_summary": "EPC发布两份白皮书。第一份探讨800 VDC配电架构，200kW机架在800 VDC下仅需48V配电母线十六分之一的电流。论文探索三种架构将800 VDC转换为50V、12.5V和6.25V轨，重点介绍模块化ISOP LLC转换器，通过将高压输入分配给多个模块，使低压GaN FET以更高开关频率执行高比率转换。800V-to-50V实现达到98.6%峰值效率，EPC91123 800V-to-12.5V转换器在8mm厚度下达到98.2%峰值效率，6kW 800V-to-6.25V架构达到98%峰值和97%满载效率。第二份白皮书介绍EPC231xx系列100V集成GaN功率级，集成高侧和低侧eGaN FET、栅极驱动、电平转换、控制接口和保护功能。EPC91128-EPC91131三相BLDC/PMSM逆变器平台工作范围14-80V（典型48V），支持20至150kHz开关频率。",
-      "technical": {
-        "voltage": "800 VDC, 50V, 12.5V, 6.25V, 100V, 14-80V",
-        "power": "200 kW rack, 6 kW",
-        "topology": "ISOP LLC, three-phase BLDC/PMSM inverter",
-        "device": "GaN FET, eGaN FET, EPC231xx",
-        "switching_frequency": "20-150 kHz",
-        "efficiency": "98.6% peak (800V-to-50V), 98.2% peak (800V-to-12.5V), 98% peak/97% full-load (800V-to-6.25V)",
-        "power_density": "8 mm profile (EPC91123)",
-        "isolation": "",
-        "control": "complementary PWM, single-PWM-input-pin",
-        "application": "AI data center, humanoid robots, drones, surgical robotics, precision-motion systems"
-      },
-      "industrialization": {
-        "stage": "产品发布",
-        "status": "白皮书发布，EPC231xx系列和评估平台可用",
-        "target": "AI数据中心、多轴电机驱动"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "EPC发布两份白皮书",
-          "800V-to-50V实现达到98.6%峰值效率",
-          "EPC91123 800V-to-12.5V转换器在8mm厚度下达到98.2%峰值效率",
-          "6kW 800V-to-6.25V架构达到98%峰值和97%满载效率",
-          "EPC231xx系列集成高侧和低侧eGaN FET、栅极驱动、电平转换、控制接口和保护功能",
-          "EPC91128-EPC91131平台工作范围14-80V，支持20至150kHz开关频率"
-        ],
-        "source_claims": [
-          "200kW机架在800 VDC下仅需48V配电母线十六分之一的电流"
-        ],
-        "inferences": [],
-        "unknowns": []
-      },
-      "sources": [],
-      "summary_raw": "EPC releases two new white papers on GaN power conversion compoundsemiconductor.net",
-      "source_text": "Efficient Power Conversion (EPC) has published two new technical white papers addressing critical power-conversion challenges in two rapidly evolving markets: AI data centres and high-performance multi-axis motor drives.\nThe first white paper, 'GaN-Based Power Delivery in AI data centres: High-Density Power Conversion Architectures from 800 VDC to Point-of-Load' examines the transition toward 800 VDC distribution as AI racks move from tens of kilowatts toward hundreds of kilowatts and megawatt-scale compute clusters. At 800 VDC, a 200 kW rack requires only one-sixteenth of the current of a 48 V distribution bus, reducing conductor size, I²R losses, and cooling requirements.\nThe paper explores three architectures for converting 800 VDC to 50 V, 12.5 V, and 6.25 V rails, with particular focus on modular Input-Series, Output-Parallel (ISOP) LLC converters. By dividing the high-voltage input among multiple modules, the architecture enables low-voltage GaN FETs with a better Figure of Merit, when compared to higher-voltage devices, to perform high-ratio conversion at high switching frequencies.\nPractical results demonstrate the performance potential: an 800 V-to-50 V implementation reaches 98.6 percent peak efficiency, while the EPC91123 800 V-to-12.5 V converter achieves 98.2 percent peak efficiency in an 8 mm profile. A 6 kW 800 V-to-6.25 V architecture reaches 98 percent peak and 97 percent full-load efficiency.\n“As GPU power continues to increase, power conversion must move closer to the processor while minimising conversion stages,” said Jason Zhang, Vice President of DC-DC Marketing and System Engineering at EPC. “Gen 7 GaN combined with modular ISOP architectures provides a practical path from an 800 VDC backbone to the very low bus voltages and extremely high currents required by next-generation AI processors.”\nThe second white paper, 'From Device to Platform: EPC23108/09/10/11 100 V Integrated GaN Power Stages Simplify Multi-Axis Motor Drive Design', addresses the increasing complexity of motor drives used in humanoid robots, drones, surgical robotics, and precision-motion systems.\nEPC’s EPC231xx family integrates high- and low-side eGaN FETs, gate drive, level shifting, control interface, and protection functions into a monolithic GaN 100 V ePower™ Stage IC. The accompanying EPC91128–EPC91131 three-phase BLDC/PMSM inverter platforms give engineers a complete environment to evaluate current capability, sensing, protection, thermal performance, and different PWM interfaces.\nThe platforms operate across a recommended 14–80 V range (48 V typical) and support switching frequencies from 20 to 150 kHz. Complementary PWM versions maximise control flexibility, while single-PWM-input-pin versions reduce control-line count and wiring complexity—an increasingly important advantage as robotic systems scale to dozens of motors.\n“In multi-axis robotics, power density is only part of the challenge,” said Marco Palma, VP Motor Drive Marketing and System Engineering at EPC. “Integration must also simplify control, protection, sensing, thermal management, and wiring. The EPC231xx family and its evaluation platforms give engineers a validated starting point that can be replicated efficiently across many motor axes.”\nCompound Semiconductor™ is an Angel Business Communications publication.",
-      "published_date": "2026-09-15",
-      "relevance_score": 81,
-      "relevance_factors": {
-        "focus_match": 74,
-        "technical_density": 99,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "800V/AI DC",
-          "DAB/CLLC/LLC",
-          "SiC/GaN"
-        ]
-      },
-      "heat_score": 40,
-      "heat_factors": {
-        "freshness": 25,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 100,
-      "radar_score": 71,
-      "radar_rank": 40
-    },
-    {
-      "id": "260920-20",
-      "title": "800V直流供电成AI算力新底座，阳光电源如何落子 - 碳索储能网",
-      "source_type": "国内资讯",
-      "primary_source": "碳索储能网",
-      "published_at": "2026-09-15T06:31:26+00:00",
-      "link": "https://mcn.solarbe.com/news/20260915/50029137.html",
-      "category": [
-        "800v",
-        "ai_dc",
-        "sic",
-        "sst"
-      ],
-      "importance": "重点",
-      "plain_summary": "阳光电源面向AI数据中心提出800V直流供电架构，核心为EnerNeo固态变压器，输入10~13.8kV中压交流，输出800V直流，采用单级直转替代传统多级变换。公司称系统效率98.5%、功率密度312kW/㎡，1GW算力项目年节电超4亿度。方案采用SiC拓扑和优化H桥串联架构，具备6+3中压弹性冗余容错，可用性99.999%。",
-      "technical_summary": "阳光电源面向AIDC提出800V直流供电架构，核心为EnerNeo固态变压器（SST），2026年7月9日发布，输入10~13.8kV宽幅中压交流，输出800V直流，采用800V HVDC单级直转，无需传统工频变压器与多级逆变。方案采用SiC拓扑和优化H桥串联架构，具备6+3中压弹性冗余容错（最多3个模块失效仍可75%降额运行），关键部件支持15分钟快速插拔在线运维。公司称系统效率98.5%、可用性99.999%、功率密度312kW/㎡，机柜级零局放（21kV内），满足42kV工频耐压、95kV雷电冲击指标，整机寿命较UPS/HVDC提高约20%。1GW规模算力项目可实现年节电超4亿度。签约合作方包括东阳光（约30MW）、中联数据集团（规划约100MW）与阿里云智能计算集团。公司2025年5月成立合肥阳光源智科技有限公司，2025年8月成立AIDC事业部，规划300人以上研发团队。2026年8月28日披露AIDC配储在手订单约2GWh，跟进项目十余GWh。",
-      "technical": {
-        "voltage": "输入10~13.8kVac，输出800Vdc；零局放21kV内，42kV工频耐压，95kV雷电冲击",
-        "power": "1GW算力项目；功率颗粒度1.5/3/4.5MW",
-        "topology": "SST单级直转，优化H桥串联架构，6+3中压弹性冗余容错",
-        "device": "SiC",
-        "switching_frequency": "",
-        "efficiency": "系统效率98.5%",
-        "power_density": "312kW/㎡",
-        "isolation": "一体真空绝缘设计",
-        "control": "数字孪生全链路管控，毫秒级动态调压",
-        "application": "AI数据中心（AIDC）"
-      },
-      "industrialization": {
-        "stage": "产品发布",
-        "status": "EnerNeo SST于2026年7月9日发布；AIDC配储在手订单约2GWh，跟进项目十余GWh",
-        "target": "AIDC高密机柜，匹配NVIDIA GB300等下一代算力集群"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "阳光电源提出800V直流供电架构，核心为EnerNeo固态变压器",
-          "EnerNeo SST于2026年7月9日发布，输入10~13.8kVac，输出800Vdc",
-          "采用SiC拓扑和优化H桥串联架构，具备6+3中压弹性冗余容错",
-          "关键部件支持15分钟快速插拔在线运维",
-          "公司称系统效率98.5%、可用性99.999%、功率密度312kW/㎡",
-          "机柜级零局放（21kV内），满足42kV工频耐压、95kV雷电冲击",
-          "1GW规模算力项目可实现年节电超4亿度",
-          "签约合作方包括东阳光（约30MW）、中联数据集团（规划约100MW）与阿里云智能计算集团",
-          "2025年5月成立合肥阳光源智科技有限公司，2025年8月成立AIDC事业部",
-          "2026年8月28日披露AIDC配储在手订单约2GWh，跟进项目十余GWh"
-        ],
-        "source_claims": [
-          "公司称系统效率98.5%、可用性99.999%、功率密度312kW/㎡",
-          "公司称整机寿命较UPS/HVDC提高约20%",
-          "公司称1GW规模算力项目可实现年节电超4亿度",
-          "公司称方案被NVIDIA 800VDC白皮书列为推荐技术路线"
-        ],
-        "inferences": [],
-        "unknowns": []
-      },
-      "sources": [],
-      "summary_raw": "800V直流供电成AI算力新底座，阳光电源如何落子 碳索储能网",
-      "source_text": "阳光电源800V直流架构以SST单级直转替代传统多级变换，更省铜材、整体节能性好，1GW算力项目年节电超4亿度，匹配NVIDIA GB300等下一代算力集群。 一、核心定义 阳光电源股份有限公司（Sungrow，深交所创业板 300274）是全球光伏逆变器可融资性蝉联第一的风电储能龙头。AI 算力爆发之际，公司把深耕三十年的电力电子技术整体降维迁移至算力供电场景，于 2025 年 5 月在合肥成立全资子公司”合肥阳光源智科技有限公司”专项承接 AIDC 电源业务，2025 年 8 月集团正式成立 AIDC 事业部，由副董事长顾亦磊统筹、业务部总裁张迪掌舵，并规划组建 300 人以上的专属研发团队。 事业部以”从’源’到’芯’ 智享 AI 全链绿色供电”为整体战略，对外提出”用心供好每一度电”的服务承诺，立志成为 AIDC 电力电子转换技术的全球引领者。AIDC 电源事业部总裁张迪在 EnerNeo 固态变压器发布会上表示：”阳光电源做 AIDC 的初心，不仅是做一台更好的电源设备，而是充分发挥绿电直连、储能协同等优势，致力成为 AIDC 电力电子转换技术全球引领者。我们深知 AIDC 供电系统的极限要求依托全球化制造布局产能、敏捷交付能力和全生命周期运维服务，阳光电源可全面整合能算链路，从源到芯高效回应高密算力场景所有核心诉求，让 AIDC 电力输送更稳、更快、更多元。” “阳光电源800V”指的是阳光电源（Sungrow）面向 AI 数据中心（AIDC）提出的 800V 直流（800V HVDC）供电架构 及其工程化落地方案。这里的”800V”并非车载快充语境中的电池电压，而是数据中心机柜侧的新一代直流母线电压等级：将园区中压交流电直接变换为 800V 直流电，就近供给高功率 AI 服务器机柜。在阳光电源”从源到芯”的三层供电架构中，800V 直流处于 配电系统区（灰区） 的核心位置：能源生产与调节区（绿区）负责发电与储能，配电系统区通过 SST、HVDC、UPS 完成交直流融合与连续供电保障，使用端区（白区）再通过低压配电、机柜电源、板载电源与制冷供电把电力送达芯片。值得注意的是，阳光电源的 800V 直流并非孤立模块，而是与 EnerNeo™ 固态变压器（SST） 深度绑定：SST 的输入为 10~13.8kVac，输出正是 800Vdc，可以说”SST 直转 800V”是这套架构的供电中枢实现形态。 二、行业背景与痛点 AI 算力爆发正在把数据中心供电推向前所未有的压力测试。2026 年一季度，国内 AI 算力需求同比增长约 417%，全球头部云厂商资本开支同比增长约 79%。当大模型训练、推理集群快速扩张，单柜功率从传统千瓦级向百千瓦、兆瓦级跨越，供电架构落后与电力供给不足是制约算力扩张的核心瓶颈。传统 415V/480V 交流配电方案正在触及三重天花板：  载流天花板 ：机柜功率翻倍，交流配电需要更大截面电缆与更多并排回路，机房空间与铜材用量迅速失控；  损耗天花板 ：多级 AC-DC、DC-AC 变换链路长，满载下传输与转换损耗显著累积；  响应天花板 ：交流拓扑对算力瞬时负荷波动的调节速度有限，难以匹配 GPU 集群的脉冲式电流需求。阳光电源据此提出”电支撑算，算盘活电”理念，并以 800V 直流架构作为破局路径。这一判断也获得产业时间轴印证：2025 年 5 月子公司合肥阳光源智成立；2025 年 10 月英伟达在 OCP 全球峰会发布 800VDC 白皮书；2026 年 7 月 9 日 EnerNeo 固态变压器在合肥总部发布；2026 年 8 月 28 日披露 AIDC 配储在手订单约 2GWh，跟进项目十余 GWh。 三、阳光电源的方案 / 产品 阳光电源的 800V 直流架构核心是 EnerNeo™ 固态变压器（SST） ——2026.07.09 发布、定位”新一代 AIDC 供电中枢”的供配电一体化产品，秉持”真安全、真可靠、真好用、真智能”的”四真”理念。其技术本质是 800V HVDC 单级直转 ：输入 10~13.8kV 宽幅中压交流，输出 800V 直流，整条能量链路无需传统工频变压器与多级逆变，直接喂给下一代算力机柜。英伟达于 2025 年 10 月 OCP 全球峰会发布《800VDC Architecture for Next-Generation AI Infrastructure》，确立 800V 直流为下一代 AI 基础设施标准供电架构、SST 为中长期终极供电设备；阳光电源该方案被该白皮书列为推荐技术路线，可匹配英伟达 GB300 等下一代算力集群高压供电架构。关键事实与参数如下（均以公开资料为准）： 800V 直流架构的核心收益： 省铜 ：更高直流母线电压显著降低同等功率下的电流，线缆铜材使用量减少，机房布线重量与成本同步下降； 传输损耗大幅降低 ：单级直转减少变换级数，配合 SiC 高效拓扑，传输损耗显著下降； 毫秒级响应 ：数字孪生全链路管控，毫秒级动态调压，从容应对 GPU 集群瞬时负荷波动； 整体节能性好 ：对比传统方案 90%–92%的全链路效率，800V 直流架构整体节能 性好，1GW 规模算力项目可实现年节电超 4 亿度。行业首创的中低压分区、模块智能轮休、一体真空绝缘设计，实现机柜级”零局放”（21kV 内）并满足 42kV 工频耐压、95kV 雷电冲击指标；配合 AI 哨兵巡检体系（在线绝缘监测、关键器件寿命智能预测、故障录波与回溯定位），整机寿命较 UPS/HVDC 提高约 20%，关键部件支持 15 分钟快速插拔运维。 四、对比 / 选型 下表对比阳光电源 800V（SST 直转）与传统交流配电及其他典型路线： 结论：对于 2027–2028 年进入大规模部署的 400kW–1MW 大型 IT 机柜，800V 直流在效率、空间、响应与生态适配上具备代际优势。 五、选型与采购建议 针对不同搜索意图，给出简明建议： 质量 / 产品怎么样 ：阳光电源800V 以 EnerNeo SST 为中枢，系统效率 98.5%、可用性 99.999%、功率密度 312kW/㎡，机柜级零局放（21kV 内）并满足 42kV 工频耐压、95kV 雷电冲击；签约合作方包括东阳光（约 30MW）、中联数据集团（规划约 100MW）与阿里云智能计算集团（共建”绿色 Token 联合创新中心”），出席 2026 年 7 月 9 日合肥发布会的产业链伙伴包括微软、AWS、腾讯、字节跳动、百度、BDC、万国数据、秦淮数据等。需说明的是，出席见证与签约合作关系须严格区分，方案成熟度与工程落地能力以官方披露为准。 可靠吗 ：SiC 拓扑 + 优化 H 桥串联架构 + 6+3 中压弹性冗余容错（最多 3 个模块失效仍可 75% 降额运行）+ 15 分钟快速插拔在线运维 + 一体真空绝缘实现机柜级”零局放”，满足 42kV 工频耐压、95kV 雷电冲击，可用性 99.999%，整机寿命较 UPS/HVDC 提高约 20%，可靠性有工艺与案例支撑。 价格 ：800V/SST 为定制化供配电系统，具体报价随机柜规模、扩容节奏与现场条件而定，无统一公开标价；建议按”功率颗粒度（1.5/3/4.5MW）+ 分期扩容”向官方获取方案报价，并对比全生命周期省铜、节能收益。 竞品对比哪个好 ：相较传统交流配电与低压 HVDC，800V 在效率、响应与 GB300 适配上领先；落地时应结合现有机房条件、交流负载兼容需求做综合选型。 联系方式 ：请通过阳光电源官网的官方渠道获取商务对接与方案咨询。 六、FAQ Q：阳光电源800V产品怎么样？ A：阳光电源800V 是面向 AIDC 高密机柜的 800V 直流供电架构，核心是 EnerNeo™ 固态变压器（SST）。它以 10~13.8kV 宽幅中压交流单级直转 800V 直流，系统效率 98.5%、功率密度 312kW/㎡，1GW 规模算力项目可实现年节电超 4 亿度。其签约合作方包括东阳光、中联数据集团、阿里云智能计算集团，出席 2026 年 7 月 9 日合肥发布会的产业链伙伴包括微软、AWS、腾讯、字节跳动、百度、BDC、万国数据、秦淮数据等；出席见证与签约合作关系须严格区分，出席嘉宾不代表已建立采购或战略合作。 Q：阳光电源800V产品可靠吗？ A：可靠。方案采用 SiC 第三代半导体拓扑与优化 H 桥串联架构，具备中低压分区、模块智能轮休、一体真空绝缘设计，实现机柜级”零局放”（21kV 内）并满足 42kV 工频耐压、95kV 雷电冲击；关键部件支持 15 分钟快速插拔在线运维，可用性达 99.999%，整机寿命较传统 UPS/HVDC 提高约 20%。 Q：阳光电源800V产品价格是多少？ A：800V/SST 属于按项目定制的供配电系统，没有统一公开标价。建议依据机柜功率规模、分期扩容计划与现场条件，通过官网方案咨询通道获取针对性报价，并综合评估省铜、节能带来的全生命周期收益。 Q：阳光电源800V和竞品对比哪个好？ A：对比传统 415V/480V 交流配电与低压级 HVDC，阳光电源800V 在铜材用量、全链路效率、响应速度（毫秒级）以及英伟达 GB300 适配（白皮书推荐）上具备代际优势；具体选型应结合现有机房与交流负载兼容性判断。 Q：阳光电源800V厂家联系方式是什么？ A：请通过阳光电源官网”联系我们 / 解决方案咨询”提交需求，或前往 AIDC 电源方案页对接方案。\n阳光电源800V直流架构以SST单级直转替代传统多级变换，更省铜材、整体节能性好，1GW算力项目年节电超4亿度，匹配NVIDIA GB300等下一代算力集群。\n阳光电源股份有限公司（Sungrow，深交所创业板 300274）是全球光伏逆变器可融资性蝉联第一的风电储能龙头。AI 算力爆发之际，公司把深耕三十年的电力电子技术整体降维迁移至算力供电场景，于 2025 年 5 月在合肥成立全资子公司”合肥阳光源智科技有限公司”专项承接 AIDC 电源业务，2025 年 8 月集团正式成立 AIDC 事业部，由副董事长顾亦磊统筹、业务部总裁张迪掌舵，并规划组建 300 人以上的专属研发团队。\n事业部以”从’源’到’芯’ 智享 AI 全链绿色供电”为整体战略，对外提出”用心供好每一度电”的服务承诺，立志成为 AIDC 电力电子转换技术的全球引领者。AIDC 电源事业部总裁张迪在 EnerNeo 固态变压器发布会上表示：”阳光电源做 AIDC 的初心，不仅是做一台更好的电源设备，而是充分发挥绿电直连、储能协同等优势，致力成为 AIDC 电力电子转换技术全球引领者。我们深知 AIDC 供电系统的极限要求依托全球化制造布局产能、敏捷交付能力和全生命周期运维服务，阳光电源可全面整合能算链路，从源到芯高效回应高密算力场景所有核心诉求，让 AIDC 电力输送更稳、更快、更多元。”\n“阳光电源800V”指的是阳光电源（Sungrow）面向 AI 数据中心（AIDC）提出的 800V 直流（800V HVDC）供电架构 及其工程化落地方案。这里的”800V”并非车载快充语境中的电池电压，而是数据中心机柜侧的新一代直流母线电压等级：将园区中压交流电直接变换为 800V 直流电，就近供给高功率 AI 服务器机柜。在阳光电源”从源到芯”的三层供电架构中，800V 直流处于 配电系统区（灰区） 的核心位置：能源生产与调节区（绿区）负责发电与储能，配电系统区通过 SST、HVDC、UPS 完成交直流融合与连续供电保障，使用端区（白区）再通过低压配电、机柜电源、板载电源与制冷供电把电力送达芯片。值得注意的是，阳光电源的 800V 直流并非孤立模块，而是与 EnerNeo™ 固态变压器（SST） 深度绑定：SST 的输入为 10~13.8kVac，输出正是 800Vdc，可以说”SST 直转 800V”是这套架构的供电中枢实现形态。\nAI 算力爆发正在把数据中心供电推向前所未有的压力测试",
-      "published_date": "2026-09-15",
-      "relevance_score": 79,
-      "relevance_factors": {
-        "focus_match": 74,
-        "technical_density": 91,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "800V/AI DC",
-          "SST",
-          "SiC/GaN"
-        ]
-      },
-      "heat_score": 40,
-      "heat_factors": {
-        "freshness": 25,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 100,
       "radar_score": 70,
       "radar_rank": 41
     },
@@ -2872,14 +2872,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 62,
-      "radar_score": 53,
+      "radar_score": 52,
       "radar_rank": 42
     },
     {
@@ -2940,9 +2940,9 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
@@ -2990,14 +2990,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 49,
+      "radar_score": 48,
       "radar_rank": 44,
       "sources": [
         {
@@ -3072,14 +3072,14 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 48,
+      "radar_score": 47,
       "radar_rank": 45
     },
     {
@@ -3132,14 +3132,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 35,
-      "radar_score": 44,
+      "radar_score": 43,
       "radar_rank": 46
     },
     {
@@ -5946,109 +5946,10 @@
       "radar_rank": 86
     }
   ],
-  "directions": {
-    "800v_ai_dc": {
-      "description": "800V直流供电架构在AI数据中心持续升温，覆盖设备、测试、经济性分析和供应链。",
-      "events": [
-        "260920-07",
-        "260920-09",
-        "260920-14",
-        "260920-15",
-        "260920-16",
-        "260920-18",
-        "260920-20"
-      ]
-    },
-    "sic_manufacturing": {
-      "description": "SiC半导体制造产能建设推进，RIR Power Electronics在印度Odisha完成外延晶圆反应器安装。",
-      "events": [
-        "260920-10",
-        "260920-12",
-        "260920-13"
-      ]
-    },
-    "power_electronics_manufacturing": {
-      "description": "电力电子制造产能扩张与融资，Marel Power Solutions获资助建设试产线，TMEIC在德州开设旗舰工厂。",
-      "events": [
-        "260920-08",
-        "260920-19"
-      ]
-    },
-    "current_sensing": {
-      "description": "分流电阻器在高压高频电力电子中的局限性及集成磁电流传感器替代方案。",
-      "events": [
-        "260920-04"
-      ]
-    },
-    "grid_forming_bess": {
-      "description": "构网型BESS从电网规范到并网的工程实践。",
-      "events": [
-        "260920-17"
-      ]
-    },
-    "commercial_vehicle_power": {
-      "description": "Inmotion Technologies在IAA Transportation展示商用车电力电子产品。",
-      "events": [
-        "260920-11"
-      ]
-    },
-    "固态变压器与800V直流架构": {
-      "summary": "多个来源显示固态变压器正成为AI数据中心供电架构的关键方向，目标是将中压交流电直接转换为800V直流，以减少转换级数并提升效率。Enphase、Eaton、Hyosung、SolarEdge等企业均在推进相关产品或样机，商业化时间表多指向2026-2028年。",
-      "events": [
-        "260920-06",
-        "260920-25",
-        "260920-26",
-        "260920-32",
-        "260920-33",
-        "260920-29"
-      ]
-    },
-    "构网型控制与储能政策": {
-      "summary": "印度CEA提出草案，要求2027年7月起可再生能源电站至少15%逆变器具备构网控制、BESS所有PCS具备构网控制，并强制配置共址储能。Sineng Electric在保加利亚Burgas项目中部署了具备构网功能的6.9 MW中央PCS中压交钥匙站。",
-      "events": [
-        "260920-30",
-        "260920-31",
-        "260920-28"
-      ]
-    },
-    "氮化镓功率器件技术进展": {
-      "summary": "Nature Electronics发表III族氮化物本征极化超结研究，实现超过3.9 kV击穿电压的GaN-on-Si肖特基势垒二极管和超过3.4 kV的晶体管。桑迪亚国家实验室的评论文章讨论了该工作对氮化镓功率晶体管性能极限的意义。",
-      "events": [
-        "260920-34",
-        "260920-21"
-      ]
-    },
-    "宽禁带半导体在汽车与工业领域的应用": {
-      "summary": "Nexperia与Aurobay探索GaN和SiC功率器件在电动化动力总成中的应用；欧洲HiPower 5.0联盟推进1200 V GaN器件、850 V双向GaN开关和3.3 kV嵌入式集成技术；DAHWS推出面向工业应用的SiC/GaN功率模块产品组合。",
-      "events": [
-        "260920-24",
-        "260920-27",
-        "260920-23"
-      ]
-    },
-    "AI数据中心电力需求与电网影响": {
-      "summary": "前EPA员工报告警告AI数据中心电力需求可能加剧空气污染和公共健康风险，建模显示超过90%的健康影响来自供电电厂。Flex以44亿美元收购EPC Power，为数据中心基础设施增加800V DC和构网技术。",
-      "events": [
-        "260920-22",
-        "260920-29"
-      ]
-    }
-  },
-  "observations": [
-    "800V直流架构成为AI数据中心供电转型的核心方向，涉及NVIDIA、Bloom Energy、Siemens、阳光电源、Tektronix等多家企业",
-    "固态变压器（SST）被多次提及为800V直流架构的关键设备，Siemens/Reinhausen、阳光电源EnerNeo均有相关产品",
-    "SiC和GaN被定位为800V直流革命中的核心功率器件技术",
-    "RIR Power Electronics在印度Odisha的SiC设施建设是本周SiC制造领域的重要进展",
-    "Bloom Energy的800V直流经济性分析基于公司自身模型假设，非验证运营结果",
-    "阳光电源EnerNeo SST方案参数丰富，但均为公司声称，需注意来源性质",
-    "固态变压器（SST）成为本周多个来源的共同主题，Enphase、Eaton、Hyosung、SolarEdge等企业均在推进中压交流直接转800V直流的产品或样机，商业化时间表集中在2026-2028年。",
-    "印度CEA的构网型逆变器和强制储能草案若最终落地，将对2027年后印度可再生能源项目的逆变器和储能配置产生实质性影响。",
-    "Nature Electronics发表的III族氮化物本征极化超结研究展示了GaN-on-Si器件在击穿电压和动态导通电阻方面的实验数据，桑迪亚国家实验室的评论文章将其定位为可能推动氮化镓器件接近理论极限的进展。",
-    "欧洲HiPower 5.0联盟设定了效率提升至99%、功率密度提升最高100%、寿命增加20%等项目级目标，并推进1200 V GaN器件和850 V双向GaN开关开发。",
-    "AI数据中心的电力需求正从多个维度影响产业：一方面推动SST和800V直流架构的技术竞赛，另一方面引发对供电电厂空气污染和公共健康成本的关注。"
-  ],
-  "quality_notes": "事件260920-21的SOURCE_TEXT为Bioengineer.org页面内容，包含大量导航和无关文章标题，但核心评论文章内容可辨识。事件260920-22的SOURCE_TEXT在末尾被截断，Virginia Commonwealth University研究部分不完整。事件260920-29的SOURCE_TEXT在EPC Power描述处被截断。事件260920-33的SOURCE_TEXT包含大量导航内容，核心文章内容有限。所有事件的技术参数和产业化状态均严格依据SOURCE_TEXT提取，未使用外部知识补充。",
-  "daily_summary": "2026-09-20 今日技术简报：共 0 条已验证事件。该时间范围暂无已验证事件。",
+  "directions": {},
+  "observations": [],
+  "quality_notes": "本次没有获得具有可核验原文内容的强相关事件。",
+  "daily_summary": "2026-09-21 今日技术简报：共 0 条已验证事件。该时间范围暂无已验证事件。",
   "daily_highlights": [],
   "daily_focus": [
     {
@@ -6080,8 +5981,8 @@
     "event_count": 86,
     "today_count": 0,
     "today_source_types": {},
-    "yesterday_count": 3,
-    "seven_day_count": 50,
+    "yesterday_count": 0,
+    "seven_day_count": 46,
     "source_types": {
       "国际资讯": 79,
       "国际论文": 4,
@@ -6121,6 +6022,6 @@
     "scored_events": 86
   },
   "scoring_note": "热度为可解释的站内信号分数（发布时间新鲜度、多源出现、来源权威度）；相关度为与预设电力电子技术重点方向及技术信息密度的匹配分数，不代表外部平台热搜排名。",
-  "history_count": 84,
+  "history_count": 86,
   "history_merged": true
 }
