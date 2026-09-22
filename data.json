@@ -1,7 +1,7 @@
 {
   "schema_version": "3.4",
-  "updated": "2026-09-21T10:39:58.737645+08:00",
-  "report_date": "2026-09-21",
+  "updated": "2026-09-22T10:41:38.654099+08:00",
+  "report_date": "2026-09-22",
   "event_count": 86,
   "events": [
     {
@@ -65,14 +65,14 @@
           "SST"
         ]
       },
-      "heat_score": 60,
+      "heat_score": 53,
       "heat_factors": {
-        "freshness": 70,
+        "freshness": 55,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 71,
-      "radar_score": 63,
+      "radar_score": 62,
       "radar_rank": 1
     },
     {
@@ -137,14 +137,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 60,
+      "heat_score": 53,
       "heat_factors": {
-        "freshness": 70,
+        "freshness": 55,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 53,
-      "radar_score": 55,
+      "radar_score": 54,
       "radar_rank": 2
     },
     {
@@ -224,14 +224,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 60,
+      "heat_score": 53,
       "heat_factors": {
-        "freshness": 70,
+        "freshness": 55,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 53,
+      "radar_score": 51,
       "radar_rank": 3
     },
     {
@@ -295,14 +295,14 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 53,
+      "heat_score": 47,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 71,
-      "radar_score": 58,
+      "radar_score": 57,
       "radar_rank": 4
     },
     {
@@ -354,14 +354,14 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 53,
+      "heat_score": 47,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 35,
-      "radar_score": 47,
+      "radar_score": 45,
       "radar_rank": 5
     },
     {
@@ -424,14 +424,14 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 47,
+      "heat_score": 40,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 80,
-      "radar_score": 59,
+      "radar_score": 57,
       "radar_rank": 6
     },
     {
@@ -492,14 +492,14 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 47,
+      "heat_score": 40,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 71,
-      "radar_score": 57,
+      "radar_score": 55,
       "radar_rank": 7
     },
     {
@@ -561,14 +561,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 47,
+      "heat_score": 40,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 71,
-      "radar_score": 57,
+      "radar_score": 55,
       "radar_rank": 8
     },
     {
@@ -626,14 +626,14 @@
         "engineering_usability": 80,
         "matched_topics": []
       },
-      "heat_score": 52,
+      "heat_score": 45,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 75
       },
       "technical_depth_score": 71,
-      "radar_score": 56,
+      "radar_score": 54,
       "radar_rank": 9
     },
     {
@@ -697,14 +697,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 52,
+      "heat_score": 45,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 75
       },
       "technical_depth_score": 53,
-      "radar_score": 55,
+      "radar_score": 53,
       "radar_rank": 10
     },
     {
@@ -767,75 +767,15 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 52,
+      "heat_score": 45,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 75
       },
       "technical_depth_score": 53,
-      "radar_score": 55,
+      "radar_score": 53,
       "radar_rank": 11
-    },
-    {
-      "id": "260917-07",
-      "title": "Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit - Pragativadi",
-      "source_type": "国际资讯",
-      "primary_source": "Pragativadi",
-      "published_at": "2026-09-17T07:41:15+00:00",
-      "link": "https://pragativadi.com/odisha-powers-up-indias-chip-ambitions-with-rs-3406-cr-sic-semiconductor-unit/",
-      "category": [
-        "sic"
-      ],
-      "importance": "一般",
-      "plain_summary": "Pragativadi报道奥里萨邦一个投资额340.6亿卢比的SiC半导体项目，被视为印度芯片产业布局的一部分。该项目与RIR Power Electronics在奥里萨邦的SiC设施建设相关。报道强调该项目对印度本土半导体制造能力的意义。",
-      "technical_summary": "该条目报道奥里萨邦一个投资额约340.6亿卢比（Rs 3,406-Cr）的SiC半导体项目。原文摘要未提供产线技术节点、晶圆尺寸、产能、产品类型（外延片/器件）或投产时间等参数。该信息属于产业投资与区域半导体制造布局层面，不涉及具体电力电子器件技术指标。",
-      "technical": {
-        "device": "SiC",
-        "application": "SiC半导体制造"
-      },
-      "industrialization": {
-        "stage": "试点/示范",
-        "status": "项目投资"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "奥里萨邦有投资额约340.6亿卢比的SiC半导体项目"
-        ],
-        "source_claims": [
-          "该项目有助于印度芯片产业布局"
-        ],
-        "inferences": [
-          "项目与RIR Power Electronics的奥里萨邦SiC设施相关"
-        ]
-      },
-      "summary_raw": "Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit Pragativadi",
-      "published_date": "2026-09-17",
-      "relevance_score": 53,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 43,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "SiC/GaN"
-        ]
-      },
-      "heat_score": 52,
-      "heat_factors": {
-        "freshness": 40,
-        "multi_source": 45,
-        "source_authority": 75
-      },
-      "technical_depth_score": 53,
-      "radar_score": 55,
-      "radar_rank": 12,
-      "sources": [
-        {
-          "source": "Pragativadi",
-          "title": "Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit - Pragativadi",
-          "link": "https://pragativadi.com/odisha-powers-up-indias-chip-ambitions-with-rs-3406-cr-sic-semiconductor-unit/"
-        }
-      ]
     },
     {
       "id": "260918-09",
@@ -896,15 +836,15 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 47,
+      "heat_score": 40,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 62,
-      "radar_score": 54,
-      "radar_rank": 13
+      "radar_score": 53,
+      "radar_rank": 12
     },
     {
       "id": "260918-09",
@@ -963,15 +903,75 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 47,
+      "heat_score": 40,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 62,
-      "radar_score": 54,
-      "radar_rank": 14
+      "radar_score": 53,
+      "radar_rank": 13
+    },
+    {
+      "id": "260917-07",
+      "title": "Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit - Pragativadi",
+      "source_type": "国际资讯",
+      "primary_source": "Pragativadi",
+      "published_at": "2026-09-17T07:41:15+00:00",
+      "link": "https://pragativadi.com/odisha-powers-up-indias-chip-ambitions-with-rs-3406-cr-sic-semiconductor-unit/",
+      "category": [
+        "sic"
+      ],
+      "importance": "一般",
+      "plain_summary": "Pragativadi报道奥里萨邦一个投资额340.6亿卢比的SiC半导体项目，被视为印度芯片产业布局的一部分。该项目与RIR Power Electronics在奥里萨邦的SiC设施建设相关。报道强调该项目对印度本土半导体制造能力的意义。",
+      "technical_summary": "该条目报道奥里萨邦一个投资额约340.6亿卢比（Rs 3,406-Cr）的SiC半导体项目。原文摘要未提供产线技术节点、晶圆尺寸、产能、产品类型（外延片/器件）或投产时间等参数。该信息属于产业投资与区域半导体制造布局层面，不涉及具体电力电子器件技术指标。",
+      "technical": {
+        "device": "SiC",
+        "application": "SiC半导体制造"
+      },
+      "industrialization": {
+        "stage": "试点/示范",
+        "status": "项目投资"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "奥里萨邦有投资额约340.6亿卢比的SiC半导体项目"
+        ],
+        "source_claims": [
+          "该项目有助于印度芯片产业布局"
+        ],
+        "inferences": [
+          "项目与RIR Power Electronics的奥里萨邦SiC设施相关"
+        ]
+      },
+      "summary_raw": "Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit Pragativadi",
+      "published_date": "2026-09-17",
+      "relevance_score": 53,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "SiC/GaN"
+        ]
+      },
+      "heat_score": 45,
+      "heat_factors": {
+        "freshness": 25,
+        "multi_source": 45,
+        "source_authority": 75
+      },
+      "technical_depth_score": 53,
+      "radar_score": 53,
+      "radar_rank": 14,
+      "sources": [
+        {
+          "source": "Pragativadi",
+          "title": "Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit - Pragativadi",
+          "link": "https://pragativadi.com/odisha-powers-up-indias-chip-ambitions-with-rs-3406-cr-sic-semiconductor-unit/"
+        }
+      ]
     },
     {
       "id": "260917-01",
@@ -1032,14 +1032,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 52,
+      "heat_score": 45,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 75
       },
       "technical_depth_score": 44,
-      "radar_score": 54,
+      "radar_score": 52,
       "radar_rank": 15
     },
     {
@@ -1100,14 +1100,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 47,
+      "heat_score": 40,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 53,
-      "radar_score": 52,
+      "radar_score": 50,
       "radar_rank": 16
     },
     {
@@ -1169,14 +1169,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 47,
+      "heat_score": 40,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 53,
-      "radar_score": 52,
+      "radar_score": 50,
       "radar_rank": 17
     },
     {
@@ -1233,14 +1233,14 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 47,
+      "heat_score": 40,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 53,
-      "radar_score": 52,
+      "radar_score": 50,
       "radar_rank": 18
     },
     {
@@ -1300,14 +1300,14 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 47,
+      "heat_score": 40,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 53,
-      "radar_score": 52,
+      "radar_score": 50,
       "radar_rank": 19
     },
     {
@@ -1383,14 +1383,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 51,
+      "heat_score": 44,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 63,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 52,
+      "radar_score": 50,
       "radar_rank": 20
     },
     {
@@ -1451,14 +1451,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 47,
+      "heat_score": 40,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 51,
+      "radar_score": 49,
       "radar_rank": 21
     },
     {
@@ -1519,14 +1519,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 47,
+      "heat_score": 40,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 51,
+      "radar_score": 49,
       "radar_rank": 22
     },
     {
@@ -1568,14 +1568,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 47,
+      "heat_score": 40,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 51,
+      "radar_score": 49,
       "radar_rank": 23,
       "sources": [
         {
@@ -1642,14 +1642,14 @@
           "Magnetics"
         ]
       },
-      "heat_score": 47,
+      "heat_score": 40,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 50,
+      "radar_score": 48,
       "radar_rank": 24
     },
     {
@@ -1710,14 +1710,14 @@
           "Magnetics"
         ]
       },
-      "heat_score": 47,
+      "heat_score": 40,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 50,
+      "radar_score": 48,
       "radar_rank": 25
     },
     {
@@ -1750,14 +1750,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 47,
+      "heat_score": 40,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 35,
-      "radar_score": 48,
+      "radar_score": 47,
       "radar_rank": 26,
       "sources": [
         {
@@ -1766,6 +1766,126 @@
           "link": "https://scanx.trade/stock-market-news/companies/rir-power-electronics-board-to-meet-on-may-28/41170221"
         }
       ]
+    },
+    {
+      "id": "260918-16",
+      "title": "Is Infineon’s 800 VDC AI Data Center Breaker Role Altering The Investment Case For Infineon Technologies (XTRA:IFX)? - Yahoo Finance",
+      "source_type": "国际资讯",
+      "primary_source": "Yahoo Finance",
+      "published_at": "2026-09-16T23:14:37+00:00",
+      "link": "https://finance.yahoo.com/technology/ai/articles/infineon-800-vdc-ai-data-231437123.html",
+      "summary_raw": "Is Infineon’s 800 VDC AI Data Center Breaker Role Altering The Investment Case For Infineon Technologies (XTRA:IFX)? Yahoo Finance",
+      "source_text": "Is Infineon’s 800 VDC AI Data Center Breaker Role Altering The Investment Case For Infineon Technologies (XTRA:IFX)? Sasha Jovanovic Wed, September 16, 2026 at 6:14 PM CDT 3 min read IFX.DE SEDG Trade SEDG on Coinbase Trading disclosure Trading disclosure The above button links to Coinbase. Yahoo Finance is not a broker-dealer or investment adviser and does not offer securities or cryptocurrencies for sale or facilitate trading. Coinbase pays us for certain activity generated through this link. Prices displayed are informational. Learn more\nTerms and Privacy Policy Privacy Dashboard More Info\nCopyright © 2026 Yahoo. All rights reserved. Trending Topics Dow Jones S&P 500 DAX Index Nvidia Tesla DJT Tariffs Explore Further Mortgages Credit Cards Sectors Crypto Heatmap Financial News About Data Disclaimer Help Feedback Sitemap Licensing What's New About Our Ads Premium Plans Terms and Privacy Policy Privacy Dashboard More Info\nTerms and Privacy Policy Privacy Dashboard Ad Terms Feedback More Info\nSkip to navigation Skip to main content Skip to right column Yahoo Finance Home News Finance Sports More News US Politics World Climate change Health Science Originals Newsletters Finance My portfolio News Markets Research Community Personal finance Videos Sports World Cup Fantasy Football 2026 Fantasy NFL NFL Odds NBA MLB NHL College football College basketball Soccer Sports Betting Yahoo Sports AM Shopping Style Beauty Health Home and garden Pets Tech Gift ideas Stores Shopping Guides Deals Toys and games Shopping lists General Games Solitaire Roadtrip Yahoo Mini Crossword Pile-Up Poker Circuits Yahoo IQ Trivia Crushable Farm Merge Valley Daily Sudoku Together Entertainment Celebrity TV Movies Music How to Watch Interviews Videos Nonfiction Hotlist Selected edition US English Sign in My Portfolio News Markets Stock market Crypto Real estate Magnificent 7 Private markets Futures & Derivatives Originals Premium news Newsletters Economy & Policy Earnings Oil & gas Strait of Hormuz Tariffs Clean Energy Tech Aerospace & Defense Enterprise Cloud Pharma & Biotech Cybersecurity Exchange-Traded Funds Markets Stocks Most active Day gainers Day losers Trending Highest dividend Small cap Large cap Most expensive Highest beta Pink sheet Unusual volume Crypto Most active Day gainers Day losers Private companies 52 week gainers Recently funded Most funded Options Day gainers Day losers Highest open interest Highest implied volatility Sectors Technology Financial services Consumer cyclical Communication services Healthcare Industrials Consumer defensive Energy Basic materials Real estate Utilities Treasury bonds Futures Currencies World indices ETFs Mutual funds Calendars Earnings IPOs Stock splits Economic events Research AlphaSpace Stock picks Screeners Stocks Most shorted Most active penny stocks Analyst strong buy Stock comparison NVDA vs INTC NVDA vs AMD GOOG vs AMZN AAPL vs MSFT TSLA vs RIVN Currency converter Advanced charts Investment ideas Research reports Community Personal Finance My Money BETA Credit cards Compare Credit Cards Best 0% APR cards Best balance transfer cards Best rewards cards Best travel cards Banking Best CD rates Best high-yield savings accounts Best money market accounts Best free checking accounts Best online banks Mortgage Best mortgage lenders Best mortgage rates Mortgage refinance First time homebuyer Mortgage payment calculator Home affordability calculator Insurance Find car insurance Types of car insurance Find life insurance Taxes How to file Tax brackets and rates Child tax credit Tax extension Tax refund status Student loans Federal vs. private How to apply FAFSA 2026-27 Student loan assistance Personal loans Best personal loans Improve credit score How to get approved Calculators All Calculators 50/30/20 Budget Calculator Compound Interest Calculator Savings Calculator Savings Goal Calculator Social Security Calculator Videos Watch Now Latest Editor's picks Trending stocks Investing insights Live shows Morning Brief Opening Bid Market Catalysts Market Domination Market Domination Overtime Asking for a Trend The Daily Wolf Weekly shows Power Players Trader Talk Built Different The Big Idea ETF Report ... Network AlphaSpace Markets Analysis News My Portfolio Earnings Hub Options A pro-grade research workspace with advanced charts, company data and real-time news. Now part of Yahoo Finance Gold. Learn more Get Finance Plus U.S. markets open in 4h 10m US Markets US Markets Europe Markets Asia Markets Cryptocurrencies Rates Commodities Currencies U.S. markets open in 4h 10m S&P Futures 7,726.75 +19.50 +0.25% Dow Futures 52,307.00 +87.00 +0.17% Nasdaq Futures 29,888.50 +145.50 +0.49% Russell 2000 Futures 2,898.80 +1.90 +0.07% VIX 15.22 -0.22 -1.42% Gold 4,436.50 +36.80 +0.84% Bitcoin USD 78,263.35 +1,869.01 +2.45% Crude Oil Oct 26 95.33 -1.90 -1.95% ADVERTISEMENT Is Infineon’s 800 VDC AI Data Center Breaker Role Altering The Investment Case For Infineon Technologies (XTRA:IFX)? Sasha Jovanovic Wed,",
+      "category": [
+        "800v",
+        "ai_dc",
+        "sic"
+      ],
+      "sources": [],
+      "plain_summary": "Is Infineon’s 800 VDC AI Data Center Breaker Role Altering The Investment Case For Infineon Technologies (XTRA:IFX)? Yahoo Finance",
+      "technical_summary": "",
+      "technical": {
+        "voltage": "",
+        "power": "",
+        "topology": "",
+        "device": "",
+        "switching_frequency": "",
+        "efficiency": "",
+        "power_density": "",
+        "isolation": "",
+        "control": "",
+        "application": ""
+      },
+      "industrialization": {
+        "stage": "未知",
+        "status": "",
+        "target": ""
+      },
+      "evidence": {
+        "confirmed_facts": [],
+        "source_claims": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "published_date": "2026-09-17",
+      "relevance_score": 45,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 35,
+        "engineering_usability": 50,
+        "matched_topics": [
+          "800V/AI DC"
+        ]
+      },
+      "heat_score": 40,
+      "heat_factors": {
+        "freshness": 25,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 35,
+      "radar_score": 44,
+      "radar_rank": 27
+    },
+    {
+      "id": "260918-09",
+      "title": "CorePower Magnetics Raises $10.6 Million To Scale U.S. Manufacturing Of Advanced Magnetics For AI, Data Centers And Grid Infrastructure - Pulse 2.0",
+      "source_type": "国际资讯",
+      "primary_source": "Pulse 2.0",
+      "published_at": "2026-09-17T12:44:25+00:00",
+      "link": "https://pulse2.com/corepower-magnetics-raises-10-6-million-to-scale-u-s-manufacturing-of-advanced-magnetics-for-ai-data-centers-and-grid-infrastructure/",
+      "summary_raw": "CorePower Magnetics Raises $10.6 Million To Scale U.S. Manufacturing Of Advanced Magnetics For AI, Data Centers And Grid Infrastructure Pulse 2.0",
+      "source_text": "CorePower Magnetics Raises $10.6 Million To Scale U.S. Manufacturing Of Advanced Magnetics For AI, Data Centers And Grid Infrastructure By Amit Chowdhry Yesterday at 8:44 AM CorePower Magnetics Raises $10.6 Million To Scale U.S. Manufacturing Of Advanced Magnetics For AI, Data Centers And Grid Infrastructure CorePower Magnetics, a Pittsburgh-based developer and manufacturer of advanced magnetic components for power electronics, has raised $10.6 million in equity financing to expand domestic manufacturing capacity, accelerate hiring and scale commercialization of its technology. The oversubscribed round was co-led by Engine Ventures and Material Impact, with participation from Evergreen Climate Innovations, the Carnegie Mellon Catalyst Fund and Baruch Future Ventures. The financing brings CorePower’s total equity funding to $13.6 million. The company has also secured another $27 million in non-dilutive funding through ARPA-E, the U.S. Department of Energy and Department of Defense programs. CorePower develops advanced magnetic materials and components, including transformers and inductors, used in power electronics across AI infrastructure, data centers, grid modernization and industrial electrification. Demand for more efficient power electronics is increasing as data centers and other energy-intensive infrastructure require larger amounts of electricity. CorePower noted that the International Energy Agency projects AI-driven data center electricity demand will more than double by 2030, while the U.S. Department of Energy estimates roughly 100 GW of additional peak-hour supply could be required by then. Magnetic components play a critical role in converting and controlling electricity but remain one of the less-modernized portions of the power infrastructure stack. As systems move toward higher voltages and frequencies, conventional transformers and inductors can struggle with efficiency, heat, size and weight. CorePower’s technology is based on nanocrystalline alloys originally advanced by co-founders Paul Ohodnicki and Sam Kernion at Carnegie Mellon University in collaboration with the Department of Energy’s National Energy Technology Laboratory. The company reformulated the materials to operate at higher temperatures while withstanding the mechanical requirements associated with commercial manufacturing. CorePower works across the full value chain, spanning materials development, manufacturing processes, component design and production. The result is smaller, lighter and more efficient inductors and transformers that customers can integrate directly into power systems. CorePower is now moving from technology development toward higher-volume domestic manufacturing. The company plans to use the new capital to expand production capacity and equipment in the Pittsburgh region while adding employees across engineering, operations and manufacturing. The company has already moved its proprietary alloy, annealing and component manufacturing processes from laboratory scale through intermediate stages and into commercial-scale production. Multiple product lines are now advancing toward volume manufacturing. CorePower also has paid engagements with several Fortune 500 companies across AI infrastructure, data centers, industrial power systems and grid modernization. The financing strengthens the company’s effort to build a domestic supply base for advanced magnetics at a time when power infrastructure has become increasingly important to the expansion of AI computing and broader electrification. Engine Ventures General Partner Reed Sturtevant and Material Impact Co-Founder and Managing Partner Carmichael Roberts are also joining CorePower’s board as part of the financing. Founded in 2020, CorePower is headquartered at the Energy Innovation Center in Pittsburgh. The company plans to continue expanding its manufacturing footprint in the region while increasing commercialization of its magnetic components across power-intensive markets. KEY QUOTES: “The increased need for more efficient power electronics is creating a significant opportunity for advanced magnetic materials and components. Along with improved performance, we’re bringing greater standardization to a historically custom industry, enabling customers to move faster from design to production while accelerating adoption of next-generation power electronics.” Sam Kernion, CEO of CorePower Magnetics “CorePower sits at a critical and under-appreciated layer in the power stack. We believe their unique magnetics materials technology can be the foundation of a large, successful company during the growth of data centers and the grid.” Reed Sturtevant, General Partner at Engine Ventures “Advanced materials create value only when they can be translated into products that solve meaningful customer problems. What impressed us about CorePower is not only the strength of the underlying technology, but the team’s ability to scale it into manufacturable components that addr",
+      "category": [
+        "ai_dc",
+        "llc",
+        "magnetics"
+      ],
+      "sources": [],
+      "plain_summary": "CorePower Magnetics Raises $10.6 Million To Scale U.S. Manufacturing Of Advanced Magnetics For AI, Data Centers And Grid Infrastructure Pulse 2.0",
+      "technical_summary": "",
+      "technical": {
+        "voltage": "",
+        "power": "",
+        "topology": "",
+        "device": "",
+        "switching_frequency": "",
+        "efficiency": "",
+        "power_density": "",
+        "isolation": "",
+        "control": "",
+        "application": ""
+      },
+      "industrialization": {
+        "stage": "未知",
+        "status": "",
+        "target": ""
+      },
+      "evidence": {
+        "confirmed_facts": [],
+        "source_claims": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "published_date": "2026-09-17",
+      "relevance_score": 45,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 35,
+        "engineering_usability": 50,
+        "matched_topics": [
+          "Magnetics"
+        ]
+      },
+      "heat_score": 40,
+      "heat_factors": {
+        "freshness": 25,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 35,
+      "radar_score": 44,
+      "radar_rank": 28
     },
     {
       "id": "260917-14",
@@ -1820,134 +1940,14 @@
         "engineering_usability": 80,
         "matched_topics": []
       },
-      "heat_score": 47,
+      "heat_score": 40,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 46,
-      "radar_rank": 27
-    },
-    {
-      "id": "260918-16",
-      "title": "Is Infineon’s 800 VDC AI Data Center Breaker Role Altering The Investment Case For Infineon Technologies (XTRA:IFX)? - Yahoo Finance",
-      "source_type": "国际资讯",
-      "primary_source": "Yahoo Finance",
-      "published_at": "2026-09-16T23:14:37+00:00",
-      "link": "https://finance.yahoo.com/technology/ai/articles/infineon-800-vdc-ai-data-231437123.html",
-      "summary_raw": "Is Infineon’s 800 VDC AI Data Center Breaker Role Altering The Investment Case For Infineon Technologies (XTRA:IFX)? Yahoo Finance",
-      "source_text": "Is Infineon’s 800 VDC AI Data Center Breaker Role Altering The Investment Case For Infineon Technologies (XTRA:IFX)? Sasha Jovanovic Wed, September 16, 2026 at 6:14 PM CDT 3 min read IFX.DE SEDG Trade SEDG on Coinbase Trading disclosure Trading disclosure The above button links to Coinbase. Yahoo Finance is not a broker-dealer or investment adviser and does not offer securities or cryptocurrencies for sale or facilitate trading. Coinbase pays us for certain activity generated through this link. Prices displayed are informational. Learn more\nTerms and Privacy Policy Privacy Dashboard More Info\nCopyright © 2026 Yahoo. All rights reserved. Trending Topics Dow Jones S&P 500 DAX Index Nvidia Tesla DJT Tariffs Explore Further Mortgages Credit Cards Sectors Crypto Heatmap Financial News About Data Disclaimer Help Feedback Sitemap Licensing What's New About Our Ads Premium Plans Terms and Privacy Policy Privacy Dashboard More Info\nTerms and Privacy Policy Privacy Dashboard Ad Terms Feedback More Info\nSkip to navigation Skip to main content Skip to right column Yahoo Finance Home News Finance Sports More News US Politics World Climate change Health Science Originals Newsletters Finance My portfolio News Markets Research Community Personal finance Videos Sports World Cup Fantasy Football 2026 Fantasy NFL NFL Odds NBA MLB NHL College football College basketball Soccer Sports Betting Yahoo Sports AM Shopping Style Beauty Health Home and garden Pets Tech Gift ideas Stores Shopping Guides Deals Toys and games Shopping lists General Games Solitaire Roadtrip Yahoo Mini Crossword Pile-Up Poker Circuits Yahoo IQ Trivia Crushable Farm Merge Valley Daily Sudoku Together Entertainment Celebrity TV Movies Music How to Watch Interviews Videos Nonfiction Hotlist Selected edition US English Sign in My Portfolio News Markets Stock market Crypto Real estate Magnificent 7 Private markets Futures & Derivatives Originals Premium news Newsletters Economy & Policy Earnings Oil & gas Strait of Hormuz Tariffs Clean Energy Tech Aerospace & Defense Enterprise Cloud Pharma & Biotech Cybersecurity Exchange-Traded Funds Markets Stocks Most active Day gainers Day losers Trending Highest dividend Small cap Large cap Most expensive Highest beta Pink sheet Unusual volume Crypto Most active Day gainers Day losers Private companies 52 week gainers Recently funded Most funded Options Day gainers Day losers Highest open interest Highest implied volatility Sectors Technology Financial services Consumer cyclical Communication services Healthcare Industrials Consumer defensive Energy Basic materials Real estate Utilities Treasury bonds Futures Currencies World indices ETFs Mutual funds Calendars Earnings IPOs Stock splits Economic events Research AlphaSpace Stock picks Screeners Stocks Most shorted Most active penny stocks Analyst strong buy Stock comparison NVDA vs INTC NVDA vs AMD GOOG vs AMZN AAPL vs MSFT TSLA vs RIVN Currency converter Advanced charts Investment ideas Research reports Community Personal Finance My Money BETA Credit cards Compare Credit Cards Best 0% APR cards Best balance transfer cards Best rewards cards Best travel cards Banking Best CD rates Best high-yield savings accounts Best money market accounts Best free checking accounts Best online banks Mortgage Best mortgage lenders Best mortgage rates Mortgage refinance First time homebuyer Mortgage payment calculator Home affordability calculator Insurance Find car insurance Types of car insurance Find life insurance Taxes How to file Tax brackets and rates Child tax credit Tax extension Tax refund status Student loans Federal vs. private How to apply FAFSA 2026-27 Student loan assistance Personal loans Best personal loans Improve credit score How to get approved Calculators All Calculators 50/30/20 Budget Calculator Compound Interest Calculator Savings Calculator Savings Goal Calculator Social Security Calculator Videos Watch Now Latest Editor's picks Trending stocks Investing insights Live shows Morning Brief Opening Bid Market Catalysts Market Domination Market Domination Overtime Asking for a Trend The Daily Wolf Weekly shows Power Players Trader Talk Built Different The Big Idea ETF Report ... Network AlphaSpace Markets Analysis News My Portfolio Earnings Hub Options A pro-grade research workspace with advanced charts, company data and real-time news. Now part of Yahoo Finance Gold. Learn more Get Finance Plus U.S. markets open in 4h 10m US Markets US Markets Europe Markets Asia Markets Cryptocurrencies Rates Commodities Currencies U.S. markets open in 4h 10m S&P Futures 7,726.75 +19.50 +0.25% Dow Futures 52,307.00 +87.00 +0.17% Nasdaq Futures 29,888.50 +145.50 +0.49% Russell 2000 Futures 2,898.80 +1.90 +0.07% VIX 15.22 -0.22 -1.42% Gold 4,436.50 +36.80 +0.84% Bitcoin USD 78,263.35 +1,869.01 +2.45% Crude Oil Oct 26 95.33 -1.90 -1.95% ADVERTISEMENT Is Infineon’s 800 VDC AI Data Center Breaker Role Altering The Investment Case For Infineon Technologies (XTRA:IFX)? Sasha Jovanovic Wed,",
-      "category": [
-        "800v",
-        "ai_dc",
-        "sic"
-      ],
-      "sources": [],
-      "plain_summary": "Is Infineon’s 800 VDC AI Data Center Breaker Role Altering The Investment Case For Infineon Technologies (XTRA:IFX)? Yahoo Finance",
-      "technical_summary": "",
-      "technical": {
-        "voltage": "",
-        "power": "",
-        "topology": "",
-        "device": "",
-        "switching_frequency": "",
-        "efficiency": "",
-        "power_density": "",
-        "isolation": "",
-        "control": "",
-        "application": ""
-      },
-      "industrialization": {
-        "stage": "未知",
-        "status": "",
-        "target": ""
-      },
-      "evidence": {
-        "confirmed_facts": [],
-        "source_claims": [],
-        "inferences": [],
-        "unknowns": []
-      },
-      "published_date": "2026-09-17",
-      "relevance_score": 45,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 35,
-        "engineering_usability": 50,
-        "matched_topics": [
-          "800V/AI DC"
-        ]
-      },
-      "heat_score": 47,
-      "heat_factors": {
-        "freshness": 40,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 35,
-      "radar_score": 45,
-      "radar_rank": 28
-    },
-    {
-      "id": "260918-09",
-      "title": "CorePower Magnetics Raises $10.6 Million To Scale U.S. Manufacturing Of Advanced Magnetics For AI, Data Centers And Grid Infrastructure - Pulse 2.0",
-      "source_type": "国际资讯",
-      "primary_source": "Pulse 2.0",
-      "published_at": "2026-09-17T12:44:25+00:00",
-      "link": "https://pulse2.com/corepower-magnetics-raises-10-6-million-to-scale-u-s-manufacturing-of-advanced-magnetics-for-ai-data-centers-and-grid-infrastructure/",
-      "summary_raw": "CorePower Magnetics Raises $10.6 Million To Scale U.S. Manufacturing Of Advanced Magnetics For AI, Data Centers And Grid Infrastructure Pulse 2.0",
-      "source_text": "CorePower Magnetics Raises $10.6 Million To Scale U.S. Manufacturing Of Advanced Magnetics For AI, Data Centers And Grid Infrastructure By Amit Chowdhry Yesterday at 8:44 AM CorePower Magnetics Raises $10.6 Million To Scale U.S. Manufacturing Of Advanced Magnetics For AI, Data Centers And Grid Infrastructure CorePower Magnetics, a Pittsburgh-based developer and manufacturer of advanced magnetic components for power electronics, has raised $10.6 million in equity financing to expand domestic manufacturing capacity, accelerate hiring and scale commercialization of its technology. The oversubscribed round was co-led by Engine Ventures and Material Impact, with participation from Evergreen Climate Innovations, the Carnegie Mellon Catalyst Fund and Baruch Future Ventures. The financing brings CorePower’s total equity funding to $13.6 million. The company has also secured another $27 million in non-dilutive funding through ARPA-E, the U.S. Department of Energy and Department of Defense programs. CorePower develops advanced magnetic materials and components, including transformers and inductors, used in power electronics across AI infrastructure, data centers, grid modernization and industrial electrification. Demand for more efficient power electronics is increasing as data centers and other energy-intensive infrastructure require larger amounts of electricity. CorePower noted that the International Energy Agency projects AI-driven data center electricity demand will more than double by 2030, while the U.S. Department of Energy estimates roughly 100 GW of additional peak-hour supply could be required by then. Magnetic components play a critical role in converting and controlling electricity but remain one of the less-modernized portions of the power infrastructure stack. As systems move toward higher voltages and frequencies, conventional transformers and inductors can struggle with efficiency, heat, size and weight. CorePower’s technology is based on nanocrystalline alloys originally advanced by co-founders Paul Ohodnicki and Sam Kernion at Carnegie Mellon University in collaboration with the Department of Energy’s National Energy Technology Laboratory. The company reformulated the materials to operate at higher temperatures while withstanding the mechanical requirements associated with commercial manufacturing. CorePower works across the full value chain, spanning materials development, manufacturing processes, component design and production. The result is smaller, lighter and more efficient inductors and transformers that customers can integrate directly into power systems. CorePower is now moving from technology development toward higher-volume domestic manufacturing. The company plans to use the new capital to expand production capacity and equipment in the Pittsburgh region while adding employees across engineering, operations and manufacturing. The company has already moved its proprietary alloy, annealing and component manufacturing processes from laboratory scale through intermediate stages and into commercial-scale production. Multiple product lines are now advancing toward volume manufacturing. CorePower also has paid engagements with several Fortune 500 companies across AI infrastructure, data centers, industrial power systems and grid modernization. The financing strengthens the company’s effort to build a domestic supply base for advanced magnetics at a time when power infrastructure has become increasingly important to the expansion of AI computing and broader electrification. Engine Ventures General Partner Reed Sturtevant and Material Impact Co-Founder and Managing Partner Carmichael Roberts are also joining CorePower’s board as part of the financing. Founded in 2020, CorePower is headquartered at the Energy Innovation Center in Pittsburgh. The company plans to continue expanding its manufacturing footprint in the region while increasing commercialization of its magnetic components across power-intensive markets. KEY QUOTES: “The increased need for more efficient power electronics is creating a significant opportunity for advanced magnetic materials and components. Along with improved performance, we’re bringing greater standardization to a historically custom industry, enabling customers to move faster from design to production while accelerating adoption of next-generation power electronics.” Sam Kernion, CEO of CorePower Magnetics “CorePower sits at a critical and under-appreciated layer in the power stack. We believe their unique magnetics materials technology can be the foundation of a large, successful company during the growth of data centers and the grid.” Reed Sturtevant, General Partner at Engine Ventures “Advanced materials create value only when they can be translated into products that solve meaningful customer problems. What impressed us about CorePower is not only the strength of the underlying technology, but the team’s ability to scale it into manufacturable components that addr",
-      "category": [
-        "ai_dc",
-        "llc",
-        "magnetics"
-      ],
-      "sources": [],
-      "plain_summary": "CorePower Magnetics Raises $10.6 Million To Scale U.S. Manufacturing Of Advanced Magnetics For AI, Data Centers And Grid Infrastructure Pulse 2.0",
-      "technical_summary": "",
-      "technical": {
-        "voltage": "",
-        "power": "",
-        "topology": "",
-        "device": "",
-        "switching_frequency": "",
-        "efficiency": "",
-        "power_density": "",
-        "isolation": "",
-        "control": "",
-        "application": ""
-      },
-      "industrialization": {
-        "stage": "未知",
-        "status": "",
-        "target": ""
-      },
-      "evidence": {
-        "confirmed_facts": [],
-        "source_claims": [],
-        "inferences": [],
-        "unknowns": []
-      },
-      "published_date": "2026-09-17",
-      "relevance_score": 45,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 35,
-        "engineering_usability": 50,
-        "matched_topics": [
-          "Magnetics"
-        ]
-      },
-      "heat_score": 47,
-      "heat_factors": {
-        "freshness": 40,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 35,
-      "radar_score": 45,
+      "radar_score": 44,
       "radar_rank": 29
     },
     {
@@ -2015,14 +2015,14 @@
           "SST"
         ]
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 98,
-      "radar_score": 66,
+      "radar_score": 65,
       "radar_rank": 30
     },
     {
@@ -2091,81 +2091,15 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 80,
       "radar_score": 64,
       "radar_rank": 31
-    },
-    {
-      "id": "260920-17",
-      "title": "From grid code to grid connection: what makes a grid-forming BESS work in the real world? - Energy-Storage.News",
-      "source_type": "国际资讯",
-      "primary_source": "Energy-Storage.News",
-      "published_at": "2026-09-16T09:31:07+00:00",
-      "link": "https://www.energy-storage.news/from-grid-code-to-grid-connection-what-makes-a-grid-forming-bess-work-in-the-real-world/",
-      "category": [
-        "gfm",
-        "pcs",
-        "sic"
-      ],
-      "importance": "一般",
-      "plain_summary": "Sinexcel技术总监Luke Lu撰文讨论构网型BESS项目从电网规范到并网的关键工程问题。文章指出构网功能正越来越多地出现在电网规范中，但指定构网功能只是开始。文章提出五个需关注的领域，包括从电网规范而非PCS数据手册出发、将构网分解为可测试的行为等。",
-      "technical_summary": "文章由Sinexcel技术总监Luke Lu撰写，讨论构网型BESS项目工程挑战。文章指出构网功能正越来越多地出现在电网规范、并网要求和公用事业规模BESS规范中，但指定构网功能只是开始。PCS可能支持构网控制，但实际项目仍需通过电网研究、与电池和电站控制器正确交互、在物理电流和热限制内运行并现场展示预期行为。文章提出五个关注领域：从电网规范而非PCS数据手册出发，将本地并网要求转化为明确技术行为，包括有功无功能力、电压频率响应、LVRT/HVRT、无功电流注入、爬坡率、故障行为、保护设置、建模验证要求及构网功能；将构网分解为可测试行为，包括黑启动、虚拟同步发电机控制、弱电网运行等。SINEXCEL公用事业规模PCS支持PQ、VF和VSG控制模式及黑启动。",
-      "technical": {
-        "voltage": "",
-        "power": "",
-        "topology": "构网型BESS",
-        "device": "",
-        "switching_frequency": "",
-        "efficiency": "",
-        "power_density": "",
-        "isolation": "",
-        "control": "PQ、VF、VSG控制模式，黑启动，虚拟同步发电机控制",
-        "application": "公用事业规模电池储能系统"
-      },
-      "industrialization": {
-        "stage": "商业部署",
-        "status": "Sinexcel已交付超过5000个储能项目",
-        "target": "公用事业规模BESS"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "文章由Sinexcel技术总监Luke Lu撰写",
-          "构网功能正越来越多地出现在电网规范中",
-          "SINEXCEL公用事业规模PCS支持PQ、VF和VSG控制模式及黑启动",
-          "Sinexcel已交付超过5000个储能项目"
-        ],
-        "source_claims": [],
-        "inferences": [],
-        "unknowns": []
-      },
-      "sources": [],
-      "summary_raw": "From grid code to grid connection: what makes a grid-forming BESS work in the real world? Energy-Storage.News",
-      "source_text": "Solar Media Events PV Tech Solar Power Portal EV Infrastructure News Battery Technology Newsletter Twitter/X LinkedIn YouTube Feed\nSubscribe To Premium Premium Homepage Sign In My Account Search ... Results See all results\nNews Premium Premium Homepage PV Tech Power Journal Technical Papers Industry Updates Distributed Grid Scale Off Grid Market Analysis Software & Optimisation Materials & Production Features Resources Interviews Guest blog Editor’s blog Analysis Events & Webinars Events Upcoming Webinars On-demand Webinars\nFeatures , Guest blog From grid code to grid connection: what makes a grid-forming BESS work in the real world? By Luke Lu, technical director, Sinexcel September 16, 2026 Europe , Africa , Africa & Middle East Grid Scale Technology , Software & Optimisation\nLinkedIn Twitter Reddit Facebook Email BESS project installation in Romania, 2026. Image: Sinexcel. Drawing on nearly two decades of power electronics development and more than 5,000 energy storage projects, Sinexcel technical director Luke Lu discusses what goes into a successful grid-forming battery energy storage system (BESS) project. Grid-forming capability is increasingly appearing in grid codes, connection requirements and specifications for utility-scale battery energy storage systems (BESS). But specifying grid-forming functionality is only the beginning. For developers and EPCs, the harder question is: how can grid-forming capability be translated into a BESS that is compliant, stable and ready for successful commissioning under real grid conditions? A power conversion system (PCS) may support grid-forming control on its datasheet, but a real project still has to pass grid studies, interact correctly with the battery and plant controller, operate within physical current and thermal limits, and ultimately demonstrate the expected behaviour onsite. This article requires Premium Subscription Basic (FREE) Subscription Already a subscriber? Sign In Try Premium for just $1 Full premium access for the first month at only $1 Converts to an annual rate after 30 days unless cancelled Cancel anytime during the trial period Start $1 Trial Premium Benefits Expert industry analysis and interviews Digital access to PV Tech Power journal Exclusive event discounts Or get the full Premium subscription right away Get Premium Subscription Or continue reading this article for free Get Basic (FREE) Subscription This is where grid-forming (GFM) moves from being a product feature to a project-engineering challenge. Five areas deserve particular attention. 1. Start with the grid code, not the PCS datasheet One of the most common risks in early project development is selecting equipment first and interpreting the grid-connection requirements later. The sequence should be reversed. Before finalising the PCS configuration, developers and EPCs should translate local connection requirements into clearly defined technical behaviours, including: active and reactive power capability; voltage and frequency response; LVRT and HVRT; reactive current injection; ramp rates; fault behaviour; protection settings; modelling and validation requirements increasingly, specific grid-forming functions. This matters because connection requirements vary not only between countries but also between network operators, voltage levels and, in some cases, individual connection points. Grid-code compliance should therefore not be treated simply as a certification exercise. The requirements can influence converter controls, plant-level settings, protection philosophy, modelling strategy and even aspects of the overall system architecture. For example, SINEXCEL’s utility-scale PCS supports multiple operating modes, including PQ, VF and VSG control, as well as black start and configurations adapted to different grid requirements. But which functions are required, and how they need to be configured and validated, ultimately depends on the project. Discovering these requirements too late can lead to model revisions, control changes, additional testing and, in the worst case, delays to energisation and commercial operation. The earlier grid requirements are translated into engineering requirements, the lower the risk of redesign during the connection and commissioning process. 2. Break ‘grid-forming’ into behaviours that can actually be tested Grid-forming is frequently discussed as if it were a single feature. It is not. From an engineering perspective, it is better understood as a collection of behaviours that need to be specified, modelled and validated individually. Black start Can the BESS establish voltage and frequency without relying on an external grid reference, and can it energise the intended network under the required conditions? Virtual synchronous generator control Can the converter provide the required virtual inertia and damping characteristics, and how does it respond during frequency disturbances? Weak-grid operation How does the system behave as short-circuit stre",
-      "published_date": "2026-09-16",
-      "relevance_score": 55,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 51,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "GFM/PCS"
-        ]
-      },
-      "heat_score": 40,
-      "heat_factors": {
-        "freshness": 25,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 62,
-      "radar_score": 53,
-      "radar_rank": 32
     },
     {
       "id": "260917-27",
@@ -2223,15 +2157,15 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 45,
+      "heat_score": 43,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 75
       },
       "technical_depth_score": 53,
       "radar_score": 53,
-      "radar_rank": 33
+      "radar_rank": 32
     },
     {
       "id": "260917-26",
@@ -2291,14 +2225,80 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 45,
+      "heat_score": 43,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 75
       },
       "technical_depth_score": 53,
       "radar_score": 53,
+      "radar_rank": 33
+    },
+    {
+      "id": "260920-17",
+      "title": "From grid code to grid connection: what makes a grid-forming BESS work in the real world? - Energy-Storage.News",
+      "source_type": "国际资讯",
+      "primary_source": "Energy-Storage.News",
+      "published_at": "2026-09-16T09:31:07+00:00",
+      "link": "https://www.energy-storage.news/from-grid-code-to-grid-connection-what-makes-a-grid-forming-bess-work-in-the-real-world/",
+      "category": [
+        "gfm",
+        "pcs",
+        "sic"
+      ],
+      "importance": "一般",
+      "plain_summary": "Sinexcel技术总监Luke Lu撰文讨论构网型BESS项目从电网规范到并网的关键工程问题。文章指出构网功能正越来越多地出现在电网规范中，但指定构网功能只是开始。文章提出五个需关注的领域，包括从电网规范而非PCS数据手册出发、将构网分解为可测试的行为等。",
+      "technical_summary": "文章由Sinexcel技术总监Luke Lu撰写，讨论构网型BESS项目工程挑战。文章指出构网功能正越来越多地出现在电网规范、并网要求和公用事业规模BESS规范中，但指定构网功能只是开始。PCS可能支持构网控制，但实际项目仍需通过电网研究、与电池和电站控制器正确交互、在物理电流和热限制内运行并现场展示预期行为。文章提出五个关注领域：从电网规范而非PCS数据手册出发，将本地并网要求转化为明确技术行为，包括有功无功能力、电压频率响应、LVRT/HVRT、无功电流注入、爬坡率、故障行为、保护设置、建模验证要求及构网功能；将构网分解为可测试行为，包括黑启动、虚拟同步发电机控制、弱电网运行等。SINEXCEL公用事业规模PCS支持PQ、VF和VSG控制模式及黑启动。",
+      "technical": {
+        "voltage": "",
+        "power": "",
+        "topology": "构网型BESS",
+        "device": "",
+        "switching_frequency": "",
+        "efficiency": "",
+        "power_density": "",
+        "isolation": "",
+        "control": "PQ、VF、VSG控制模式，黑启动，虚拟同步发电机控制",
+        "application": "公用事业规模电池储能系统"
+      },
+      "industrialization": {
+        "stage": "商业部署",
+        "status": "Sinexcel已交付超过5000个储能项目",
+        "target": "公用事业规模BESS"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "文章由Sinexcel技术总监Luke Lu撰写",
+          "构网功能正越来越多地出现在电网规范中",
+          "SINEXCEL公用事业规模PCS支持PQ、VF和VSG控制模式及黑启动",
+          "Sinexcel已交付超过5000个储能项目"
+        ],
+        "source_claims": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "sources": [],
+      "summary_raw": "From grid code to grid connection: what makes a grid-forming BESS work in the real world? Energy-Storage.News",
+      "source_text": "Solar Media Events PV Tech Solar Power Portal EV Infrastructure News Battery Technology Newsletter Twitter/X LinkedIn YouTube Feed\nSubscribe To Premium Premium Homepage Sign In My Account Search ... Results See all results\nNews Premium Premium Homepage PV Tech Power Journal Technical Papers Industry Updates Distributed Grid Scale Off Grid Market Analysis Software & Optimisation Materials & Production Features Resources Interviews Guest blog Editor’s blog Analysis Events & Webinars Events Upcoming Webinars On-demand Webinars\nFeatures , Guest blog From grid code to grid connection: what makes a grid-forming BESS work in the real world? By Luke Lu, technical director, Sinexcel September 16, 2026 Europe , Africa , Africa & Middle East Grid Scale Technology , Software & Optimisation\nLinkedIn Twitter Reddit Facebook Email BESS project installation in Romania, 2026. Image: Sinexcel. Drawing on nearly two decades of power electronics development and more than 5,000 energy storage projects, Sinexcel technical director Luke Lu discusses what goes into a successful grid-forming battery energy storage system (BESS) project. Grid-forming capability is increasingly appearing in grid codes, connection requirements and specifications for utility-scale battery energy storage systems (BESS). But specifying grid-forming functionality is only the beginning. For developers and EPCs, the harder question is: how can grid-forming capability be translated into a BESS that is compliant, stable and ready for successful commissioning under real grid conditions? A power conversion system (PCS) may support grid-forming control on its datasheet, but a real project still has to pass grid studies, interact correctly with the battery and plant controller, operate within physical current and thermal limits, and ultimately demonstrate the expected behaviour onsite. This article requires Premium Subscription Basic (FREE) Subscription Already a subscriber? Sign In Try Premium for just $1 Full premium access for the first month at only $1 Converts to an annual rate after 30 days unless cancelled Cancel anytime during the trial period Start $1 Trial Premium Benefits Expert industry analysis and interviews Digital access to PV Tech Power journal Exclusive event discounts Or get the full Premium subscription right away Get Premium Subscription Or continue reading this article for free Get Basic (FREE) Subscription This is where grid-forming (GFM) moves from being a product feature to a project-engineering challenge. Five areas deserve particular attention. 1. Start with the grid code, not the PCS datasheet One of the most common risks in early project development is selecting equipment first and interpreting the grid-connection requirements later. The sequence should be reversed. Before finalising the PCS configuration, developers and EPCs should translate local connection requirements into clearly defined technical behaviours, including: active and reactive power capability; voltage and frequency response; LVRT and HVRT; reactive current injection; ramp rates; fault behaviour; protection settings; modelling and validation requirements increasingly, specific grid-forming functions. This matters because connection requirements vary not only between countries but also between network operators, voltage levels and, in some cases, individual connection points. Grid-code compliance should therefore not be treated simply as a certification exercise. The requirements can influence converter controls, plant-level settings, protection philosophy, modelling strategy and even aspects of the overall system architecture. For example, SINEXCEL’s utility-scale PCS supports multiple operating modes, including PQ, VF and VSG control, as well as black start and configurations adapted to different grid requirements. But which functions are required, and how they need to be configured and validated, ultimately depends on the project. Discovering these requirements too late can lead to model revisions, control changes, additional testing and, in the worst case, delays to energisation and commercial operation. The earlier grid requirements are translated into engineering requirements, the lower the risk of redesign during the connection and commissioning process. 2. Break ‘grid-forming’ into behaviours that can actually be tested Grid-forming is frequently discussed as if it were a single feature. It is not. From an engineering perspective, it is better understood as a collection of behaviours that need to be specified, modelled and validated individually. Black start Can the BESS establish voltage and frequency without relying on an external grid reference, and can it energise the intended network under the required conditions? Virtual synchronous generator control Can the converter provide the required virtual inertia and damping characteristics, and how does it respond during frequency disturbances? Weak-grid operation How does the system behave as short-circuit stre",
+      "published_date": "2026-09-16",
+      "relevance_score": 55,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 51,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "GFM/PCS"
+        ]
+      },
+      "heat_score": 38,
+      "heat_factors": {
+        "freshness": 20,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 62,
+      "radar_score": 52,
       "radar_rank": 34
     },
     {
@@ -2356,9 +2356,9 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
@@ -2429,9 +2429,9 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
@@ -2495,9 +2495,9 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
@@ -2563,9 +2563,9 @@
         "engineering_usability": 80,
         "matched_topics": []
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
@@ -5949,7 +5949,7 @@
   "directions": {},
   "observations": [],
   "quality_notes": "本次没有获得具有可核验原文内容的强相关事件。",
-  "daily_summary": "2026-09-21 今日技术简报：共 0 条已验证事件。该时间范围暂无已验证事件。",
+  "daily_summary": "2026-09-22 今日技术简报：共 0 条已验证事件。该时间范围暂无已验证事件。",
   "daily_highlights": [],
   "daily_focus": [
     {
@@ -5982,7 +5982,7 @@
     "today_count": 0,
     "today_source_types": {},
     "yesterday_count": 0,
-    "seven_day_count": 46,
+    "seven_day_count": 38,
     "source_types": {
       "国际资讯": 79,
       "国际论文": 4,
