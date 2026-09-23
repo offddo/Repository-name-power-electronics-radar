@@ -1,7 +1,7 @@
 {
   "schema_version": "3.4",
-  "updated": "2026-09-22T10:41:38.654099+08:00",
-  "report_date": "2026-09-22",
+  "updated": "2026-09-23T10:42:37.301758+08:00",
+  "report_date": "2026-09-23",
   "event_count": 86,
   "events": [
     {
@@ -65,14 +65,14 @@
           "SST"
         ]
       },
-      "heat_score": 53,
+      "heat_score": 47,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 71,
-      "radar_score": 62,
+      "radar_score": 60,
       "radar_rank": 1
     },
     {
@@ -137,14 +137,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 53,
+      "heat_score": 47,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 53,
-      "radar_score": 54,
+      "radar_score": 52,
       "radar_rank": 2
     },
     {
@@ -224,14 +224,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 53,
+      "heat_score": 47,
       "heat_factors": {
-        "freshness": 55,
+        "freshness": 40,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 51,
+      "radar_score": 50,
       "radar_rank": 3
     },
     {
@@ -295,14 +295,14 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 47,
+      "heat_score": 40,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 71,
-      "radar_score": 57,
+      "radar_score": 55,
       "radar_rank": 4
     },
     {
@@ -354,14 +354,14 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 47,
+      "heat_score": 40,
       "heat_factors": {
-        "freshness": 40,
+        "freshness": 25,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 35,
-      "radar_score": 45,
+      "radar_score": 44,
       "radar_rank": 5
     },
     {
@@ -424,9 +424,9 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
@@ -492,15 +492,80 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 71,
-      "radar_score": 55,
+      "radar_score": 54,
       "radar_rank": 7
+    },
+    {
+      "id": "260920-11",
+      "title": "IAA TRANSPORTATION: Inmotion Technologies expands power electronics range - Industrial Vehicle Technology International",
+      "source_type": "国际资讯",
+      "primary_source": "Industrial Vehicle Technology International",
+      "published_at": "2026-09-17T09:39:11+00:00",
+      "link": "https://www.ivtinternational.com/news/exhibitions/inmotion-expands-power-electronics-range-at-iaa-transportation.html",
+      "category": [
+        "sic"
+      ],
+      "importance": "一般",
+      "plain_summary": "Inmotion Technologies（Zapi Group旗下公司）在汉诺威IAA Transportation展示三款动力产品：第三代高压逆变器ACH3、辅助系统DC/DC变换器DCC3，以及与Schabmüller合作开发的集成电机逆变器IMI 214预览。ACH3电流额定30至600安培以上，母线电压最高900V，公司称峰值效率99%。DCC3将250至900V输入转换为可调12或24V输出，功率最高10kW。",
+      "technical_summary": "Inmotion Technologies展示三款产品：ACH3第三代高压逆变器，公司称峰值效率99%，具备最佳EMC性能，电流额定30至600安培以上，全功率下母线电压最高900V，所有单元在瑞典组装，内置原生网络安全和功能安全。DCC3紧凑型DC/DC变换器，输入电压250至900V，输出稳定可调12或24V，功率最高10kW，面向电动或混合动力工业、商用和公用事业车辆的辅助系统。IMI 214为欧洲工程设计的集成电机逆变器，与Schabmüller（同属ZAPI Group）合作开发，将电力电子与电机技术集成于紧凑封装，用于商用车电动PTO应用，公司称设计优化了性能、效率和集成便利性。",
+      "technical": {
+        "voltage": "ACH3母线电压最高900V；DCC3输入250-900V，输出12/24V",
+        "power": "DCC3输出最高10kW",
+        "topology": "",
+        "device": "",
+        "switching_frequency": "",
+        "efficiency": "ACH3峰值效率99%（公司声称）",
+        "power_density": "",
+        "isolation": "",
+        "control": "",
+        "application": "商用车、工业车辆、建筑车辆、电动PTO"
+      },
+      "industrialization": {
+        "stage": "产品发布",
+        "status": "IAA Transportation展示",
+        "target": "商用车OEM"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "Inmotion Technologies在IAA Transportation展示ACH3、DCC3和IMI 214",
+          "ACH3电流额定30至600安培以上，母线电压最高900V，所有单元在瑞典组装",
+          "DCC3输入250至900V，输出可调12或24V，功率最高10kW",
+          "IMI 214与Schabmüller合作开发，用于电动PTO应用"
+        ],
+        "source_claims": [
+          "公司称ACH3峰值效率99%，具备最佳EMC性能",
+          "公司称IMI 214设计优化了性能、效率和集成便利性"
+        ],
+        "inferences": [],
+        "unknowns": []
+      },
+      "sources": [],
+      "summary_raw": "IAA TRANSPORTATION: Inmotion Technologies expands power electronics range Industrial Vehicle Technology International",
+      "source_text": "Featured 29th July 2026 iVT July/August issue – Digital edition available here! iVT By Anjali Sooknanan\nRecent iVT July/August issue – Digital edition available here! 29th July 2026\niVT May/June issue – Digital edition available here! 18th May 2026\niVT February/March issue – Digital edition available here! 13th February 2026\nInmotion Technologies, a Zapi Group company, is presenting its latest motive power products at IAA Transportation in Hannover, running from 15–20 September. The company is showing three applications: a third-generation high-voltage inverter, a new DC/DC converter for auxiliary systems, and a preview of an integrated motor inverter for electric power take-off (PTO) applications. The ACH3 inverter powers a vehicle’s motor with what the company states is 99% peak efficiency and best-in-class EMC performance. Current ratings for the ACH3 family run from 30 to more than 600 amperes and up to 900V bus voltage at full power. All units are assembled in Sweden and feature built-in native cybersecurity and functional safety. The DCC3 is a compact DC/DC converter engineered for a range of commercial and construction vehicle applications. It converts input voltages from 250 to 900V into a stable, adjustable 12 or 24V output, delivering up to 10kW of power for auxiliary systems in electric or hybrid industrial, commercial and utility vehicles. The IMI 214 is a European-engineered integrated motor inverter developed with Schabmüller, also a ZAPI Group company. It combines power electronics and electric motor technology in a compact package for electric PTO applications in commercial vehicles. The company says the design is optimised for performance, efficiency and ease of integration into existing vehicle architectures. “We are excited to showcase these new capabilities at IAA Transportation 2026 because they address real integration challenges facing commercial vehicle OEMs,” says Martin Wennerblom, product and marketing director at Inmotion Technologies. “By combining safety, performance, and streamlined installation, our solutions help manufacturers reduce integration effort while supporting the transition toward more sustainable and efficient commercial vehicles.” Inmotion is exhibiting at Hall 12, Stand D40, alongside Business Sweden and FKG. Image: Inmotion Technologies\nPrevious Article TTControl expands physical AI and autonomy offering Next Article Kleemann reveals MR 130 Evo successor for 2027\nAnjali Sooknanan Anjali Sooknanan is deputy editor of the iVT brand - which includes digital and print editions of a quarterly magazine and Off-Highway Annual, as well as ivtinternational.com. She holds an English degree from Goldsmiths University in London, and has experience working on B2B publications in various industries from electrical to construction.\nRelated Posts Construction Finlay launches Elektro hybrid crusher range at Bauma ConExpo India 18th September 2026 3 Mins Read\nAutonomous Vehicles TTControl expands physical AI and autonomy offering 16th September 2026 3 Mins Read\nAwards & Events IAA TRANSPORTATION: Stoneridge unveils EVO ECU platform for off-highway use 14th September 2026 3 Mins Read\nLatest Posts Fendt updates 1100 Vario MT tracked tractor 18th September 2026\nCat D11 XE brings electric drive to largest dozer platform 18th September 2026\nFinlay launches Elektro hybrid crusher range at Bauma ConExpo India 18th September 2026\nInmotion Technologies, a Zapi Group company, is presenting its latest motive power products at IAA Transportation in Hannover, running from 15–20 September.\nThe company is showing three applications: a third-generation high-voltage inverter, a new DC/DC converter for auxiliary systems, and a preview of an integrated motor inverter for electric power take-off (PTO) applications.\nThe ACH3 inverter powers a vehicle’s motor with what the company states is 99% peak efficiency and best-in-class EMC performance. Current ratings for the ACH3 family run from 30 to more than 600 amperes and up to 900V bus voltage at full power. All units are assembled in Sweden and feature built-in native cybersecurity and functional safety.\nThe DCC3 is a compact DC/DC converter engineered for a range of commercial and construction vehicle applications. It converts input voltages from 250 to 900V into a stable, adjustable 12 or 24V output, delivering up to 10kW of power for auxiliary systems in electric or hybrid industrial, commercial and utility vehicles.\nThe IMI 214 is a European-engineered integrated motor inverter developed with Schabmüller, also a ZAPI Group company. It combines power electronics and electric motor technology in a compact package for electric PTO applications in commercial vehicles. The company says the design is optimised for performance, efficiency and ease of integration into existing vehicle architectures.\n“We are excited to showcase these new capabilities at IAA Transportation 2026 because they address real integration challenges facing commercial vehicle OEMs",
+      "published_date": "2026-09-17",
+      "relevance_score": 50,
+      "relevance_factors": {
+        "focus_match": 35,
+        "technical_density": 59,
+        "engineering_usability": 80,
+        "matched_topics": []
+      },
+      "heat_score": 43,
+      "heat_factors": {
+        "freshness": 20,
+        "multi_source": 45,
+        "source_authority": 75
+      },
+      "technical_depth_score": 71,
+      "radar_score": 54,
+      "radar_rank": 8
     },
     {
       "id": "260920-04",
@@ -561,76 +626,11 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
-      },
-      "technical_depth_score": 71,
-      "radar_score": 55,
-      "radar_rank": 8
-    },
-    {
-      "id": "260920-11",
-      "title": "IAA TRANSPORTATION: Inmotion Technologies expands power electronics range - Industrial Vehicle Technology International",
-      "source_type": "国际资讯",
-      "primary_source": "Industrial Vehicle Technology International",
-      "published_at": "2026-09-17T09:39:11+00:00",
-      "link": "https://www.ivtinternational.com/news/exhibitions/inmotion-expands-power-electronics-range-at-iaa-transportation.html",
-      "category": [
-        "sic"
-      ],
-      "importance": "一般",
-      "plain_summary": "Inmotion Technologies（Zapi Group旗下公司）在汉诺威IAA Transportation展示三款动力产品：第三代高压逆变器ACH3、辅助系统DC/DC变换器DCC3，以及与Schabmüller合作开发的集成电机逆变器IMI 214预览。ACH3电流额定30至600安培以上，母线电压最高900V，公司称峰值效率99%。DCC3将250至900V输入转换为可调12或24V输出，功率最高10kW。",
-      "technical_summary": "Inmotion Technologies展示三款产品：ACH3第三代高压逆变器，公司称峰值效率99%，具备最佳EMC性能，电流额定30至600安培以上，全功率下母线电压最高900V，所有单元在瑞典组装，内置原生网络安全和功能安全。DCC3紧凑型DC/DC变换器，输入电压250至900V，输出稳定可调12或24V，功率最高10kW，面向电动或混合动力工业、商用和公用事业车辆的辅助系统。IMI 214为欧洲工程设计的集成电机逆变器，与Schabmüller（同属ZAPI Group）合作开发，将电力电子与电机技术集成于紧凑封装，用于商用车电动PTO应用，公司称设计优化了性能、效率和集成便利性。",
-      "technical": {
-        "voltage": "ACH3母线电压最高900V；DCC3输入250-900V，输出12/24V",
-        "power": "DCC3输出最高10kW",
-        "topology": "",
-        "device": "",
-        "switching_frequency": "",
-        "efficiency": "ACH3峰值效率99%（公司声称）",
-        "power_density": "",
-        "isolation": "",
-        "control": "",
-        "application": "商用车、工业车辆、建筑车辆、电动PTO"
-      },
-      "industrialization": {
-        "stage": "产品发布",
-        "status": "IAA Transportation展示",
-        "target": "商用车OEM"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "Inmotion Technologies在IAA Transportation展示ACH3、DCC3和IMI 214",
-          "ACH3电流额定30至600安培以上，母线电压最高900V，所有单元在瑞典组装",
-          "DCC3输入250至900V，输出可调12或24V，功率最高10kW",
-          "IMI 214与Schabmüller合作开发，用于电动PTO应用"
-        ],
-        "source_claims": [
-          "公司称ACH3峰值效率99%，具备最佳EMC性能",
-          "公司称IMI 214设计优化了性能、效率和集成便利性"
-        ],
-        "inferences": [],
-        "unknowns": []
-      },
-      "sources": [],
-      "summary_raw": "IAA TRANSPORTATION: Inmotion Technologies expands power electronics range Industrial Vehicle Technology International",
-      "source_text": "Featured 29th July 2026 iVT July/August issue – Digital edition available here! iVT By Anjali Sooknanan\nRecent iVT July/August issue – Digital edition available here! 29th July 2026\niVT May/June issue – Digital edition available here! 18th May 2026\niVT February/March issue – Digital edition available here! 13th February 2026\nInmotion Technologies, a Zapi Group company, is presenting its latest motive power products at IAA Transportation in Hannover, running from 15–20 September. The company is showing three applications: a third-generation high-voltage inverter, a new DC/DC converter for auxiliary systems, and a preview of an integrated motor inverter for electric power take-off (PTO) applications. The ACH3 inverter powers a vehicle’s motor with what the company states is 99% peak efficiency and best-in-class EMC performance. Current ratings for the ACH3 family run from 30 to more than 600 amperes and up to 900V bus voltage at full power. All units are assembled in Sweden and feature built-in native cybersecurity and functional safety. The DCC3 is a compact DC/DC converter engineered for a range of commercial and construction vehicle applications. It converts input voltages from 250 to 900V into a stable, adjustable 12 or 24V output, delivering up to 10kW of power for auxiliary systems in electric or hybrid industrial, commercial and utility vehicles. The IMI 214 is a European-engineered integrated motor inverter developed with Schabmüller, also a ZAPI Group company. It combines power electronics and electric motor technology in a compact package for electric PTO applications in commercial vehicles. The company says the design is optimised for performance, efficiency and ease of integration into existing vehicle architectures. “We are excited to showcase these new capabilities at IAA Transportation 2026 because they address real integration challenges facing commercial vehicle OEMs,” says Martin Wennerblom, product and marketing director at Inmotion Technologies. “By combining safety, performance, and streamlined installation, our solutions help manufacturers reduce integration effort while supporting the transition toward more sustainable and efficient commercial vehicles.” Inmotion is exhibiting at Hall 12, Stand D40, alongside Business Sweden and FKG. Image: Inmotion Technologies\nPrevious Article TTControl expands physical AI and autonomy offering Next Article Kleemann reveals MR 130 Evo successor for 2027\nAnjali Sooknanan Anjali Sooknanan is deputy editor of the iVT brand - which includes digital and print editions of a quarterly magazine and Off-Highway Annual, as well as ivtinternational.com. She holds an English degree from Goldsmiths University in London, and has experience working on B2B publications in various industries from electrical to construction.\nRelated Posts Construction Finlay launches Elektro hybrid crusher range at Bauma ConExpo India 18th September 2026 3 Mins Read\nAutonomous Vehicles TTControl expands physical AI and autonomy offering 16th September 2026 3 Mins Read\nAwards & Events IAA TRANSPORTATION: Stoneridge unveils EVO ECU platform for off-highway use 14th September 2026 3 Mins Read\nLatest Posts Fendt updates 1100 Vario MT tracked tractor 18th September 2026\nCat D11 XE brings electric drive to largest dozer platform 18th September 2026\nFinlay launches Elektro hybrid crusher range at Bauma ConExpo India 18th September 2026\nInmotion Technologies, a Zapi Group company, is presenting its latest motive power products at IAA Transportation in Hannover, running from 15–20 September.\nThe company is showing three applications: a third-generation high-voltage inverter, a new DC/DC converter for auxiliary systems, and a preview of an integrated motor inverter for electric power take-off (PTO) applications.\nThe ACH3 inverter powers a vehicle’s motor with what the company states is 99% peak efficiency and best-in-class EMC performance. Current ratings for the ACH3 family run from 30 to more than 600 amperes and up to 900V bus voltage at full power. All units are assembled in Sweden and feature built-in native cybersecurity and functional safety.\nThe DCC3 is a compact DC/DC converter engineered for a range of commercial and construction vehicle applications. It converts input voltages from 250 to 900V into a stable, adjustable 12 or 24V output, delivering up to 10kW of power for auxiliary systems in electric or hybrid industrial, commercial and utility vehicles.\nThe IMI 214 is a European-engineered integrated motor inverter developed with Schabmüller, also a ZAPI Group company. It combines power electronics and electric motor technology in a compact package for electric PTO applications in commercial vehicles. The company says the design is optimised for performance, efficiency and ease of integration into existing vehicle architectures.\n“We are excited to showcase these new capabilities at IAA Transportation 2026 because they address real integration challenges facing commercial vehicle OEMs",
-      "published_date": "2026-09-17",
-      "relevance_score": 50,
-      "relevance_factors": {
-        "focus_match": 35,
-        "technical_density": 59,
-        "engineering_usability": 80,
-        "matched_topics": []
-      },
-      "heat_score": 45,
-      "heat_factors": {
-        "freshness": 25,
-        "multi_source": 45,
-        "source_authority": 75
       },
       "technical_depth_score": 71,
       "radar_score": 54,
@@ -697,9 +697,9 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 45,
+      "heat_score": 43,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 75
       },
@@ -767,15 +767,75 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 45,
+      "heat_score": 43,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 75
       },
       "technical_depth_score": 53,
       "radar_score": 53,
       "radar_rank": 11
+    },
+    {
+      "id": "260917-07",
+      "title": "Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit - Pragativadi",
+      "source_type": "国际资讯",
+      "primary_source": "Pragativadi",
+      "published_at": "2026-09-17T07:41:15+00:00",
+      "link": "https://pragativadi.com/odisha-powers-up-indias-chip-ambitions-with-rs-3406-cr-sic-semiconductor-unit/",
+      "category": [
+        "sic"
+      ],
+      "importance": "一般",
+      "plain_summary": "Pragativadi报道奥里萨邦一个投资额340.6亿卢比的SiC半导体项目，被视为印度芯片产业布局的一部分。该项目与RIR Power Electronics在奥里萨邦的SiC设施建设相关。报道强调该项目对印度本土半导体制造能力的意义。",
+      "technical_summary": "该条目报道奥里萨邦一个投资额约340.6亿卢比（Rs 3,406-Cr）的SiC半导体项目。原文摘要未提供产线技术节点、晶圆尺寸、产能、产品类型（外延片/器件）或投产时间等参数。该信息属于产业投资与区域半导体制造布局层面，不涉及具体电力电子器件技术指标。",
+      "technical": {
+        "device": "SiC",
+        "application": "SiC半导体制造"
+      },
+      "industrialization": {
+        "stage": "试点/示范",
+        "status": "项目投资"
+      },
+      "evidence": {
+        "confirmed_facts": [
+          "奥里萨邦有投资额约340.6亿卢比的SiC半导体项目"
+        ],
+        "source_claims": [
+          "该项目有助于印度芯片产业布局"
+        ],
+        "inferences": [
+          "项目与RIR Power Electronics的奥里萨邦SiC设施相关"
+        ]
+      },
+      "summary_raw": "Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit Pragativadi",
+      "published_date": "2026-09-17",
+      "relevance_score": 53,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 43,
+        "engineering_usability": 80,
+        "matched_topics": [
+          "SiC/GaN"
+        ]
+      },
+      "heat_score": 43,
+      "heat_factors": {
+        "freshness": 20,
+        "multi_source": 45,
+        "source_authority": 75
+      },
+      "technical_depth_score": 53,
+      "radar_score": 53,
+      "radar_rank": 12,
+      "sources": [
+        {
+          "source": "Pragativadi",
+          "title": "Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit - Pragativadi",
+          "link": "https://pragativadi.com/odisha-powers-up-indias-chip-ambitions-with-rs-3406-cr-sic-semiconductor-unit/"
+        }
+      ]
     },
     {
       "id": "260918-09",
@@ -836,15 +896,15 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 62,
-      "radar_score": 53,
-      "radar_rank": 12
+      "radar_score": 52,
+      "radar_rank": 13
     },
     {
       "id": "260918-09",
@@ -903,75 +963,15 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 62,
-      "radar_score": 53,
-      "radar_rank": 13
-    },
-    {
-      "id": "260917-07",
-      "title": "Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit - Pragativadi",
-      "source_type": "国际资讯",
-      "primary_source": "Pragativadi",
-      "published_at": "2026-09-17T07:41:15+00:00",
-      "link": "https://pragativadi.com/odisha-powers-up-indias-chip-ambitions-with-rs-3406-cr-sic-semiconductor-unit/",
-      "category": [
-        "sic"
-      ],
-      "importance": "一般",
-      "plain_summary": "Pragativadi报道奥里萨邦一个投资额340.6亿卢比的SiC半导体项目，被视为印度芯片产业布局的一部分。该项目与RIR Power Electronics在奥里萨邦的SiC设施建设相关。报道强调该项目对印度本土半导体制造能力的意义。",
-      "technical_summary": "该条目报道奥里萨邦一个投资额约340.6亿卢比（Rs 3,406-Cr）的SiC半导体项目。原文摘要未提供产线技术节点、晶圆尺寸、产能、产品类型（外延片/器件）或投产时间等参数。该信息属于产业投资与区域半导体制造布局层面，不涉及具体电力电子器件技术指标。",
-      "technical": {
-        "device": "SiC",
-        "application": "SiC半导体制造"
-      },
-      "industrialization": {
-        "stage": "试点/示范",
-        "status": "项目投资"
-      },
-      "evidence": {
-        "confirmed_facts": [
-          "奥里萨邦有投资额约340.6亿卢比的SiC半导体项目"
-        ],
-        "source_claims": [
-          "该项目有助于印度芯片产业布局"
-        ],
-        "inferences": [
-          "项目与RIR Power Electronics的奥里萨邦SiC设施相关"
-        ]
-      },
-      "summary_raw": "Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit Pragativadi",
-      "published_date": "2026-09-17",
-      "relevance_score": 53,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 43,
-        "engineering_usability": 80,
-        "matched_topics": [
-          "SiC/GaN"
-        ]
-      },
-      "heat_score": 45,
-      "heat_factors": {
-        "freshness": 25,
-        "multi_source": 45,
-        "source_authority": 75
-      },
-      "technical_depth_score": 53,
-      "radar_score": 53,
-      "radar_rank": 14,
-      "sources": [
-        {
-          "source": "Pragativadi",
-          "title": "Odisha Powers Up India’s Chip Ambitions with Rs 3,406-Cr SiC Semiconductor Unit - Pragativadi",
-          "link": "https://pragativadi.com/odisha-powers-up-indias-chip-ambitions-with-rs-3406-cr-sic-semiconductor-unit/"
-        }
-      ]
+      "radar_score": 52,
+      "radar_rank": 14
     },
     {
       "id": "260917-01",
@@ -1032,14 +1032,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 45,
+      "heat_score": 43,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 75
       },
       "technical_depth_score": 44,
-      "radar_score": 52,
+      "radar_score": 51,
       "radar_rank": 15
     },
     {
@@ -1100,9 +1100,9 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
@@ -1169,9 +1169,9 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
@@ -1233,9 +1233,9 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
@@ -1300,9 +1300,9 @@
           "800V/AI DC"
         ]
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
@@ -1383,14 +1383,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 44,
+      "heat_score": 42,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 63,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 50,
+      "radar_score": 49,
       "radar_rank": 20
     },
     {
@@ -1451,14 +1451,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 49,
+      "radar_score": 48,
       "radar_rank": 21
     },
     {
@@ -1519,14 +1519,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 49,
+      "radar_score": 48,
       "radar_rank": 22
     },
     {
@@ -1568,14 +1568,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 49,
+      "radar_score": 48,
       "radar_rank": 23,
       "sources": [
         {
@@ -1642,14 +1642,14 @@
           "Magnetics"
         ]
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 48,
+      "radar_score": 47,
       "radar_rank": 24
     },
     {
@@ -1710,14 +1710,14 @@
           "Magnetics"
         ]
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 44,
-      "radar_score": 48,
+      "radar_score": 47,
       "radar_rank": 25
     },
     {
@@ -1750,14 +1750,14 @@
           "SiC/GaN"
         ]
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 35,
-      "radar_score": 47,
+      "radar_score": 46,
       "radar_rank": 26,
       "sources": [
         {
@@ -1766,126 +1766,6 @@
           "link": "https://scanx.trade/stock-market-news/companies/rir-power-electronics-board-to-meet-on-may-28/41170221"
         }
       ]
-    },
-    {
-      "id": "260918-16",
-      "title": "Is Infineon’s 800 VDC AI Data Center Breaker Role Altering The Investment Case For Infineon Technologies (XTRA:IFX)? - Yahoo Finance",
-      "source_type": "国际资讯",
-      "primary_source": "Yahoo Finance",
-      "published_at": "2026-09-16T23:14:37+00:00",
-      "link": "https://finance.yahoo.com/technology/ai/articles/infineon-800-vdc-ai-data-231437123.html",
-      "summary_raw": "Is Infineon’s 800 VDC AI Data Center Breaker Role Altering The Investment Case For Infineon Technologies (XTRA:IFX)? Yahoo Finance",
-      "source_text": "Is Infineon’s 800 VDC AI Data Center Breaker Role Altering The Investment Case For Infineon Technologies (XTRA:IFX)? Sasha Jovanovic Wed, September 16, 2026 at 6:14 PM CDT 3 min read IFX.DE SEDG Trade SEDG on Coinbase Trading disclosure Trading disclosure The above button links to Coinbase. Yahoo Finance is not a broker-dealer or investment adviser and does not offer securities or cryptocurrencies for sale or facilitate trading. Coinbase pays us for certain activity generated through this link. Prices displayed are informational. Learn more\nTerms and Privacy Policy Privacy Dashboard More Info\nCopyright © 2026 Yahoo. All rights reserved. Trending Topics Dow Jones S&P 500 DAX Index Nvidia Tesla DJT Tariffs Explore Further Mortgages Credit Cards Sectors Crypto Heatmap Financial News About Data Disclaimer Help Feedback Sitemap Licensing What's New About Our Ads Premium Plans Terms and Privacy Policy Privacy Dashboard More Info\nTerms and Privacy Policy Privacy Dashboard Ad Terms Feedback More Info\nSkip to navigation Skip to main content Skip to right column Yahoo Finance Home News Finance Sports More News US Politics World Climate change Health Science Originals Newsletters Finance My portfolio News Markets Research Community Personal finance Videos Sports World Cup Fantasy Football 2026 Fantasy NFL NFL Odds NBA MLB NHL College football College basketball Soccer Sports Betting Yahoo Sports AM Shopping Style Beauty Health Home and garden Pets Tech Gift ideas Stores Shopping Guides Deals Toys and games Shopping lists General Games Solitaire Roadtrip Yahoo Mini Crossword Pile-Up Poker Circuits Yahoo IQ Trivia Crushable Farm Merge Valley Daily Sudoku Together Entertainment Celebrity TV Movies Music How to Watch Interviews Videos Nonfiction Hotlist Selected edition US English Sign in My Portfolio News Markets Stock market Crypto Real estate Magnificent 7 Private markets Futures & Derivatives Originals Premium news Newsletters Economy & Policy Earnings Oil & gas Strait of Hormuz Tariffs Clean Energy Tech Aerospace & Defense Enterprise Cloud Pharma & Biotech Cybersecurity Exchange-Traded Funds Markets Stocks Most active Day gainers Day losers Trending Highest dividend Small cap Large cap Most expensive Highest beta Pink sheet Unusual volume Crypto Most active Day gainers Day losers Private companies 52 week gainers Recently funded Most funded Options Day gainers Day losers Highest open interest Highest implied volatility Sectors Technology Financial services Consumer cyclical Communication services Healthcare Industrials Consumer defensive Energy Basic materials Real estate Utilities Treasury bonds Futures Currencies World indices ETFs Mutual funds Calendars Earnings IPOs Stock splits Economic events Research AlphaSpace Stock picks Screeners Stocks Most shorted Most active penny stocks Analyst strong buy Stock comparison NVDA vs INTC NVDA vs AMD GOOG vs AMZN AAPL vs MSFT TSLA vs RIVN Currency converter Advanced charts Investment ideas Research reports Community Personal Finance My Money BETA Credit cards Compare Credit Cards Best 0% APR cards Best balance transfer cards Best rewards cards Best travel cards Banking Best CD rates Best high-yield savings accounts Best money market accounts Best free checking accounts Best online banks Mortgage Best mortgage lenders Best mortgage rates Mortgage refinance First time homebuyer Mortgage payment calculator Home affordability calculator Insurance Find car insurance Types of car insurance Find life insurance Taxes How to file Tax brackets and rates Child tax credit Tax extension Tax refund status Student loans Federal vs. private How to apply FAFSA 2026-27 Student loan assistance Personal loans Best personal loans Improve credit score How to get approved Calculators All Calculators 50/30/20 Budget Calculator Compound Interest Calculator Savings Calculator Savings Goal Calculator Social Security Calculator Videos Watch Now Latest Editor's picks Trending stocks Investing insights Live shows Morning Brief Opening Bid Market Catalysts Market Domination Market Domination Overtime Asking for a Trend The Daily Wolf Weekly shows Power Players Trader Talk Built Different The Big Idea ETF Report ... Network AlphaSpace Markets Analysis News My Portfolio Earnings Hub Options A pro-grade research workspace with advanced charts, company data and real-time news. Now part of Yahoo Finance Gold. Learn more Get Finance Plus U.S. markets open in 4h 10m US Markets US Markets Europe Markets Asia Markets Cryptocurrencies Rates Commodities Currencies U.S. markets open in 4h 10m S&P Futures 7,726.75 +19.50 +0.25% Dow Futures 52,307.00 +87.00 +0.17% Nasdaq Futures 29,888.50 +145.50 +0.49% Russell 2000 Futures 2,898.80 +1.90 +0.07% VIX 15.22 -0.22 -1.42% Gold 4,436.50 +36.80 +0.84% Bitcoin USD 78,263.35 +1,869.01 +2.45% Crude Oil Oct 26 95.33 -1.90 -1.95% ADVERTISEMENT Is Infineon’s 800 VDC AI Data Center Breaker Role Altering The Investment Case For Infineon Technologies (XTRA:IFX)? Sasha Jovanovic Wed,",
-      "category": [
-        "800v",
-        "ai_dc",
-        "sic"
-      ],
-      "sources": [],
-      "plain_summary": "Is Infineon’s 800 VDC AI Data Center Breaker Role Altering The Investment Case For Infineon Technologies (XTRA:IFX)? Yahoo Finance",
-      "technical_summary": "",
-      "technical": {
-        "voltage": "",
-        "power": "",
-        "topology": "",
-        "device": "",
-        "switching_frequency": "",
-        "efficiency": "",
-        "power_density": "",
-        "isolation": "",
-        "control": "",
-        "application": ""
-      },
-      "industrialization": {
-        "stage": "未知",
-        "status": "",
-        "target": ""
-      },
-      "evidence": {
-        "confirmed_facts": [],
-        "source_claims": [],
-        "inferences": [],
-        "unknowns": []
-      },
-      "published_date": "2026-09-17",
-      "relevance_score": 45,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 35,
-        "engineering_usability": 50,
-        "matched_topics": [
-          "800V/AI DC"
-        ]
-      },
-      "heat_score": 40,
-      "heat_factors": {
-        "freshness": 25,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 35,
-      "radar_score": 44,
-      "radar_rank": 27
-    },
-    {
-      "id": "260918-09",
-      "title": "CorePower Magnetics Raises $10.6 Million To Scale U.S. Manufacturing Of Advanced Magnetics For AI, Data Centers And Grid Infrastructure - Pulse 2.0",
-      "source_type": "国际资讯",
-      "primary_source": "Pulse 2.0",
-      "published_at": "2026-09-17T12:44:25+00:00",
-      "link": "https://pulse2.com/corepower-magnetics-raises-10-6-million-to-scale-u-s-manufacturing-of-advanced-magnetics-for-ai-data-centers-and-grid-infrastructure/",
-      "summary_raw": "CorePower Magnetics Raises $10.6 Million To Scale U.S. Manufacturing Of Advanced Magnetics For AI, Data Centers And Grid Infrastructure Pulse 2.0",
-      "source_text": "CorePower Magnetics Raises $10.6 Million To Scale U.S. Manufacturing Of Advanced Magnetics For AI, Data Centers And Grid Infrastructure By Amit Chowdhry Yesterday at 8:44 AM CorePower Magnetics Raises $10.6 Million To Scale U.S. Manufacturing Of Advanced Magnetics For AI, Data Centers And Grid Infrastructure CorePower Magnetics, a Pittsburgh-based developer and manufacturer of advanced magnetic components for power electronics, has raised $10.6 million in equity financing to expand domestic manufacturing capacity, accelerate hiring and scale commercialization of its technology. The oversubscribed round was co-led by Engine Ventures and Material Impact, with participation from Evergreen Climate Innovations, the Carnegie Mellon Catalyst Fund and Baruch Future Ventures. The financing brings CorePower’s total equity funding to $13.6 million. The company has also secured another $27 million in non-dilutive funding through ARPA-E, the U.S. Department of Energy and Department of Defense programs. CorePower develops advanced magnetic materials and components, including transformers and inductors, used in power electronics across AI infrastructure, data centers, grid modernization and industrial electrification. Demand for more efficient power electronics is increasing as data centers and other energy-intensive infrastructure require larger amounts of electricity. CorePower noted that the International Energy Agency projects AI-driven data center electricity demand will more than double by 2030, while the U.S. Department of Energy estimates roughly 100 GW of additional peak-hour supply could be required by then. Magnetic components play a critical role in converting and controlling electricity but remain one of the less-modernized portions of the power infrastructure stack. As systems move toward higher voltages and frequencies, conventional transformers and inductors can struggle with efficiency, heat, size and weight. CorePower’s technology is based on nanocrystalline alloys originally advanced by co-founders Paul Ohodnicki and Sam Kernion at Carnegie Mellon University in collaboration with the Department of Energy’s National Energy Technology Laboratory. The company reformulated the materials to operate at higher temperatures while withstanding the mechanical requirements associated with commercial manufacturing. CorePower works across the full value chain, spanning materials development, manufacturing processes, component design and production. The result is smaller, lighter and more efficient inductors and transformers that customers can integrate directly into power systems. CorePower is now moving from technology development toward higher-volume domestic manufacturing. The company plans to use the new capital to expand production capacity and equipment in the Pittsburgh region while adding employees across engineering, operations and manufacturing. The company has already moved its proprietary alloy, annealing and component manufacturing processes from laboratory scale through intermediate stages and into commercial-scale production. Multiple product lines are now advancing toward volume manufacturing. CorePower also has paid engagements with several Fortune 500 companies across AI infrastructure, data centers, industrial power systems and grid modernization. The financing strengthens the company’s effort to build a domestic supply base for advanced magnetics at a time when power infrastructure has become increasingly important to the expansion of AI computing and broader electrification. Engine Ventures General Partner Reed Sturtevant and Material Impact Co-Founder and Managing Partner Carmichael Roberts are also joining CorePower’s board as part of the financing. Founded in 2020, CorePower is headquartered at the Energy Innovation Center in Pittsburgh. The company plans to continue expanding its manufacturing footprint in the region while increasing commercialization of its magnetic components across power-intensive markets. KEY QUOTES: “The increased need for more efficient power electronics is creating a significant opportunity for advanced magnetic materials and components. Along with improved performance, we’re bringing greater standardization to a historically custom industry, enabling customers to move faster from design to production while accelerating adoption of next-generation power electronics.” Sam Kernion, CEO of CorePower Magnetics “CorePower sits at a critical and under-appreciated layer in the power stack. We believe their unique magnetics materials technology can be the foundation of a large, successful company during the growth of data centers and the grid.” Reed Sturtevant, General Partner at Engine Ventures “Advanced materials create value only when they can be translated into products that solve meaningful customer problems. What impressed us about CorePower is not only the strength of the underlying technology, but the team’s ability to scale it into manufacturable components that addr",
-      "category": [
-        "ai_dc",
-        "llc",
-        "magnetics"
-      ],
-      "sources": [],
-      "plain_summary": "CorePower Magnetics Raises $10.6 Million To Scale U.S. Manufacturing Of Advanced Magnetics For AI, Data Centers And Grid Infrastructure Pulse 2.0",
-      "technical_summary": "",
-      "technical": {
-        "voltage": "",
-        "power": "",
-        "topology": "",
-        "device": "",
-        "switching_frequency": "",
-        "efficiency": "",
-        "power_density": "",
-        "isolation": "",
-        "control": "",
-        "application": ""
-      },
-      "industrialization": {
-        "stage": "未知",
-        "status": "",
-        "target": ""
-      },
-      "evidence": {
-        "confirmed_facts": [],
-        "source_claims": [],
-        "inferences": [],
-        "unknowns": []
-      },
-      "published_date": "2026-09-17",
-      "relevance_score": 45,
-      "relevance_factors": {
-        "focus_match": 48,
-        "technical_density": 35,
-        "engineering_usability": 50,
-        "matched_topics": [
-          "Magnetics"
-        ]
-      },
-      "heat_score": 40,
-      "heat_factors": {
-        "freshness": 25,
-        "multi_source": 45,
-        "source_authority": 58
-      },
-      "technical_depth_score": 35,
-      "radar_score": 44,
-      "radar_rank": 28
     },
     {
       "id": "260917-14",
@@ -1940,14 +1820,134 @@
         "engineering_usability": 80,
         "matched_topics": []
       },
-      "heat_score": 40,
+      "heat_score": 38,
       "heat_factors": {
-        "freshness": 25,
+        "freshness": 20,
         "multi_source": 45,
         "source_authority": 58
       },
       "technical_depth_score": 44,
       "radar_score": 44,
+      "radar_rank": 27
+    },
+    {
+      "id": "260918-16",
+      "title": "Is Infineon’s 800 VDC AI Data Center Breaker Role Altering The Investment Case For Infineon Technologies (XTRA:IFX)? - Yahoo Finance",
+      "source_type": "国际资讯",
+      "primary_source": "Yahoo Finance",
+      "published_at": "2026-09-16T23:14:37+00:00",
+      "link": "https://finance.yahoo.com/technology/ai/articles/infineon-800-vdc-ai-data-231437123.html",
+      "summary_raw": "Is Infineon’s 800 VDC AI Data Center Breaker Role Altering The Investment Case For Infineon Technologies (XTRA:IFX)? Yahoo Finance",
+      "source_text": "Is Infineon’s 800 VDC AI Data Center Breaker Role Altering The Investment Case For Infineon Technologies (XTRA:IFX)? Sasha Jovanovic Wed, September 16, 2026 at 6:14 PM CDT 3 min read IFX.DE SEDG Trade SEDG on Coinbase Trading disclosure Trading disclosure The above button links to Coinbase. Yahoo Finance is not a broker-dealer or investment adviser and does not offer securities or cryptocurrencies for sale or facilitate trading. Coinbase pays us for certain activity generated through this link. Prices displayed are informational. Learn more\nTerms and Privacy Policy Privacy Dashboard More Info\nCopyright © 2026 Yahoo. All rights reserved. Trending Topics Dow Jones S&P 500 DAX Index Nvidia Tesla DJT Tariffs Explore Further Mortgages Credit Cards Sectors Crypto Heatmap Financial News About Data Disclaimer Help Feedback Sitemap Licensing What's New About Our Ads Premium Plans Terms and Privacy Policy Privacy Dashboard More Info\nTerms and Privacy Policy Privacy Dashboard Ad Terms Feedback More Info\nSkip to navigation Skip to main content Skip to right column Yahoo Finance Home News Finance Sports More News US Politics World Climate change Health Science Originals Newsletters Finance My portfolio News Markets Research Community Personal finance Videos Sports World Cup Fantasy Football 2026 Fantasy NFL NFL Odds NBA MLB NHL College football College basketball Soccer Sports Betting Yahoo Sports AM Shopping Style Beauty Health Home and garden Pets Tech Gift ideas Stores Shopping Guides Deals Toys and games Shopping lists General Games Solitaire Roadtrip Yahoo Mini Crossword Pile-Up Poker Circuits Yahoo IQ Trivia Crushable Farm Merge Valley Daily Sudoku Together Entertainment Celebrity TV Movies Music How to Watch Interviews Videos Nonfiction Hotlist Selected edition US English Sign in My Portfolio News Markets Stock market Crypto Real estate Magnificent 7 Private markets Futures & Derivatives Originals Premium news Newsletters Economy & Policy Earnings Oil & gas Strait of Hormuz Tariffs Clean Energy Tech Aerospace & Defense Enterprise Cloud Pharma & Biotech Cybersecurity Exchange-Traded Funds Markets Stocks Most active Day gainers Day losers Trending Highest dividend Small cap Large cap Most expensive Highest beta Pink sheet Unusual volume Crypto Most active Day gainers Day losers Private companies 52 week gainers Recently funded Most funded Options Day gainers Day losers Highest open interest Highest implied volatility Sectors Technology Financial services Consumer cyclical Communication services Healthcare Industrials Consumer defensive Energy Basic materials Real estate Utilities Treasury bonds Futures Currencies World indices ETFs Mutual funds Calendars Earnings IPOs Stock splits Economic events Research AlphaSpace Stock picks Screeners Stocks Most shorted Most active penny stocks Analyst strong buy Stock comparison NVDA vs INTC NVDA vs AMD GOOG vs AMZN AAPL vs MSFT TSLA vs RIVN Currency converter Advanced charts Investment ideas Research reports Community Personal Finance My Money BETA Credit cards Compare Credit Cards Best 0% APR cards Best balance transfer cards Best rewards cards Best travel cards Banking Best CD rates Best high-yield savings accounts Best money market accounts Best free checking accounts Best online banks Mortgage Best mortgage lenders Best mortgage rates Mortgage refinance First time homebuyer Mortgage payment calculator Home affordability calculator Insurance Find car insurance Types of car insurance Find life insurance Taxes How to file Tax brackets and rates Child tax credit Tax extension Tax refund status Student loans Federal vs. private How to apply FAFSA 2026-27 Student loan assistance Personal loans Best personal loans Improve credit score How to get approved Calculators All Calculators 50/30/20 Budget Calculator Compound Interest Calculator Savings Calculator Savings Goal Calculator Social Security Calculator Videos Watch Now Latest Editor's picks Trending stocks Investing insights Live shows Morning Brief Opening Bid Market Catalysts Market Domination Market Domination Overtime Asking for a Trend The Daily Wolf Weekly shows Power Players Trader Talk Built Different The Big Idea ETF Report ... Network AlphaSpace Markets Analysis News My Portfolio Earnings Hub Options A pro-grade research workspace with advanced charts, company data and real-time news. Now part of Yahoo Finance Gold. Learn more Get Finance Plus U.S. markets open in 4h 10m US Markets US Markets Europe Markets Asia Markets Cryptocurrencies Rates Commodities Currencies U.S. markets open in 4h 10m S&P Futures 7,726.75 +19.50 +0.25% Dow Futures 52,307.00 +87.00 +0.17% Nasdaq Futures 29,888.50 +145.50 +0.49% Russell 2000 Futures 2,898.80 +1.90 +0.07% VIX 15.22 -0.22 -1.42% Gold 4,436.50 +36.80 +0.84% Bitcoin USD 78,263.35 +1,869.01 +2.45% Crude Oil Oct 26 95.33 -1.90 -1.95% ADVERTISEMENT Is Infineon’s 800 VDC AI Data Center Breaker Role Altering The Investment Case For Infineon Technologies (XTRA:IFX)? Sasha Jovanovic Wed,",
+      "category": [
+        "800v",
+        "ai_dc",
+        "sic"
+      ],
+      "sources": [],
+      "plain_summary": "Is Infineon’s 800 VDC AI Data Center Breaker Role Altering The Investment Case For Infineon Technologies (XTRA:IFX)? Yahoo Finance",
+      "technical_summary": "",
+      "technical": {
+        "voltage": "",
+        "power": "",
+        "topology": "",
+        "device": "",
+        "switching_frequency": "",
+        "efficiency": "",
+        "power_density": "",
+        "isolation": "",
+        "control": "",
+        "application": ""
+      },
+      "industrialization": {
+        "stage": "未知",
+        "status": "",
+        "target": ""
+      },
+      "evidence": {
+        "confirmed_facts": [],
+        "source_claims": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "published_date": "2026-09-17",
+      "relevance_score": 45,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 35,
+        "engineering_usability": 50,
+        "matched_topics": [
+          "800V/AI DC"
+        ]
+      },
+      "heat_score": 38,
+      "heat_factors": {
+        "freshness": 20,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 35,
+      "radar_score": 43,
+      "radar_rank": 28
+    },
+    {
+      "id": "260918-09",
+      "title": "CorePower Magnetics Raises $10.6 Million To Scale U.S. Manufacturing Of Advanced Magnetics For AI, Data Centers And Grid Infrastructure - Pulse 2.0",
+      "source_type": "国际资讯",
+      "primary_source": "Pulse 2.0",
+      "published_at": "2026-09-17T12:44:25+00:00",
+      "link": "https://pulse2.com/corepower-magnetics-raises-10-6-million-to-scale-u-s-manufacturing-of-advanced-magnetics-for-ai-data-centers-and-grid-infrastructure/",
+      "summary_raw": "CorePower Magnetics Raises $10.6 Million To Scale U.S. Manufacturing Of Advanced Magnetics For AI, Data Centers And Grid Infrastructure Pulse 2.0",
+      "source_text": "CorePower Magnetics Raises $10.6 Million To Scale U.S. Manufacturing Of Advanced Magnetics For AI, Data Centers And Grid Infrastructure By Amit Chowdhry Yesterday at 8:44 AM CorePower Magnetics Raises $10.6 Million To Scale U.S. Manufacturing Of Advanced Magnetics For AI, Data Centers And Grid Infrastructure CorePower Magnetics, a Pittsburgh-based developer and manufacturer of advanced magnetic components for power electronics, has raised $10.6 million in equity financing to expand domestic manufacturing capacity, accelerate hiring and scale commercialization of its technology. The oversubscribed round was co-led by Engine Ventures and Material Impact, with participation from Evergreen Climate Innovations, the Carnegie Mellon Catalyst Fund and Baruch Future Ventures. The financing brings CorePower’s total equity funding to $13.6 million. The company has also secured another $27 million in non-dilutive funding through ARPA-E, the U.S. Department of Energy and Department of Defense programs. CorePower develops advanced magnetic materials and components, including transformers and inductors, used in power electronics across AI infrastructure, data centers, grid modernization and industrial electrification. Demand for more efficient power electronics is increasing as data centers and other energy-intensive infrastructure require larger amounts of electricity. CorePower noted that the International Energy Agency projects AI-driven data center electricity demand will more than double by 2030, while the U.S. Department of Energy estimates roughly 100 GW of additional peak-hour supply could be required by then. Magnetic components play a critical role in converting and controlling electricity but remain one of the less-modernized portions of the power infrastructure stack. As systems move toward higher voltages and frequencies, conventional transformers and inductors can struggle with efficiency, heat, size and weight. CorePower’s technology is based on nanocrystalline alloys originally advanced by co-founders Paul Ohodnicki and Sam Kernion at Carnegie Mellon University in collaboration with the Department of Energy’s National Energy Technology Laboratory. The company reformulated the materials to operate at higher temperatures while withstanding the mechanical requirements associated with commercial manufacturing. CorePower works across the full value chain, spanning materials development, manufacturing processes, component design and production. The result is smaller, lighter and more efficient inductors and transformers that customers can integrate directly into power systems. CorePower is now moving from technology development toward higher-volume domestic manufacturing. The company plans to use the new capital to expand production capacity and equipment in the Pittsburgh region while adding employees across engineering, operations and manufacturing. The company has already moved its proprietary alloy, annealing and component manufacturing processes from laboratory scale through intermediate stages and into commercial-scale production. Multiple product lines are now advancing toward volume manufacturing. CorePower also has paid engagements with several Fortune 500 companies across AI infrastructure, data centers, industrial power systems and grid modernization. The financing strengthens the company’s effort to build a domestic supply base for advanced magnetics at a time when power infrastructure has become increasingly important to the expansion of AI computing and broader electrification. Engine Ventures General Partner Reed Sturtevant and Material Impact Co-Founder and Managing Partner Carmichael Roberts are also joining CorePower’s board as part of the financing. Founded in 2020, CorePower is headquartered at the Energy Innovation Center in Pittsburgh. The company plans to continue expanding its manufacturing footprint in the region while increasing commercialization of its magnetic components across power-intensive markets. KEY QUOTES: “The increased need for more efficient power electronics is creating a significant opportunity for advanced magnetic materials and components. Along with improved performance, we’re bringing greater standardization to a historically custom industry, enabling customers to move faster from design to production while accelerating adoption of next-generation power electronics.” Sam Kernion, CEO of CorePower Magnetics “CorePower sits at a critical and under-appreciated layer in the power stack. We believe their unique magnetics materials technology can be the foundation of a large, successful company during the growth of data centers and the grid.” Reed Sturtevant, General Partner at Engine Ventures “Advanced materials create value only when they can be translated into products that solve meaningful customer problems. What impressed us about CorePower is not only the strength of the underlying technology, but the team’s ability to scale it into manufacturable components that addr",
+      "category": [
+        "ai_dc",
+        "llc",
+        "magnetics"
+      ],
+      "sources": [],
+      "plain_summary": "CorePower Magnetics Raises $10.6 Million To Scale U.S. Manufacturing Of Advanced Magnetics For AI, Data Centers And Grid Infrastructure Pulse 2.0",
+      "technical_summary": "",
+      "technical": {
+        "voltage": "",
+        "power": "",
+        "topology": "",
+        "device": "",
+        "switching_frequency": "",
+        "efficiency": "",
+        "power_density": "",
+        "isolation": "",
+        "control": "",
+        "application": ""
+      },
+      "industrialization": {
+        "stage": "未知",
+        "status": "",
+        "target": ""
+      },
+      "evidence": {
+        "confirmed_facts": [],
+        "source_claims": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "published_date": "2026-09-17",
+      "relevance_score": 45,
+      "relevance_factors": {
+        "focus_match": 48,
+        "technical_density": 35,
+        "engineering_usability": 50,
+        "matched_topics": [
+          "Magnetics"
+        ]
+      },
+      "heat_score": 38,
+      "heat_factors": {
+        "freshness": 20,
+        "multi_source": 45,
+        "source_authority": 58
+      },
+      "technical_depth_score": 35,
+      "radar_score": 43,
       "radar_rank": 29
     },
     {
@@ -5949,7 +5949,7 @@
   "directions": {},
   "observations": [],
   "quality_notes": "本次没有获得具有可核验原文内容的强相关事件。",
-  "daily_summary": "2026-09-22 今日技术简报：共 0 条已验证事件。该时间范围暂无已验证事件。",
+  "daily_summary": "2026-09-23 今日技术简报：共 0 条已验证事件。该时间范围暂无已验证事件。",
   "daily_highlights": [],
   "daily_focus": [
     {
@@ -5982,7 +5982,7 @@
     "today_count": 0,
     "today_source_types": {},
     "yesterday_count": 0,
-    "seven_day_count": 38,
+    "seven_day_count": 29,
     "source_types": {
       "国际资讯": 79,
       "国际论文": 4,
