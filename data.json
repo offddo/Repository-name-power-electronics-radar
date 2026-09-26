@@ -1,7 +1,7 @@
 {
   "schema_version": "3.4",
-  "updated": "2026-09-25T10:48:40.760426+08:00",
-  "report_date": "2026-09-25",
+  "updated": "2026-09-26T10:51:56.922956+08:00",
+  "report_date": "2026-09-26",
   "event_count": 86,
   "events": [
     {
@@ -5949,7 +5949,7 @@
   "directions": {},
   "observations": [],
   "quality_notes": "本次没有获得具有可核验原文内容的强相关事件。",
-  "daily_summary": "2026-09-25 今日技术简报：共 0 条已验证事件。该时间范围暂无已验证事件。",
+  "daily_summary": "2026-09-26 今日技术简报：共 0 条已验证事件。该时间范围暂无已验证事件。",
   "daily_highlights": [],
   "daily_focus": [
     {
@@ -5982,7 +5982,7 @@
     "today_count": 0,
     "today_source_types": {},
     "yesterday_count": 0,
-    "seven_day_count": 3,
+    "seven_day_count": 0,
     "source_types": {
       "国际资讯": 79,
       "国际论文": 4,
