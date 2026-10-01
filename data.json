@@ -1,7 +1,7 @@
 {
   "schema_version": "3.4",
-  "updated": "2026-09-30T11:19:39.350730+08:00",
-  "report_date": "2026-09-30",
+  "updated": "2026-10-01T11:26:13.617499+08:00",
+  "report_date": "2026-10-01",
   "event_count": 86,
   "events": [
     {
@@ -5949,7 +5949,7 @@
   "directions": {},
   "observations": [],
   "quality_notes": "本次没有获得具有可核验原文内容的强相关事件。",
-  "daily_summary": "2026-09-30 今日技术简报：共 0 条已验证事件。该时间范围暂无已验证事件。",
+  "daily_summary": "2026-10-01 今日技术简报：共 0 条已验证事件。该时间范围暂无已验证事件。",
   "daily_highlights": [],
   "daily_focus": [
     {
